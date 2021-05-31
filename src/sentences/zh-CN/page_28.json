@@ -2578,5 +2578,31 @@
         "source": "For Linux, they are defined in [linux/auxvec.h][auxvec_h].",
         "suggest": "对于 Linux，它们在 [linux/auxvec.h][auxvec_h] 中定义。",
         "translate": ""
+    },
+    {
+        "source": "that in this case the `Vec` may not report a [`capacity`] of 0*.",
+        "suggest": "在这种情况下，`Vec` 可能不会报告 0* 的 [`capacity`]。",
+        "translate": ""
+    },
+    {
+        "source": "loopback address",
+        "suggest": "回环地址",
+        "translate": ""
+    },
+
+    {
+        "source": "*Exception flags* report which exceptions occurred since last they were reset.",
+        "suggest": "*异常标志* 报告自上次重置后发生了哪些异常。",
+        "translate": ""
+    },
+    {
+        "source": "*Masking flags* can be used to mask (ignore) certain exceptions.",
+        "suggest": "*屏蔽标志* 可用于屏蔽 (忽略) 的某些异常。",
+        "translate": ""
+    },
+    {
+        "source": "*Rounding mode flags* control the rounding mode of floating point instructions.",
+        "suggest": "*舍入模式标志* 控制浮点指令的舍入模式。",
+        "translate": ""
     }
 ]
