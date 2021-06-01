@@ -1121,7 +1121,7 @@
     },
     {
         "source": "See note at the top of this module to understand why these are used:",
-        "suggest": "请参见本模块顶部的注释以了解为什么使用它们:",
+        "suggest": "请参见本模块顶部的说明以了解为什么使用它们:",
         "translate": ""
     },
     {
@@ -1486,7 +1486,7 @@
     },
     {
         "source": "When attribute privacy is implemented, `PathBuf` should be annotated as `#[repr(transparent)]`.",
-        "suggest": "实现属性隐私后，应将 `PathBuf` 注释为 `#[repr(transparent)]`。",
+        "suggest": "实现属性隐私时，应将 `PathBuf` 注解为 `#[repr(transparent)]`。",
         "translate": ""
     },
     {
@@ -1761,7 +1761,7 @@
     },
     {
         "source": "When attribute privacy is implemented, `Path` should be annotated as `#[repr(transparent)]`.",
-        "suggest": "实现属性隐私后，应将 `Path` 注释为 `#[repr(transparent)]`。",
+        "suggest": "实现属性隐私时，应将 `Path` 注解为 `#[repr(transparent)]`。",
         "translate": ""
     },
     {

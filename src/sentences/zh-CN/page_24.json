@@ -611,7 +611,7 @@
     },
     {
         "source": "First you can annotate functions with `#[target_feature(enable = \"simd128\")]`.",
-        "suggest": "首先，您可以使用 `#[target_feature(enable = \"simd128\")]` 注释函数。",
+        "suggest": "首先，您可以使用 `#[target_feature(enable = \"simd128\")]` 注解函数。",
         "translate": ""
     },
     {

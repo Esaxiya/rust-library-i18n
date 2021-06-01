@@ -3496,7 +3496,7 @@
     },
     {
         "source": "Using the 'turbofish' instead of annotating `four`:",
-        "suggest": "使用 'turbofish' 而不是注释 `four`:",
+        "suggest": "使用 'turbofish' 而不是注解 `four`:",
         "translate": ""
     },
     {

@@ -316,7 +316,7 @@
     },
     {
         "source": "See comments in Arc::clone() for why this is relaxed.",
-        "suggest": "有关为什么放松的信息，请参见 Arc::clone () 中的注释。",
+        "suggest": "请参阅 Arc::clone() 中的注释，以了解放宽此限制的原因。",
         "translate": ""
     },
     {

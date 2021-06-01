@@ -681,7 +681,7 @@
     },
     {
         "source": "Should this following branch be annotated with unlikely?",
-        "suggest": "此后的分支是否应该被注释 (不太可能)?",
+        "suggest": "下面这个分支应该用不太可能来注释吗？",
         "translate": ""
     },
     {

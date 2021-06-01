@@ -1861,7 +1861,7 @@
     },
     {
         "source": "see the comments in `format_shortest_opt` for the rationale.",
-        "suggest": "有关原理，请参见 `format_shortest_opt` 中的注释。",
+        "suggest": "有关基本原理，请参见 `format_shortest_opt` 中的注释。",
         "translate": ""
     },
     {

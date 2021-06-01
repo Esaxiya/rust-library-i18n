@@ -711,7 +711,7 @@
     },
     {
         "source": "Only tests the simple function definition with respect to intersection",
-        "suggest": "仅针对交集测试简单的函数定义",
+        "suggest": "仅针对测试交集的简单函数定义",
         "translate": ""
     },
     {
@@ -1306,12 +1306,12 @@
     },
     {
         "source": "Short cloned from long",
-        "suggest": "短克隆从长克隆",
+        "suggest": "从长的克隆短的",
         "translate": ""
     },
     {
         "source": "Long cloned from short",
-        "suggest": "长克隆从短克隆",
+        "suggest": "从短的克隆长的",
         "translate": ""
     },
     {
@@ -1856,12 +1856,12 @@
     },
     {
         "source": "We're at the start of the list.",
-        "suggest": "我们在列表的开头。",
+        "suggest": "我们位于列表的开头。",
         "translate": ""
     },
     {
         "source": "Yield None and jump to the end.",
-        "suggest": "不屈服并跳到最后。",
+        "suggest": "Yield None 并跳到最后。",
         "translate": ""
     },
     {
@@ -3971,7 +3971,7 @@
     },
     {
         "source": "pretty-print the [`Debug`] formatting",
-        "suggest": "漂亮打印 [`Debug`] 格式",
+        "suggest": "漂亮地打印 [`Debug`] 格式",
         "translate": ""
     },
     {

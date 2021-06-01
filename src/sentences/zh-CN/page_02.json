@@ -4291,12 +4291,12 @@
     },
     {
         "source": "uncomment AsRef impls below when stabilizing.",
-        "suggest": "取消注释稳定时，AsRef 表示如下。",
+        "suggest": "当稳定时，请取消下面的 AsRef impls 注释。",
         "translate": ""
     },
     {
         "source": "Uncomment when stabilizing `string_drain_as_str`.",
-        "suggest": "稳定 `string_drain_as_str` 时不加注释。",
+        "suggest": "在稳定时，请取消下面的 `string_drain_as_str` 注释。",
         "translate": ""
     },
     {

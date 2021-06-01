@@ -156,7 +156,7 @@
     },
     {
         "source": "comment out the `dev-dependencies` in their `Cargo.toml` files (due to https://github.com/rust-lang/cargo/issues/4242),",
-        "suggest": "在 `Cargo.toml` 文件中注释掉 `dev-dependencies` (由于 https://github.com/rust-lang/cargo/issues/4242)，",
+        "suggest": "在 `Cargo.toml` 文件中注释掉 `dev-dependencies` (因为 https://github.com/rust-lang/cargo/issues/4242)，",
         "translate": ""
     },
     {

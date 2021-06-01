@@ -721,7 +721,7 @@
     },
     {
         "source": "auto-derived `Send` impl is OK.",
-        "suggest": "自动派生的 `Send` impl 正常。",
+        "suggest": "自动派生的 `Send` impl 是可以的。",
         "translate": ""
     },
     {

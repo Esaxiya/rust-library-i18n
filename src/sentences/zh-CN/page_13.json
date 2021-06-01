@@ -2446,7 +2446,7 @@
     },
     {
         "source": "See note on above test for why `should_panic` is used.",
-        "suggest": "有关为何使用 `should_panic` 的信息，请参见上述测试的注释。",
+        "suggest": "关于为什么使用 `should_panic` 的原因，请参见上述测试的说明。",
         "translate": ""
     },
     {
@@ -3221,7 +3221,7 @@
     },
     {
         "source": "in the following comments, three numbers are spaced by 1 ulp apart, and the second one is being formatted.",
-        "suggest": "在以下注释中，三个数字以 1 ulp 的间隔隔开，第二个数字正在格式化。",
+        "suggest": "在下面的注释中，三个数字以 1 ulp 的间隔隔开，第二个数字被格式化了。",
         "translate": ""
     },
     {
@@ -3391,7 +3391,7 @@
     },
     {
         "source": "See comments in dragon.rs's exact_sanity_test for why this test is ignored on MSVC",
-        "suggest": "有关为何在 MSVC 上忽略此测试的信息，请参见 dragon.rs 的精确 _sanity_test 中的注释",
+        "suggest": "有关为何在 MSVC 上忽略此测试的信息，请参见 dragon.rs 的 _sanity_test 中的注释",
         "translate": ""
     },
     {

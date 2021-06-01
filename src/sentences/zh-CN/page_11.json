@@ -501,7 +501,7 @@
     },
     {
         "source": "see previous safety comment.",
-        "suggest": "请参见先前的安全注释。",
+        "suggest": "请参见之前的安全注释。",
         "translate": ""
     },
     {
@@ -1986,7 +1986,7 @@
     },
     {
         "source": "is annotated with the `#[must_use]` attribute, which will cause the compiler to issue a warning when a Result value is ignored.",
-        "suggest": "带有 `#[must_use]` 属性的注释，它将导致编译器在忽略 Result 值时发出警告。",
+        "suggest": "带有 `#[must_use]` 属性的注解，它将导致编译器在忽略 Result 值时发出警告。",
         "translate": ""
     },
     {

@@ -586,7 +586,7 @@
     },
     {
         "source": "When attribute privacy is implemented, `CStr` should be annotated as `#[repr(transparent)]`.",
-        "suggest": "实现属性隐私后，应将 `CStr` 注释为 `#[repr(transparent)]`。",
+        "suggest": "实现属性隐私时，应将 `CStr` 注解为 `#[repr(transparent)]`。",
         "translate": ""
     },
     {
@@ -1726,7 +1726,7 @@
     },
     {
         "source": "When attribute privacy is implemented, `OsStr` should be annotated as `#[repr(transparent)]`.",
-        "suggest": "实现属性隐私后，应将 `OsStr` 注释为 `#[repr(transparent)]`。",
+        "suggest": "实现属性隐私时，应将 `OsStr` 注解为 `#[repr(transparent)]`。",
         "translate": ""
     },
     {

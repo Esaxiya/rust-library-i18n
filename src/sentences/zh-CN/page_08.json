@@ -721,7 +721,7 @@
     },
     {
         "source": "once support to add notes in `rustc_on_unimplemented` lands in beta, and it has been extended to check whether a closure is anywhere in the requirement chain, extend it as such (#48534):",
-        "suggest": "一旦支持在 `rustc_on_unimplemented` 中添加注释进入 beta 版本，并且它已扩展为检查需求包中是否有闭包，请将其扩展为 (#48534):",
+        "suggest": "一旦在 `rustc_on_unimplemented` 中添加 note 的支持进入 beta 版本，并且已经扩展到检查闭包是否在需求链中的任何地方，就这样扩展它 (#48534):",
         "translate": ""
     },
     {
@@ -4051,7 +4051,7 @@
     },
     {
         "source": "A note on integer overflow: Many parts of this file perform arithmetic with the decimal exponent `e`.",
-        "suggest": "关于整型溢出的注释: 该文件的许多部分都使用十进制指数 `e` 进行算术运算。",
+        "suggest": "关于整型溢出的注意事项: 该文件的许多部分都使用十进制指数 `e` 来执行算术运算。",
         "translate": ""
     },
     {

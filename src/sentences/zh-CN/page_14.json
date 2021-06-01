@@ -1851,7 +1851,7 @@
     },
     {
         "source": "A note on resolution of a backtrace:",
-        "suggest": "关于回溯分辨率的注释:",
+        "suggest": "关于解决回溯的说明:",
         "translate": ""
     },
     {
@@ -4786,7 +4786,7 @@
     },
     {
         "source": "A note about crates and the facade:",
-        "suggest": "关于 crates 和立面的注释:",
+        "suggest": "关于 crates 和 facade 的笔记:",
         "translate": ""
     },
     {

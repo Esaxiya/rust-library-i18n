@@ -186,7 +186,7 @@
     },
     {
         "source": "When attribute privacy is implemented, `Slice` should be annotated as `#[repr(transparent)]`.",
-        "suggest": "实现属性隐私后，应将 `Slice` 注释为 `#[repr(transparent)]`。",
+        "suggest": "实现属性隐私时，应将 `Slice` 注解为 `#[repr(transparent)]`。",
         "translate": ""
     },
     {
@@ -551,7 +551,7 @@
     },
     {
         "source": "the cfg annotations only exist due to dead code warnings.",
-        "suggest": "cfg 注释仅由于死代码警告而存在。",
+        "suggest": "cfg 注解仅因 dead 代码警告而存在。",
         "translate": ""
     },
     {

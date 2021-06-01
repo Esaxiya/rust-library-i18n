@@ -361,7 +361,7 @@
     },
     {
         "source": "Fuchsia's libc parses the notes first however so by virtue of being here these headers must be valid.",
-        "suggest": "Fuchsia 的 libc 首先解析注释，因此，由于位于此处，这些标头必须有效。",
+        "suggest": "Fuchsia 的 libc 首先解析了 note，因此这些 header 既然出现在这里，就一定是有效的。",
         "translate": ""
     },
     {
@@ -376,17 +376,17 @@
     },
     {
         "source": "The note type for build IDs.",
-        "suggest": "构建 ID 的注解类型。",
+        "suggest": "构建 ID 的 note 类型。",
         "translate": ""
     },
     {
         "source": "Elf_Nhdr represents an ELF note header in the endianness of the target.",
-        "suggest": "Elf_Nhdr 表示目标字节序中的 ELF 注释标头。",
+        "suggest": "Elf_Nhdr 表示目标字节序中的 ELF note 头。",
         "translate": ""
     },
     {
         "source": "Note represents an ELF note (header + contents).",
-        "suggest": "注释表示 ELF 注释 (标题 + 内容)。",
+        "suggest": "Note 表示 ELF note (标题 + 内容)。",
         "translate": ""
     },
     {
@@ -401,12 +401,12 @@
     },
     {
         "source": "It terminates as soon as an error occurs or there are no more notes.",
-        "suggest": "一旦发生错误或没有更多注释，它将终止。",
+        "suggest": "一旦发生错误或没有更多 note，它将终止。",
         "translate": ""
     },
     {
         "source": "If you iterate over invalid data it will function as though no notes were found.",
-        "suggest": "如果您遍历无效数据，它将像没有找到注释的情况一样起作用。",
+        "suggest": "如果您遍历无效数据，它将像没有找到 note 的情况一样起作用。",
         "translate": ""
     },
     {

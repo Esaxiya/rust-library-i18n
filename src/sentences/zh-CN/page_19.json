@@ -2191,7 +2191,7 @@
     },
     {
         "source": "see the comment in 'try' for a shared channel for why this window of \"not disconnected\" is ok.",
-        "suggest": "请参见 'try' 中有关共享通道的注释，以了解 \"not disconnected\" 的此窗口正常的原因。",
+        "suggest": "请参见 'try' 中有关共享通道的文档，以了解 \"not disconnected\" 窗口正常的原因。",
         "translate": ""
     },
     {
