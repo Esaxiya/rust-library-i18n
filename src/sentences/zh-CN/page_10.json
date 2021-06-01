@@ -3536,7 +3536,7 @@
     },
     {
         "source": "However, `Deref` only provides a reference that lives for as long as the borrow of the `Pin`, not the lifetime of the `Pin` itself.",
-        "suggest": "但是，`Deref` 仅提供一个引用，该引用的寿命与 `Pin` 的借用时间一样长，而不是 `Pin` 本身的生命周期。",
+        "suggest": "但是，`Deref` 仅提供一个引用，该引用的生命周期与 `Pin` 的借用时间一样长，而不是 `Pin` 本身的生命周期。",
         "translate": ""
     },
     {
@@ -3566,7 +3566,7 @@
     },
     {
         "source": "However, `DerefMut` only provides a reference that lives for as long as the borrow of the `Pin`, not the lifetime of the `Pin` itself.",
-        "suggest": "但是，`DerefMut` 仅提供一个引用，该引用的寿命与 `Pin` 的借用时间一样长，而不是 `Pin` 本身的生命周期。",
+        "suggest": "但是，`DerefMut` 仅提供一个引用，该引用生命周期与 `Pin` 的借用时间一样长，而不是 `Pin` 本身的生命周期。",
         "translate": ""
     },
     {

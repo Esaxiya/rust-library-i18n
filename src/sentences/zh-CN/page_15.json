@@ -2661,12 +2661,12 @@
     },
     {
         "source": "The file's cursor isn't changed.",
-        "suggest": "文件的光标未更改。",
+        "suggest": "文件的游标未更改。",
         "translate": ""
     },
     {
         "source": "In particular, if the cursor was at the end and the file is shrunk using this operation, the cursor will now be past the end.",
-        "suggest": "特别是，如果光标位于末尾，并且使用此操作将文件缩小，则光标现在将位于末尾。",
+        "suggest": "特别是，如果游标位于末尾，并且使用此操作将文件缩小了，那么游标现在将超过末尾。",
         "translate": ""
     },
     {

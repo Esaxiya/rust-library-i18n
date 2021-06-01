@@ -4556,7 +4556,7 @@
     },
     {
         "source": "We primarily want to ensure that the function pointer at `USIZE_MARKER` has an address corresponding *only* to functions that also take `&usize` as their first argument.",
-        "suggest": "我们主要是要确保 `USIZE_MARKER` 处的函数指针具有对应于 *only* 的地址，该地址也将 `&usize` 作为其第一个参数。",
+        "suggest": "我们主要是要确保 `USIZE_MARKER` 处的函数指针具有对应于 *only* 的地址，该地址也将 `&usize` 作为它的第一个参数。",
         "translate": ""
     },
     {

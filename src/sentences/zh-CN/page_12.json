@@ -4356,7 +4356,7 @@
     },
     {
         "source": "uses `self.position` as its cursor",
-        "suggest": "使用 `self.position` 作为其光标",
+        "suggest": "使用 `self.position` 作为它的游标",
         "translate": ""
     },
     {
@@ -4421,7 +4421,7 @@
     },
     {
         "source": "uses `self.end` as its cursor -- so that `next()` and `next_back()` are independent.",
-        "suggest": "使用 `self.end` 作为其光标 - `next()` 和 `next_back()` 是独立的。",
+        "suggest": "使用 `self.end` 作为它的游标 - `next()` 和 `next_back()` 是独立的。",
         "translate": ""
     },
     {

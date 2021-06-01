@@ -1186,7 +1186,7 @@
     },
     {
         "source": "the cursors at the front and back of the path each keep track of what parts of the path have been consumed so far.",
-        "suggest": "路径前面和后面的光标分别跟踪到目前为止路径的哪些部分已被使用。",
+        "suggest": "路径前面和后面的游标都记录了到目前为止路径的哪些部分被消耗了。",
         "translate": ""
     },
     {
@@ -2606,7 +2606,7 @@
     },
     {
         "source": "requires a `bool` value as its conditional.",
-        "suggest": "需要 `bool` 值作为其条件。",
+        "suggest": "需要 `bool` 值作为它的条件。",
         "translate": ""
     },
     {
@@ -2796,7 +2796,7 @@
     },
     {
         "source": "The reason is that functions returning an `impl Trait` where `!` does not have an `impl` of `Trait` cannot diverge as their only possible code path.",
-        "suggest": "原因是返回 `impl Trait` 且 `!` 没有 `impl` 的函数不能作为其唯一可能的代码路径发散。",
+        "suggest": "原因是返回 `impl Trait` 且 `!` 没有 `impl` 的函数不能作为它的唯一可能的代码路径发散。",
         "translate": ""
     },
     {
@@ -3521,7 +3521,7 @@
     },
     {
         "source": "The `'static` lifetime is the longest lifetime, which represents the total life of the program.",
-        "suggest": "`'static` 生命周期是最长的生命周期，它代表程序的总寿命。",
+        "suggest": "`'static` 生命周期是最长的生命周期，它代表程序的总生命周期。",
         "translate": ""
     },
     {

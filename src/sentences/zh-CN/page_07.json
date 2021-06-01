@@ -3986,7 +3986,7 @@
     },
     {
         "source": "depends on libcore, but the contents of this module are set up in such a way that directly pulling it here works such that the crate uses the this crate as its libcore.",
-        "suggest": "取决于 libcore，但是此模块的内容设置为可以在此处直接拉出模块，这样 crate 使用 this crate 作为其 libcore。",
+        "suggest": "依赖于 libcore，但是这个模块的内容是这样设置的: 直接将它 pull 到这里，这样 crate 就可以使用这个 crate 作为它的 libcore。",
         "translate": ""
     },
     {
@@ -4381,7 +4381,7 @@
     },
     {
         "source": "Match arms with guard conditions.",
-        "suggest": "使分支与守卫条件匹配。",
+        "suggest": "让分支与守卫条件匹配。",
         "translate": ""
     },
     {

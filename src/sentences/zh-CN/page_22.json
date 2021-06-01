@@ -2641,12 +2641,12 @@
     },
     {
         "source": "The reason for this is that threads can `detach` and outlive the lifetime they have been created in.",
-        "suggest": "这样做的原因是，线程可以 `detach` 并使它们在其中创建的生命周期寿命更长。",
+        "suggest": "这样做的原因是，线程可以 `detach` 并使它们在其中创建的生命周期更长。",
         "translate": ""
     },
     {
         "source": "Indeed if the thread, and by extension its return value, can outlive their caller, we need to make sure that they will be valid afterwards, and since we *can't* know when it will return we need to have them valid as long as possible, that is until the end of the program, hence the `'static` lifetime.",
-        "suggest": "确实，如果线程及其扩展值可以超过调用者的寿命，我们需要确保它们之后才有效，并且由于我们 *无法* 知道何时返回，因此需要使它们有效尽可能直到程序结束，因此是 `'static` 生命周期。",
+        "suggest": "确实，如果线程及其扩展值可以超过调用者的生命周期，我们需要确保它们之后才有效，并且由于我们 *无法* 知道何时返回，因此需要使它们有效尽可能直到程序结束，因此是 `'static` 生命周期。",
         "translate": ""
     },
     {

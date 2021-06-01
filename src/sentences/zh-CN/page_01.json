@@ -1561,27 +1561,27 @@
     },
     {
         "source": "Provides a cursor at the front element.",
-        "suggest": "在前元素处提供光标。",
+        "suggest": "在前元素处提供游标。",
         "translate": ""
     },
     {
         "source": "The cursor is pointing to the \"ghost\" non-element if the list is empty.",
-        "suggest": "如果列表为空，则光标指向 \"ghost\" 非元素。",
+        "suggest": "如果列表为空，则游标指向 \"ghost\" 非元素。",
         "translate": ""
     },
     {
         "source": "Provides a cursor with editing operations at the front element.",
-        "suggest": "在前面的元素上为光标提供编辑操作。",
+        "suggest": "在前面的元素上为游标提供编辑操作。",
         "translate": ""
     },
     {
         "source": "Provides a cursor at the back element.",
-        "suggest": "在 back 元素上提供光标。",
+        "suggest": "在 back 元素上提供游标。",
         "translate": ""
     },
     {
         "source": "Provides a cursor with editing operations at the back element.",
-        "suggest": "在 back 元素上为光标提供编辑操作。",
+        "suggest": "在 back 元素上为游标提供编辑操作。",
         "translate": ""
     },
     {
@@ -1751,7 +1751,7 @@
     },
     {
         "source": "A cursor over a `LinkedList`.",
-        "suggest": "`LinkedList` 上的光标。",
+        "suggest": "`LinkedList` 上的游标。",
         "translate": ""
     },
     {
@@ -1771,12 +1771,12 @@
     },
     {
         "source": "When created, cursors start at the front of the list, or the \"ghost\" non-element if the list is empty.",
-        "suggest": "创建后，光标从列表的开头开始，如果列表为空，则从 \"ghost\" 非元素开始。",
+        "suggest": "创建后，游标从列表的开头开始，如果列表为空，则从 \"ghost\" 非元素开始。",
         "translate": ""
     },
     {
         "source": "A cursor over a `LinkedList` with editing operations.",
-        "suggest": "带有编辑操作的 `LinkedList` 上的光标。",
+        "suggest": "带有编辑操作的 `LinkedList` 上的游标。",
         "translate": ""
     },
     {
@@ -1796,22 +1796,22 @@
     },
     {
         "source": "Returns the cursor position index within the `LinkedList`.",
-        "suggest": "返回 `LinkedList` 中的光标位置索引。",
+        "suggest": "返回 `LinkedList` 中的游标位置索引。",
         "translate": ""
     },
     {
         "source": "This returns `None` if the cursor is currently pointing to the \"ghost\" non-element.",
-        "suggest": "如果光标当前指向 \"ghost\" 非元素，则返回 `None`。",
+        "suggest": "如果游标当前指向 \"ghost\" 非元素，则返回 `None`。",
         "translate": ""
     },
     {
         "source": "Moves the cursor to the next element of the `LinkedList`.",
-        "suggest": "将光标移动到 `LinkedList` 的下一个元素。",
+        "suggest": "将游标移动到 `LinkedList` 的下一个元素。",
         "translate": ""
     },
     {
         "source": "If the cursor is pointing to the \"ghost\" non-element then this will move it to the first element of the `LinkedList`.",
-        "suggest": "如果光标指向 \"ghost\" 非元素，那么它将移动到 `LinkedList` 的第一个元素。",
+        "suggest": "如果游标指向 \"ghost\" 非元素，那么它将移动到 `LinkedList` 的第一个元素。",
         "translate": ""
     },
     {
@@ -1826,7 +1826,7 @@
     },
     {
         "source": "the cursor was sitting at the start position Next element should be the head of the list",
-        "suggest": "光标位于开始位置，下一个元素应位于列表的开头",
+        "suggest": "游标位于开始位置，下一个元素应位于列表的开头",
         "translate": ""
     },
     {
@@ -1836,12 +1836,12 @@
     },
     {
         "source": "Moves the cursor to the previous element of the `LinkedList`.",
-        "suggest": "将光标移动到 `LinkedList` 的上一个元素。",
+        "suggest": "将游标移动到 `LinkedList` 的上一个元素。",
         "translate": ""
     },
     {
         "source": "If the cursor is pointing to the \"ghost\" non-element then this will move it to the last element of the `LinkedList`.",
-        "suggest": "如果光标指向 \"ghost\" 非元素，那么它将移动到 `LinkedList` 的最后一个元素。",
+        "suggest": "如果游标指向 \"ghost\" 非元素，那么它将移动到 `LinkedList` 的最后一个元素。",
         "translate": ""
     },
     {
@@ -1876,7 +1876,7 @@
     },
     {
         "source": "Returns a reference to the element that the cursor is currently pointing to.",
-        "suggest": "返回对光标当前指向的元素的引用。",
+        "suggest": "返回对游标当前指向的元素的引用。",
         "translate": ""
     },
     {
@@ -1886,7 +1886,7 @@
     },
     {
         "source": "If the cursor is pointing to the \"ghost\" non-element then this returns the first element of the `LinkedList`.",
-        "suggest": "如果光标指向 \"ghost\" 非元素，则返回 `LinkedList` 的第一个元素。",
+        "suggest": "如果游标指向 \"ghost\" 非元素，则返回 `LinkedList` 的第一个元素。",
         "translate": ""
     },
     {
@@ -1901,7 +1901,7 @@
     },
     {
         "source": "If the cursor is pointing to the \"ghost\" non-element then this returns the last element of the `LinkedList`.",
-        "suggest": "如果光标指向 \"ghost\" 非元素，则返回 `LinkedList` 的最后一个元素。",
+        "suggest": "如果游标指向 \"ghost\" 非元素，则返回 `LinkedList` 的最后一个元素。",
         "translate": ""
     },
     {
@@ -1916,7 +1916,7 @@
     },
     {
         "source": "The lifetime of the returned `Cursor` is bound to that of the `CursorMut`, which means it cannot outlive the `CursorMut` and that the `CursorMut` is frozen for the lifetime of the `Cursor`.",
-        "suggest": "返回的 `Cursor` 的生命周期与 `CursorMut` 的生命周期绑定在一起，这意味着它不能超过 `CursorMut` 的寿命，并且 `CursorMut` 被冻结为 `Cursor` 的生命周期。",
+        "suggest": "返回的 `Cursor` 的生命周期与 `CursorMut` 的生命周期绑定在一起，这意味着它不能超过 `CursorMut` 的生命周期，并且 `CursorMut` 被冻结为 `Cursor` 的生命周期。",
         "translate": ""
     },
     {
@@ -1931,7 +1931,7 @@
     },
     {
         "source": "If the cursor is pointing at the \"ghost\" non-element then the new element is inserted at the front of the `LinkedList`.",
-        "suggest": "如果光标指向 \"ghost\" 非元素，则将新元素插入 `LinkedList` 的前面。",
+        "suggest": "如果游标指向 \"ghost\" 非元素，则将新元素插入 `LinkedList` 的前面。",
         "translate": ""
     },
     {
@@ -1946,7 +1946,7 @@
     },
     {
         "source": "If the cursor is pointing at the \"ghost\" non-element then the new element is inserted at the end of the `LinkedList`.",
-        "suggest": "如果光标指向 \"ghost\" 非元素，则将新元素插入 `LinkedList` 的末尾。",
+        "suggest": "如果游标指向 \"ghost\" 非元素，则将新元素插入 `LinkedList` 的末尾。",
         "translate": ""
     },
     {
@@ -1956,12 +1956,12 @@
     },
     {
         "source": "The element that was removed is returned, and the cursor is moved to point to the next element in the `LinkedList`.",
-        "suggest": "返回已删除的元素，并移动光标以指向 `LinkedList` 中的下一个元素。",
+        "suggest": "返回已删除的元素，并移动游标以指向 `LinkedList` 中的下一个元素。",
         "translate": ""
     },
     {
         "source": "If the cursor is currently pointing to the \"ghost\" non-element then no element is removed and `None` is returned.",
-        "suggest": "如果光标当前指向 \"ghost\" 非元素，则不删除任何元素，并返回 `None`。",
+        "suggest": "如果游标当前指向 \"ghost\" 非元素，则不删除任何元素，并返回 `None`。",
         "translate": ""
     },
     {
@@ -1976,7 +1976,7 @@
     },
     {
         "source": "The cursor is moved to point to the next element in the current `LinkedList`.",
-        "suggest": "光标将移至当前 `LinkedList` 中的下一个元素。",
+        "suggest": "游标将移至当前 `LinkedList` 中的下一个元素。",
         "translate": ""
     },
     {
@@ -1986,7 +1986,7 @@
     },
     {
         "source": "If the cursor is pointing at the \"ghost\" non-element then the new elements are inserted at the start of the `LinkedList`.",
-        "suggest": "如果光标指向 \"ghost\" 非元素，则新元素将插入 `LinkedList` 的开头。",
+        "suggest": "如果游标指向 \"ghost\" 非元素，则新元素将插入 `LinkedList` 的开头。",
         "translate": ""
     },
     {
@@ -1996,7 +1996,7 @@
     },
     {
         "source": "If the cursor is pointing at the \"ghost\" non-element then the new elements are inserted at the end of the `LinkedList`.",
-        "suggest": "如果光标指向 \"ghost\" 非元素，则新元素将插入 `LinkedList` 的末尾。",
+        "suggest": "如果游标指向 \"ghost\" 非元素，则新元素将插入 `LinkedList` 的末尾。",
         "translate": ""
     },
     {
@@ -2006,12 +2006,12 @@
     },
     {
         "source": "This will return a new list consisting of everything after the cursor, with the original list retaining everything before.",
-        "suggest": "这将返回一个新列表，其中包含光标之后的所有内容，而原始列表将保留之前的所有内容。",
+        "suggest": "这将返回一个新列表，其中包含游标之后的所有内容，而原始列表将保留之前的所有内容。",
         "translate": ""
     },
     {
         "source": "If the cursor is pointing at the \"ghost\" non-element then the entire contents of the `LinkedList` are moved.",
-        "suggest": "如果光标指向 \"ghost\" 非元素，那么将移动 `LinkedList` 的全部内容。",
+        "suggest": "如果游标指向 \"ghost\" 非元素，那么将移动 `LinkedList` 的全部内容。",
         "translate": ""
     },
     {
@@ -2026,7 +2026,7 @@
     },
     {
         "source": "This will return a new list consisting of everything before the cursor, with the original list retaining everything after.",
-        "suggest": "这将返回一个新列表，该列表包含光标之前的所有内容，而原始列表保留之后的所有内容。",
+        "suggest": "这将返回一个新列表，该列表包含游标之前的所有内容，而原始列表保留之后的所有内容。",
         "translate": ""
     },
     {

@@ -1966,12 +1966,12 @@
     },
     {
         "source": "The offset is relative to the start of the file and thus independent from the current cursor.",
-        "suggest": "偏移量相对于文件的开头，因此独立于当前光标。",
+        "suggest": "偏移量相对于文件的开始，因此独立于当前游标。",
         "translate": ""
     },
     {
         "source": "The current file cursor is not affected by this function.",
-        "suggest": "当前文件光标不受此函数影响。",
+        "suggest": "当前文件游标不受此函数影响。",
         "translate": ""
     },
     {
@@ -3881,7 +3881,7 @@
     },
     {
         "source": "may indicate non-zero number of bytes already written if one of the files' cursor +`max_len` would exceed u64::MAX (`EOVERFLOW`).",
-        "suggest": "如果文件的光标 +'max_len' 之一超过 u64::MAX (`EOVERFLOW`)，则可能表示已写入的字节数不为零。",
+        "suggest": "如果文件的游标 + 'max_len' 之一超过 u64::MAX (`EOVERFLOW`)，则可能表示已写入的字节数不为零。",
         "translate": ""
     },
     {

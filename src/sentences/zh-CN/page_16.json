@@ -241,7 +241,7 @@
     },
     {
         "source": "Cursor initial position is `0` even if underlying buffer (e.g., [`Vec`]) is not empty.",
-        "suggest": "即使基础缓冲区 (例如 [`Vec`]) 不为空，光标的初始位置也为 `0`。",
+        "suggest": "即使基础缓冲区 (例如 [`Vec`]) 不为空，游标的初始位置也为 `0`。",
         "translate": ""
     },
     {
@@ -266,17 +266,17 @@
     },
     {
         "source": "Care should be taken to avoid modifying the internal I/O state of the underlying value as it may corrupt this cursor's position.",
-        "suggest": "应注意避免修改基础值的内部 I/O 状态，因为它可能损坏此光标的位置。",
+        "suggest": "应注意避免修改基础值的内部 I/O 状态，因为它可能损坏此游标的位置。",
         "translate": ""
     },
     {
         "source": "Returns the current position of this cursor.",
-        "suggest": "返回此光标的当前位置。",
+        "suggest": "返回此游标的当前位置。",
         "translate": ""
     },
     {
         "source": "Sets the position of this cursor.",
-        "suggest": "设置此光标的位置。",
+        "suggest": "设置此游标的位置。",
         "translate": ""
     },
     {
@@ -816,7 +816,7 @@
     },
     {
         "source": "move the cursor 42 bytes from the start of the file",
-        "suggest": "从文件的开头将光标移动 42 个字节",
+        "suggest": "从文件的开头将游标移动 42 个字节",
         "translate": ""
     },
     {
@@ -831,27 +831,27 @@
     },
     {
         "source": "cursor is at 'l'",
-        "suggest": "光标在 'l'",
+        "suggest": "游标在 'l'",
         "translate": ""
     },
     {
         "source": "cursor is at 'i'",
-        "suggest": "光标在 'i'",
+        "suggest": "游标在 'i'",
         "translate": ""
     },
     {
         "source": "cursor is at EOF",
-        "suggest": "光标在 EOF 处",
+        "suggest": "游标在 EOF 处",
         "translate": ""
     },
     {
         "source": "cursor is at 'f'",
-        "suggest": "光标在 'f'",
+        "suggest": "游标在 'f'",
         "translate": ""
     },
     {
         "source": "cursor is at 'b'",
-        "suggest": "光标在 'b'",
+        "suggest": "游标在 'b'",
         "translate": ""
     },
     {
@@ -1621,17 +1621,17 @@
     },
     {
         "source": "Advance the internal cursor of the slice.",
-        "suggest": "前进切片的内部光标。",
+        "suggest": "前进切片的内部游标。",
         "translate": ""
     },
     {
         "source": "Elements in the slice may be modified if the cursor is not advanced to the end of the slice.",
-        "suggest": "如果光标没有移到切片的末尾，则可以修改切片中的元素。",
+        "suggest": "如果游标没有移到切片的末尾，则可以修改切片中的元素。",
         "translate": ""
     },
     {
         "source": "For example if we have a slice of buffers with 2 `IoSliceMut`s, both of length 8, and we advance the cursor by 10 bytes the first `IoSliceMut` will be untouched however the second will be modified to remove the first 2 bytes (10 - 8).",
-        "suggest": "例如，如果我们有一个带有 2 个 `IoSliceMut` 的缓冲区切片，两个缓冲区的长度均为 8，并且我们将光标前进了 10 个字节，则第一个 `IoSliceMut` 将保持不变，但是第二个 `IoSliceMut` 将被修改以删除前 2 个字节 (10-8)。",
+        "suggest": "例如，如果我们有一个带有 2 个 `IoSliceMut` 的缓冲区切片，两个缓冲区的长度均为 8，并且我们将游标前进了 10 个字节，则第一个 `IoSliceMut` 将保持不变，但是第二个 `IoSliceMut` 将被修改以删除前 2 个字节 (10-8)。",
         "translate": ""
     },
     {
@@ -1661,7 +1661,7 @@
     },
     {
         "source": "For example if we have a slice of buffers with 2 `IoSlice`s, both of length 8, and we advance the cursor by 10 bytes the first `IoSlice` will be untouched however the second will be modified to remove the first 2 bytes (10 - 8).",
-        "suggest": "例如，如果我们有一个缓冲区切片，缓冲区的长度均为 2`IoSlice'，长度均为 8，并且将光标向前移动了 10 个字节，则第一个 `IoSlice` 将保持不变，但是第二个 `IoSlice` 将被修改以删除前两个字节 (10-8)。",
+        "suggest": "例如，如果我们有一个缓冲区切片，缓冲区的长度均为 2`IoSlice'，长度均为 8，并且将游标向前移动了 10 个字节，则第一个 `IoSlice` 将保持不变，但是第二个 `IoSlice` 将被修改以删除前两个字节 (10-8)。",
         "translate": ""
     },
     {
@@ -3711,7 +3711,7 @@
     },
     {
         "source": "Instantiating enum variants involves explicitly using the enum's name as its namespace, followed by one of its variants.",
-        "suggest": "实例化枚举成员涉及显式地使用枚举的名称作为其命名空间，后跟一个成员。",
+        "suggest": "实例化枚举成员涉及显式地使用枚举的名称作为它的命名空间，后跟一个成员。",
         "translate": ""
     },
     {
@@ -4006,7 +4006,7 @@
     },
     {
         "source": "If the function takes `self`, `&self`, or `&mut self` as its first argument, it can also be called using method-call syntax, a familiar feature to any object oriented programmer, like `foo.bar()`.",
-        "suggest": "如果该函数将 `self`，`&self` 或 `&mut self` 作为其第一个参数，则也可以使用方法调用语法来调用它，这是任何面向 object 的程序员 (如 `foo.bar()`) 都熟悉的功能。",
+        "suggest": "如果该函数将 `self`，`&self` 或 `&mut self` 作为它的第一个参数，则也可以使用方法调用语法来调用它，这是任何面向 object 的程序员 (如 `foo.bar()`) 都熟悉的功能。",
         "translate": ""
     },
     {
