@@ -601,7 +601,7 @@
     },
     {
         "source": "We can only pass pointers down to `do_call` (can't pass objects by value), so we do all the ownership tracking here manually using a union.",
-        "suggest": "我们只能将指针向下传递到 `do_call` (不能按值传递对象)，因此我们在此处使用联合手动进行所有所有权跟踪。",
+        "suggest": "我们只能将指针向下传递到 `do_call` (不能按值传递对象)，所以我们在此处使用 union 进行手动的所有的所有权跟踪。",
         "translate": ""
     },
     {
@@ -621,7 +621,7 @@
     },
     {
         "source": "At this point the `data` union is entirely uninitialized.",
-        "suggest": "此时，`data` 联合完全未初始化。",
+        "suggest": "此时，`data` union 完全没有初始化。",
         "translate": ""
     },
     {
@@ -666,7 +666,7 @@
     },
     {
         "source": "Access to the union's fields: this is `std` and we know that the `r#try` intrinsic fills in the `r` or `p` union field based on its return value.",
-        "suggest": "访问联合的字段: 这是 `std`，我们知道 `r#try` 内部函数根据其返回值填充 `r` 或 `p` 联合字段。",
+        "suggest": "访问 union 的字段: 这是 `std`，我们知道 `r#try` 内部函数根据其返回值填充 `r` 或 `p` union 字段。",
         "translate": ""
     },
     {
@@ -726,7 +726,7 @@
     },
     {
         "source": "We *do* want this part of the catch to be inlined: this allows the compiler to properly track accesses to the Data union and optimize it away most of the time.",
-        "suggest": "我们 *确实* 希望内嵌捕获的这一部分: 这允许编译器正确跟踪对数据联合的访问，并在大多数情况下对其进行优化。",
+        "suggest": "我们 *确实* 希望这部分的 catch 被内联: 这允许编译器正确跟踪对 Data union 的访问，并在大多数情况下对其进行优化。",
         "translate": ""
     },
     {
@@ -3801,7 +3801,7 @@
     },
     {
         "source": "This is a union in the real struct, but we don't need this data for the purposes of this test.",
-        "suggest": "这是真实结构体中的并集，但出于测试目的，我们不需要此数据。",
+        "suggest": "这是真实结构中的一个 union，但是我们不需要这个数据来进行这个测试。",
         "translate": ""
     },
     {

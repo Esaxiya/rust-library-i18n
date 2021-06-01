@@ -4711,7 +4711,7 @@
     },
     {
         "source": "Accessing the value from the `PtrRepr` union is safe since *const T and PtrComponents<T> have the same memory layouts.",
-        "suggest": "由于 *const T 和 PtrComponents<T> 具有相同的内存布局，因此从 `PtrRepr` 联合访问值是安全的。",
+        "suggest": "因为 *const T 和 PtrComponents<T> 具有相同的内存布局，所以从 `PtrRepr` union 访问值是安全的。",
         "translate": ""
     },
     {

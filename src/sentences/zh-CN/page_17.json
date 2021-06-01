@@ -446,12 +446,12 @@
     },
     {
         "source": "The [Rust equivalent of a C-style union][union].",
-        "suggest": "[Rust equivalent of a C-style union][union]。",
+        "suggest": "[Rust 等价于 c 风格的 union][union]。",
         "translate": ""
     },
     {
         "source": "A `union` looks like a [`struct`] in terms of declaration, but all of its fields exist in the same memory, superimposed over one another.",
-        "suggest": "`union` 在声明方面看起来像 [`struct`]，但是它的所有字段都存在于同一内存中，彼此重叠。",
+        "suggest": "`union` 在声明方面看起来像 [`struct`]，但是它的所有字段都存在于同一内存中，彼此叠加在一起。",
         "translate": ""
     },
     {
@@ -461,7 +461,7 @@
     },
     {
         "source": "Matching on unions",
-        "suggest": "结合工会",
+        "suggest": "union 上的匹配",
         "translate": ""
     },
     {
@@ -476,12 +476,12 @@
     },
     {
         "source": "Like reading from a `union`, pattern matching on a `union` requires `unsafe`.",
-        "suggest": "就像从 `union` 读取一样，`union` 上的模式匹配也需要 `unsafe`。",
+        "suggest": "就像从 `union` 读取一样，在 `union` 上进行模式匹配时也需要 `unsafe`。",
         "translate": ""
     },
     {
         "source": "References to union fields",
-        "suggest": "引用联合字段",
+        "suggest": "union 字段的引用",
         "translate": ""
     },
     {

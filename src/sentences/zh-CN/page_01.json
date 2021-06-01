@@ -721,7 +721,7 @@
     },
     {
         "source": "not applied to Difference, Intersection, SymmetricDifference, Union",
-        "suggest": "不适用于差分，相交，SymmetricDifference，联合",
+        "suggest": "不适用于差分，相交，对称差，并集",
         "translate": ""
     },
     {
@@ -821,7 +821,7 @@
     },
     {
         "source": "A lazy iterator producing elements in the difference of `BTreeSet`s.",
-        "suggest": "一个懒惰的迭代器，它产生与 BTreeSet 不同的元素。",
+        "suggest": "一个惰性迭代器，它产生与 BTreeSet 不同的元素。",
         "translate": ""
     },
     {
@@ -841,7 +841,7 @@
     },
     {
         "source": "A lazy iterator producing elements in the symmetric difference of `BTreeSet`s.",
-        "suggest": "一个懒惰的迭代器，它会产生对称差异为 `BTreeSet`s 的元素。",
+        "suggest": "一个惰性迭代器，它会产生对称差异为 `BTreeSet` 的元素。",
         "translate": ""
     },
     {
@@ -851,7 +851,7 @@
     },
     {
         "source": "A lazy iterator producing elements in the intersection of `BTreeSet`s.",
-        "suggest": "一个懒惰的迭代器，它在 BTreeSet 的交集中生成元素。",
+        "suggest": "一个惰性迭代器，它在 BTreeSet 的交集中生成元素。",
         "translate": ""
     },
     {
@@ -871,7 +871,7 @@
     },
     {
         "source": "A lazy iterator producing elements in the union of `BTreeSet`s.",
-        "suggest": "一个懒惰的迭代器，在 `BTreeSet`s 的联合中生成元素。",
+        "suggest": "一个惰性迭代器，在 `BTreeSet` 的并集中的元素。",
         "translate": ""
     },
     {

@@ -3316,7 +3316,7 @@
     },
     {
         "source": "Reading the fields of an union is always unsafe",
-        "suggest": "阅读工会的领域总是不安全的",
+        "suggest": "读取一个 union 的字段总是不安全的",
         "translate": ""
     },
     {

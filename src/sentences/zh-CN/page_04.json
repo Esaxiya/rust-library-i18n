@@ -2196,12 +2196,12 @@
     },
     {
         "source": "Handling verification against unions in winapi requires some special care",
-        "suggest": "在 Winapi 中处理针对工会的验证需要特别注意",
+        "suggest": "在 Winapi 中处理对 union 的验证需要一些特别的注意",
         "translate": ""
     },
     {
         "source": "Skip this field on x86_64 `CONTEXT` since it's a union and a bit funny",
-        "suggest": "在 x86_64 `CONTEXT` 上跳过此字段，因为它是一个联合并且有点有趣",
+        "suggest": "跳过 x86_64 `CONTEXT`  上的的这个字段，因为它是一个 union，而且有点滑稽",
         "translate": ""
     },
     {

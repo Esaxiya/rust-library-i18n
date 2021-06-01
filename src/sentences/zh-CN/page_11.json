@@ -286,7 +286,7 @@
     },
     {
         "source": "Accessing the value from the `Repr` union is safe since *const [T] and FatPtr have the same memory layouts.",
-        "suggest": "从 `Repr` 并集访问值是安全的，因为 *const [T] 和 FatPtr 具有相同的内存布局。",
+        "suggest": "因为 *const [T] 和 FatPtr 具有相同的内存布局，所以从 `Repr` union 访问值是安全的。",
         "translate": ""
     },
     {
@@ -306,7 +306,7 @@
     },
     {
         "source": "Accessing the value from the `Repr` union is safe since *mut [T] and FatPtr have the same memory layouts",
-        "suggest": "从 `Repr` 并集访问值是安全的，因为 *mut [T] 和 FatPtr 具有相同的内存布局",
+        "suggest": "因为 *mut [T] 和 FatPtr 具有相同的内存布局，所以从 `Repr` union 访问值是安全的，",
         "translate": ""
     },
     {

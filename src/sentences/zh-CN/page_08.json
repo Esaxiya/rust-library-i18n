@@ -1586,12 +1586,12 @@
     },
     {
         "source": "is a union type, and `#[repr(transparent)]` on unions is unstable (see [the tracking issue](https://github.com/rust-lang/rust/issues/60405)).",
-        "suggest": "是联合类型，联合上的 `#[repr(transparent)]` 不稳定 (请参见 [跟踪问题](https://github.com/rust-lang/rust/issues/60405))。",
+        "suggest": "是一个是联合类型，并且 union 上的 `#[repr(transparent)]` 是不稳定的 (请参见 [跟踪问题](https://github.com/rust-lang/rust/issues/60405))。",
         "translate": ""
     },
     {
         "source": "Over time, the exact guarantees of `#[repr(transparent)]` on unions may evolve, and `MaybeUninit` may or may not remain `#[repr(transparent)]`.",
-        "suggest": "随着时间的流逝，对联合的 `#[repr(transparent)]` 的确切保证可能会演变，并且 `MaybeUninit` 可能会或可能不会保留 `#[repr(transparent)]`。",
+        "suggest": "随着时间的推移，对 union 的 `#[repr(transparent)]` 的确切保证可能会发生变化，并且 `MaybeUninit` 可能会或可能不会保留 `#[repr(transparent)]`。",
         "translate": ""
     },
     {
@@ -2196,7 +2196,7 @@
     },
     {
         "source": "Union size is the size of the largest field.",
-        "suggest": "联合大小是最大字段的大小。",
+        "suggest": "union 的大小是最大字段的大小。",
         "translate": ""
     },
     {
@@ -2566,17 +2566,17 @@
     },
     {
         "source": "Size of Unions",
-        "suggest": "Unions 大小",
+        "suggest": "union 的大小",
         "translate": ""
     },
     {
         "source": "The size of a union is the size of its largest field.",
-        "suggest": "union 的规模就是其最大领域的规模。",
+        "suggest": "union 的大小是其最大字段的大小。",
         "translate": ""
     },
     {
         "source": "Unlike `C`, zero sized unions are not rounded up to one byte in size.",
-        "suggest": "与 `C` 不同，零大小的 unions 不会四舍五入到一个字节的大小。",
+        "suggest": "与 `C` 不同，零大小的 union 不会被四舍五入到一个字节的大小。",
         "translate": ""
     },
     {
