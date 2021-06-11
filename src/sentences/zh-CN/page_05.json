@@ -2246,7 +2246,7 @@
     },
     {
         "source": "is an enum returned by the main functions of [`Ord`] and [`PartialOrd`], and describes an ordering.",
-        "suggest": "是 [`Ord`] 和 [`PartialOrd`] 的主要函数返回的枚举，并描述了顺序。",
+        "suggest": "是 [`Ord`] 和 [`PartialOrd`] 的主函数返回的枚举，并描述了顺序。",
         "translate": ""
     },
     {
