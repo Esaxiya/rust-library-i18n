@@ -736,7 +736,7 @@
     },
     {
         "source": "The Rust Standard Library is the foundation of portable Rust software, a set of minimal and battle-tested shared abstractions for the [broader Rust ecosystem][crates.io].",
-        "suggest": "Rust 标准库是便携式 Rust 软件的基础，Rust 软件是针对 [更广泛的 Rust 生态系统][crates.io] 的一组最小且经过实践检验的共享抽象。",
+        "suggest": "Rust 标准库是可移植 Rust 软件的基础，这是一组针对 [更广泛的 Rust 生态系统][crates.io] 的最小且经过实战测试的共享抽象。",
         "translate": ""
     },
     {
@@ -751,22 +751,22 @@
     },
     {
         "source": "Therefore, the standard library can be accessed in [`use`] statements through the path `std`, as in [`use std::env`].",
-        "suggest": "因此，可以像在 [`use std::env`] 中一样，通过 [`use`] 语句使用路径 `std` 来访问标准库。",
+        "suggest": "因此，可以通过 [`use`] 语句使用路径 `std` 来访问标准库，就像在 [`use std::env`] 中一样。",
         "translate": ""
     },
     {
         "source": "How to read this documentation",
-        "suggest": "如何阅读本文件",
+        "suggest": "如何阅读本文档",
         "translate": ""
     },
     {
         "source": "If you already know the name of what you are looking for, the fastest way to find it is to use the <a href=\"#\" onclick=\"focusSearchBar();\">search bar</a> at the top of the page.",
-        "suggest": "如果您已经知道要查找的名称，最快的查找方法是使用页面顶部的 <a href=\"#\" onclick=\"focusSearchBar();\">搜索栏</a>。",
+        "suggest": "如果您已经知道要查找的内容的名称，最快的查找方法是使用页面顶部的 <a href=\"#\" onclick=\"focusSearchBar();\">搜索栏</a>。",
         "translate": ""
     },
     {
         "source": "Otherwise, you may want to jump to one of these useful sections:",
-        "suggest": "否则，您可能想跳到以下有用的部分之一:",
+        "suggest": "否则，您可能想跳转到以下有用的部分之一:",
         "translate": ""
     },
     {
@@ -776,7 +776,7 @@
     },
     {
         "source": "Clicking on interesting things should generally lead you to interesting places.",
-        "suggest": "单击有趣的事物通常会把您带到有趣的地方。",
+        "suggest": "点击有趣的东西通常会把您带到有趣的地方。",
         "translate": ""
     },
     {
@@ -791,17 +791,17 @@
     },
     {
         "source": "At this stage in your development you may want to press the `[-]` button near the top of the page to collapse it into a more skimmable view.",
-        "suggest": "在开发的阶段，您可能需要按页面顶部附近的 `[-]` 按钮以将其折叠为更可浏览的视图。",
+        "suggest": "在开发阶段，您可能需要按页面顶部附近的 `[-]` 按钮，将其折叠为更易于阅读的视图。",
         "translate": ""
     },
     {
         "source": "While you are looking at that `[-]` button also notice the `[src]` button.",
-        "suggest": "当您查看该 `[-]` 按钮时，还请注意 `[src]` 按钮。",
+        "suggest": "当您看到 `[-]` 按钮的时候，也请注意 `[src]` 按钮。",
         "translate": ""
     },
     {
         "source": "Rust's API documentation comes with the source code and you are encouraged to read it.",
-        "suggest": "Rust 的 API 文档附带了源代码，建议您阅读它。",
+        "suggest": "Rust 的 API 文档附带了源代码，我们鼓励您阅读它。",
         "translate": ""
     },
     {
@@ -816,7 +816,7 @@
     },
     {
         "source": "First of all, The Rust Standard Library is divided into a number of focused modules, [all listed further down this page](#modules).",
-        "suggest": "首先，Rust 标准库分为多个重点 [模块](#modules)，所有这些都在本页下方列出。",
+        "suggest": "首先，Rust 标准库分为多个重点 [模块](#modules)，所有的这些模块都会在本页下方列出。",
         "translate": ""
     },
     {
@@ -826,7 +826,7 @@
     },
     {
         "source": "Modules' documentation typically includes an overview of the module along with examples, and are a smart place to start familiarizing yourself with the library.",
-        "suggest": "模块的文档通常包括模块概述和示例，是开始熟悉该库的明智之地。",
+        "suggest": "模块的文档通常包括模块的概述和示例，是开始熟悉库的好地方。",
         "translate": ""
     },
     {
@@ -841,12 +841,12 @@
     },
     {
         "source": "While primitives are implemented by the compiler, the standard library implements methods directly on the primitive types (and it is the only library that does so), which are [documented in the section on primitives](#primitives).",
-        "suggest": "虽然原语是由编译器实现的，但标准库是直接在原语类型上实现方法 (这是唯一这样做的库)。在 [原语](#primitives) 部分中对此进行了说明。",
+        "suggest": "虽然原语是由编译器实现的，但标准库是直接在原语类型上实现方法 (而且它是唯一一个这样做的库)。在 [原语](#primitives) 部分中对此进行了说明。",
         "translate": ""
     },
     {
         "source": "The standard library exports many modules *with the same name as primitive types*.",
-        "suggest": "标准库导出许多模块，这些模块的名称和原始类型的名称相同。",
+        "suggest": "标准库导出了许多模块，这些模块的名称和原始类型的名称相同。",
         "translate": ""
     },
     {
@@ -861,7 +861,7 @@
     },
     {
         "source": "32-bit integers (very useful), and there is a [page for the module `std::i32`] that documents the constant values [`MIN`] and [`MAX`] (rarely useful).",
-        "suggest": "32 位整数 (非常有用)，并且有一个 [模块为 `std::i32`] 的页面记录了常量值 [`MIN`] 和 [`MAX`] (不太常用)。",
+        "suggest": "32 位整数 (非常有用)，并且有一个 [模块为 `std::i32`] 的页面记录了常量值 [`MIN`] 和 [`MAX`] (很少有用)。",
         "translate": ""
     },
     {
@@ -871,27 +871,27 @@
     },
     {
         "source": "Many method calls on [`String`] and [`Vec<T>`] are actually calls to methods on [`str`] and [`[T]`][prim@slice] respectively, via [deref coercions][deref-coercions].",
-        "suggest": "实际上，[`String`] 和 [`Vec<T>`] 上的许多方法调用实际上都是通过 [解引用强制多态][deref-coercions] 分别对 [`str`] 和 [`[T]`][prim@slice] 上的方法的调用。",
+        "suggest": "[`String`] 和 [`Vec<T>`] 上许多方法的调用实际上都是通过 [解引用强制多态][deref-coercions] 分别对 [`str`] 和 [`[T]`][prim@slice] 上的方法的调用。",
         "translate": ""
     },
     {
         "source": "Third, the standard library defines [The Rust Prelude], a small collection of items - mostly traits - that are imported into every module of every crate.",
-        "suggest": "第三，标准库定义 [The Rust Prelude]，这是一小部分项目 - 主要是 traits - 导入到每个 crate 的每个模块中。",
+        "suggest": "第三，标准库还定义了 [The Rust Prelude]，这是一小部分项目 - 主要是 traits - 导入到每个 crate 的每个模块中。",
         "translate": ""
     },
     {
         "source": "The traits in the prelude are pervasive, making the prelude documentation a good entry point to learning about the library.",
-        "suggest": "prelude 中的 traits 普遍存在，这使 prelude 文档成为了解该库的一个很好的切入点。",
+        "suggest": "prelude 中的 traits 无处不在，这使 prelude 文档成为了解该库的一个很好的切入点。",
         "translate": ""
     },
     {
         "source": "And finally, the standard library exports a number of standard macros, and [lists them on this page](#macros) (technically, not all of the standard macros are defined by the standard library - some are defined by the compiler - but they are documented here the same).",
-        "suggest": "最后，标准库导出了许多标准宏，并且在 [此页面](#macros) 上列出它们 (从技术上讲，并不是所有标准宏都由标准库定义 - 有些是由编译器定义的 - 但此处记录的内容相同)。",
+        "suggest": "最后，标准库导出了许多标准宏，并且在 [此页面](#macros) 上列出了它们 (从技术上讲，并不是所有的标准宏都由标准库定义的 - 有些是由编译器定义的 - 但它们在这里的文档是相同的)。",
         "translate": ""
     },
     {
         "source": "Like the prelude, the standard macros are imported by default into all crates.",
-        "suggest": "与 prelude 一样，默认情况下会将标准宏导入所有 crates 中。",
+        "suggest": "与 prelude 一样，默认情况下会将标准宏导入到所有 crates 中。",
         "translate": ""
     },
     {
@@ -901,7 +901,7 @@
     },
     {
         "source": "Check out the rust contribution guidelines [here](https://rustc-dev-guide.rust-lang.org/contributing.html#writing-documentation).",
-        "suggest": "切换到 rust 贡献准则 [这里](https://rustc-dev-guide.rust-lang.org/contributing.html#writing-documentation)。",
+        "suggest": "在 [这里](https://rustc-dev-guide.rust-lang.org/contributing.html#writing-documentation) 查看 Rust 贡献指南。",
         "translate": ""
     },
     {
@@ -911,7 +911,7 @@
     },
     {
         "source": "To contribute changes, make sure you read the guidelines first, then submit pull-requests for your suggested changes.",
-        "suggest": "要做出更改，请确保您先阅读指南，然后提交建议的更改的拉取请求。",
+        "suggest": "要贡献更改，请确保您先阅读指南，然后为您建议的更改提交拉取请求。",
         "translate": ""
     },
     {
@@ -921,7 +921,7 @@
     },
     {
         "source": "If you see a part of the docs that can be improved, submit a PR, or chat with us first on [Discord][rust-discord] #docs.",
-        "suggest": "如果您发现可以改进的文档中的一部分，请先在 [Discord][rust-discord] #docs 上提交 PR，或与我们聊天。",
+        "suggest": "如果您看到可以改进的部分文档，请提交 PR，或者先在 [Discord][rust-discord] #docs 上与我们聊天。",
         "translate": ""
     },
     {
@@ -931,7 +931,7 @@
     },
     {
         "source": "The rest of this crate documentation is dedicated to pointing out notable features of The Rust Standard Library.",
-        "suggest": "crate 文档的其余部分专用于指出 Rust 标准库的显着功能。",
+        "suggest": "crate 文档的其余部分致力于指出 Rust 标准库的显著特性。",
         "translate": ""
     },
     {
@@ -946,17 +946,17 @@
     },
     {
         "source": "The [`iter`] module defines Rust's iterator trait, [`Iterator`], which works with the [`for`] loop to access collections.",
-        "suggest": "[`iter`] 模块定义 Rust 的迭代器 trait [`Iterator`]，该迭代器与 [`for`] 循环一起访问集合。",
+        "suggest": "[`iter`] 模块定义了 Rust 的迭代器 trait [`Iterator`]，它与 [`for`] 循环一起工作来访问集合。",
         "translate": ""
     },
     {
         "source": "The standard library exposes three common ways to deal with contiguous regions of memory:",
-        "suggest": "标准库公开了三种处理内存连续区域的常用方法:",
+        "suggest": "标准库公开了三种处理连续内存区域的常用方法:",
         "translate": ""
     },
     {
         "source": "A heap-allocated *vector* that is resizable at runtime.",
-        "suggest": "堆分配的 *vector* 在运行时可调整大小。",
+        "suggest": "在运行时可调整大小的堆分配的 *vector*。",
         "translate": ""
     },
     {
@@ -966,12 +966,12 @@
     },
     {
         "source": "A dynamically sized *slice* into any other kind of contiguous storage, whether heap-allocated or not.",
-        "suggest": "动态大小的 *切片* 到任何其他类型的连续存储中，无论是否进行堆分配。",
+        "suggest": "动态调整大小的 *切片* 到任何其他类型的连续存储中，无论是否进行了堆分配。",
         "translate": ""
     },
     {
         "source": "Slices can only be handled through some kind of *pointer*, and as such come in many flavors such as:",
-        "suggest": "切片只能通过某种 *指针* 进行处理，因此具有多种形式，例如:",
+        "suggest": "切片只能通过某种 *指针* 来处理，因此具有多种形式，例如:",
         "translate": ""
     },
     {
@@ -986,22 +986,22 @@
     },
     {
         "source": "*owned slice*",
-        "suggest": "*owned 切片*",
+        "suggest": "*拥有 (所有权) 的切片*",
         "translate": ""
     },
     {
         "source": "a UTF-8 string slice, is a primitive type, and the standard library defines many methods for it.",
-        "suggest": "UTF-8 字符串片段是原始类型，标准库为此定义了许多方法。",
+        "suggest": "UTF-8 字符串片段是一种原始类型，标准库为它定义了许多方法。",
         "translate": ""
     },
     {
         "source": "Rust [`str`]s are typically accessed as immutable references: `&str`.",
-        "suggest": "Rust [`str`] 通常以 `&str` 的形式访问。",
+        "suggest": "Rust [`str`] 通常作为不可变引用来访问: `&str`。",
         "translate": ""
     },
     {
         "source": "Use the owned [`String`] for building and mutating strings.",
-        "suggest": "使用拥有的 [`String`] 来构建和可变字符串。",
+        "suggest": "使用拥有所有权的 [`String`] 来创建和修改字符串。",
         "translate": ""
     },
     {
@@ -1011,17 +1011,17 @@
     },
     {
         "source": "Data may be shared by placing it in a reference-counted box or the [`Rc`] type, and if further contained in a [`Cell`] or [`RefCell`], may be mutated as well as shared.",
-        "suggest": "可以通过将数据置于引用计数的 box 或 [`Rc`] 类型中来共享数据，并且如果进一步包含在 [`Cell`] 或 [`RefCell`] 中，则可以对其进行可变的和共享。",
+        "suggest": "可以通过将数据放在引用计数的 Box 或 [`Rc`] 类型中来共享数据，并且，如果进一步包含在 [`Cell`] 或 [`RefCell`] 中，则可以对其进行可变的和共享。",
         "translate": ""
     },
     {
         "source": "Likewise, in a concurrent setting it is common to pair an atomically-reference-counted box, [`Arc`], with a [`Mutex`] to get the same effect.",
-        "suggest": "同样，在并发设置中，通常将原子引用计数的 box [`Arc`] 与 [`Mutex`] 配对以获得相同的效果。",
+        "suggest": "同样，在并发设置中，通常将原子引用计数的 Box [`Arc`] 与 [`Mutex`] 配合以获得相同的效果。",
         "translate": ""
     },
     {
         "source": "The [`collections`] module defines maps, sets, linked lists and other typical collection types, including the common [`HashMap<K, V>`].",
-        "suggest": "[`collections`] 模块定义了映射，集合，链表和其他典型的集合类型，包括通用的 [`HashMap<K, V>`]。",
+        "suggest": "[`collections`] 模块定义了 Map，Set，链表和其他典型的集合类型，包括常见的 [`HashMap<K, V>`]。",
         "translate": ""
     },
     {
@@ -1031,22 +1031,22 @@
     },
     {
         "source": "Besides basic data types, the standard library is largely concerned with abstracting over differences in common platforms, most notably Windows and Unix derivatives.",
-        "suggest": "除了基本的数据类型外，标准库还主要关注通用平台差异的抽象 (尤其是 Windows 和 Unix 派生平台)。",
+        "suggest": "除了基本的数据类型外，标准库还主要关注对通用平台差异的抽象 (尤其是 Windows 和 Unix 派生平台)。",
         "translate": ""
     },
     {
         "source": "Common types of I/O, including [files], [TCP], [UDP], are defined in the [`io`], [`fs`], and [`net`] modules.",
-        "suggest": "I/O，[`fs`] 和 [`net`] 模块中定义了 I/O 的常见类型，包括 [files]，[TCP]，[UDP]。",
+        "suggest": "常见的 I/O 类型包括 [files]，[TCP] 和 [UDP]。它们被定义在 [`io`]，[`fs`] 和 [`net`] 模块中。",
         "translate": ""
     },
     {
         "source": "The [`thread`] module contains Rust's threading abstractions.",
-        "suggest": "[`thread`] 模块包含 Rust 的线程抽象。",
+        "suggest": "[`thread`] 模块包含了 Rust 的线程抽象。",
         "translate": ""
     },
     {
         "source": "[`sync`] contains further primitive shared memory types, including [`atomic`] and [`mpsc`], which contains the channel types for message passing.",
-        "suggest": "[`sync`] 包含其他原始共享内存类型，包括 [`atomic`] 和 [`mpsc`]，其中包含用于消息传递的通道类型。",
+        "suggest": "[`sync`] 包含更多的原始共享内存类型，包括 [`atomic`] 和 [`mpsc`]，其中包含用于消息传递的通道类型。",
         "translate": ""
     },
     {
@@ -1066,7 +1066,7 @@
     },
     {
         "source": "std may use features in a platform-specific way",
-        "suggest": "std 可以以特定于平台的方式使用功能",
+        "suggest": "std 可能以特定于平台的方式使用特性",
         "translate": ""
     },
     {
@@ -1076,12 +1076,12 @@
     },
     {
         "source": "the following list is sorted to minimize merge conflicts.",
-        "suggest": "以下列表被排序以最大程度地减少合并冲突。",
+        "suggest": "对下面的列表排序是为了最大限度地减少合并冲突。",
         "translate": ""
     },
     {
         "source": "the above list is sorted to minimize merge conflicts.",
-        "suggest": "对上面的列表进行排序以最大程度地减少合并冲突。",
+        "suggest": "对上面的列表排序是为了最大限度地减少合并冲突。",
         "translate": ""
     },
     {
