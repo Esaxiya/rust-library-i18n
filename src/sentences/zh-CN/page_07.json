@@ -3831,7 +3831,7 @@
     },
     {
         "source": "It is the portable glue between the language and its libraries, defining the intrinsic and primitive building blocks of all Rust code.",
-        "suggest": "它是语言与这个库之间的可移植粘合剂，它定义了所有 Rust 代码的内在和原始构建块。",
+        "suggest": "它是语言和标准库库之间的可移植粘合剂，它定义了所有 Rust 代码的内在和原始构建块。",
         "translate": ""
     },
     {
@@ -3856,7 +3856,7 @@
     },
     {
         "source": "These things require platform integration, and this library is platform-agnostic.",
-        "suggest": "这些事情需要平台集成，并且核心库与平台无关。",
+        "suggest": "这些东西都需要平台集成，而核心库是与平台无关的。",
         "translate": ""
     },
     {
@@ -3866,12 +3866,12 @@
     },
     {
         "source": "Please note that all of these details are currently not considered stable.",
-        "suggest": "请注意，所有这些详细信息目前都不稳定。",
+        "suggest": "请注意，所有这些细节目前都被认为是不稳定的。",
         "translate": ""
     },
     {
         "source": "Fill me in with more detail when the interface settles",
-        "suggest": "当接口稳定后，请向我提供更多详细信息",
+        "suggest": "当接口稳定后，请向我提供更多细节",
         "translate": ""
     },
     {
@@ -3886,7 +3886,7 @@
     },
     {
         "source": "Additionally, this library can make explicit calls to these functions.",
-        "suggest": "此外，这个库可以对这些函数进行显式调用。",
+        "suggest": "此外，这个库可以显式地调用这些函数。",
         "translate": ""
     },
     {
@@ -4246,12 +4246,12 @@
     },
     {
         "source": "The `?` operator was added to replace `try!` and should be used instead.",
-        "suggest": "添加了 `?` 运算符以替换 `try!`，应使用它代替。",
+        "suggest": "添加了 `?` 运算符来替换 `try!`，应该用它来代替。",
         "translate": ""
     },
     {
         "source": "Furthermore, `try` is a reserved word in Rust 2018, so if you must use it, you will need to use the [raw-identifier syntax][ris]:",
-        "suggest": "此外，`try` 是 Rust 2018 中的保留字，因此如果必须使用它，则需要使用 [raw-identifier syntax][ris]:",
+        "suggest": "此外，`try` 是 Rust 2018 中的保留字，因此如果必须使用它，则需要使用 [原始标识符语法][ris]:",
         "translate": ""
     },
     {
@@ -4436,7 +4436,7 @@
     },
     {
         "source": "Also some IDEs will mark `todo!`s.",
-        "suggest": "还有一些 IDE 会标记 `todo!`s。",
+        "suggest": "还有一些 IDE 会标记 `todo!`。",
         "translate": ""
     },
     {
@@ -4866,12 +4866,12 @@
     },
     {
         "source": "This frequently leads to less duplicated code.",
-        "suggest": "这经常导致重复代码更少。",
+        "suggest": "这通常会减少重复的代码。",
         "translate": ""
     },
     {
         "source": "The syntax given to this macro is the same syntax as the [`cfg`] attribute.",
-        "suggest": "赋予该宏的语法与 [`cfg`] 属性的语法相同。",
+        "suggest": "该宏的语法与 [`cfg`] 属性的语法相同。",
         "translate": ""
     },
     {
@@ -4891,12 +4891,12 @@
     },
     {
         "source": "Using this macro is often a bad idea, because if the file is parsed as an expression, it is going to be placed in the surrounding code unhygienically.",
-        "suggest": "使用此宏通常不是一个好主意，因为如果将文件解析为表达式，则将不卫生地将其放置在周围的代码中。",
+        "suggest": "使用此宏通常不是一个好主意，因为如果将文件解析为表达式，它将被不卫生地放在周围的代码中。",
         "translate": ""
     },
     {
         "source": "This could result in variables or functions being different from what the file expected if there are variables or functions that have the same name in the current file.",
-        "suggest": "如果当前文件中的变量或函数具有相同的名称，则这可能导致变量或函数与文件预期的不同。",
+        "suggest": "如果当前文件中有同名的变量或函数，这可能导致变量或函数与文件预期的不同。",
         "translate": ""
     },
     {
@@ -4911,17 +4911,17 @@
     },
     {
         "source": "Assertions are always checked in both debug and release builds, and cannot be disabled.",
-        "suggest": "断言始终在调试和发行版本中进行检查，并且不能禁用。",
+        "suggest": "断言总是在调试和发行版本中被检查，并且不能被禁用。",
         "translate": ""
     },
     {
         "source": "See [`debug_assert!`] for assertions that are not enabled in release builds by default.",
-        "suggest": "有关默认情况下未在发行版中启用的声明，请参见 [`debug_assert!`]。",
+        "suggest": "有关默认情况下未在发行版中启用的断言，请参见 [`debug_assert!`]。",
         "translate": ""
     },
     {
         "source": "Unsafe code may rely on `assert!` to enforce run-time invariants that, if violated could lead to unsafety.",
-        "suggest": "不安全的代码可能依赖 `assert!` 来强制执行运行时不变式，如果违反该规定，可能会导致不安全。",
+        "suggest": "不安全的代码可能依赖 `assert!` 来强制执行运行时不可变变量，如果违反该规定，可能会导致不安全。",
         "translate": ""
     },
     {
