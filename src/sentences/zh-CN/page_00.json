@@ -671,7 +671,7 @@
     },
     {
         "source": "C header",
-        "suggest": "C header",
+        "suggest": "C 头文件",
         "translate": ""
     },
     {
@@ -836,7 +836,7 @@
     },
     {
         "source": "As an example, consider this C header which declares functions that create and destroy some kind of `Foo` value:",
-        "suggest": "例如，考虑下面的 C 标头，该标头声明创建和销毁某种 `Foo` 值的函数:",
+        "suggest": "例如，考虑下面的 C 头文件，该标头声明创建和销毁某种 `Foo` 值的函数:",
         "translate": ""
     },
     {
