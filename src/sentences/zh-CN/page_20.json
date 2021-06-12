@@ -1396,7 +1396,7 @@
     },
     {
         "source": "Special care must be taken in the caller of `push` to ensure unwinding does not destroy the stack frame containing the entry.",
-        "suggest": "`push` 的调用者必须特别小心，以确保展开不会破坏包含入口的栈框架。",
+        "suggest": "`push` 的调用者必须特别小心，以确保展开不会销毁包含入口的栈框架。",
         "translate": ""
     },
     {
@@ -2866,7 +2866,7 @@
     },
     {
         "source": "This is so that future additional methods are not breaking changes.",
-        "suggest": "这样一来，future 的其他方法就不会破坏更改。",
+        "suggest": "这是为了将来的附加方法不会破坏更改。",
         "translate": ""
     },
     {

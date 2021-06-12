@@ -696,7 +696,7 @@
     },
     {
         "source": "In general .write is required to avoid attempting to destruct the (uninitialized) previous contents of `ptr`, though for this simple example `*ptr = 5` would have worked as well.",
-        "suggest": "通常，需要 .write 以避免尝试破坏 `ptr` 以前的内容，尽管对于这个简单的示例 `*ptr = 5` 也可以工作。",
+        "suggest": "通常，需要 .write 以避免尝试销毁 `ptr` 以前的内容，尽管对于这个简单的示例 `*ptr = 5` 也可以工作。",
         "translate": ""
     },
     {
@@ -4106,7 +4106,7 @@
     },
     {
         "source": "The results are non-unique references allowing massively destructive mutation, so must be used with the utmost care.",
-        "suggest": "结果是非唯一引证的，允许大规模破坏性可变的，因此必须格外小心。",
+        "suggest": "结果是非唯一引用，允许大规模破坏性可变的，因此必须格外小心使用。",
         "translate": ""
     },
     {
@@ -4506,7 +4506,7 @@
     },
     {
         "source": "Unlike `reborrow_mut`, this is safe because the return value cannot be used to destroy the root, and there cannot be other references to the tree.",
-        "suggest": "与 `reborrow_mut` 不同，这是安全的，因为返回值不能用于破坏根，并且树上不能有其他引用。",
+        "suggest": "与 `reborrow_mut` 不同，这是安全的，因为返回值不能用于销毁 root，并且树上不能有其他引用。",
         "translate": ""
     },
     {

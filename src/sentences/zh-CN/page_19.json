@@ -766,7 +766,7 @@
     },
     {
         "source": "This channel can be used as a stream and cloned to allow multiple senders.",
-        "suggest": "此通道可以用作流，并可以克隆以允许多个发件人。",
+        "suggest": "此通道可以用作流，并可以克隆以允许多个发送者。",
         "translate": ""
     },
     {
@@ -941,7 +941,7 @@
     },
     {
         "source": "The theory behind this is that if a sender sees a",
-        "suggest": "其背后的理论是，如果发件人看到",
+        "suggest": "其背后的理论是，如果发送者看到",
         "translate": ""
     },
     {
@@ -1266,7 +1266,7 @@
     },
     {
         "source": "differs greatly in the semantics of the sender, however.",
-        "suggest": "但是，发件人的语义差异很大。",
+        "suggest": "但是，发送者的语义差异很大。",
         "translate": ""
     },
     {
@@ -1611,7 +1611,7 @@
     },
     {
         "source": "It is recommended that a pop() occur \"in the near future\" in order to see if the sender has made progress or not",
-        "suggest": "建议查看 pop()，以查看发件人是否已取得进展",
+        "suggest": "建议查看 pop()，以查看发送者是否已取得进展",
         "translate": ""
     },
     {
@@ -1806,7 +1806,7 @@
     },
     {
         "source": "race with senders to enter the blocking state",
-        "suggest": "与发件人竞争进入阻止状态",
+        "suggest": "与发送者竞争进入阻止状态",
         "translate": ""
     },
     {
@@ -1866,7 +1866,7 @@
     },
     {
         "source": "Senders will check the data before the upgrade (in case we plastered over the DATA state).",
-        "suggest": "发件人将在升级之前检查数据 (以防我们粘贴 DATA 状态)。",
+        "suggest": "发送者将在升级之前检查数据 (以防我们粘贴 DATA 状态)。",
         "translate": ""
     },
     {
@@ -1981,7 +1981,7 @@
     },
     {
         "source": "Shared channels are cloneable allowing for multiple senders.",
-        "suggest": "共享通道是可克隆的，允许多个发件人。",
+        "suggest": "共享通道是可克隆的，允许多个发送者。",
         "translate": ""
     },
     {
@@ -2116,7 +2116,7 @@
     },
     {
         "source": "Note that the multiple sender case is a little trickier semantically than the single sender case.",
-        "suggest": "请注意，多发件人案例在语义上要比单发件人案例稍微复杂一些。",
+        "suggest": "请注意，多发送者案例在语义上要比单发送者案例稍微复杂一些。",
         "translate": ""
     },
     {
@@ -2126,7 +2126,7 @@
     },
     {
         "source": "This could end up leading some senders to believe that there wasn't a disconnect if in fact there was a disconnect.",
-        "suggest": "这可能最终导致某些发件人认为，即使实际上存在断开连接，也不会断开连接。",
+        "suggest": "这可能最终导致某些发送者认为，即使实际上存在断开连接，也不会断开连接。",
         "translate": ""
     },
     {
@@ -2176,7 +2176,7 @@
     },
     {
         "source": "We must arbitrate among the multiple senders, however, because the queues that we're using are single-consumer queues.",
-        "suggest": "但是，我们必须在多个发件人之间进行仲裁，因为我们使用的队列是单消费者队列。",
+        "suggest": "但是，我们必须在多个发送者之间进行仲裁，因为我们使用的队列是单消费者队列。",
         "translate": ""
     },
     {
@@ -2211,7 +2211,7 @@
     },
     {
         "source": "That sender in question will drain its own data.",
-        "suggest": "该发件人将 drain 自己的数据。",
+        "suggest": "该发送者将 drain 自己的数据。",
         "translate": ""
     },
     {
@@ -2281,7 +2281,7 @@
     },
     {
         "source": "with no senders, an inconsistency is impossible.",
-        "suggest": "没有发件人，不一致是不可能的。",
+        "suggest": "没有发送者，不一致是不可能的。",
         "translate": ""
     },
     {
@@ -2641,7 +2641,7 @@
     },
     {
         "source": "flag if the channel has been destroyed.",
-        "suggest": "如果通道已被破坏，则进行标记。",
+        "suggest": "如果通道已被销毁，则进行标记。",
         "translate": ""
     },
     {
@@ -2831,7 +2831,7 @@
     },
     {
         "source": "Now that we're guaranteed to deal with a bounded number of senders, we need to drain the queue.",
-        "suggest": "现在确保可以处理一定数量的发件人，我们需要将队列 drain 处理。",
+        "suggest": "现在确保可以处理一定数量的发送者，我们需要将队列 drain 处理。",
         "translate": ""
     },
     {
@@ -2856,12 +2856,12 @@
     },
     {
         "source": "At this point in time, we have gated all future senders from sending, and we have flagged the channel as being disconnected.",
-        "suggest": "此时，我们已禁止所有 future 发件人发送，并且已将通道标记为已断开连接。",
+        "suggest": "此时，我们已禁止所有 future 发送者发送，并且已将通道标记为已断开连接。",
         "translate": ""
     },
     {
         "source": "The senders still have some responsibility, however, because some sends may not complete until after we flag the disconnection.",
-        "suggest": "但是，发件人仍然要承担一些责任，因为有些发送可能要等到我们标记断开连接后才能完成。",
+        "suggest": "但是，发送者仍然要承担一些责任，因为有些发送可能要等到我们标记断开连接后才能完成。",
         "translate": ""
     },
     {
@@ -3026,7 +3026,7 @@
     },
     {
         "source": "There are a few branches for the unbuffered case, but they're mostly just relevant to blocking senders.",
-        "suggest": "对于无缓冲的情况，有一些分支，但它们大多与阻止发件人有关。",
+        "suggest": "对于无缓冲的情况，有一些分支，但它们大多与阻止发送者有关。",
         "translate": ""
     },
     {
@@ -3066,7 +3066,7 @@
     },
     {
         "source": "A curious flag used to indicate whether a sender failed or succeeded in blocking.",
-        "suggest": "一个奇怪的标志，用于指示发件人是阻止还是成功阻止。",
+        "suggest": "一个奇怪的标志，用于指示发送者是阻止还是成功阻止。",
         "translate": ""
     },
     {
@@ -3271,12 +3271,12 @@
     },
     {
         "source": "Otherwise it's now our responsibility to destroy the buffered data.",
-        "suggest": "否则，现在我们有责任破坏缓冲的数据。",
+        "suggest": "否则，现在我们有责任销毁缓冲的数据。",
         "translate": ""
     },
     {
         "source": "As with many other portions of this code, this needs to be careful to destroy the data *outside* of the lock to prevent deadlock.",
-        "suggest": "与该代码的许多其他部分一样，需要小心地破坏锁外部的数据，以防止死锁。",
+        "suggest": "与该代码的许多其他部分一样，需要小心地销毁锁外部的数据，以防止死锁。",
         "translate": ""
     },
     {
@@ -3326,7 +3326,7 @@
     },
     {
         "source": "destroy a shared",
-        "suggest": "破坏共享",
+        "suggest": "销毁共享",
         "translate": ""
     },
     {

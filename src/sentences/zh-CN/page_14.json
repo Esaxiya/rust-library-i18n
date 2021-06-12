@@ -4491,7 +4491,7 @@
     },
     {
         "source": "The temporary directory may be shared among users, or between processes with different privileges;",
-        "suggest": "临时目录可以在用户之间共享，也可以在具有不同特权的进程之间共享;",
+        "suggest": "临时目录可以在用户之间共享，也可以在具有不同权限的进程之间共享;",
         "translate": ""
     },
     {

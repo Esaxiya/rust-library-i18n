@@ -581,7 +581,7 @@
     },
     {
         "source": "at worst we will destroy or rearrange the parent through the grandparent, thus change the link to the parent inside the leaf.",
-        "suggest": "在最坏的情况下，我们将通过祖父母破坏或重新排列父级，从而在叶内更改到父级的链接。",
+        "suggest": "在最坏的情况下，我们将通过祖父母销毁或重新排列父级，从而在叶内更改到父级的链接。",
         "translate": ""
     },
     {

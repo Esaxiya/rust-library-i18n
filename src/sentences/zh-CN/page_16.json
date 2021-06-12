@@ -156,7 +156,7 @@
     },
     {
         "source": "Only the standard library gets to soundly \"ignore\" this, based on its privileged knowledge of unstable rustc internals;",
-        "suggest": "基于标准库对不稳定 rustc 内部的特权知识，只有标准库才能做到这一点。",
+        "suggest": "基于标准库对不稳定 rustc 内部的权限知识，只有标准库才能做到这一点。",
         "translate": ""
     },
     {
@@ -416,7 +416,7 @@
     },
     {
         "source": "The operation lacked the necessary privileges to complete.",
-        "suggest": "该操作缺少完成操作所需的特权。",
+        "suggest": "该操作缺少完成操作所需的权限。",
         "translate": ""
     },
     {

@@ -371,7 +371,7 @@
     },
     {
         "source": "Returns the contained stream, destroying the `Terminal`",
-        "suggest": "返回包含的流，破坏 `Terminal`",
+        "suggest": "返回包含的流，销毁 `Terminal`",
         "translate": ""
     },
     {

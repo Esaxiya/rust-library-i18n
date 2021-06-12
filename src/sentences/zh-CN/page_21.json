@@ -2556,7 +2556,7 @@
     },
     {
         "source": "When `security_qos_flags` is not set, a malicious program can gain the elevated privileges of a privileged Rust process when it allows opening user-specified paths, by tricking it into opening a named pipe.",
-        "suggest": "如果未设置 `security_qos_flags`，则恶意程序可以通过诱使程序打开命名管道来允许其打开用户指定的路径，从而获得特权 Rust 进程的提升的特权。",
+        "suggest": "如果未设置 `security_qos_flags`，则恶意程序可以通过诱使程序打开命名管道来允许其打开用户指定的路径，从而获得权限 Rust 进程的提升的权限。",
         "translate": ""
     },
     {
@@ -2986,12 +2986,12 @@
     },
     {
         "source": "Formerly, symlink creation required the SeCreateSymbolicLink privilege.",
-        "suggest": "以前，创建符号链接需要 SeCreateSymbolicLink 特权。",
+        "suggest": "以前，创建符号链接需要 SeCreateSymbolicLink 权限。",
         "translate": ""
     },
     {
         "source": "For the Windows 10 Creators Update, Microsoft loosened this to allow unprivileged symlink creation if the computer is in Developer Mode, but SYMBOLIC_LINK_FLAG_ALLOW_UNPRIVILEGED_CREATE must be added to dwFlags to opt into this behaviour.",
-        "suggest": "对于 Windows 10 Creators Update，Microsoft 放宽了此限制，以允许在计算机处于 `开发人员模式` 时创建无特权的符号链接，但是必须将 SYMBOLIC_LINK_FLAG_ALLOW_UNPRIVILEGED_CREATE 添加到 dwFlags 中才能采用此行为。",
+        "suggest": "对于 Windows 10 Creators 更新，Microsoft 放宽了此限制，以允许在计算机处于 `开发人员模式` 时创建未经授权的符号链接，但是必须将 SYMBOLIC_LINK_FLAG_ALLOW_UNPRIVILEGED_CREATE 添加到 dwFlags 中才能采用此行为。",
         "translate": ""
     },
     {

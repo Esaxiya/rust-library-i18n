@@ -2111,7 +2111,7 @@
     },
     {
         "source": "This may to print if the demangled symbol isn't actually valid, so handle the error here gracefully by not propagating it outwards.",
-        "suggest": "如果被破坏的符号实际上无效，这可能会打印，因此通过不向外传播来优雅地处理这里的错误。",
+        "suggest": "如果被检索的符号实际上不是有效的，这可能会打印出来，所以通过不向外传播错误来优雅地处理这里的错误。",
         "translate": ""
     },
     {

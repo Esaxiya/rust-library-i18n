@@ -96,7 +96,7 @@
     },
     {
         "source": "This is not really unsafe, but the unsafe code *you* write that relies on the behavior of this function may break.",
-        "suggest": "这并不是真的不安全，但是依赖于此函数的行为的不安全代码 *you* 可能会破坏。",
+        "suggest": " 这并不是真的不安全，但是依赖于这个函数行为的不安全代码可能会被破坏。",
         "translate": ""
     },
     {
@@ -576,7 +576,7 @@
     },
     {
         "source": "When the last [`Rc`] pointer to a given allocation is destroyed, the value stored in that allocation (often referred to as \"inner value\") is also dropped.",
-        "suggest": "当指向给定分配的最后一个 [`Rc`] 指针被破坏时，存储在该分配中的值 (通常称为 \"inner value\") 也将被丢弃。",
+        "suggest": "当指向给定分配的最后一个 [`Rc`] 指针被销毁时，存储在该分配中的值 (通常称为 \"内部值\") 也将被丢弃。",
         "translate": ""
     },
     {
@@ -726,7 +726,7 @@
     },
     {
         "source": "This means that their reference counts can never reach 0, and the allocation will never be destroyed:",
-        "suggest": "这意味着它们的引用计数永远不会达到 0，并且分配也永远不会被破坏:",
+        "suggest": "这意味着它们的引用计数永远不会达到 0，并且分配也永远不会被销毁:",
         "translate": ""
     },
     {
@@ -1266,7 +1266,7 @@
     },
     {
         "source": "remove the implicit \"strong weak\" pointer now that we've destroyed the contents.",
-        "suggest": "现在我们已经破坏了内容，请删除隐式 \"strong weak\" 指针。",
+        "suggest": "现在我们已经销毁了内容，请删除隐式 \"strong weak\" 指针。",
         "translate": ""
     },
     {
@@ -1421,7 +1421,7 @@
     },
     {
         "source": "Allow the Vec to free its memory, but not destroy its contents",
-        "suggest": "允许 Vec 释放其内存，但不破坏其内容",
+        "suggest": "允许 Vec 释放其内存，但不销毁其内容",
         "translate": ""
     },
     {
@@ -3636,7 +3636,7 @@
     },
     {
         "source": "Violating these may cause problems like corrupting the allocator's internal data structures.",
-        "suggest": "违反这些规则可能会导致诸如破坏分配器的内部数据结构之类的问题。",
+        "suggest": "违反这些可能会导致一些问题，比如破坏分配器的内部数据结构。",
         "translate": ""
     },
     {
@@ -4396,7 +4396,7 @@
     },
     {
         "source": "When the last `Arc` pointer to a given allocation is destroyed, the value stored in that allocation (often referred to as \"inner value\") is also dropped.",
-        "suggest": "当指向给定分配的最后一个 `Arc` 指针被破坏时，存储在该分配中的值 (通常称为 \"内部值\") 也将被丢弃。",
+        "suggest": "当指向给定分配的最后一个 `Arc` 指针被销毁时，存储在该分配中的值 (通常称为 \"内部值\") 也将被丢弃。",
         "translate": ""
     },
     {

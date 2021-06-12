@@ -531,7 +531,7 @@
     },
     {
         "source": "Unlocks previously acquired exclusive access to this lock.",
-        "suggest": "解锁先前获得的对此锁的独占访问权限。",
+        "suggest": "解锁先前获得的对此锁的独占访问权。",
         "translate": ""
     },
     {
@@ -1641,7 +1641,7 @@
     },
     {
         "source": "Initialization is dynamically performed on the first call to [`with`] within a thread, and values that implement [`Drop`] get destructed when a thread exits.",
-        "suggest": "初始化是在线程中对 [`with`] 的第一次调用中动态执行的，并且当线程退出时，实现 [`Drop`] 的值将被破坏。",
+        "suggest": "初始化是在线程中对 [`with`] 的第一次调用中动态执行的，并且当线程退出时，实现 [`Drop`] 的值将被销毁。",
         "translate": ""
     },
     {
@@ -1896,7 +1896,7 @@
     },
     {
         "source": "The value has already been destroyed or is being destroyed To determine which kind of `None`, check `dtor_state`.",
-        "suggest": "该值已被破坏或正在被破坏。要确定哪种 `None`，请检查 `dtor_state`。",
+        "suggest": "该值已被销毁或正在被销毁。要确定哪种 `None`，请检查 `dtor_state`。",
         "translate": ""
     },
     {
@@ -4501,7 +4501,7 @@
     },
     {
         "source": "(Note that if instruction and data caches are separate, privileged cache maintenance operations would be needed in order to unify the caches.)",
-        "suggest": "(请注意，如果指令和数据高速缓存是分开的，则需要特权高速缓存维护操作才能统一高速缓存。)",
+        "suggest": "(请注意，如果指令缓存和数据缓存是分开的，则需要特权缓存维护操作来统一缓存。)",
         "translate": ""
     },
     {

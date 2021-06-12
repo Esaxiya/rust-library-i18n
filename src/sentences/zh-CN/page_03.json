@@ -2596,7 +2596,7 @@
     },
     {
         "source": "executing the pipeline in place.",
-        "suggest": "执行到位的管道。",
+        "suggest": "在适当的位置执行管道。",
         "translate": ""
     },
     {

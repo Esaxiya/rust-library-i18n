@@ -3791,7 +3791,7 @@
     },
     {
         "source": "can this line be shared with the same in `value_ptr()` without upsetting Stacked Borrows?",
-        "suggest": "可以在 `value_ptr()` 中与同一行共享该行，而不会破坏堆叠的借用?",
+        "suggest": "这一行是否可以与 `value_ptr ()` 中的同一行共享而不会影响栈上的借用?",
         "translate": ""
     },
     {

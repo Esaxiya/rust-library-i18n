@@ -96,7 +96,7 @@
     },
     {
         "source": "It is possible, however, for **logical** invariants to be broken in Rust, which can end up causing behavioral bugs.",
-        "suggest": "但是，可能会在 Rust 中破坏 ** 逻辑不变式，从而最终导致行为错误。",
+        "suggest": "然而，在Rust中，**logical** 不可变变量被破坏是有可能的，这最终会导致行为 Bug。",
         "translate": ""
     },
     {
@@ -3016,7 +3016,7 @@
     },
     {
         "source": "It doesn't destroy `T` or deallocate any memory.",
-        "suggest": "它不会破坏 `T` 或释放任何内存。",
+        "suggest": "它不会销毁 `T` 或释放任何内存。",
         "translate": ""
     },
     {

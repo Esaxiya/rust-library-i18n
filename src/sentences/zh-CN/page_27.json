@@ -2111,7 +2111,7 @@
     },
     {
         "source": "XSETBV is a privileged instruction we should only test this when running in privileged mode:",
-        "suggest": "XSETBV 是特权指令，我们仅应在特权模式下运行时对其进行测试:",
+        "suggest": "XSETBV 是权限指令，我们仅应在权限模式下运行时对其进行测试:",
         "translate": ""
     },
     {
@@ -2436,7 +2436,7 @@
     },
     {
         "source": "Note that we use an `=` dependency here instead of a floating dependency because the text format for wasm changes over time, and we want to make updates to this explicit rather than automatically picking up updates which might break CI with new instruction names.",
-        "suggest": "请注意，我们在这里使用 `=` 依赖关系而不是浮动依赖关系，因为 wasm 的文本格式会随着时间而变化，并且我们要对此显式进行更新，而不是自动选择可能会破坏带有新指令名的 CI 的更新。",
+        "suggest": "请注意，我们在这里使用 `=` 依赖关系而不是浮动依赖关系，因为 wasm 的文本格式会随着时间而变化，并且我们要对此显式进行更新，而不是自动获取可能会用新指令名称破坏 CI 的更新。",
         "translate": ""
     },
     {
@@ -3981,7 +3981,7 @@
     },
     {
         "source": "On FreeBSD >= 12.0, Linux >= 4.11 and other operating systems, it is possible to use privileged system registers from userspace to check CPU feature support.",
-        "suggest": "在 FreeBSD>= 12.0，Linux>= 4.11 和其他操作系统上，可以使用用户空间中的特权系统寄存器来检查 CPU 功能支持。",
+        "suggest": "在 FreeBSD>= 12.0，Linux>= 4.11 和其他操作系统上，可以使用用户空间中的权限系统寄存器来检查 CPU 功能支持。",
         "translate": ""
     },
     {

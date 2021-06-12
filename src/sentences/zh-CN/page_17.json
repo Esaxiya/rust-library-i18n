@@ -546,7 +546,7 @@
     },
     {
         "source": "Safe b/c checked is_initialized and we have a unique access",
-        "suggest": "安全 b/c 已检查 is_initialized，我们具有唯一访问权限",
+        "suggest": "安全 b/c 已检查 is_initialized，我们拥有唯一的访问权",
         "translate": ""
     },
     {
