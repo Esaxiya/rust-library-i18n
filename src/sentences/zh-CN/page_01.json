@@ -221,7 +221,7 @@
     },
     {
         "source": "Beware that, once the node pointer is dereferenced, we access the edges array with a reference (Rust issue #73987) and invalidate any other references to or inside the array, should any be around.",
-        "suggest": "请注意，一旦取消引用节点指针，我们将使用引用 (Rust issue #73987) 访问 edges 数组，并使该数组中或数组内的其他任何引用无效 (如果有的话)。",
+        "suggest": "请注意，一旦解引用节点指针，我们将使用引用 (Rust issue #73987) 访问 edges 数组，并使该数组中或数组内的其他任何引用无效 (如果有的话)。",
         "translate": ""
     },
     {
@@ -1781,7 +1781,7 @@
     },
     {
         "source": "A `Cursor` is like an iterator, except that it can freely seek back-and-forth, and can safely mutate the list during iteration.",
-        "suggest": "`Cursor` 类似于迭代器，不同之处在于它可以自由地来回查找，并且可以在迭代过程中安全地更改列表。",
+        "suggest": "`Cursor` 类似于迭代器，不同之处在于它可以自由地来回查找，并且可以在迭代过程中安全地修改列表。",
         "translate": ""
     },
     {

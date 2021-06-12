@@ -601,7 +601,7 @@
     },
     {
         "source": "Unquoting is done with `$`, and works by taking the single next ident as the unquoted term.",
-        "suggest": "用 `$` 取消引用，并通过将单个下一个标识符作为未引用的术语来工作。",
+        "suggest": "用 `$` 解引用，并通过将单个下一个标识符作为未引用的术语来工作。",
         "translate": ""
     },
     {
@@ -1241,7 +1241,7 @@
     },
     {
         "source": "Build system executing the compiler will know that the variable was accessed during compilation, and will be able to rerun the build when the value of that variable changes.",
-        "suggest": "执行编译器的构建系统将知道在编译过程中已访问该变量，并且当该变量的值更改时将能够重新运行该构建。",
+        "suggest": "执行编译器的构建系统将知道在编译期间访问了该变量，并且能够在该变量的值发生变化时重新运行构建。",
         "translate": ""
     },
     {
@@ -1266,7 +1266,7 @@
     },
     {
         "source": "supported tokens are a subset of the real `quote!`, but unquoting is different: instead of `$x`, this uses `(@ expr)`.",
-        "suggest": "支持的 tokens 是实际 `quote!` 的子集，但取消引用是不同的: 它使用 `(@ expr)` 代替 `$x`。",
+        "suggest": "支持的 tokens 是实际 `quote!` 的子集，但解引用是不同的: 它使用 `(@ expr)` 代替 `$x`。",
         "translate": ""
     },
     {
@@ -4211,7 +4211,7 @@
     },
     {
         "source": "Inspection and manipulation of the process's environment.",
-        "suggest": "检查和操作过程的环境。",
+        "suggest": "检查和操作进程的环境。",
         "translate": ""
     },
     {
@@ -4266,7 +4266,7 @@
     },
     {
         "source": "An iterator over a snapshot of the environment variables of this process.",
-        "suggest": "在此过程的环境变量的快照上进行迭代的迭代器。",
+        "suggest": "在此进程的环境变量的快照上进行迭代的迭代器。",
         "translate": ""
     },
     {
@@ -4606,7 +4606,7 @@
     },
     {
         "source": "An iterator over the arguments of a process, yielding an [`OsString`] value for each argument.",
-        "suggest": "一个过程参数的迭代器，为每个参数产生 [`OsString`] 值。",
+        "suggest": "一个进程参数的迭代器，为每个参数产生 [`OsString`] 值。",
         "translate": ""
     },
     {
@@ -4646,7 +4646,7 @@
     },
     {
         "source": "The returned iterator will panic during iteration if any argument to the process is not valid unicode.",
-        "suggest": "如果该过程的任何参数不是有效的 unicode，则返回的迭代器在迭代过程中将为 panic。",
+        "suggest": "如果该进程的任何参数不是有效的 unicode，则返回的迭代器将在迭代过程中 panic。",
         "translate": ""
     },
     {

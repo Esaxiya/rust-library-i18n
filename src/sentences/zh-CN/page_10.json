@@ -31,7 +31,7 @@
     },
     {
         "source": "Dereferences the value.",
-        "suggest": "取消引用值。",
+        "suggest": "解引用值。",
         "translate": ""
     },
     {
@@ -2486,7 +2486,7 @@
     },
     {
         "source": "The current interface for panicking is:",
-        "suggest": "当前的 panic 界面是:",
+        "suggest": "当前的 panic 接口是:",
         "translate": ""
     },
     {
@@ -3326,7 +3326,7 @@
     },
     {
         "source": "Unlike `Pin::new_unchecked`, this method is safe because the pointer `P` dereferences to an [`Unpin`] type, which cancels the pinning guarantees.",
-        "suggest": "与 `Pin::new_unchecked` 不同，此方法是安全的，因为指针 `P` 取消引用了 [`Unpin`] 类型，从而取消了固定保证。",
+        "suggest": "与 `Pin::new_unchecked` 不同，此方法是安全的，因为指针 `P` 解引用了 [`Unpin`] 类型，从而取消了固定保证。",
         "translate": ""
     },
     {
@@ -3351,7 +3351,7 @@
     },
     {
         "source": "If `pointer` dereferences to an `Unpin` type, `Pin::new` should be used instead.",
-        "suggest": "如果 `pointer` 取消引用 `Unpin` 类型，则应改用 `Pin::new`。",
+        "suggest": "如果 `pointer` 解引用 `Unpin` 类型，则应改用 `Pin::new`。",
         "translate": ""
     },
     {
@@ -4006,7 +4006,7 @@
     },
     {
         "source": "`wrapping_offset` produces a pointer but still leads to Undefined Behavior if a pointer is dereferenced when it is out-of-bounds of the object it is attached to.",
-        "suggest": "`wrapping_offset` 产生一个指针，但如果指针超出其附加对象的范围而被取消引用，则仍会导致未定义行为。",
+        "suggest": "`wrapping_offset` 产生一个指针，但如果指针超出其附加对象的范围而被解引用，则仍会导致未定义行为。",
         "translate": ""
     },
     {
@@ -4016,7 +4016,7 @@
     },
     {
         "source": "The delayed check only considers the value of the pointer that was dereferenced, not the intermediate values used during the computation of the final result.",
-        "suggest": "延迟检查仅考虑取消引用的指针的值，而不考虑最终结果计算期间使用的中间值。",
+        "suggest": "延迟检查仅考虑解引用的指针的值，而不考虑最终结果计算期间使用的中间值。",
         "translate": ""
     },
     {
@@ -4246,7 +4246,7 @@
     },
     {
         "source": "`wrapping_add` produces a pointer but still leads to Undefined Behavior if a pointer is dereferenced when it is out-of-bounds of the object it is attached to.",
-        "suggest": "`wrapping_add` 产生一个指针，但如果指针超出其附加对象的范围而被取消引用，则仍会导致未定义行为。",
+        "suggest": "`wrapping_add` 产生一个指针，但如果指针超出其附加对象的范围而被解引用，则仍会导致未定义行为。",
         "translate": ""
     },
     {
@@ -4271,7 +4271,7 @@
     },
     {
         "source": "`wrapping_sub` produces a pointer but still leads to Undefined Behavior if a pointer is dereferenced when it is out-of-bounds of the object it is attached to.",
-        "suggest": "`wrapping_sub` 产生一个指针，但如果指针超出其附加对象的范围而被取消引用，则仍会导致未定义行为。",
+        "suggest": "`wrapping_sub` 产生一个指针，但如果指针超出其附加对象的范围而被解引用，则仍会导致未定义行为。",
         "translate": ""
     },
     {
@@ -4506,7 +4506,7 @@
     },
     {
         "source": "the caller ensures that `self` is dereferencable and `index` in-bounds.",
-        "suggest": "调用方确保 `self` 是可取消引用的，并且 `index` 是入站的。",
+        "suggest": "调用方确保 `self` 是可解引用的，并且 `index` 是入站的。",
         "translate": ""
     },
     {

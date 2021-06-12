@@ -956,7 +956,7 @@
     },
     {
         "source": "Module providing interface for running tests in the console.",
-        "suggest": "提供在控制台中运行测试的界面的模块。",
+        "suggest": "提供在控制台中运行测试的接口的模块。",
         "translate": ""
     },
     {
@@ -1331,7 +1331,7 @@
     },
     {
         "source": "Benchmarks aren't expected to panic, so we run them all in-process.",
-        "suggest": "不应将基准设置为 panic，因此我们将它们全部在过程中运行。",
+        "suggest": "不应将基准设置为 panic，因此我们会在所有进程中运行它们。",
         "translate": ""
     },
     {
@@ -2296,7 +2296,7 @@
     },
     {
         "source": "Failure during dereferencing can be extremely confusing when `DerefMut` is invoked implicitly.",
-        "suggest": "当隐式调用 `DerefMut` 时，解引用过程中的失败可能会造成极大的混乱。",
+        "suggest": "当隐式调用 `DerefMut` 时，解引用过程中的失败可能会非常令人困惑。",
         "translate": ""
     },
     {

@@ -2516,7 +2516,7 @@
     },
     {
         "source": "A handle to a raw instance of the standard input stream of this process.",
-        "suggest": "此过程的标准输入流的原始实例的句柄。",
+        "suggest": "此进程的标准输入流的原始实例的句柄。",
         "translate": ""
     },
     {
@@ -2531,7 +2531,7 @@
     },
     {
         "source": "A handle to a raw instance of the standard output stream of this process.",
-        "suggest": "此过程的标准输出流的原始实例的句柄。",
+        "suggest": "此进程的标准输出流的原始实例的句柄。",
         "translate": ""
     },
     {
@@ -2546,7 +2546,7 @@
     },
     {
         "source": "Constructs a new raw handle to the standard input of this process.",
-        "suggest": "为该过程的标准输入创建一个新的原始句柄。",
+        "suggest": "为这个进程的标准输入创建一个新的原始句柄。",
         "translate": ""
     },
     {
@@ -2566,7 +2566,7 @@
     },
     {
         "source": "Constructs a new raw handle to the standard output stream of this process.",
-        "suggest": "为该过程的标准输出流创建一个新的原始句柄。",
+        "suggest": "为该进程的标准输出流创建一个新的原始句柄。",
         "translate": ""
     },
     {
@@ -2586,7 +2586,7 @@
     },
     {
         "source": "Constructs a new raw handle to the standard error stream of this process.",
-        "suggest": "为该过程的标准错误流创建一个新的原始句柄。",
+        "suggest": "为该进程的标准错误流创建一个新的原始句柄。",
         "translate": ""
     },
     {
@@ -2601,7 +2601,7 @@
     },
     {
         "source": "Each handle is a shared reference to a global buffer of input data to this process.",
-        "suggest": "每个句柄都是对该过程的输入数据缓冲区的共享引用。",
+        "suggest": "每个句柄都是对该进程输入数据的全局缓冲区的共享引用。",
         "translate": ""
     },
     {

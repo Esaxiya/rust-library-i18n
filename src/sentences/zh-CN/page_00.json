@@ -446,7 +446,7 @@
     },
     {
         "source": "The default behavior of this function is to print a message to standard error and abort the process.",
-        "suggest": "该函数的默认行为是将一条消息打印到标准错误并终止该过程。",
+        "suggest": "该函数的默认行为是将一条消息打印到标准错误并终止该进程。",
         "translate": ""
     },
     {
@@ -3976,7 +3976,7 @@
     },
     {
         "source": "If a panic occurs in the `change` closure, the entire process will be aborted.",
-        "suggest": "如果 `change` 闭包中出现 panic，则整个过程将被中止。",
+        "suggest": "如果 `change` 闭包中出现 panic，则整个进程将被中止。",
         "translate": ""
     },
     {
@@ -4896,7 +4896,7 @@
     },
     {
         "source": "Similar to `ascend`, gets a reference to a node's parent node, but also deallocates the current node in the process.",
-        "suggest": "与 `ascend` 相似，对节点的父节点进行引用，但还会在此过程中取消分配当前节点。",
+        "suggest": "与 `ascend` 相似，获取对节点父节点的引用，但也会在此进程中释放当前节点。",
         "translate": ""
     },
     {

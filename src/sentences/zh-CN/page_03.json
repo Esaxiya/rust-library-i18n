@@ -86,7 +86,7 @@
     },
     {
         "source": "Any other `Arc` or [`Weak`] pointers to the same allocation must not be dereferenced for the duration of the returned borrow.",
-        "suggest": "在返回的借用期间，不得取消引用其他指向相同分配的 `Arc` 或 [`Weak`] 指针。",
+        "suggest": "在返回的借用期间，不得解引用其他指向相同分配的 `Arc` 或 [`Weak`] 指针。",
         "translate": ""
     },
     {
@@ -516,7 +516,7 @@
     },
     {
         "source": "An executor can define an implementation of this trait, and use that to construct a Waker to pass to the tasks that are executed on that executor.",
-        "suggest": "执行者可以定义此 trait 的实现，并使用该构造来构造 Waker 以传递给在该执行者上执行的任务。",
+        "suggest": "执行者可以定义此 trait 的实现，并使用它来构造一个 Waker 以传递给在该执行者上执行的任务。",
         "translate": ""
     },
     {
@@ -4426,7 +4426,7 @@
     },
     {
         "source": "Ensure this process's symbols are initialized",
-        "suggest": "确保此过程的符号已初始化",
+        "suggest": "确保此进程的符号已初始化",
         "translate": ""
     },
     {
@@ -4666,7 +4666,7 @@
     },
     {
         "source": "This function strives to never panic, but if the `cb` provided panics then some platforms will force a double panic to abort the process.",
-        "suggest": "该函数致力于从不 panic，但是如果 `cb` 提供了 panics，则某些平台将强制使用双 panic 终止该过程。",
+        "suggest": "这个函数尽量避免 panic，但是如果 `cb` 提供了 panics，则某些平台将强制使用双 panic 来终止进程。",
         "translate": ""
     },
     {
@@ -4866,7 +4866,7 @@
     },
     {
         "source": "This function exists because the resolution process can sometimes take a significant amount of time whereas any one backtrace may only be rarely printed.",
-        "suggest": "之所以存在该函数，是因为解析过程有时会花费大量时间，而任何一条回溯痕迹可能很少被打印出来。",
+        "suggest": "此函数之所以存在，是因为解析过程有时会花费大量时间，而任何一个回溯都可能很少打印。",
         "translate": ""
     },
     {

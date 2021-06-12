@@ -201,7 +201,7 @@
     },
     {
         "source": "Rust has a construct which can call [`next`] on your iterator, until it reaches `None`.",
-        "suggest": "Rust 具有可以在迭代器上调用 [`next`] 的构造，直到达到 `None`。",
+        "suggest": "Rust 有一个构造，可以在迭代器上调用 [`next`]，直到它到达 `None`。",
         "translate": ""
     },
     {

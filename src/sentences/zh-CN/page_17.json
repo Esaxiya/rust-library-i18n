@@ -3271,22 +3271,22 @@
     },
     {
         "source": "There must be at least two groups left.",
-        "suggest": "至少必须剩下两组。",
+        "suggest": "至少还剩下两组。",
         "translate": ""
     },
     {
         "source": "Read the front part of the address;",
-        "suggest": "阅读地址的开头;",
+        "suggest": "读取地址的开头;",
         "translate": ""
     },
     {
         "source": "either the whole thing, or up to the first ::",
-        "suggest": "整个过程，或者直到第一个::",
+        "suggest": "要么整件事，或者直到第一个 ::",
         "translate": ""
     },
     {
         "source": "part is not allowed before `::`",
-        "suggest": "`::` 之前不允许零件",
+        "suggest": "`::` 之前不允许部分",
         "translate": ""
     },
     {

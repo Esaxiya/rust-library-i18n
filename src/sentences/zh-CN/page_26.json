@@ -4331,7 +4331,7 @@
     },
     {
         "source": "The standard handler will simply terminate the process.",
-        "suggest": "标准处理程序将简单地终止该过程。",
+        "suggest": "标准处理程序将简单地终止该进程。",
         "translate": ""
     },
     {

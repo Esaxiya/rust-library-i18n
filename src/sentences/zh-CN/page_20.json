@@ -2896,7 +2896,7 @@
     },
     {
         "source": "Sets the supplementary group IDs for the calling process.",
-        "suggest": "设置调用过程的补充组 ID。",
+        "suggest": "设置调用进程的补充组 ID。",
         "translate": ""
     },
     {
@@ -3001,7 +3001,7 @@
     },
     {
         "source": "This function, unlike `spawn`, will **not** `fork` the process to create a new child.",
-        "suggest": "与 `spawn` 不同，此函数不会 `fork` 创建新子级的过程。",
+        "suggest": "与 `spawn` 不同，此函数不会使用 `fork` 来创建一个新的子进程。",
         "translate": ""
     },
     {
@@ -3061,7 +3061,7 @@
     },
     {
         "source": "This is because a Unix wait status (a Rust `ExitStatus`) can represent a Unix exit status, but can also represent other kinds of process event.",
-        "suggest": "这是因为 Unix 等待状态 (Rust `ExitStatus`) 可以表示 Unix 退出状态，但也可以表示其他类型的过程事件。",
+        "suggest": "这是因为 Unix 等待状态 (Rust `ExitStatus`) 可以表示 Unix 退出状态，但也可以表示其他类型的进程事件。",
         "translate": ""
     },
     {
@@ -3076,7 +3076,7 @@
     },
     {
         "source": "If the process was terminated by a signal, returns that signal.",
-        "suggest": "如果该过程被信号终止，则返回该信号。",
+        "suggest": "如果进程被一个信号终止，则返回该信号。",
         "translate": ""
     },
     {
@@ -3086,12 +3086,12 @@
     },
     {
         "source": "If the process was terminated by a signal, says whether it dumped core.",
-        "suggest": "如果该过程被信号终止，则说明是否转储了 core。",
+        "suggest": "如果进程被一个信号终止，说明它是否丢弃了 core。",
         "translate": ""
     },
     {
         "source": "If the process was stopped by a signal, returns that signal.",
-        "suggest": "如果该过程被信号停止，则返回该信号。",
+        "suggest": "如果该进程被信号停止，则返回该信号。",
         "translate": ""
     },
     {
@@ -3106,7 +3106,7 @@
     },
     {
         "source": "Whether the process was continued from a stopped status.",
-        "suggest": "该过程是否从停止状态继续进行。",
+        "suggest": "进程是否从停止状态继续。",
         "translate": ""
     },
     {
@@ -4056,7 +4056,7 @@
     },
     {
         "source": "If the stream is closed but we failed to reopen it, abort the process.",
-        "suggest": "如果该流已关闭，但我们无法重新打开它，请终止该过程。",
+        "suggest": "如果流已关闭，但未能重新打开它，则中止该进程。",
         "translate": ""
     },
     {
@@ -4781,7 +4781,7 @@
     },
     {
         "source": "I'm not entirely sure why, but all collected backtraces point at malloc/free traffic in the child spawned process.",
-        "suggest": "我不完全确定为什么，但是所有收集的回溯都指向子派生过程中的 malloc/free 流量。",
+        "suggest": "我不完全确定为什么，但是所有收集的回溯都指向子衍生进程中的 malloc/free 流量。",
         "translate": ""
     },
     {

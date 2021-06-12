@@ -2721,7 +2721,7 @@
     },
     {
         "source": "Aborts the execution of the process.",
-        "suggest": "中止过程的执行。",
+        "suggest": "中止进程的执行。",
         "translate": ""
     },
     {

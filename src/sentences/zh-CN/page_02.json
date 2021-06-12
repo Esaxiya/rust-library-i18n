@@ -361,7 +361,7 @@
     },
     {
         "source": "Cloning the `Rc<Owner>` gives us a new pointer to the same `Owner` allocation, incrementing the reference count in the process.",
-        "suggest": "克隆 `Rc<Owner>` 为我们提供了指向相同 `Owner` 分配的新指针，从而增加了该过程中的引用计数。",
+        "suggest": "克隆 `Rc<Owner>` 为我们提供了指向同一个 `Owner` 分配的新指针，从而增加了该进程中的引用计数。",
         "translate": ""
     },
     {
@@ -856,7 +856,7 @@
     },
     {
         "source": "Constructs a new `Rc` with uninitialized contents, returning an error if the allocation fails",
-        "suggest": "构造具有未初始化内容的新 `Rc`，如果分配失败，则返回错误",
+        "suggest": "用未初始化的内容构造一个新的 `Rc`，如果分配失败，则返回错误",
         "translate": ""
     },
     {
@@ -1051,7 +1051,7 @@
     },
     {
         "source": "Any other `Rc` or [`Weak`] pointers to the same allocation must not be dereferenced for the duration of the returned borrow.",
-        "suggest": "在返回的借用期间，不得取消引用其他指向相同分配的 `Rc` 或 [`Weak`] 指针。",
+        "suggest": "在返回的借用期间，不得解引用其他指向相同分配的 `Rc` 或 [`Weak`] 指针。",
         "translate": ""
     },
     {
@@ -1606,7 +1606,7 @@
     },
     {
         "source": "if is_dangling returns false, then the pointer is dereferencable.",
-        "suggest": "如果 is_dangling 返回 false，则该指针是可取消引用的。",
+        "suggest": "如果 is_dangling 返回 false，则该指针是可解引用的。",
         "translate": ""
     },
     {
@@ -2426,7 +2426,7 @@
     },
     {
         "source": "As we go along, copy every traversed element into the slot preceding it.",
-        "suggest": "在进行过程中，将所有遍历的元素复制到其前面的插槽中。",
+        "suggest": "在继续操作时，将每个遍历的元素复制到它前面的插槽中。",
         "translate": ""
     },
     {

@@ -126,7 +126,7 @@
     },
     {
         "source": "Typically there aren't really that many calls to `dbghelp` within the same process and we can probably safely assume that we're the only ones accessing it.",
-        "suggest": "通常，在同一过程中实际上没有太多对 `dbghelp` 的调用，我们可以放心地假设我们是唯一访问它的人。",
+        "suggest": "通常，在同一进程中实际上没有太多对 `dbghelp` 的调用，我们可以放心地假设我们是唯一访问它的人。",
         "translate": ""
     },
     {
@@ -771,7 +771,7 @@
     },
     {
         "source": "Fuchsia is unable to symbolize within a process so it has a special format which can be used to symbolize later.",
-        "suggest": "Fuchsia 无法在过程中进行符号化，因此它具有一种特殊的格式，可用于以后进行符号化。",
+        "suggest": "Fuchsia 无法在进程中进行符号化，因此它具有一种特殊的格式，可用于以后进行符号化。",
         "translate": ""
     },
     {
@@ -1151,7 +1151,7 @@
     },
     {
         "source": "this is the only function that ever constructs a mutable reference to `self.buffers`.",
-        "suggest": "这是构造 `self.buffers` 的可变引用的唯一函数。",
+        "suggest": "这是创建 `self.buffers` 的可变引用的唯一函数。",
         "translate": ""
     },
     {
@@ -2856,7 +2856,7 @@
     },
     {
         "source": "Constructs a `Layout` from a given `size` and `align`, or returns `LayoutError` if any of the following conditions are not met:",
-        "suggest": "从给定的 `size` 和 `align` 构造 `Layout`，或者如果不满足以下任何条件，则返回 `LayoutError`:",
+        "suggest": "从给定的 `size` 和 `align` 创建 `Layout`，或者如果不满足以下任何条件，则返回 `LayoutError`:",
         "translate": ""
     },
     {

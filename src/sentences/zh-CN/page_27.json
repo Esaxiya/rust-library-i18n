@@ -2236,7 +2236,7 @@
     },
     {
         "source": "Currently this function aborts the process with an undefined instruction.",
-        "suggest": "当前，此函数使用未定义的指令中止该过程。",
+        "suggest": "当前，该函数使用未定义的指令中止进程。",
         "translate": ""
     },
     {

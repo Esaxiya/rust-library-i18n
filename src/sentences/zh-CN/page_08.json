@@ -1416,7 +1416,7 @@
     },
     {
         "source": "A wrapper type to construct uninitialized instances of `T`.",
-        "suggest": "包装器类型，用于构造 `T` 的未初始化实例。",
+        "suggest": "包装器类型，用于创建 `T` 的未初始化实例。",
         "translate": ""
     },
     {
@@ -3531,7 +3531,7 @@
     },
     {
         "source": "This is extracted into a separate function so that it can be attempted before constructing a bignum.",
-        "suggest": "将其提取到单独的函数中，以便可以在构造 bignum 之前尝试使用它。",
+        "suggest": "将其提取到单独的函数中，以便可以在创建 bignum 之前尝试使用它。",
         "translate": ""
     },
     {
@@ -4761,7 +4761,7 @@
     },
     {
         "source": "A mantissa of 0 is allowed and constructs zero.",
-        "suggest": "允许尾数为 0 并构造零。",
+        "suggest": "允许尾数为 0，构造为 0。",
         "translate": ""
     },
     {
@@ -4961,7 +4961,7 @@
     },
     {
         "source": "Among other causes, this variant will be constructed when parsing an empty string.",
-        "suggest": "除其他原因外，将在解析空字符串时构造此成员。",
+        "suggest": "除其他原因外，解析空字符串时会创建这个变量。",
         "translate": ""
     },
     {
@@ -4971,12 +4971,12 @@
     },
     {
         "source": "Among other causes, this variant will be constructed when parsing a string that contains a non-ASCII char.",
-        "suggest": "除其他原因外，在解析包含非 ASCII 字符的字符串时将构造此成员。",
+        "suggest": "除其他原因外，当解析包含非 ASCII 字符的字符串时，将创建这个变量。",
         "translate": ""
     },
     {
         "source": "This variant is also constructed when a `+` or `-` is misplaced within a string either on its own or in the middle of a number.",
-        "suggest": "当 `+` 或 `-` 单独放置在字符串中或放置在数字中间时，也会构造此成员。",
+        "suggest": "当 `+` 或 `-` 单独放置在字符串中或放置在数字中间时，也会创建此变量。",
         "translate": ""
     },
     {

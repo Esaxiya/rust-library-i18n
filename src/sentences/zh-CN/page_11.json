@@ -1381,7 +1381,7 @@
     },
     {
         "source": "Unlike `*mut T`, the pointer must always be non-null, even if the pointer is never dereferenced.",
-        "suggest": "与 `*mut T` 不同，即使从未取消引用指针，指针也必须始终为非 null。",
+        "suggest": "与 `*mut T` 不同，即使从未解引用指针，指针也必须始终为非 null。",
         "translate": ""
     },
     {
@@ -1391,7 +1391,7 @@
     },
     {
         "source": "However the pointer may still dangle if it isn't dereferenced.",
-        "suggest": "但是，如果指针未取消引用，它可能仍会悬垂。",
+        "suggest": "但是，如果指针未解引用，它可能仍会悬垂。",
         "translate": ""
     },
     {
@@ -1766,7 +1766,7 @@
     },
     {
         "source": "Dereferences the content.",
-        "suggest": "取消引用内容。",
+        "suggest": "解引用内容。",
         "translate": ""
     },
     {
@@ -1781,7 +1781,7 @@
     },
     {
         "source": "Mutably dereferences the content.",
-        "suggest": "相互取消引用内容。",
+        "suggest": "相互解引用内容。",
         "translate": ""
     },
     {
@@ -3301,7 +3301,7 @@
     },
     {
         "source": "will never be dereferenced, only checked for direct pointer equality with `ptr` to check if the iterator is done.",
-        "suggest": "永远不会被取消引用，仅使用 `ptr` 检查直接指针是否相等，以检查迭代器是否完成。",
+        "suggest": "永远不会被解引用，仅使用 `ptr` 检查直接指针是否相等，以检查迭代器是否完成。",
         "translate": ""
     },
     {

@@ -771,7 +771,7 @@
     },
     {
         "source": "Constructs a new instance of `UnsafeCell` which will wrap the specified value.",
-        "suggest": "构造 `UnsafeCell` 的新实例，该实例将包装指定的值。",
+        "suggest": "创建 `UnsafeCell` 的新实例，该实例将包装指定的值。",
         "translate": ""
     },
     {
@@ -891,7 +891,7 @@
     },
     {
         "source": "This function is unsafe, as it may construct invalid `char` values.",
-        "suggest": "该函数是不安全的，因为它可能构造无效的 `char` 值。",
+        "suggest": "该函数是不安全的，因为它可能创建无效的 `char` 值。",
         "translate": ""
     },
     {
@@ -4111,7 +4111,7 @@
     },
     {
         "source": "This can be constructed by the [`Formatter::debug_struct`] method.",
-        "suggest": "这可以通过 [`Formatter::debug_struct`] 方法构造。",
+        "suggest": "这可以通过 [`Formatter::debug_struct`] 方法创建。",
         "translate": ""
     },
     {
@@ -4141,7 +4141,7 @@
     },
     {
         "source": "This can be constructed by the [`Formatter::debug_tuple`] method.",
-        "suggest": "这可以通过 [`Formatter::debug_tuple`] 方法构造。",
+        "suggest": "这可以通过 [`Formatter::debug_tuple`] 方法创建。",
         "translate": ""
     },
     {
@@ -4156,7 +4156,7 @@
     },
     {
         "source": "This can be constructed by the [`Formatter::debug_set`] method.",
-        "suggest": "这可以通过 [`Formatter::debug_set`] 方法构造。",
+        "suggest": "这可以通过 [`Formatter::debug_set`] 方法创建。",
         "translate": ""
     },
     {
@@ -4176,7 +4176,7 @@
     },
     {
         "source": "This can be constructed by the [`Formatter::debug_list`] method.",
-        "suggest": "这可以通过 [`Formatter::debug_list`] 方法构造。",
+        "suggest": "这可以通过 [`Formatter::debug_list`] 方法创建。",
         "translate": ""
     },
     {
@@ -4196,7 +4196,7 @@
     },
     {
         "source": "This can be constructed by the [`Formatter::debug_map`] method.",
-        "suggest": "这可以通过 [`Formatter::debug_map`] 方法构造。",
+        "suggest": "这可以通过 [`Formatter::debug_map`] 方法创建。",
         "translate": ""
     },
     {
@@ -4606,7 +4606,7 @@
     },
     {
         "source": "The `pieces` array must be at least as long as `fmt` to construct a valid Arguments structure.",
-        "suggest": "`pieces` 数组必须至少与 `fmt` 一样长，以构造有效的参数结构体。",
+        "suggest": "`pieces` 数组必须至少与 `fmt` 一样长，以创建有效的参数结构体。",
         "translate": ""
     },
     {

@@ -3606,7 +3606,7 @@
     },
     {
         "source": "The process lacks permissions to view the contents.",
-        "suggest": "该过程没有查看内容的权限。",
+        "suggest": "该进程没有查看内容的权限。",
         "translate": ""
     },
     {
@@ -3986,7 +3986,7 @@
     },
     {
         "source": "Though dropping will attempt to flush the contents of the buffer, any errors that happen in the process of dropping will be ignored.",
-        "suggest": "尽管删除将尝试刷新缓冲区的内容，但是删除过程中发生的任何错误都将被忽略。",
+        "suggest": "尽管删除将尝试刷新缓冲区的内容，但删除过程中发生的任何错误都将被忽略。",
         "translate": ""
     },
     {
@@ -4811,7 +4811,7 @@
     },
     {
         "source": "If writer panics *again* due to the flush error then the process will abort.",
-        "suggest": "如果再次由于刷新错误而再次 writer panics，则该过程将终止。",
+        "suggest": "如果写入器由于刷新错误而再次 panic，那么进程将中止。",
         "translate": ""
     },
     {

@@ -6,7 +6,7 @@
     },
     {
         "source": "Enqueues a procedure to run when the main thread exits.",
-        "suggest": "排队主线程退出时要运行的过程。",
+        "suggest": "当主线程退出时，将一个过程排入队列运行。",
         "translate": ""
     },
     {
@@ -1011,7 +1011,7 @@
     },
     {
         "source": "Other platforms should use the appropriate platform-specific mechanism for aborting the process.",
-        "suggest": "其他平台应使用适当的特定于平台的机制来终止该过程。",
+        "suggest": "其他平台应该使用适当的特定于平台的机制来中止进程。",
         "translate": ""
     },
     {
@@ -1571,7 +1571,7 @@
     },
     {
         "source": "The process lacks permissions to view the number of hardware threads available.",
-        "suggest": "该过程没有查看可用硬件线程数的权限。",
+        "suggest": "该进程缺乏查看可用硬件线程数的权限。",
         "translate": ""
     },
     {
@@ -2036,7 +2036,7 @@
     },
     {
         "source": "ptr has been ensured as non-NUL just above an so can be dereferenced safely.",
-        "suggest": "已确保 ptr 为非 NUL 且正好位于 a 以上，因此可以安全地取消引用。",
+        "suggest": "已确保 ptr 为非 NUL 且正好位于 a 以上，因此可以安全地解引用。",
         "translate": ""
     },
     {
@@ -2511,7 +2511,7 @@
     },
     {
         "source": "The spawned thread may outlive the caller (unless the caller thread is the main thread; the whole process is terminated when the main thread finishes).",
-        "suggest": "新建线程可能会超出调用者的生命 (除非调用者线程是主线程; 整个过程在主线程完成时终止)。",
+        "suggest": "新建线程可能会超出调用者的生命 (除非调用者线程是主线程; 当主线程结束时，整个进程被终止)。",
         "translate": ""
     },
     {
@@ -2611,7 +2611,7 @@
     },
     {
         "source": "In this case, the child thread may outlive the parent (unless the parent thread is the main thread; the whole process is terminated when the main thread finishes).",
-        "suggest": "在这种情况下，子线程可能会超过父线程 (除非父线程是主线程; 整个过程在主线程完成时终止)。",
+        "suggest": "在这种情况下，子线程可能会超过父线程 (除非父线程是主线程; 当主线程结束时，整个进程被终止)。",
         "translate": ""
     },
     {

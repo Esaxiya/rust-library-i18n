@@ -1946,7 +1946,7 @@
     },
     {
         "source": "includes a function to do this in shell32.dll, but linking with that DLL causes the process to be registered as a GUI application.",
-        "suggest": "在 shell32.dll 中包含一个用于执行此操作的函数，但是与该 DLL 的链接导致该过程被注册为 GUI 应用程序。",
+        "suggest": "在 shell32.dll 中包含一个用于执行此操作的函数，但是与该 DLL 的链接导致该进程被注册为 GUI 应用程序。",
         "translate": ""
     },
     {
@@ -3146,7 +3146,7 @@
     },
     {
         "source": "Use `__fastfail` to abort the process",
-        "suggest": "使用 `__fastfail` 终止该过程",
+        "suggest": "使用 `__fastfail` 中止该进程",
         "translate": ""
     },
     {
