@@ -3766,7 +3766,7 @@
     },
     {
         "source": "Note that unsized types have many possible null pointers, as only the raw data pointer is considered, not their length, vtable, etc.",
-        "suggest": "请注意，未调整大小的类型具有许多可能的空指针，因为仅考虑原始数据指针，而不考虑其长度，vtable 等。",
+        "suggest": "请注意，未定义大小的类型具有许多可能的空指针，因为仅考虑原始数据指针，而不考虑其长度，vtable 等。",
         "translate": ""
     },
     {
@@ -4281,7 +4281,7 @@
     },
     {
         "source": "In case `self` is a (fat) pointer to an unsized type, this operation will only affect the pointer part, whereas for (thin) pointers to sized types, this has the same effect as a simple assignment.",
-        "suggest": "如果 `self` 是指向未确定大小类型的 (fat) 指针，则此操作将仅影响指针部分，而对于指向已确定大小类型的 (thin) 指针，其作用与简单分配相同。",
+        "suggest": "如果 `self` 是指向未定义大小类型的 (fat) 指针，则此操作将仅影响指针部分，而对于指向已确定大小类型的 (thin) 指针，其作用与简单分配相同。",
         "translate": ""
     },
     {

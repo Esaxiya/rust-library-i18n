@@ -3671,12 +3671,12 @@
     },
     {
         "source": "Pointers to unsized types -- slices",
-        "suggest": "指向未定型类型的指针 - 切片",
+        "suggest": "指向未定义大小的类型的指针 - 切片",
         "translate": ""
     },
     {
         "source": "Pointers to unsized types -- trait objects",
-        "suggest": "指向非大小类型的指针 - trait 对象",
+        "suggest": "指向未定义大小的类型指针 - trait 对象",
         "translate": ""
     },
     {

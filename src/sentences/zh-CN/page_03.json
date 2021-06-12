@@ -471,7 +471,7 @@
     },
     {
         "source": "Align the unsized value to the end of the ArcInner.",
-        "suggest": "将未调整大小的值与 ArcInner 的末端对齐。",
+        "suggest": "将未定义大小的值与 ArcInner 的末端对齐。",
         "translate": ""
     },
     {

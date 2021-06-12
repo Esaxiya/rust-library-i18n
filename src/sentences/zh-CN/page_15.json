@@ -376,7 +376,7 @@
     },
     {
         "source": "is dangling",
-        "suggest": "晃来晃去",
+        "suggest": "是悬垂的",
         "translate": ""
     },
     {
@@ -596,12 +596,12 @@
     },
     {
         "source": "this should not be represented with a DST slice but rather with just a raw `c_char` along with some form of marker to make this an unsized type.",
-        "suggest": "这不应该用 DST 切片来表示，而只能用原始 `c_char` 以及某种形式的标记将其表示为未调整大小的类型。",
+        "suggest": "这不应该用 DST 切片来表示，而只能用原始 `c_char` 以及某种形式的标记将其表示为未定义大小的类型。",
         "translate": ""
     },
     {
         "source": "Essentially `sizeof(&CStr)` should be the same as `sizeof(&c_char)` but `CStr` should be an unsized type.",
-        "suggest": "本质上，`sizeof(&CStr)` 应该与 `sizeof(&c_char)` 相同，但是 `CStr` 应该是未调整大小的类型。",
+        "suggest": "本质上，`sizeof(&CStr)` 应该与 `sizeof(&c_char)` 相同，但是 `CStr` 应该是未定义大小的类型。",
         "translate": ""
     },
     {

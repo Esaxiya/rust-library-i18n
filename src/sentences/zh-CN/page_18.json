@@ -1746,7 +1746,7 @@
     },
     {
         "source": "This is an *unsized* type, meaning that it must always be used behind a pointer like `&` or [`Box`].",
-        "suggest": "这是 *unsize* 类型，表示必须始终在 `&` 或 [`Box`] 之类的指针后面使用它。",
+        "suggest": "这是未定义大小的类型，表示必须始终在 `&` 或 [`Box`] 之类的指针后面使用它。",
         "translate": ""
     },
     {

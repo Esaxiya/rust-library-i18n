@@ -236,7 +236,7 @@
     },
     {
         "source": "Types that can be \"unsized\" to a dynamically-sized type.",
-        "suggest": "可以是 \"unsized\" 的类型也可以是动态大小的类型。",
+        "suggest": "可以是未定义大小的类型也可以是动态大小的类型。",
         "translate": ""
     },
     {
@@ -2431,7 +2431,7 @@
     },
     {
         "source": "Like [`forget`], but also accepts unsized values.",
-        "suggest": "与 [`forget`] 一样，但也接受大小不一的值。",
+        "suggest": "与 [`forget`] 一样，但也接受未定义大小的值。",
         "translate": ""
     },
     {

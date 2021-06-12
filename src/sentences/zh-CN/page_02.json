@@ -1136,7 +1136,7 @@
     },
     {
         "source": "Allocates an `RcBox<T>` with sufficient space for a possibly-unsized inner value where the value has the layout provided.",
-        "suggest": "为 `RcBox<T>` 分配足够的空间，以容纳可能未设置大小的内部值，其中该值具有提供的布局。",
+        "suggest": "为 `RcBox<T>` 分配足够的空间，以容纳可能未定义大小的内部值，其中该值具有提供的布局。",
         "translate": ""
     },
     {
@@ -1156,7 +1156,7 @@
     },
     {
         "source": "Allocates an `RcBox<T>` with sufficient space for a possibly-unsized inner value where the value has the layout provided, returning an error if allocation fails.",
-        "suggest": "为 `RcBox<T>` 分配足够的空间，以容纳可能未设置大小的内部值 (该值具有提供的布局)，如果分配失败，则返回错误。",
+        "suggest": "为 `RcBox<T>` 分配足够的空间，以容纳可能未定义大小的内部值 (该值具有提供的布局)，如果分配失败，则返回错误。",
         "translate": ""
     },
     {
@@ -1171,7 +1171,7 @@
     },
     {
         "source": "Allocates an `RcBox<T>` with sufficient space for an unsized inner value",
-        "suggest": "为 `RcBox` 分配足够的空间，以容纳未指定大小的内部值",
+        "suggest": "为 `RcBox` 分配足够的空间，以容纳未定义大小的内部值",
         "translate": ""
     },
     {
@@ -1561,7 +1561,7 @@
     },
     {
         "source": "unsized `T` never dangle.",
-        "suggest": "没有大小的 `T` 永远不会悬垂。",
+        "suggest": "未定义大小的 `T` 永远不会悬垂。",
         "translate": ""
     },
     {
@@ -1826,7 +1826,7 @@
     },
     {
         "source": "Align the unsized value to the end of the RcBox.",
-        "suggest": "将未调整大小的值与 RcBox 的末端对齐。",
+        "suggest": "将未定义大小的值与 RcBox 的末端对齐。",
         "translate": ""
     },
     {
@@ -1836,7 +1836,7 @@
     },
     {
         "source": "since the only unsized types possible are slices, trait objects, and extern types, the input safety requirement is currently enough to satisfy the requirements of align_of_val_raw;",
-        "suggest": "由于唯一可能的未调整大小类型是切片，trait 对象和外部类型，因此当前输入的安全要求足以满足 align_of_val_raw 的要求;",
+        "suggest": "由于唯一可能的未定义大小类型是切片，trait 对象和外部类型，因此当前输入的安全要求足以满足 align_of_val_raw 的要求;",
         "translate": ""
     },
     {
@@ -4881,7 +4881,7 @@
     },
     {
         "source": "Allocates an `ArcInner<T>` with sufficient space for a possibly-unsized inner value where the value has the layout provided.",
-        "suggest": "为 `ArcInner<T>` 分配足够的空间，以容纳可能未设置大小的内部值，其中该值具有提供的布局。",
+        "suggest": "为 `ArcInner<T>` 分配足够的空间，以容纳可能未定义大小的内部值，其中该值具有提供的布局。",
         "translate": ""
     },
     {
@@ -4896,7 +4896,7 @@
     },
     {
         "source": "Allocates an `ArcInner<T>` with sufficient space for a possibly-unsized inner value where the value has the layout provided, returning an error if allocation fails.",
-        "suggest": "为 `ArcInner<T>` 分配足够的空间，以容纳可能未设置大小的内部值 (该值具有提供的布局)，如果分配失败，则返回错误。",
+        "suggest": "为 `ArcInner<T>` 分配足够的空间，以容纳可能未定义大小的内部值 (该值具有提供的布局)，如果分配失败，则返回错误。",
         "translate": ""
     },
     {
@@ -4906,7 +4906,7 @@
     },
     {
         "source": "Allocates an `ArcInner<T>` with sufficient space for an unsized inner value.",
-        "suggest": "为 `ArcInner<T>` 分配足够的空间以容纳未设置大小的内部值。",
+        "suggest": "为 `ArcInner<T>` 分配足够的空间以容纳未定义大小的内部值。",
         "translate": ""
     },
     {

@@ -2956,7 +2956,7 @@
     },
     {
         "source": "Produces layout describing a record that could be used to allocate backing structure for `T` (which could be a trait or other unsized type like a slice).",
-        "suggest": "产生描述记录的布局，该记录可用于为 `T` 分配支持结构 (可以是 trait 或其他没有定义大小的类型，例如切片)。",
+        "suggest": "产生描述记录的布局，该记录可用于为 `T` 分配支持结构 (可以是 trait 或其他未定义大小的类型，例如切片)。",
         "translate": ""
     },
     {
@@ -2976,7 +2976,7 @@
     },
     {
         "source": "If the unsized tail of `T` is:",
-        "suggest": "如果 `T` 的未调整大小的尾部为:",
+        "suggest": "如果 `T` 的未定义大小的尾部为:",
         "translate": ""
     },
     {

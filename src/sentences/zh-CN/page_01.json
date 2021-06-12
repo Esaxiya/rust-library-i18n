@@ -1,7 +1,7 @@
 [
     {
         "source": "We must coerce to unsized array pointers because of Rust issue #74679.",
-        "suggest": "由于 Rust issue #74679，我们必须强制使用未调整大小的数组指针。",
+        "suggest": "由于 Rust issue #74679，我们必须强制使用未定义大小的数组指针。",
         "translate": ""
     },
     {

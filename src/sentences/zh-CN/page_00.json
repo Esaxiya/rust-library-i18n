@@ -1246,7 +1246,7 @@
     },
     {
         "source": "Unsized data:",
-        "suggest": "未固定大小的数据:",
+        "suggest": "未定义大小的数据:",
         "translate": ""
     },
     {
