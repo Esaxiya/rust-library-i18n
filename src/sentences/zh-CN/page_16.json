@@ -761,7 +761,7 @@
     },
     {
         "source": "drop our &mut reference so we can use f again",
-        "suggest": "放下 &mut 引用，以便我们可以再次使用 f",
+        "suggest": "drop &mut 引用，以便我们可以再次使用 f",
         "translate": ""
     },
     {

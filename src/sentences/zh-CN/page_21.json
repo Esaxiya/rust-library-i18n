@@ -3036,7 +3036,7 @@
     },
     {
         "source": "This does **not** drop the handle when it goes out of scope, use `Handle` instead for that.",
-        "suggest": "当它离开作用域时，这不会 `放下` 句柄，请改用 `Handle`。",
+        "suggest": "当它离开作用域时，它不会 drop 句柄，而是使用 `Handle` 代替那个。",
         "translate": ""
     },
     {

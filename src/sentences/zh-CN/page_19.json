@@ -4781,7 +4781,7 @@
     },
     {
         "source": "The dropping of the SpinlockGuard will release the lock it was created from.",
-        "suggest": "放下 SpinlockGuard，将释放从其创建的锁。",
+        "suggest": "drop 自旋锁守护程序将会释放创建它的锁。",
         "translate": ""
     },
     {

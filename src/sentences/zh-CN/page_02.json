@@ -306,12 +306,12 @@
     },
     {
         "source": "custom thin DSTs exist, this test should be updated to use one",
-        "suggest": "存在自定义的精简 DST，应将此测试更新为使用一个",
+        "suggest": "如果存在自定义的精简 DST，那么这个测试应该更新为使用一个",
         "translate": ""
     },
     {
         "source": "At this point, the weak points to a dropped DST",
-        "suggest": "在这一点上，弱点表明 DST dropped",
+        "suggest": "在这一点上，弱指针指向一个被 dorp 的 DST",
         "translate": ""
     },
     {
@@ -546,7 +546,7 @@
     },
     {
         "source": "Decrement the last weak count.",
-        "suggest": "减少最后一个弱计数。",
+        "suggest": "减少最后一个弱引用计数。",
         "translate": ""
     },
     {
@@ -896,7 +896,7 @@
     },
     {
         "source": "Indicate to Weaks that they can't be promoted by decrementing the strong count, and then remove the implicit \"strong weak\" pointer while also handling drop logic by just crafting a fake Weak.",
-        "suggest": "向 Weaks 表示不能通过减少强计数来提升它们，然后删除隐式 \"strong weak\" 指针，同时还通过伪造 Weak 来处理放置逻辑。",
+        "suggest": "向 Weaks 表示不能通过减少强引用计数来提升它们，然后删除隐式 \"strong weak\" 指针，同时还通过伪造 Weak 来处理放置逻辑。",
         "translate": ""
     },
     {
@@ -1171,7 +1171,7 @@
     },
     {
         "source": "Allocates an `RcBox<T>` with sufficient space for an unsized inner value",
-        "suggest": "为 `RcBox<T>` 分配足够的空间以容纳未调整的内部值",
+        "suggest": "为 `RcBox` 分配足够的空间，以容纳未指定大小的内部值",
         "translate": ""
     },
     {
@@ -1621,7 +1621,7 @@
     },
     {
         "source": "This converts the weak pointer into a raw pointer, while still preserving the ownership of one weak reference (the weak count is not modified by this operation).",
-        "suggest": "这会将弱指针转换为裸指针，同时仍保留一个弱引用的所有权 (此操作不会修改弱计数)。",
+        "suggest": "这会将弱指针转换为裸指针，同时仍保留一个弱引用的所有权 (此操作不会修改弱引用计数)。",
         "translate": ""
     },
     {
@@ -1641,7 +1641,7 @@
     },
     {
         "source": "This can be used to safely get a strong reference (by calling [`upgrade`] later) or to deallocate the weak count by dropping the `Weak<T>`.",
-        "suggest": "这可以用于安全地获得强引用 (稍后调用 [`upgrade`]) 或通过删除 `Weak<T>` 来分配弱计数。",
+        "suggest": "这可以用于安全地获得强引用 (稍后调用 [`upgrade`]) 或通过删除 `Weak<T>` 来分配弱引用计数。",
         "translate": ""
     },
     {
@@ -1656,12 +1656,12 @@
     },
     {
         "source": "It is allowed for the strong count to be 0 at the time of calling this.",
-        "suggest": "调用时允许强计数为 0。",
+        "suggest": "调用时允许强引用计数为 0。",
         "translate": ""
     },
     {
         "source": "Nevertheless, this takes ownership of one weak reference currently represented as a raw pointer (the weak count is not modified by this operation) and therefore it must be paired with a previous call to [`into_raw`].",
-        "suggest": "不过，这需要当前表示为裸指针的弱引用的所有权 (该操作不会修改弱计数)，因此必须与 [`into_raw`] 的先前调用配对。",
+        "suggest": "不过，这需要当前表示为裸指针的弱引用的所有权 (该操作不会修改弱引用计数)，因此必须与 [`into_raw`] 的先前调用配对。",
         "translate": ""
     },
     {
@@ -1766,7 +1766,7 @@
     },
     {
         "source": "the weak count starts at 1, and will only go to zero if all the strong pointers have disappeared.",
-        "suggest": "弱计数从 1 开始，并且仅在所有强指针都消失后才变为零。",
+        "suggest": "弱引用计数从 1 开始，并且仅在所有强指针都消失后才变为零。",
         "translate": ""
     },
     {
@@ -2596,7 +2596,7 @@
     },
     {
         "source": "When dropped, copies the range `start..end` into `dest..`.",
-        "suggest": "放下后，将范围 `start..end` 复制到 `dest..`。",
+        "suggest": "drop 后，将范围 `start..end` 复制到 `dest..`。",
         "translate": ""
     },
     {
@@ -3051,7 +3051,7 @@
     },
     {
         "source": "story has nineteen bytes",
-        "suggest": "故事有十九个字节",
+        "suggest": "story 有十九个字节",
         "translate": ""
     },
     {
@@ -4606,7 +4606,7 @@
     },
     {
         "source": "The above write to the data field must be visible to any threads which observe a non-zero strong count.",
-        "suggest": "上面对数据字段的写操作对于任何观察到非零强计数的线程都必须可见。",
+        "suggest": "上面对数据字段的写操作对于任何观察到非零强引用计数的线程都必须可见。",
         "translate": ""
     },
     {
@@ -4761,7 +4761,7 @@
     },
     {
         "source": "check if the weak counter is currently \"locked\";",
-        "suggest": "检查弱计数器当前是否为 \"locked\";",
+        "suggest": "检查弱引用计数当前是否为 \"locked\";",
         "translate": ""
     },
     {
@@ -4791,12 +4791,12 @@
     },
     {
         "source": "Another thread can change the weak count at any time, including potentially between calling this method and acting on the result.",
-        "suggest": "另一个线程可以随时更改弱计数，包括潜在地在调用此方法与对结果进行操作之间。",
+        "suggest": "另一个线程可以随时更改弱引用计数，包括潜在地在调用此方法与对结果进行操作之间。",
         "translate": ""
     },
     {
         "source": "If the weak count is currently locked, the value of the count was 0 just before taking the lock.",
-        "suggest": "如果弱计数当前处于锁定状态，则在进行锁定之前，该计数的值为 0。",
+        "suggest": "如果弱引用计数当前处于锁定状态，则在进行锁定之前，该计数的值为 0。",
         "translate": ""
     },
     {
@@ -4806,7 +4806,7 @@
     },
     {
         "source": "Another thread can change the strong count at any time, including potentially between calling this method and acting on the result.",
-        "suggest": "另一个线程可以随时更改强计数，包括潜在地在调用此方法与对结果进行操作之间。",
+        "suggest": "另一个线程可以随时更改强引用计数，包括潜在地在调用此方法与对结果进行操作之间。",
         "translate": ""
     },
     {
@@ -4821,7 +4821,7 @@
     },
     {
         "source": "the strong count must be at least 1) for the duration of this method.",
-        "suggest": "在此方法的持续时间内，强计数必须至少为 1)。",
+        "suggest": "在此方法的持续时间内，强引用计数必须至少为 1)。",
         "translate": ""
     },
     {
@@ -4841,7 +4841,7 @@
     },
     {
         "source": "the strong count must be at least 1) when invoking this method.",
-        "suggest": "调用此方法时，强计数必须至少为 1)。",
+        "suggest": "调用此方法时，强引用计数必须至少为 1)。",
         "translate": ""
     },
     {

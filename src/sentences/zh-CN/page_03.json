@@ -46,7 +46,7 @@
     },
     {
         "source": "Note that it is not possible for the read of `weak` to yield usize::MAX (i.e., locked), since the weak count can only be locked by a thread with a strong reference.",
-        "suggest": "请注意，读取 `weak` 不可能产生 usize::MAX (即已锁定)，因为弱计数只能由带有强引用的线程锁定。",
+        "suggest": "请注意，读取 `weak` 不可能产生 usize::MAX (即已锁定)，因为弱引用计数只能由带有强引用的线程锁定。",
         "translate": ""
     },
     {
@@ -141,7 +141,7 @@
     },
     {
         "source": "Drops the `Arc`.",
-        "suggest": "放下 `Arc`。",
+        "suggest": "drop `Arc`。",
         "translate": ""
     },
     {
@@ -246,7 +246,7 @@
     },
     {
         "source": "We use a CAS loop to increment the strong count instead of a fetch_add as this function should never take the reference count from zero to one.",
-        "suggest": "我们使用 CAS 循环而不是 fetch_add 来增加强计数，因为此函数绝不应该将引用计数从零变为一。",
+        "suggest": "我们使用 CAS 循环而不是 fetch_add 来增加强引用计数，因为此函数绝不应该将引用计数从零变为一。",
         "translate": ""
     },
     {
@@ -301,7 +301,7 @@
     },
     {
         "source": "Since we observed that there was at least one strong pointer after reading the weak count, we know that the implicit weak reference (present whenever any strong references are alive) was still around when we observed the weak count, and can therefore safely subtract it.",
-        "suggest": "由于我们在读取弱计数后观察到至少有一个强指针，因此我们知道在观察弱计数时隐含的弱引用 (在任何强引用活着时都存在) 仍然存在，因此可以安全地减去它。",
+        "suggest": "由于我们在读取弱引用计数后观察到至少有一个强指针，因此我们知道在观察弱引用计数时隐含的弱引用 (在任何强引用活着时都存在) 仍然存在，因此可以安全地减去它。",
         "translate": ""
     },
     {
@@ -321,7 +321,7 @@
     },
     {
         "source": "This can use a fetch_add (ignoring the lock) because the weak count is only locked where are *no other* weak pointers in existence.",
-        "suggest": "这可以使用 fetch_add (忽略锁定)，因为弱计数仅在存在 *no 其他* 弱指针的地方被锁定。",
+        "suggest": "这可以使用 fetch_add (忽略锁定)，因为弱引用计数仅在存在 *no 其他* 弱指针的地方被锁定。",
         "translate": ""
     },
     {
@@ -351,7 +351,7 @@
     },
     {
         "source": "It's not necessary to check for the locked state here, because the weak count can only be locked if there was precisely one weak ref, meaning that drop could only subsequently run ON that remaining weak ref, which can only happen after the lock is released.",
-        "suggest": "这里没有必要检查锁定状态，因为弱计数只能在恰好有一个弱引用的情况下才被锁定，这意味着 drop 只能随后在剩余的弱引用上运行，这只能在释放锁定之后发生。",
+        "suggest": "这里没有必要检查锁定状态，因为弱引用计数只能在恰好有一个弱引用的情况下才被锁定，这意味着 drop 只能随后在剩余的弱引用上运行，这只能在释放锁定之后发生。",
         "translate": ""
     },
     {
@@ -656,7 +656,7 @@
     },
     {
         "source": "Drop a `DropGuard` to move back the non-drained tail of `self`.",
-        "suggest": "放下 `DropGuard`，以移回 `self` 的不 draining 的尾巴。",
+        "suggest": "drop `DropGuard`，以移回 `self` 的不 draining 的尾巴。",
         "translate": ""
     },
     {
@@ -3201,7 +3201,7 @@
     },
     {
         "source": "If the unsafe block didn't drop things properly, we blow up here.",
-        "suggest": "如果不安全的障碍物不能正确地放下东西，我们将在这里炸毁。",
+        "suggest": "如果 unsafe 块没有正确地 drop 东西，我们就在这里销毁。",
         "translate": ""
     },
     {
@@ -3551,7 +3551,7 @@
     },
     {
         "source": "Don't double free.",
-        "suggest": "不要二次释放。",
+        "suggest": "不要双重释放。",
         "translate": ""
     },
     {
@@ -3826,7 +3826,7 @@
     },
     {
         "source": "Double drop",
-        "suggest": "二次释放",
+        "suggest": "双重释放",
         "translate": ""
     },
     {
@@ -3906,7 +3906,7 @@
     },
     {
         "source": "Pull an element from the iterator, then drop it.",
-        "suggest": "从迭代器中拉出一个元素，然后将其放下。",
+        "suggest": "从迭代器中取出一个元素，然后 drop 它。",
         "translate": ""
     },
     {

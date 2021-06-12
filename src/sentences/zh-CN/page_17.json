@@ -706,7 +706,7 @@
     },
     {
         "source": "We also don't touch the `T` other than dropping it, which validates our usage of #[may_dangle].",
-        "suggest": "除了放下 `T`，我们别无其他选择，它可以验证我们对 #[may_dangle] 的使用。",
+        "suggest": "除了 drop 它之外，我们也不会触及 `T`，它可以验证我们对 #[may_dangle] 的用法。",
         "translate": ""
     },
     {

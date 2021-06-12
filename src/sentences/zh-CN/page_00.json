@@ -3791,7 +3791,7 @@
     },
     {
         "source": "It is unspecified how many more elements will be subjected to the closure if a panic occurs in the closure, or a panic occurs while dropping an element, or if the `DrainFilter` value is leaked.",
-        "suggest": "如果在闭包中出现 panic，或者在放下元素时出现 panic，或者 `DrainFilter` 值泄漏，则不确定要对闭包进行多少个元素。",
+        "suggest": "如果在闭包中出现 panic，或者在删除元素时发生 panic，或者 `DrainFilter` 值泄漏，将有多少个元素受到该闭包的影响，这是不确定的。",
         "translate": ""
     },
     {
@@ -4226,7 +4226,7 @@
     },
     {
         "source": "The only safe way to proceed with the updated handle is to compare it, drop it, call this method again subject to its safety conditions, or call counterpart `next_back_unchecked` subject to its safety conditions.",
-        "suggest": "进行更新后的句柄的唯一安全方法是对其进行比较，放下，再次调用此方法 (以其安全性为前提) 或调用对应的 `next_back_unchecked` (以其安全性为条件)。",
+        "suggest": "处理更新后的句柄的唯一安全方法是比较它，drop 它，根据安全条件再次调用这个方法，或者根据安全条件调用对应的 `next_back_unchecked`。",
         "translate": ""
     },
     {
@@ -4241,7 +4241,7 @@
     },
     {
         "source": "The only safe way to proceed with the updated handle is to compare it, drop it, call this method again subject to its safety conditions, or call counterpart `next_unchecked` subject to its safety conditions.",
-        "suggest": "进行更新后的句柄的唯一安全方法是对其进行比较，放下，再次调用此方法 (以其安全性为前提) 或调用对应的 `next_unchecked` (以其安全性为条件)。",
+        "suggest": " 处理更新后的句柄的唯一安全方法是比较它，drop 它，根据安全条件再次调用这个方法，或者根据安全条件调用对应的 `next_unchecked`。",
         "translate": ""
     },
     {

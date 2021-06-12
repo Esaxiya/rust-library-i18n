@@ -4241,12 +4241,12 @@
     },
     {
         "source": "The last line of the poem doesn't end in a newline, so we have to flush or drop the `LineWriter` to finish writing.",
-        "suggest": "这首诗的最后一行不是以换行符结尾，因此我们必须刷新或放下 `LineWriter` 才能完成写作。",
+        "suggest": "这首诗的最后一行不是以换行符结束的，所以我们必须刷新或 drop `LineWriter` 来完成写作。",
         "translate": ""
     },
     {
         "source": "Confirm the whole poem was written.",
-        "suggest": "确认整首诗都写好了。",
+        "suggest": "确认整首诗是写好的。",
         "translate": ""
     },
     {

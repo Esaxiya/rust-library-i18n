@@ -1221,7 +1221,7 @@
     },
     {
         "source": "As a bit of a cop-out for now we mmap the file, read the file header information, then drop the mmap.",
-        "suggest": "现在，作为一点补偿，我们映射文件，读取文件头信息，然后放下 mmap。",
+        "suggest": "现在，作为一点补偿，我们对文件进行 mmap，读取文件头信息，然后删除 mmap。",
         "translate": ""
     },
     {

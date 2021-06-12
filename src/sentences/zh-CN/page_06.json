@@ -4916,7 +4916,7 @@
     },
     {
         "source": "It must also be safe to drop `self` after calling `get_unchecked`.",
-        "suggest": "调用 `get_unchecked` 后放下 `self` 也必须安全。",
+        "suggest": "调用 `get_unchecked` 后 drop `self` 也必须是安全的。",
         "translate": ""
     },
     {

@@ -456,7 +456,7 @@
     },
     {
         "source": "A simple bitwise copy of [`String`] values would merely copy the pointer, leading to a double free down the line.",
-        "suggest": "[`String`] 值的简单按位副本将仅复制指针，从而导致该行向下二次释放。",
+        "suggest": "[`String`] 值的简单按位副本将仅复制指针，从而导致该行向下双重释放。",
         "translate": ""
     },
     {
@@ -536,7 +536,7 @@
     },
     {
         "source": "Copying [`String`] would duplicate responsibility for managing the [`String`]'s buffer, leading to a double free.",
-        "suggest": "复制 [`String`] 将重复管理 [String] 缓冲区的责任，从而导致二次释放。",
+        "suggest": "复制 [`String`] 将重复管理 [String] 缓冲区的责任，从而导致双重释放。",
         "translate": ""
     },
     {
@@ -1326,7 +1326,7 @@
     },
     {
         "source": "We now created two copies of the same vector, leading to a double-free ⚠️ when they both get dropped!",
-        "suggest": "现在，我们创建了同一 vector 的两个副本，当它们都 drop 时，将导致二次释放!",
+        "suggest": "现在，我们创建了同一 vector 的两个副本，当它们都 drop 时，将导致双重释放!",
         "translate": ""
     },
     {
@@ -1926,7 +1926,7 @@
     },
     {
         "source": "MaybeUnint does not drop, so there are no double-frees And thus the conversion is safe",
-        "suggest": "也许 Unint 不会 drop，所以没有二次释放，因此转换是安全的",
+        "suggest": "也许 Unint 不会 drop，所以没有双重释放，因此转换是安全的",
         "translate": ""
     },
     {
@@ -2381,7 +2381,7 @@
     },
     {
         "source": "If more code were added between the construction of `String` and the invocation of `mem::forget()`, a panic within it would cause a double free because the same memory is handled by both `v` and `s`.",
-        "suggest": "如果在 `String` 的构造与 `mem::forget()` 的调用之间添加了更多代码，则其中的 panic 将导致二次释放，因为 `v` 和 `s` 均处理同一内存。",
+        "suggest": "如果在 `String` 的构造与 `mem::forget()` 的调用之间添加了更多代码，则其中的 panic 将导致双重释放，因为 `v` 和 `s` 均处理同一内存。",
         "translate": ""
     },
     {
@@ -2416,7 +2416,7 @@
     },
     {
         "source": "Even if a panic were introduced between construction of `ManuallyDrop` and building the string (which cannot happen in the code as shown), it would result in a leak and not a double free.",
-        "suggest": "即使在 `ManuallyDrop` 的构建与字符串的构建之间引入了 panic (这在所示的代码中不能发生)，也将导致泄漏，而不是二次释放。",
+        "suggest": "即使在 `ManuallyDrop` 的构建与字符串的构建之间引入了 panic (这在所示的代码中不能发生)，也将导致泄漏，而不是双重释放。",
         "translate": ""
     },
     {
