@@ -3101,7 +3101,7 @@
     },
     {
         "source": "If either pointer is out of bounds or arithmetic overflow occurs then any further use of the returned value will result in undefined behavior.",
-        "suggest": "如果指针超出范围或发生算术溢出，则进一步使用返回值将导致不确定的行为。",
+        "suggest": "如果指针越界或发生算术溢出，则进一步使用返回值将导致不确定的行为。",
         "translate": ""
     },
     {
@@ -3416,7 +3416,7 @@
     },
     {
         "source": "Convert with LLVM’s fptoui/fptosi, which may return undef for values out of range",
-        "suggest": "使用 LLVM 的 fptoui/fptosi 进行转换，对于超出范围的值可能会返回 undef",
+        "suggest": "使用 LLVM 的 fptoui/fptosi 进行转换，对于越界的值可能会返回 undef",
         "translate": ""
     },
     {
@@ -4741,7 +4741,7 @@
     },
     {
         "source": "does the right thing here when `n` is out of bounds because the length of `self.iter` does not exceed `usize::MAX` (because `I: ExactSizeIterator`) and `nth_back` is zero-indexed",
-        "suggest": "当 `n` 超出范围时，此处将执行正确的操作，因为 `self.iter` 的长度不超过 `usize::MAX` (因为 `I: ExactSizeIterator`) 并且 `nth_back` 的索引为零",
+        "suggest": "当 `n` 越界时，此处将执行正确的操作，因为 `self.iter` 的长度不超过 `usize::MAX` (因为 `I: ExactSizeIterator`) 并且 `nth_back` 的索引为零",
         "translate": ""
     },
     {

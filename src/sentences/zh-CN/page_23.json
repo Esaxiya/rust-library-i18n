@@ -426,7 +426,7 @@
     },
     {
         "source": "If `val` is out-of-range the behavior is **undefined**.",
-        "suggest": "如果 `val` 超出范围，则行为是 `未定义`。",
+        "suggest": "如果 `val` 越界，则行为是 `未定义`。",
         "translate": ""
     },
     {
@@ -446,7 +446,7 @@
     },
     {
         "source": "The current implementation only accepts values in range `[0, 255]` - if the value is out-of-range the behavior is **undefined**.",
-        "suggest": "当前实现仅接受 `[0, 255]` 范围内的值 - 如果该值超出范围，则行为是 `未定义`。",
+        "suggest": "当前实现仅接受 `[0, 255]` 范围内的值 - 如果该值越界，则行为是 `未定义`。",
         "translate": ""
     },
     {
@@ -466,7 +466,7 @@
     },
     {
         "source": "If `val` is out-of-range this macro uses `val == 255`:",
-        "suggest": "如果 `val` 超出范围，则此宏使用 `val == 255`:",
+        "suggest": "如果 `val` 越界，则此宏使用 `val == 255`:",
         "translate": ""
     },
     {

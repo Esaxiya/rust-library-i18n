@@ -3951,7 +3951,7 @@
     },
     {
         "source": "Panics if the starting point or end point do not lie on a [`char`] boundary, or if they're out of bounds.",
-        "suggest": "Panics，如果起点或终点不在 [`char`] 边界上，或者它们超出范围。",
+        "suggest": "如果起始点或结束点不在 [`char`] 边界上，或超出边界，就会出现 panic。",
         "translate": ""
     },
     {

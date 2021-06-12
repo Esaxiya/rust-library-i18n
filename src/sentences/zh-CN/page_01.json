@@ -2461,7 +2461,7 @@
     },
     {
         "source": "Panics if either index is out of bounds.",
-        "suggest": "Panics (如果任一索引超出范围)。",
+        "suggest": "Panics (如果任一索引越界)。",
         "translate": ""
     },
     {
@@ -2791,7 +2791,7 @@
     },
     {
         "source": "Returns `None` if `index` is out of bounds.",
-        "suggest": "如果 `index` 超出范围，则返回 `None`。",
+        "suggest": "如果 `index` 越界，则返回 `None`。",
         "translate": ""
     },
     {
@@ -3496,7 +3496,7 @@
     },
     {
         "source": "We shouldn't have changed the capacity or made the head or tail out of bounds",
-        "suggest": "我们不应该改变容量或使头或尾超出范围",
+        "suggest": "我们不应该改变容量或使头或尾越界",
         "translate": ""
     },
     {

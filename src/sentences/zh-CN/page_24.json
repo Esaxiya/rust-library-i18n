@@ -1741,7 +1741,7 @@
     },
     {
         "source": "If `N` is out of bounds then it is a compile time error.",
-        "suggest": "如果 `N` 超出范围，则是编译时错误。",
+        "suggest": "如果 `N` 越界，则是编译时错误。",
         "translate": ""
     },
     {
@@ -1816,7 +1816,7 @@
     },
     {
         "source": "If `N` fs out of bounds then it is a compile time error.",
-        "suggest": "如果 `N` fs 超出范围，则是编译时错误。",
+        "suggest": "如果 `N` fs 越界，则是编译时错误。",
         "translate": ""
     },
     {
@@ -2271,7 +2271,7 @@
     },
     {
         "source": "NaN is converted to 0 and if it's out of bounds it becomes the nearest representable intger.",
-        "suggest": "NaN 会转换为 0，如果超出范围，它将成为最接近的可表示整数。",
+        "suggest": "NaN 会转换为 0，如果越界，它将成为最接近的可表示整数。",
         "translate": ""
     },
     {

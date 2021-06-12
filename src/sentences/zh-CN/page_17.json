@@ -1966,7 +1966,7 @@
     },
     {
         "source": "out of range",
-        "suggest": "超出范围",
+        "suggest": "越界",
         "translate": ""
     },
     {
@@ -2031,7 +2031,7 @@
     },
     {
         "source": "port out of range",
-        "suggest": "端口超出范围",
+        "suggest": "端口越界",
         "translate": ""
     },
     {

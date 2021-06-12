@@ -1531,7 +1531,7 @@
     },
     {
         "source": "(for infinities, we use out-of-range values.) also we assume that at least one digit is generated, i.e., `mant` cannot be zero too.",
-        "suggest": "(对于无穷大，我们使用超出范围的值。) 我们还假定至少生成一个数字，即 `mant` 也不能为零。",
+        "suggest": "(对于无穷大，我们使用越界的值。) 我们还假定至少生成一个数字，即 `mant` 也不能为零。",
         "translate": ""
     },
     {
@@ -3246,7 +3246,7 @@
     },
     {
         "source": "the masking by the bitsize of the type ensures that we do not shift out of bounds",
-        "suggest": "通过类型的位大小进行掩蔽可确保我们不会超出范围",
+        "suggest": "通过类型的位大小进行掩蔽可确保我们不会越界",
         "translate": ""
     },
     {

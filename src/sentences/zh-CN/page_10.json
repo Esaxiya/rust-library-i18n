@@ -11,7 +11,7 @@
     },
     {
         "source": "implicitly implements all the (immutable) methods of the type `U`.",
-        "suggest": "隐式实现 `U` 类型的所有 (immutable) 方法。",
+        "suggest": "隐式实现 `U` 类型的所有 (不可变) 方法。",
         "translate": ""
     },
     {

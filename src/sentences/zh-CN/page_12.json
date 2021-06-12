@@ -936,7 +936,7 @@
     },
     {
         "source": "instead of incrementing `i` and then checking if it is outside the bounds, we check if `i` will go outside the bounds on the next increment.",
-        "suggest": "而不是递增 `i`，然后检查它是否在范围之内，我们检查 `i` 是否在下一次递增时超出范围。",
+        "suggest": "而不是递增 `i`，然后检查它是否在范围之内，我们检查 `i` 是否在下一次递增时越界。",
         "translate": ""
     },
     {

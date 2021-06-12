@@ -666,12 +666,12 @@
     },
     {
         "source": "if n is out of range, `unsigned_start + n` is too",
-        "suggest": "如果 n 超出范围，则 `unsigned_start + n` 也是",
+        "suggest": "如果 n 越界，则 `unsigned_start + n` 也是",
         "translate": ""
     },
     {
         "source": "if n is out of range, `unsigned_start - n` is too",
-        "suggest": "如果 n 超出范围，则 `unsigned_start - n` 也是",
+        "suggest": "如果 n 越界，则 `unsigned_start - n` 也是",
         "translate": ""
     },
     {

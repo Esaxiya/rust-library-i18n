@@ -2816,12 +2816,12 @@
     },
     {
         "source": "Returns a shared reference to the output at this location, panicking if out of bounds.",
-        "suggest": "返回此位置输出的共享引用，如果超出范围则恐慌。",
+        "suggest": "返回此位置输出的共享引用，如果越界则会触发 panic。",
         "translate": ""
     },
     {
         "source": "Returns a mutable reference to the output at this location, panicking if out of bounds.",
-        "suggest": "返回此位置输出的变量引用，如果超出范围则恐慌。",
+        "suggest": "返回此位置输出的变量引用，如果越界则会触发 panic。",
         "translate": ""
     },
     {
@@ -2896,7 +2896,7 @@
     },
     {
         "source": "Panics if `range` would be out of bounds.",
-        "suggest": "如果 `range` 超出范围，则为 Panics。",
+        "suggest": "如果 `range` 越界，则为 Panics。",
         "translate": ""
     },
     {
@@ -4041,17 +4041,17 @@
     },
     {
         "source": "If given a position, returns a reference to the element at that position or `None` if out of bounds.",
-        "suggest": "如果给定位置，则返回该位置上的元素的引用，如果超出范围则返回 `None`。",
+        "suggest": "如果给定位置，则返回该位置上的元素的引用，如果越界则返回 `None`。",
         "translate": ""
     },
     {
         "source": "If given a range, returns the subslice corresponding to that range, or `None` if out of bounds.",
-        "suggest": "如果给定范围，则返回对应于该范围的子切片; 如果超出范围，则返回 `None`。",
+        "suggest": "如果给定范围，则返回对应于该范围的子切片; 如果越界，则返回 `None`。",
         "translate": ""
     },
     {
         "source": "Returns a mutable reference to an element or subslice depending on the type of index (see [`get`]) or `None` if the index is out of bounds.",
-        "suggest": "根据索引的类型 (请参见 [`get`]) 或 `None` (如果索引超出范围)，对元素或子切片返回可变引用。",
+        "suggest": "根据索引的类型 (请参见 [`get`]) 或 `None` (如果索引越界)，对元素或子切片返回可变引用。",
         "translate": ""
     },
     {
@@ -4211,7 +4211,7 @@
     },
     {
         "source": "Panics if `a` or `b` are out of bounds.",
-        "suggest": "如果 `a` 或 `b` 超出范围，则为 Panics。",
+        "suggest": "如果 `a` 或 `b` 越界，则为 Panics。",
         "translate": ""
     },
     {
@@ -4226,7 +4226,7 @@
     },
     {
         "source": "Note that accessing the elements behind `a` and `b` is checked and will panic when out of bounds.",
-        "suggest": "请注意，将检查访问 `a` 和 `b` 后面的元素，并且超出范围时将访问 panic。",
+        "suggest": "请注意，将检查访问 `a` 和 `b` 后面的元素，并且越界时将访问 panic。",
         "translate": ""
     },
     {

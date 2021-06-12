@@ -1816,7 +1816,7 @@
     },
     {
         "source": "Panics if `index` is out of bounds.",
-        "suggest": "如果 `index` 超出范围，则为 Panics。",
+        "suggest": "如果 `index` 越界，则为 Panics。",
         "translate": ""
     },
     {

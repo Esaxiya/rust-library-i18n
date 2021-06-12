@@ -3941,12 +3941,12 @@
     },
     {
         "source": "The length is only 13, so 14 is out of bounds.",
-        "suggest": "长度只有 13，所以 14 超出范围。",
+        "suggest": "长度只有 13，所以 14 越界。",
         "translate": ""
     },
     {
         "source": "The length is only 13, so a slice of length 4 starting at index 10 is out of bounds.",
-        "suggest": "长度仅为 13，因此从索引 10 开始的长度为 4 的切片超出范围。",
+        "suggest": "长度仅为 13，因此从索引 10 开始的长度为 4 的切片越界。",
         "translate": ""
     },
     {

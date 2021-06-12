@@ -2396,7 +2396,7 @@
     },
     {
         "source": "For indices outside of the range the resulting lane is 0.",
-        "suggest": "对于超出范围的索引，结果车道为 0。",
+        "suggest": "对于越界的索引，结果 lane 是 0。",
         "translate": ""
     },
     {
