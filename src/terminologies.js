@@ -9,8 +9,8 @@ const terminologies = {
     'double free': {
         // Attribute name is `ISO-639-1` code.
         // see：https://cloud.google.com/translate/docs/languages
-        'zh-CN': '二次释放',
-        'zh-TW': '二次釋放',
+        'zh-CN': '双重释放',
+        'zh-TW': '雙重釋放',
         // Please add here ...
     },
 
