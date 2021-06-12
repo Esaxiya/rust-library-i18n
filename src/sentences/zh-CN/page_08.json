@@ -981,7 +981,7 @@
     },
     {
         "source": "This drops the `Box`.",
-        "suggest": "这将使 `Box` 掉落。",
+        "suggest": "这将使 `Box` drop。",
         "translate": ""
     },
     {
@@ -1326,7 +1326,7 @@
     },
     {
         "source": "We now created two copies of the same vector, leading to a double-free ⚠️ when they both get dropped!",
-        "suggest": "现在，我们创建了同一 vector 的两个副本，当它们都掉落时，将导致双自由 free️!",
+        "suggest": "现在，我们创建了同一 vector 的两个副本，当它们都 drop 时，将导致二次释放!",
         "translate": ""
     },
     {

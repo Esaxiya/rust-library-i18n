@@ -326,7 +326,7 @@
     },
     {
         "source": "A `TryLockResult` doesn't necessarily hold the associated guard in the [`Err`] type as the lock may not have been acquired for other reasons.",
-        "suggest": "`TryLockResult` 不一定将关联的防护装置保持在 [`Err`] 类型，因为可能由于其他原因未获得锁。",
+        "suggest": "`TryLockResult` 不一定将关联的守卫保持在 [`Err`] 类型，因为可能由于其他原因未获得锁。",
         "translate": ""
     },
     {
@@ -561,7 +561,7 @@
     },
     {
         "source": "The lock is automatically unlocked when the returned guard is dropped.",
-        "suggest": "当返回的防护装置掉落时，锁会自动解锁。",
+        "suggest": "当返回的守卫 drop 时，锁会自动解锁。",
         "translate": ""
     },
     {

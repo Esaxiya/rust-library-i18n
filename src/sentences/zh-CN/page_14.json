@@ -336,7 +336,7 @@
     },
     {
         "source": "Check whether `state2` was dropped, to know when to stop.",
-        "suggest": "检查 `state2` 是否已掉落，以了解何时停止。",
+        "suggest": "检查 `state2` 是否被 drop，以了解何时停止。",
         "translate": ""
     },
     {

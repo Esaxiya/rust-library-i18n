@@ -1331,7 +1331,7 @@
     },
     {
         "source": "Dropping this now should not cause laundry consumption",
-        "suggest": "现在掉落不应该导致洗衣费",
+        "suggest": "现在 drop 不应该导致 laundry 消耗",
         "translate": ""
     },
     {
@@ -1341,7 +1341,7 @@
     },
     {
         "source": "A doubly-linked list with owned nodes.",
-        "suggest": "具有所属节点的双向链接列表。",
+        "suggest": "具有所属节点的双向链表。",
         "translate": ""
     },
     {

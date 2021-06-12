@@ -4666,7 +4666,7 @@
     },
     {
         "source": "Note that if we had not let the previous borrow of the cache fall out of scope then the subsequent borrow would cause a dynamic thread panic.",
-        "suggest": "请注意，如果我们不让缓存的前一个借用掉落到离开作用域，那么后续的借用将导致动态线程 panic。",
+        "suggest": "请注意，如果我们没有让缓存的上一次借用离开作用域，那么后续的借用将导致动态线程 panic。",
         "translate": ""
     },
     {

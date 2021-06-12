@@ -2476,7 +2476,7 @@
     },
     {
         "source": "If `is_less` panics at any point during the process, `hole` will get dropped and fill the hole in `v` with `tmp`, thus ensuring that `v` still holds every object it initially held exactly once.",
-        "suggest": "如果在此过程中的任何时候 `is_less` panics，`hole` 都会掉落，并用 `tmp` 填充 `v` 中的 hole，从而确保 `v` 仍将其最初持有的每个对象精确地保留一次。",
+        "suggest": "如果在此过程中的任何时候 `is_less` panics，`hole` 都会 drop，并用 `tmp` 填充 `v` 中的 hole，从而确保 `v` 仍将其最初持有的每个对象精确地保留一次。",
         "translate": ""
     },
     {
@@ -2541,7 +2541,7 @@
     },
     {
         "source": "If `is_less` panics at any point during the process, `hole` will get dropped and fill the hole in `v` with the unconsumed range in `buf`, thus ensuring that `v` still holds every object it initially held exactly once.",
-        "suggest": "如果在此过程中的任何时候 `is_less` panics，`hole` 都会掉落并用 `buf` 中的未消耗范围填充 `v` 中的 hole，从而确保 `v` 仍将其最初持有的每个对象精确地保留一次。",
+        "suggest": "如果在此过程中的任何时候 `is_less` panics，`hole` 都会 drop 并用 `buf` 中的未消耗范围填充 `v` 中的 hole，从而确保 `v` 仍将其最初持有的每个对象精确地保留一次。",
         "translate": ""
     },
     {

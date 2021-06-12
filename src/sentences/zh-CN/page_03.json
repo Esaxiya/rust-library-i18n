@@ -591,7 +591,7 @@
     },
     {
         "source": "Wake by reference, wrap the waker in ManuallyDrop to avoid dropping it",
-        "suggest": "通过引用唤醒，将唤醒器包裹在 ManuallyDrop 中，以避免掉落",
+        "suggest": "通过引用唤醒，将唤醒器包裹在 ManuallyDrop 中，以避免 drop",
         "translate": ""
     },
     {
@@ -826,7 +826,7 @@
     },
     {
         "source": "A helper struct for in-place iteration that drops the destination slice of iteration, i.e. the head.",
-        "suggest": "用于就地迭代的辅助结构体，该结构体将迭代的目标切片 (即头部) 掉落。",
+        "suggest": "用于就地迭代的辅助结构体，该结构体将迭代的目标切片 (即头部) drop。",
         "translate": ""
     },
     {
@@ -2291,7 +2291,7 @@
     },
     {
         "source": "len set by scope guard",
-        "suggest": "len 由作用域后卫设定",
+        "suggest": "len 由作用域守卫设置",
         "translate": ""
     },
     {
@@ -2911,7 +2911,7 @@
     },
     {
         "source": "Clone a bit and let these get dropped.",
-        "suggest": "克隆一点，让它们掉落。",
+        "suggest": "克隆一个位，然后让它们 drop。",
         "translate": ""
     },
     {
@@ -3296,12 +3296,12 @@
     },
     {
         "source": "When xs is dropped, +5.",
-        "suggest": "当 xs 掉落时，+ 5。",
+        "suggest": "当 xs drop 后，+ 5。",
         "translate": ""
     },
     {
         "source": "When panic is cloned, +3.",
-        "suggest": "克隆 panic 时，+ 3。",
+        "suggest": "当 panic 被克隆时，+ 3。",
         "translate": ""
     },
     {

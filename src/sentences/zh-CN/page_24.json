@@ -1416,17 +1416,17 @@
     },
     {
         "source": "The `waiters` argument indicates how many waiters should be woken up (a maximum).",
-        "suggest": "`waiters` 参数指示应唤醒的服务员数量 (最大值)。",
+        "suggest": "`waiters` 参数指示应唤醒的等待者数量 (最大值)。",
         "translate": ""
     },
     {
         "source": "If the value is zero no waiters are woken up.",
-        "suggest": "如果值为零，则不会唤醒任何服务员。",
+        "suggest": "如果值为零，则不会唤醒任何等待者。",
         "translate": ""
     },
     {
         "source": "Returns the number of waiters which were actually notified.",
-        "suggest": "返回实际被通知的服务员的数量。",
+        "suggest": "返回实际被通知的等待者的数量。",
         "translate": ""
     },
     {

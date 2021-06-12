@@ -846,7 +846,7 @@
     },
     {
         "source": "The SPSC queue found online is essentially a linked list of nodes where one half of the nodes are the \"queue of data\" and the other half of nodes are a cache of unused nodes.",
-        "suggest": "在线找到的 SPSC 队列实质上是节点的链接列表，其中一半节点是 \"queue of data\"，另一半节点是未使用节点的缓存。",
+        "suggest": "在线找到的 SPSC 队列实质上是节点的链表，其中一半节点是 \"queue of data\"，另一半节点是未使用节点的缓存。",
         "translate": ""
     },
     {
@@ -971,7 +971,7 @@
     },
     {
         "source": "The implication of this is that if a sender sees a -1 count, then there's guaranteed to be a waiter waiting!",
-        "suggest": "这意味着如果发件人看到 -1 计数，那么肯定有一个服务员在等!",
+        "suggest": "这意味着如果发送方看到 -1 计数，那么肯定有一个等待者在等!",
         "translate": ""
     },
     {
@@ -2301,7 +2301,7 @@
     },
     {
         "source": "This is called whenever a Chan is dropped and may end up waking up a receiver.",
-        "suggest": "每当 Chan 掉落并可能最终唤醒接收者时，就会调用此方法。",
+        "suggest": "每当 Chan drop 并可能最终唤醒接收者时，就会调用此方法。",
         "translate": ""
     },
     {
@@ -2406,7 +2406,7 @@
     },
     {
         "source": "Node within the linked list queue of messages to send",
-        "suggest": "链接列表中要发送的消息队列中的节点",
+        "suggest": "链表中要发送的消息队列中的节点",
         "translate": ""
     },
     {
@@ -3431,7 +3431,7 @@
     },
     {
         "source": "If we had not dropped the mutex guard, a thread could be waiting forever for it, causing a deadlock.",
-        "suggest": "如果我们没有放弃互斥锁防护装置，则线程可能会永远等待它，从而导致死锁。",
+        "suggest": "如果我们没有放弃互斥锁守卫，则线程可能会永远等待它，从而导致死锁。",
         "translate": ""
     },
     {
@@ -3511,7 +3511,7 @@
     },
     {
         "source": "It is sometimes necessary to manually drop the mutex guard to unlock it sooner than the end of the enclosing scope.",
-        "suggest": "有时有必要手动将互斥锁防护装置放下，以早于封闭的作用域的末端将其解锁。",
+        "suggest": "时需要手动删除互斥锁守卫，以便在封闭作用域结束之前将其解锁。",
         "translate": ""
     },
     {
@@ -3531,7 +3531,7 @@
     },
     {
         "source": "When this structure is dropped (falls out of scope), the lock will be unlocked.",
-        "suggest": "当此结构体掉落 (掉落到作用域) 时，锁将被解锁。",
+        "suggest": "当此结构体 drop (离开作用域) 时，这个锁将被解锁。",
         "translate": ""
     },
     {
@@ -3551,17 +3551,17 @@
     },
     {
         "source": "Immediately drops the guard, and consequently unlocks the mutex.",
-        "suggest": "立即放下防护装置，并因此解锁互斥锁。",
+        "suggest": "立即 drop 守卫，从而解锁互斥锁。",
         "translate": ""
     },
     {
         "source": "This function is equivalent to calling [`drop`] on the guard but is more self-documenting.",
-        "suggest": "此函数等效于在后卫上调用 [`drop`]，但更具自记录性。",
+        "suggest": "此函数等效于在守卫上调用 [`drop`]，但更具自记录性。",
         "translate": ""
     },
     {
         "source": "Alternately, the guard will be automatically dropped when it goes out of scope.",
-        "suggest": "或者，守卫离开角色域时将自动掉落。",
+        "suggest": "或者，守卫离开作用域时将自动 drop。",
         "translate": ""
     },
     {
@@ -3581,7 +3581,7 @@
     },
     {
         "source": "An RAII guard is returned to allow scoped unlock of the lock.",
-        "suggest": "返回了 RAII 防护装置，以允许对锁进行一定范围的解锁。",
+        "suggest": "返回了 RAII 守卫，以允许对锁进行一定范围的解锁。",
         "translate": ""
     },
     {
@@ -3626,7 +3626,7 @@
     },
     {
         "source": "The lock will be unlocked when the guard is dropped.",
-        "suggest": "当防护装置掉落时，锁将被解锁。",
+        "suggest": "当守卫 drop 时，锁将被解锁。",
         "translate": ""
     },
     {
@@ -3721,7 +3721,7 @@
     },
     {
         "source": "put another waiter on the once",
-        "suggest": "一次放另一个服务员",
+        "suggest": "让另一个等待者来一次",
         "translate": ""
     },
     {
@@ -3876,7 +3876,7 @@
     },
     {
         "source": "Each node is allocated on the stack, and whenever the running closure finishes it will consume the entire queue and notify all waiters they should try again.",
-        "suggest": "每个节点都分配在栈上，并且每当运行的闭包完成时，它将消耗整个队列，并通知所有服务员他们应再次尝试。",
+        "suggest": "每个节点都分配在栈上，并且每当运行的闭包完成时，它将消耗整个队列，并通知所有等待者他们应再次尝试。",
         "translate": ""
     },
     {
@@ -4026,7 +4026,7 @@
     },
     {
         "source": "Representation of a node in the linked list of waiters, used while in the RUNNING state.",
-        "suggest": "处于 RUNNING 状态时使用的服务员的链接列表中的节点表示。",
+        "suggest": "处于 RUNNING 状态时使用的等待者的链表中的节点表示。",
         "translate": ""
     },
     {
@@ -4046,7 +4046,7 @@
     },
     {
         "source": "Head of a linked list of waiters.",
-        "suggest": "服务员链接列表的头。",
+        "suggest": "等待者链表的头。",
         "translate": ""
     },
     {
@@ -4056,7 +4056,7 @@
     },
     {
         "source": "Will wake up the waiters when it gets dropped, i.e. also on panic.",
-        "suggest": "放下时将唤醒服务员，例如在 panic 上。",
+        "suggest": "Drop 时将唤醒等待者，例如在 panic 上。",
         "translate": ""
     },
     {
@@ -4251,7 +4251,7 @@
     },
     {
         "source": "It is important not to return before being signaled, otherwise we would drop our `Waiter` node and leave a hole in the linked list (and a dangling reference).",
-        "suggest": "重要的是不要在收到信号之前返回，否则我们将删除 `Waiter` 节点，并将 hole 留在链接列表中 (并悬垂引用)。",
+        "suggest": "重要的是不要在收到信号之前返回，否则我们将删除 `Waiter` 节点，并将 hole 留在链表中 (并悬垂引用)。",
         "translate": ""
     },
     {
@@ -4281,7 +4281,7 @@
     },
     {
         "source": "Walk the entire linked list of waiters and wake them up (in lifo order, last to register is first to wake up).",
-        "suggest": "遍历整个服务员的链接列表并唤醒他们 (按照 lifo 顺序，最后注册要首先唤醒)。",
+        "suggest": "遍历整个 waiters 的链表并唤醒他们 (按照 lifo 顺序，最后注册要首先唤醒)。",
         "translate": ""
     },
     {
@@ -4561,7 +4561,7 @@
     },
     {
         "source": "Otherwise, an RAII guard is returned which will release the lock when it is dropped.",
-        "suggest": "否则，将返回 RAII 防护装置，该防护装置在被释放时将释放该锁。",
+        "suggest": "否则，将返回 RAII 守卫，该守卫在被释放时将释放该锁。",
         "translate": ""
     },
     {
@@ -4841,7 +4841,7 @@
     },
     {
         "source": "A current downside of the implementation is that unlocking the lock will notify *all* waiters rather than just readers or just writers.",
-        "suggest": "该实现的当前缺点是，解锁锁将通知 *所有* 服务员，而不只是 readers 或 writers。",
+        "suggest": "该实现的当前缺点是，解锁锁将通知 *所有* 等待者，而不只是 readers 或 writers。",
         "translate": ""
     },
     {

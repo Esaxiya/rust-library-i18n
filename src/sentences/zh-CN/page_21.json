@@ -1826,7 +1826,7 @@
     },
     {
         "source": "wake up one waiter, if any",
-        "suggest": "叫醒一位服务员 (如果有)",
+        "suggest": "叫醒一位等待者 (如果有)",
         "translate": ""
     },
     {
@@ -1876,7 +1876,7 @@
     },
     {
         "source": "If we didn't ever recursively lock the lock then we fully unlock the mutex and wake up a waiter, if any.",
-        "suggest": "如果我们从未递归锁定该锁，那么我们将完全解锁互斥锁并唤醒服务员 (如果有)。",
+        "suggest": "如果我们从未递归锁定该锁，那么我们将完全解锁互斥锁并唤醒等待者 (如果有)。",
         "translate": ""
     },
     {
@@ -4921,12 +4921,12 @@
     },
     {
         "source": "Signals one waiter on this condition variable to wake up.",
-        "suggest": "在此条件变量上发信号通知一位服务员醒来。",
+        "suggest": "在此条件变量上发信号通知一位等待者醒来。",
         "translate": ""
     },
     {
         "source": "Awakens all current waiters on this condition variable.",
-        "suggest": "在此条件变量上唤醒所有当前的服务员。",
+        "suggest": "在此条件变量上唤醒所有当前的等待者。",
         "translate": ""
     },
     {

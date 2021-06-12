@@ -2866,7 +2866,7 @@
     },
     {
         "source": "A guard for unsafe functions that cannot ever be executed if `T` is uninhabited:",
-        "suggest": "如果 `T` 无人居住，则无法执行的不安全函数的防护措施:",
+        "suggest": "如果 `T` 未定义，则无法执行的不安全函数的守卫:",
         "translate": ""
     },
     {
@@ -2876,12 +2876,12 @@
     },
     {
         "source": "A guard for unsafe functions that cannot ever be executed if `T` does not permit zero-initialization: This will statically either panic, or do nothing.",
-        "suggest": "如果 `T` 不允许零初始化，则永远不能执行的不安全函数的防护措施: 这将静态 panic，或者什么也不做。",
+        "suggest": "如果 `T` 不允许零初始化，则永远不能执行的不安全函数的守卫: 这将静态 panic，或者什么也不做。",
         "translate": ""
     },
     {
         "source": "A guard for unsafe functions that cannot ever be executed if `T` has invalid bit patterns: This will statically either panic, or do nothing.",
-        "suggest": "如果 `T` 具有无效的位模式，则永远不能执行的不安全函数的防护措施: 这将静态地 panic，或者什么也不做。",
+        "suggest": "如果 `T` 具有无效的位模式，则永远不能执行的不安全函数的守卫: 这将静态地 panic，或者什么也不做。",
         "translate": ""
     },
     {

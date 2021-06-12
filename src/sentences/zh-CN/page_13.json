@@ -2381,12 +2381,12 @@
     },
     {
         "source": "This test makes sure the correct number of elements are dropped.",
-        "suggest": "此测试可确保删除正确数量的元素。",
+        "suggest": "这个测试确保删除了正确数量的元素。",
         "translate": ""
     },
     {
         "source": "The `R` type is just a reference to a `Cell` that is incremented when an `R` is dropped.",
-        "suggest": "`R` 类型只是对 `Cell` 的引用，当 `R` 掉落时，`Cell` 会递增。",
+        "suggest": "`R` 类型只是对 `Cell` 的引用，当 `R` drop 时，`Cell` 会递增。",
         "translate": ""
     },
     {

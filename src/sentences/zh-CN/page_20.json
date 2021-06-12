@@ -1186,7 +1186,7 @@
     },
     {
         "source": "No other waiters, unlock",
-        "suggest": "没有其他服务员，请解锁",
+        "suggest": "没有其他等待者，请解锁",
         "translate": ""
     },
     {
@@ -1556,12 +1556,12 @@
     },
     {
         "source": "Returns which TCSes will be notified when this guard drops.",
-        "suggest": "返回此防护措施掉落时将通知哪些 TCS。",
+        "suggest": "返回此守卫 drop 时将通知哪些 TCS。",
         "translate": ""
     },
     {
         "source": "Drop this `WaitGuard`, after dropping another `guard`.",
-        "suggest": "删除另一个 `guard` 之后，删除该 `WaitGuard`。",
+        "suggest": "drop 另一个 `guard` 之后，drop `WaitGuard`。",
         "translate": ""
     },
     {
@@ -1611,22 +1611,22 @@
     },
     {
         "source": "Either find the next waiter on the wait queue, or return the mutex guard unchanged.",
-        "suggest": "在等待队列中找到下一个服务员，或者不更改互斥锁防护装置。",
+        "suggest": "在等待队列中找到下一个等待者，或者不更改互斥锁守卫。",
         "translate": ""
     },
     {
         "source": "If a waiter is found, a `WaitGuard` is returned which will notify the waiter when it is dropped.",
-        "suggest": "如果找到服务员，则返回 `WaitGuard`，当 `WaitGuard` 掉落时，它将通知服务员。",
+        "suggest": "如果找到等待者，则返回 `WaitGuard`，当 `WaitGuard` drop 时，它将通知等待者。",
         "translate": ""
     },
     {
         "source": "Either find any and all waiters on the wait queue, or return the mutex guard unchanged.",
-        "suggest": "在等待队列中找到所有服务员，或者不更改互斥锁防护装置。",
+        "suggest": "在等待队列中找到所有等待者，或者不更改互斥锁守卫。",
         "translate": ""
     },
     {
         "source": "If at least one waiter is found, a `WaitGuard` is returned which will notify all waiters when it is dropped.",
-        "suggest": "如果找到至少一个服务员，则返回 `WaitGuard`，当 `WaitGuard` 被丢弃时，它将通知所有服务员。",
+        "suggest": "如果找到至少一个等待者，则返回 `WaitGuard`，当 `WaitGuard` 被丢弃时，它将通知所有等待者。",
         "translate": ""
     },
     {

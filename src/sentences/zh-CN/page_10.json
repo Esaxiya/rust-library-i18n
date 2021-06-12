@@ -2861,7 +2861,7 @@
     },
     {
         "source": "In an intrusive doubly-linked list, the collection does not actually allocate the memory for the elements itself.",
-        "suggest": "在侵入式双向链接列表中，集合实际上并未为元素本身分配内存。",
+        "suggest": "在侵入式双向链表中，集合实际上并未为元素本身分配内存。",
         "translate": ""
     },
     {
@@ -2956,7 +2956,7 @@
     },
     {
         "source": "In the example of the doubly-linked list, that element would just stay in the list.",
-        "suggest": "在双向链接列表的示例中，该元素将仅保留在列表中。",
+        "suggest": "在双向链表的示例中，该元素将仅保留在列表中。",
         "translate": ""
     },
     {
