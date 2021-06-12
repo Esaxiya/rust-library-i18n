@@ -1576,7 +1576,7 @@
     },
     {
         "source": "Helper type to allow accessing the reference counts without making any assertions about the data field.",
-        "suggest": "帮助程序类型，允许访问报价计数而无需对数据字段进行任何声明。",
+        "suggest": "帮助程序类型，允许访问引用计数而无需对数据字段进行任何声明。",
         "translate": ""
     },
     {

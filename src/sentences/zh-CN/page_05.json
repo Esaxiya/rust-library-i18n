@@ -351,7 +351,7 @@
     },
     {
         "source": "We check that nobody is actively writing now, but it is the caller's responsibility to ensure that nobody writes until the returned reference is no longer in use.",
-        "suggest": "我们检查当前没有人在积极写信，但是调用者有责任确保在返回的报价不再使用之前没有人写信。",
+        "suggest": "我们检查现在没有人在主动写入，但是调用者有责任确保没有人写入，直到返回的引用不再使用。",
         "translate": ""
     },
     {
@@ -3101,7 +3101,7 @@
     },
     {
         "source": "Unlike `AsRef`, [`Borrow`] has a blanket impl for any `T`, and can be used to accept either a reference or a value.",
-        "suggest": "与 `AsRef` 不同，[`Borrow`] 对任何 `T` 都有一个毯子暗示，可用于接受报价或值。",
+        "suggest": "与 `AsRef` 不同，[`Borrow`] 对任何 `T` 都有一个毯子暗示，可用于接受引用或值。",
         "translate": ""
     },
     {
@@ -4561,7 +4561,7 @@
     },
     {
         "source": "The read_volatile here ensures that we can safely ready out a usize from the passed reference and that this address does not point at a non-usize taking function.",
-        "suggest": "这里的 read_volatile 确保我们可以安全地从传递的报价中准备出 usize，并且此地址不指向未使用的接受函数。",
+        "suggest": "这里的 read_volatile 确保我们可以安全地从传递的引用中准备出 usize，并且此地址不指向未使用的接受函数。",
         "translate": ""
     },
     {

@@ -4716,7 +4716,7 @@
     },
     {
         "source": "That way, the borrow checker guarantees that the `NodeRef` remains borrowed as long as the returned reference is used.",
-        "suggest": "这样，借用检查器保证 `NodeRef` 保持借用状态，只要使用返回的报价即可。",
+        "suggest": "这样，借用检查器保证 `NodeRef` 保持借用状态，只要使用返回的引用即可。",
         "translate": ""
     },
     {

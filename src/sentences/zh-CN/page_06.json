@@ -4546,7 +4546,7 @@
     },
     {
         "source": "An iterator with a `peek()` that returns an optional reference to the next element.",
-        "suggest": "带有 `peek()` 的迭代器，该迭代器将可选的报价返回到下一个元素。",
+        "suggest": "带有 `peek()` 的迭代器，该迭代器将可选的引用返回到下一个元素。",
         "translate": ""
     },
     {
