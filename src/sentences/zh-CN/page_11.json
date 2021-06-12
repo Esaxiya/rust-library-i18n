@@ -2531,7 +2531,7 @@
     },
     {
         "source": "Read the first word with an unaligned load.",
-        "suggest": "阅读未对齐的单词的第一个单词。",
+        "suggest": "读取未对齐负载的第一个单词。。",
         "translate": ""
     },
     {

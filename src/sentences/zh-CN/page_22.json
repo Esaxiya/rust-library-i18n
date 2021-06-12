@@ -896,7 +896,7 @@
     },
     {
         "source": "We must read here, even though we know it will be `NOTIFIED`.",
-        "suggest": "即使我们知道它将是 `NOTIFIED`，也必须在这里阅读。",
+        "suggest": "即使我们知道它将是 `NOTIFIED`，也必须在这里读取。",
         "translate": ""
     },
     {
@@ -941,7 +941,7 @@
     },
     {
         "source": "We must read again here, see `park`.",
-        "suggest": "我们必须在这里再次阅读，请参见 `park`。",
+        "suggest": "我们必须在这里再次读取，请参见 `park`。",
         "translate": ""
     },
     {

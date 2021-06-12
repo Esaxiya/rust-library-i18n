@@ -4421,7 +4421,7 @@
     },
     {
         "source": "Try to read the features using IsProcessorFeaturePresent.",
-        "suggest": "尝试使用 IsProcessorFeaturePresent 阅读功能。",
+        "suggest": "尝试使用 IsProcessorFeaturePresent 来阅读特征。",
         "translate": ""
     },
     {

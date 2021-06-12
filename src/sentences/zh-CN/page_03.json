@@ -4411,7 +4411,7 @@
     },
     {
         "source": "we're just sending around raw pointers and reading them, never interpreting them so this should be safe to both send and share across threads.",
-        "suggest": "我们只是在发送裸指针并阅读它们，从不解释它们，因此跨线程发送和共享应该是安全的。",
+        "suggest": "我们只是在发送裸指针并读取它们，从不解释它们，因此跨线程发送和共享应该是安全的。",
         "translate": ""
     },
     {

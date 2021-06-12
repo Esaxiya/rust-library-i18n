@@ -1826,7 +1826,7 @@
     },
     {
         "source": "Call the `backtrace_syminfo` API which (from reading the code) should call `syminfo_cb` exactly once (or fail with an error presumably).",
-        "suggest": "调用 `backtrace_syminfo` API，该 API (从阅读代码中) 应该恰好调用一次 `syminfo_cb` (否则可能会因错误而失败)。",
+        "suggest": "调用 `backtrace_syminfo` API，该 API (通过读取代码) 应该恰好调用一次 `syminfo_cb` (或者可能会因错误而失败)。",
         "translate": ""
     },
     {

@@ -3941,7 +3941,7 @@
     },
     {
         "source": "This store can be Relaxed, but the read has to be Acquire because of the requirements mentioned above.",
-        "suggest": "这家商店可以放宽，但由于上述要求，必须阅读该书。",
+        "suggest": "这个 store 可以是 Relaxed，但是 read 必须是 Acquire，因为上面提到的要求。",
         "translate": ""
     },
     {

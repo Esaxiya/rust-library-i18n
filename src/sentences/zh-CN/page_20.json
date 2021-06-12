@@ -196,7 +196,7 @@
     },
     {
         "source": "Non-exhaustive list of specific requirements for reading and writing:",
-        "suggest": "阅读和写作的特定要求的非详尽清单:",
+        "suggest": "reading 和 writing 的具体要求的非详尽清单:",
         "translate": ""
     },
     {
@@ -1931,7 +1931,7 @@
     },
     {
         "source": "for owner and read for others.",
-        "suggest": "供所有者阅读，供他人阅读。",
+        "suggest": "供所有者和其他人阅读。",
         "translate": ""
     },
     {

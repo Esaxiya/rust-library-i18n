@@ -1316,7 +1316,7 @@
     },
     {
         "source": "is `Copy`, so we may read multiple times.",
-        "suggest": "是 `Copy`，因此我们可能会多次阅读。",
+        "suggest": "是 `Copy`，因此我们可能会多次读取。",
         "translate": ""
     },
     {

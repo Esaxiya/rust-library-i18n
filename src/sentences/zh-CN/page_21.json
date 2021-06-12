@@ -146,7 +146,7 @@
     },
     {
         "source": "Fall back to reading /dev/urandom if `getrandom` is not supported on the current kernel.",
-        "suggest": "如果当前内核不支持 `getrandom`，则退回到阅读 /dev/urandom。",
+        "suggest": "如果当前内核不支持 `getrandom`，则退回到读取 /dev/urandom。",
         "translate": ""
     },
     {
@@ -721,7 +721,7 @@
     },
     {
         "source": "Relaxed is fine here because we fence before reading through the pointer (see the comment below).",
-        "suggest": "在这里放宽是可以的，因为在阅读指针之前我们会先围起来 (请参见下面的注释)。",
+        "suggest": "在这里放宽是可以的，因为在读取指针之前设置了障碍(请参见下面的注释)。",
         "translate": ""
     },
     {
@@ -946,7 +946,7 @@
     },
     {
         "source": "Read the contents of a symbolic link.",
-        "suggest": "阅读符号链接的内容。",
+        "suggest": "读取符号链接的内容。",
         "translate": ""
     },
     {

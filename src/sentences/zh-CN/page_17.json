@@ -441,7 +441,7 @@
     },
     {
         "source": "Read more about `object safety` and [trait object]s.",
-        "suggest": "阅读有关 `object safety` 和 [trait 对象] s 的更多信息。",
+        "suggest": "阅读有关 `object safety` 和 [trait object] 的更多信息。",
         "translate": ""
     },
     {
@@ -3291,7 +3291,7 @@
     },
     {
         "source": "Read `::` if previous code parsed less than 8 groups.",
-        "suggest": "如果先前的代码解析少于 8 组，请阅读 `::`。",
+        "suggest": "如果先前的代码解析少于 8 组，则读取 `::`。",
         "translate": ""
     },
     {
@@ -3301,7 +3301,7 @@
     },
     {
         "source": "Read the back part of the address.",
-        "suggest": "阅读地址的后半部分。",
+        "suggest": "读地址的后面部分。",
         "translate": ""
     },
     {
@@ -3431,12 +3431,12 @@
     },
     {
         "source": "Spawn off a reading clone",
-        "suggest": "Spawn 关闭阅读克隆",
+        "suggest": "Spawn 关闭一个 reading 克隆",
         "translate": ""
     },
     {
         "source": "Try to ensure that the reading clone is indeed reading",
-        "suggest": "尝试确保阅读克隆确实在阅读",
+        "suggest": "尝试确保 reading 克隆确实在 reading",
         "translate": ""
     },
     {
