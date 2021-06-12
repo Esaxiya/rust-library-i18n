@@ -2711,57 +2711,57 @@
     },
     {
         "source": "Cooperatively gives up a timeslice to the OS scheduler.",
-        "suggest": "合作地放弃对 OS 调度程序的时间片。",
+        "suggest": "合作地将一个时间片交给操作系统调度程序。",
         "translate": ""
     },
     {
         "source": "This is used when the programmer knows that the thread will have nothing to do for some time, and thus avoid wasting computing time.",
-        "suggest": "当程序员知道线程将在一段时间内不执行任何操作，从而避免浪费计算时间时，将使用此方法。",
+        "suggest": "当程序员知道线程将在一段时间内不执行任何操作，从而避免浪费计算时间时，可以使用这个方法。",
         "translate": ""
     },
     {
         "source": "For example when polling on a resource, it is common to check that it is available, and if not to yield in order to avoid busy waiting.",
-        "suggest": "例如，在对资源进行轮询时，通常会检查该资源是否可用，如果没有，则为了避免繁忙的等待而屈服。",
+        "suggest": "例如，在对资源进行轮询时，通常会检查该资源是否可用，如果资源不可用，就放弃访问以避免繁忙的等待。",
         "translate": ""
     },
     {
         "source": "Thus the pattern of `yield`ing after a failed poll is rather common when implementing low-level shared resources or synchronization primitives.",
-        "suggest": "因此，在实现共享资源或同步原语时，轮询失败后的 `屈服` 模式相当普遍。",
+        "suggest": "所以，在实现共享资源或同步原语时，轮询失败后的 `yield` 模式相当常见。",
         "translate": ""
     },
     {
         "source": "However programmers will usually prefer to use [`channel`]s, [`Condvar`]s, [`Mutex`]es or [`join`] for their synchronization routines, as they avoid thinking about thread scheduling.",
-        "suggest": "但是，程序员通常会更喜欢使用 [`通道`]，[`Condvar`]，[` 互斥锁] es 或 [`join`] 作为他们的同步例程，因为他们避免考虑线程调度。",
+        "suggest": "但是，程序员通常会更喜欢使用 [`channel`]，[`Condvar`]，[`Mutex`] 或 [`join`] 作为他们的同步例程，因为他们避免考虑线程调度。",
         "translate": ""
     },
     {
         "source": "Note that [`channel`]s for example are implemented using this primitive.",
-        "suggest": "注意，例如 [[通道]] 是使用此原语实现的。",
+        "suggest": "注意，例如 [`channel`] 是使用此原语实现的。",
         "translate": ""
     },
     {
         "source": "Indeed when you call `send` or `recv`, which are blocking, they will yield if the channel is not available.",
-        "suggest": "的确，当您阻塞 `send` 或 `recv` 时，如果通道不可用，它们会产生作用。",
+        "suggest": "的确，当您调用阻塞的 `send` 或 `recv` 时，如果通道不可用，它们就会让步。",
         "translate": ""
     },
     {
         "source": "A common use of this feature is to poison shared resources when writing unsafe code, by checking `panicking` when the `drop` is called.",
-        "suggest": "此功能的常见用法是在编写不安全的代码时毒害共享资源，方法是在调用 `drop` 时检查 `panicking`。",
+        "suggest": "此功能的一个常见用途是在编写不安全代码时毒害共享资源，方法是在调用 `drop` 时检查 `panic`。",
         "translate": ""
     },
     {
         "source": "This is usually not needed when writing safe code, as [`Mutex`es][Mutex] already poison themselves when a thread panics while holding the lock.",
-        "suggest": "编写安全代码时通常不需要这样做，因为当线程 panics 按住锁时，[`Mutex`es][Mutex] 已经中毒了。",
+        "suggest": "编写安全代码时通常不需要这样做，因为当线程在持有锁时 panic，[`Mutex`es][Mutex] 已经中毒了。",
         "translate": ""
     },
     {
         "source": "This can also be used in multithreaded applications, in order to send a message to other threads warning that a thread has panicked (e.g., for monitoring purposes).",
-        "suggest": "这也可以在多线程应用程序中使用，以便向其他线程发送消息，警告某个线程已发生紧急情况 (例如，出于监视目的)。",
+        "suggest": "这也可以在多线程应用程序中使用，以便向其他线程发送消息，警告某个线程已发生 panic (例如，出于监视目的)。",
         "translate": ""
     },
     {
         "source": "Puts the current thread to sleep for at least the specified amount of time.",
-        "suggest": "使当前线程休眠至少指定的时间量。",
+        "suggest": "使当前线程休眠至少指定的时间。",
         "translate": ""
     },
     {

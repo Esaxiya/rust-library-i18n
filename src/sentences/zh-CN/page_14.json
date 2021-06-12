@@ -286,7 +286,7 @@
     },
     {
         "source": "Wrapper that ensures that the cell always gets filled (with the original state, optionally changed by `f`), even if `f` had panicked.",
-        "suggest": "即使 `f` 发生了紧急情况，也可以确保始终填充 cell  (具有原始状态，可以通过 `f` 进行更改) 的包装器。",
+        "suggest": "即使 `f` 发生了 panic，也可以确保始终填充 cell  (具有原始状态，可以通过 `f` 进行更改) 的包装器。",
         "translate": ""
     },
     {

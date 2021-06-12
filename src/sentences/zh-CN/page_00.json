@@ -2311,7 +2311,7 @@
     },
     {
         "source": "The latter makes it easier for the caller to avoid a leak when the iterator panicks.",
-        "suggest": "后者使调用者在迭代器出现紧急情况时更容易避免泄漏。",
+        "suggest": "后者使调用者在迭代器出现 panic 时更容易避免泄漏。",
         "translate": ""
     },
     {

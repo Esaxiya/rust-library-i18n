@@ -4166,7 +4166,7 @@
     },
     {
         "source": "Error returned for the buffered data from `BufWriter::into_raw_parts`, when the underlying writer has previously panicked.",
-        "suggest": "当基础 writer 先前发生紧急情况时，从 `BufWriter::into_raw_parts` 返回的缓冲数据返回错误。",
+        "suggest": "当基础 writer 先前发生 panic 时，从 `BufWriter::into_raw_parts` 返回的缓冲数据返回错误。",
         "translate": ""
     },
     {

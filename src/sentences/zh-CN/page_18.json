@@ -811,7 +811,7 @@
     },
     {
         "source": "If we do start doing this, then we should propagate this allocation to be performed in the parent of this thread instead of the thread that's panicking.",
-        "suggest": "如果确实开始执行此操作，则应将此分配传播给要在此线程的父级中执行，而不是在发生紧急情况的线程中执行。",
+        "suggest": "如果确实开始执行此操作，则应将此分配传播给要在此线程的父级中执行，而不是在发生 panic 的线程中执行。",
         "translate": ""
     },
     {
