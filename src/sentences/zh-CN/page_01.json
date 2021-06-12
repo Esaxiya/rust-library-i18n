@@ -4861,7 +4861,7 @@
     },
     {
         "source": "If `T` is zero-sized, then it makes a `RawVec` with capacity `usize::MAX`.",
-        "suggest": "如果 `T` 的尺寸为零，则它制成容量为 `usize::MAX` 的 `RawVec`。",
+        "suggest": "如果 `T` 的大小为零，则生成一个容量为 `usize::MAX` 的 `RawVec`。",
         "translate": ""
     },
     {
@@ -4911,7 +4911,7 @@
     },
     {
         "source": "The `capacity` cannot exceed `isize::MAX` for sized types.",
-        "suggest": "对于尺寸类型，`capacity` 不能超过 `isize::MAX`。",
+        "suggest": "对于大小类型，`capacity` 不能超过 `isize::MAX`。",
         "translate": ""
     },
     {

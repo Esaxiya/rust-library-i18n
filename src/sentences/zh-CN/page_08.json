@@ -1566,7 +1566,7 @@
     },
     {
         "source": "Furthermore because any bit value is valid for a `MaybeUninit<T>` the compiler can't apply non-zero/niche-filling optimizations, potentially resulting in a larger size:",
-        "suggest": "此外，由于任何位值对于 `MaybeUninit<T>` 都是有效的，因此编译器无法应用 non-zero/niche-filling 优化，从而可能导致更大的尺寸:",
+        "suggest": "此外，由于任何位值对于 `MaybeUninit<T>` 都是有效的，因此编译器无法应用 non-zero/niche-filling 优化，从而可能导致更大的大小:",
         "translate": ""
     },
     {
@@ -1596,7 +1596,7 @@
     },
     {
         "source": "That said, `MaybeUninit<T>` will *always* guarantee that it has the same size, alignment, and ABI as `T`;",
-        "suggest": "就是说，`MaybeUninit<T>` 将始终保证其尺寸，对齐方式和 ABI 与 `T` 相同;",
+        "suggest": "就是说，`MaybeUninit<T>` 将总是保证它具有与 `T` 有相同的大小、对齐方式和 ABI;",
         "translate": ""
     },
     {
@@ -2136,7 +2136,7 @@
     },
     {
         "source": "The alignment of the second field is 2, so add 1 to the size for padding.",
-        "suggest": "第二个字段的对齐方式为 2，因此在填充尺寸上加 1。",
+        "suggest": "第二个字段的对齐方式为 2，因此在填充大小上加 1。",
         "translate": ""
     },
     {
@@ -2171,7 +2171,7 @@
     },
     {
         "source": "Finally, the alignment of the struct is 2 (because the largest alignment amongst its fields is 2), so add 1 to the size for padding.",
-        "suggest": "最后，结构体的对齐方式为 2 (因为其字段之间的最大对齐方式为 2)，因此将 1 增大到填充尺寸。",
+        "suggest": "最后，结构体的对齐方式为 2 (因为其字段之间的最大对齐方式为 2)，所以在填充的大小上加 1。",
         "translate": ""
     },
     {
@@ -2511,7 +2511,7 @@
     },
     {
         "source": "Size of Structs",
-        "suggest": "结构体尺寸",
+        "suggest": "结构体的大小",
         "translate": ""
     },
     {

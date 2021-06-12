@@ -4551,7 +4551,7 @@
     },
     {
         "source": "The total size `ptr.len() * mem::size_of::<T>()` of the slice must be no larger than `isize::MAX`.",
-        "suggest": "切片的总尺寸 `ptr.len() * mem::size_of::<T>()` 必须不大于 `isize::MAX`。",
+        "suggest": "切片的总大小 `ptr.len() * mem::size_of::<T>()` 不能大于 `isize::MAX`。",
         "translate": ""
     },
     {
@@ -4831,7 +4831,7 @@
     },
     {
         "source": "Returns the size and alignment together as a `Layout`",
-        "suggest": "将尺寸和对齐方式一起返回为 `Layout`",
+        "suggest": "将大小和对齐方式一起返回为 `Layout`",
         "translate": ""
     },
     {

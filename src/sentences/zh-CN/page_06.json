@@ -3046,7 +3046,7 @@
     },
     {
         "source": "For `Vec`, this means that both the size *and alignment* of the inner types have to match.",
-        "suggest": "对于 `Vec`，这意味着内部类型的尺寸 *and 对齐* 必须匹配。",
+        "suggest": "对于 `Vec`，这意味着内部类型的大小和对齐方式都必须匹配。",
         "translate": ""
     },
     {

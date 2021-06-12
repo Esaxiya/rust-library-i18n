@@ -1561,7 +1561,7 @@
     },
     {
         "source": "unsized `T` never dangle.",
-        "suggest": "没有尺寸的 `T` 永远不会晃来晃去。",
+        "suggest": "没有大小的 `T` 永远不会悬垂。",
         "translate": ""
     },
     {

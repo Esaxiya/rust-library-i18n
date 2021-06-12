@@ -451,7 +451,7 @@
     },
     {
         "source": "dangling pointer ok for size 0",
-        "suggest": "尺寸为 0 的悬垂指针 ok",
+        "suggest": "大小为 0 的悬垂指针正常",
         "translate": ""
     },
     {
@@ -2166,7 +2166,7 @@
     },
     {
         "source": "Please note that this may be smaller than `st_size / 512` when the file has holes.",
-        "suggest": "请注意，当文件有孔时，该尺寸可能小于 `st_size / 512`。",
+        "suggest": "请注意，当文件有 holes 时，这个值可能小于 `st_size / 512`。",
         "translate": ""
     },
     {

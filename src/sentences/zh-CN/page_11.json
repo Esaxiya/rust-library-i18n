@@ -3851,7 +3851,7 @@
     },
     {
         "source": "transmuting `[u8]` to `[usize]` is safe except for size differences which are handled by `align_to`.",
-        "suggest": "将 `[u8]` 转换为 `[usize]` 是安全的，但 `align_to` 处理的尺寸差异除外。",
+        "suggest": "将 `[u8]` 转换为 `[usize]` 是安全的，但 `align_to` 处理的大小差异除外。",
         "translate": ""
     },
     {

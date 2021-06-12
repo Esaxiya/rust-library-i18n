@@ -371,7 +371,7 @@
     },
     {
         "source": "Atomic operations may be implemented at the instruction layer with larger-size atomics.",
-        "suggest": "原子操作可以在指令层使用更大尺寸的原子来实现。",
+        "suggest": "原子操作可以在指令层用更大的原子来实现。",
         "translate": ""
     },
     {

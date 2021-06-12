@@ -886,7 +886,7 @@
     },
     {
         "source": "the struct size in C.",
-        "suggest": "结构体尺寸 (以 C 为单位)。",
+        "suggest": " C 中的结构体大小。",
         "translate": ""
     },
     {
@@ -2076,7 +2076,7 @@
     },
     {
         "source": "Make sure to keep this zero-sized, so that the `cpp_demangle` feature has no cost when disabled.",
-        "suggest": "确保将此尺寸保持为零，以便 `cpp_demangle` 功能在禁用时不花钱。",
+        "suggest": "确保保持这个零大小，这样 `cpp_demangle` 特性在禁用时没有成本。",
         "translate": ""
     },
     {
@@ -2956,7 +2956,7 @@
     },
     {
         "source": "Produces layout describing a record that could be used to allocate backing structure for `T` (which could be a trait or other unsized type like a slice).",
-        "suggest": "产生描述记录的布局，该记录可用于为 `T` 分配后备结构体 (可以是 trait 或其他未定尺寸的类型，例如切片)。",
+        "suggest": "产生描述记录的布局，该记录可用于为 `T` 分配支持结构 (可以是 trait 或其他没有定义大小的类型，例如切片)。",
         "translate": ""
     },
     {
