@@ -696,7 +696,7 @@
     },
     {
         "source": "At a future point, we hope to generalise `core::str::Pattern` (which at the time of writing is limited to `str`) to slices, and then this trait will be replaced or abolished.",
-        "suggest": "在 future 点，我们希望将 `core::str::Pattern` (在撰写本文时仅限于 `str`) 推广到切片，然后将替换或废除此 trait。",
+        "suggest": "在 future 指针上，我们希望将 `core::str::Pattern` (在撰写本文时仅限于 `str`) 推广到切片，然后将替换或废除此 trait。",
         "translate": ""
     },
     {

@@ -766,7 +766,7 @@
     },
     {
         "source": "This is repr(C) to future-proof against possible field-reordering, which would interfere with otherwise safe [into|from]_raw() of transmutable inner types.",
-        "suggest": "这是 repr(C) 到 future 的证明，可防止可能的字段重新排序，否则可能会干扰可安全转换的内部类型的 _raw () 的安全性。",
+        "suggest": "这是 repr(C) 为了防止未来可能的字段重新排序，否则可能会干扰可安全转换的内部类型的 _raw () 的安全性。",
         "translate": ""
     },
     {
@@ -3666,7 +3666,7 @@
     },
     {
         "source": "If this constraint is violated, it may cause memory unsafety issues with future users of the `String`, as the rest of the standard library assumes that `String`s are valid UTF-8.",
-        "suggest": "如果违反了此约束，则 `String` 的 future 用户可能会导致内存不安全问题，因为标准库的其余部分都假定 `String` 是有效的 UTF-8。",
+        "suggest": "如果违反了此约束，则 `String` 的未来用户可能会导致内存不安全问题，因为标准库的其余部分都假定 `String` 是有效的 UTF-8。",
         "translate": ""
     },
     {

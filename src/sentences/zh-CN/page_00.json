@@ -2081,7 +2081,7 @@
     },
     {
         "source": "Prefer [`reserve`] if future insertions are expected.",
-        "suggest": "如果希望插入 future，则最好使用 [`reserve`]。",
+        "suggest": "如果预计将来会插入，则最好使用 [`reserve`]。",
         "translate": ""
     },
     {
@@ -3981,7 +3981,7 @@
     },
     {
         "source": "keep as illustration and for future use",
-        "suggest": "保留说明，以供 future 使用",
+        "suggest": "作为插图保存，以备将来使用",
         "translate": ""
     },
     {
