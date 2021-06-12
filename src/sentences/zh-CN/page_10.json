@@ -1626,7 +1626,7 @@
     },
     {
         "source": "Instead, Rust has *optional* pointers, like the optional owned box,",
-        "suggest": "而是 Rust 具有 *optional* 指针，例如可选的自有 box，",
+        "suggest": "相反， Rust 有可选指针，例如可选的拥有所有权的 box，",
         "translate": ""
     },
     {
@@ -2801,7 +2801,7 @@
     },
     {
         "source": "A [`Pin<P>`] where `P: Deref` should be considered as a \"`P`-style pointer\" to a pinned `P::Target` -- so, a [`Pin`]`<`[`Box`]`<T>>` is an owned pointer to a pinned `T`, and a [`Pin`]`<`[`Rc`]`<T>>` is a reference-counted pointer to a pinned `T`.",
-        "suggest": "[`Pin<P>`]，其中 `P: Deref` 应该被视为固定 `P::Target` 的 \"`P`-style pointer\" - 因此，[`Pin`]`<`[`Box`]`<T>>` 是指向固定 `T` 的自有指针，而 [`Pin`]`<`[`Rc`]`<T>>` 是指向固定 `T` 的引用计数指针。",
+        "suggest": "[`Pin<P>`]，其中 `P: Deref` 应该被视为固定 `P::Target` 的 \"`P`-style pointer\" - 因此，[`Pin`]`<`[`Box`]`<T>>` 是指向固定 `T` 的拥有所有权的指针，而 [`Pin`]`<`[`Rc`]`<T>>` 是指向固定 `T` 的引用计数指针。",
         "translate": ""
     },
     {

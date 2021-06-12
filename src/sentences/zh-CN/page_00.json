@@ -4481,7 +4481,7 @@
     },
     {
         "source": "The root node of an owned tree.",
-        "suggest": "自有树的根节点。",
+        "suggest": "拥有所有权的树的根节点。",
         "translate": ""
     },
     {

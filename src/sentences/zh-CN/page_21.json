@@ -3021,7 +3021,7 @@
     },
     {
         "source": "An owned container for `HANDLE` object, closing them on Drop.",
-        "suggest": "`HANDLE` object 的自有容器，在 Drop 上将其关闭。",
+        "suggest": "`HANDLE` object 的拥有所有权的容器，在 Drop 上将其关闭。",
         "translate": ""
     },
     {
