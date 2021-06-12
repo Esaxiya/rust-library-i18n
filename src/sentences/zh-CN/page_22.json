@@ -461,7 +461,7 @@
     },
     {
         "source": "This is actually safe b/c we know that there is no further usage of this mutex (it's up to the user to arrange for a mutex to get dropped, that's not our job)",
-        "suggest": "这实际上是安全的 b/c，我们知道此互斥锁没有进一步的用途 (由用户来安排 drop 互斥锁，这不是我们的工作)",
+        "suggest": "这实际上是安全的 b/c，我们知道此互斥锁没有进一步的用途 (由用户来安排丢弃互斥锁，这不是我们的工作)",
         "translate": ""
     },
     {
@@ -561,7 +561,7 @@
     },
     {
         "source": "The lock is automatically unlocked when the returned guard is dropped.",
-        "suggest": "当返回的守卫 drop 时，锁会自动解锁。",
+        "suggest": "当返回的守卫丢弃时，锁会自动解锁。",
         "translate": ""
     },
     {
@@ -1901,7 +1901,7 @@
     },
     {
         "source": "This is very optimizer friendly for the fast path - initialized but not yet dropped.",
-        "suggest": "这对快速路径非常优化，它非常友好 - 已初始化但尚未删除。",
+        "suggest": "这对快速路径非常优化，它非常友好 - 已初始化但尚未丢弃。",
         "translate": ""
     },
     {
@@ -2126,7 +2126,7 @@
     },
     {
         "source": "This will be called, even though the JoinHandle is dropped.",
-        "suggest": "即使 JoinHandle 被删除，也将调用它。",
+        "suggest": "即使 JoinHandle 被丢弃，也将调用它。",
         "translate": ""
     },
     {
@@ -2556,7 +2556,7 @@
     },
     {
         "source": "ensure that [`join`][`JoinHandle::join`] is called before any referenced data is dropped",
-        "suggest": "确保在删除任何引用数据之前已调用 [`join`][`JoinHandle::join`]",
+        "suggest": "确保在丢弃任何引用数据之前已调用 [`join`][`JoinHandle::join`]",
         "translate": ""
     },
     {
@@ -2606,7 +2606,7 @@
     },
     {
         "source": "The join handle will implicitly *detach* the child thread upon being dropped.",
-        "suggest": "连接子句柄在被删除后将隐式 `分离` 子线程。",
+        "suggest": "连接子句柄在被丢弃后将隐式 `分离` 子线程。",
         "translate": ""
     },
     {
@@ -3161,7 +3161,7 @@
     },
     {
         "source": "A `JoinHandle` *detaches* the associated thread when it is dropped, which means that there is no longer any handle to thread and no way to `join` on it.",
-        "suggest": "`JoinHandle` 在被删除时会 *分离* 相关的线程，这意味着不再有线程句柄，也无法在其上访问 `join`。",
+        "suggest": "`JoinHandle` 在被丢弃时会 *分离* 相关的线程，这意味着不再有线程句柄，也无法在其上访问 `join`。",
         "translate": ""
     },
     {

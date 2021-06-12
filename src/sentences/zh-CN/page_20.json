@@ -431,7 +431,7 @@
     },
     {
         "source": "The user memory will be freed when the value is dropped.",
-        "suggest": "删除该值后，将释放用户内存。",
+        "suggest": "丢弃该值后，将释放用户内存。",
         "translate": ""
     },
     {
@@ -1556,12 +1556,12 @@
     },
     {
         "source": "Returns which TCSes will be notified when this guard drops.",
-        "suggest": "返回此守卫 drop 时将通知哪些 TCS。",
+        "suggest": "返回此守卫丢弃时将通知哪些 TCS。",
         "translate": ""
     },
     {
         "source": "Drop this `WaitGuard`, after dropping another `guard`.",
-        "suggest": "drop 另一个 `guard` 之后，drop `WaitGuard`。",
+        "suggest": "丢弃另一个 `guard` 之后，丢弃 `WaitGuard`。",
         "translate": ""
     },
     {
@@ -1616,7 +1616,7 @@
     },
     {
         "source": "If a waiter is found, a `WaitGuard` is returned which will notify the waiter when it is dropped.",
-        "suggest": "如果找到等待者，则返回 `WaitGuard`，当 `WaitGuard` drop 时，它将通知等待者。",
+        "suggest": "如果找到等待者，则返回 `WaitGuard`，当 `WaitGuard` 丢弃时，它将通知等待者。",
         "translate": ""
     },
     {
@@ -4791,7 +4791,7 @@
     },
     {
         "source": "As an example of not having malloc/free traffic, we don't close this file descriptor by dropping the FileDesc (which contains an allocation).",
-        "suggest": "作为不具有 malloc/free 流量的示例，我们不通过删除 FileDesc (包含分配) 来关闭此文件描述符。",
+        "suggest": "作为不具有 malloc/free 流量的示例，我们不通过丢弃 FileDesc (包含分配) 来关闭此文件描述符。",
         "translate": ""
     },
     {
@@ -4801,7 +4801,7 @@
     },
     {
         "source": "This will never have the drop glue anyway because this code never returns (the child will either exec() or invoke libc::exit)",
-        "suggest": "无论如何这将永远不会有掉胶，因为此代码永远不会返回 (子代将 exec() or invoke libc::exit)",
+        "suggest": "无论如何这将永远不会有 drop glue，因为此代码永远不会返回 (子代码将调用 exec() 或调用 libc::exit)",
         "translate": ""
     },
     {
@@ -4811,17 +4811,17 @@
     },
     {
         "source": "When dropping privileges from root, the `setgroups` call will remove any extraneous groups.",
-        "suggest": "从根目录删除特权时，`setgroups` 调用将删除所有无关的组。",
+        "suggest": "从根目录丢弃权限时，`setgroups` 调用将丢弃所有无关的组。",
         "translate": ""
     },
     {
         "source": "We only drop groups if the current uid is 0 and we weren't given an explicit set of groups.",
-        "suggest": "仅当当前 uid 为 0 且没有给我们明确的组组时，我们才删除组。",
+        "suggest": "仅当当前 uid 为 0 且没有给我们明确的组组时，我们才丢弃组。",
         "translate": ""
     },
     {
         "source": "If we don't call this, then even though our uid has dropped, we may still have groups that enable us to do super-user things.",
-        "suggest": "如果我们不调用它，那么即使我们的 uid 掉了，我们仍然可能拥有使我们能够执行超级用户操作的组。",
+        "suggest": "如果我们不调用它，那么即使我们的 uid 丢弃，我们仍然可能拥有使我们能够执行超级用户操作的组。",
         "translate": ""
     },
     {

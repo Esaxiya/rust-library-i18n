@@ -2156,7 +2156,7 @@
     },
     {
         "source": "A [`Weak`] pointer can be [`upgrade`][upgrade]d to an `Arc`, but this will return [`None`] if the value stored in the allocation has already been dropped.",
-        "suggest": "[`Weak`] 指针可以 [`upgrade`][upgrade] d 为 `Arc`，但如果存储在分配中的值已经被删除，这将返回 [`None`]。",
+        "suggest": "[`Weak`] 指针可以 [`upgrade`][upgrade] d 为 `Arc`，但如果存储在分配中的值已经被丢弃，这将返回 [`None`]。",
         "translate": ""
     },
     {

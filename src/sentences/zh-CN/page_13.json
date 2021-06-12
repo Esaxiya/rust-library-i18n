@@ -1651,7 +1651,7 @@
     },
     {
         "source": "This function gets called when a [`RawWaker`] gets dropped.",
-        "suggest": "删除 [`RawWaker`] 时将调用此函数。",
+        "suggest": "丢弃 [`RawWaker`] 时将调用此函数。",
         "translate": ""
     },
     {
@@ -2381,12 +2381,12 @@
     },
     {
         "source": "This test makes sure the correct number of elements are dropped.",
-        "suggest": "这个测试确保删除了正确数量的元素。",
+        "suggest": "这个测试确保丢弃了正确数量的元素。",
         "translate": ""
     },
     {
         "source": "The `R` type is just a reference to a `Cell` that is incremented when an `R` is dropped.",
-        "suggest": "`R` 类型只是对 `Cell` 的引用，当 `R` drop 时，`Cell` 会递增。",
+        "suggest": "`R` 类型只是对 `Cell` 的引用，当 `R` 被丢弃时，`Cell` 会递增。",
         "translate": ""
     },
     {
@@ -2401,7 +2401,7 @@
     },
     {
         "source": "Simple: drop new iterator.",
-        "suggest": "简单: 删除新的迭代器。",
+        "suggest": "简单的: 丢弃新的迭代器。",
         "translate": ""
     },
     {
@@ -2441,7 +2441,7 @@
     },
     {
         "source": "check that all bombs are successfully dropped",
-        "suggest": "检查所有炸弹是否已成功投下",
+        "suggest": "检查所有 bombs 是否已成功丢弃",
         "translate": ""
     },
     {
@@ -4761,7 +4761,7 @@
     },
     {
         "source": "When we take the Box out of the exception, we need to leave the exception in a valid state for its destructor to run without double-dropping the Box.",
-        "suggest": "当我们将 Box 排除在异常之外时，我们需要将异常保持在有效状态，以使其析构函数得以运行，而无需两次删除 Box。",
+        "suggest": "当我们将 Box 排除在异常之外时，我们需要将异常保持在有效状态，以使其析构函数得以运行，而无需双重丢弃 Box。",
         "translate": ""
     },
     {
@@ -4906,7 +4906,7 @@
     },
     {
         "source": "Instead it will be dropped by exception_cleanup which is invoked by the C++ runtime.",
-        "suggest": "相反，它将由 C++ 运行时调用的 exception_cleanup 删除。",
+        "suggest": "相反，它将由 C++ 运行时调用的 exception_cleanup 丢弃。",
         "translate": ""
     },
     {

@@ -1416,7 +1416,7 @@
     },
     {
         "source": "You shouldn't actually drop the `fd`.",
-        "suggest": "您实际上不应该删除 `fd`。",
+        "suggest": "您实际上不应该丢弃 `fd`。",
         "translate": ""
     },
     {
@@ -3036,7 +3036,7 @@
     },
     {
         "source": "This does **not** drop the handle when it goes out of scope, use `Handle` instead for that.",
-        "suggest": "当它离开作用域时，它不会 drop 句柄，而是使用 `Handle` 代替那个。",
+        "suggest": "当它离开作用域时，它不会丢弃句柄，而是使用 `Handle` 代替那个。",
         "translate": ""
     },
     {
@@ -3671,7 +3671,7 @@
     },
     {
         "source": "If we have a pending read operation, then we have to make sure that it's *done* before we actually drop this type.",
-        "suggest": "如果我们有一个待处理的读取操作，那么在实际删除此类型之前，必须确保它已完成。",
+        "suggest": "如果我们有一个待处理的读取操作，那么在实际丢弃此类型之前，必须确保它已完成。",
         "translate": ""
     },
     {
@@ -3811,7 +3811,7 @@
     },
     {
         "source": "If an argument has 0 characters then we need to quote it to ensure that it actually gets passed through on the command line or otherwise it will be dropped entirely when parsed on the other end.",
-        "suggest": "如果一个参数有 0 个字符，那么我们需要用引号将其括起来，以确保它实际上是在命令行中通过的，否则在另一端进行解析时它将被完全删除。",
+        "suggest": "如果一个参数有 0 个字符，那么我们需要用引号将其括起来，以确保它实际上是在命令行中通过的，否则在另一端进行解析时它将被完全丢弃。",
         "translate": ""
     },
     {
@@ -4176,7 +4176,7 @@
     },
     {
         "source": "nothing to drop, we successfully added the node to the list",
-        "suggest": "没什么可删除的，我们已成功将节点添加到列表中",
+        "suggest": "没什么可丢弃的，我们已成功将节点添加到列表中",
         "translate": ""
     },
     {

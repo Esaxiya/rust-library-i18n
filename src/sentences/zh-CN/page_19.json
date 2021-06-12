@@ -1676,7 +1676,7 @@
     },
     {
         "source": "Another possible optimization would be to not use an Arc box because in theory we know when the shared packet can be deallocated (no real need for the atomic reference counting), but I was having trouble how to destroy the data early in a drop of a Port.",
-        "suggest": "另一个可能的优化是不使用 Arc box，因为从理论上讲我们知道何时可以重新分配共享数据包 (不需要真正的原子引用计数)，但是我在如何在一秒钟内销毁数据上遇到了麻烦。港口。",
+        "suggest": "另一个可能的优化是不使用 Arc box，因为从理论上讲我们知道何时可以重新分配共享数据包 (不需要真正的原子引用计数)，但我遇到了如何在一个端口丢弃的早期销毁数据的麻烦。",
         "translate": ""
     },
     {
@@ -1886,7 +1886,7 @@
     },
     {
         "source": "An empty channel has nothing to do, and a remotely disconnected channel also has nothing to do b/c we're about to run the drop glue",
-        "suggest": "空通道无关紧要，而远程断开连接的通道也无关紧要 b/c 我们将要运行滴胶",
+        "suggest": "空通道无关紧要，而远程断开连接的通道也无关紧要 b/c 我们将要运行 drop glue",
         "translate": ""
     },
     {
@@ -2301,7 +2301,7 @@
     },
     {
         "source": "This is called whenever a Chan is dropped and may end up waking up a receiver.",
-        "suggest": "每当 Chan drop 并可能最终唤醒接收者时，就会调用此方法。",
+        "suggest": "每当 Chan 丢弃并可能最终唤醒接收者时，就会调用此方法。",
         "translate": ""
     },
     {
@@ -2591,7 +2591,7 @@
     },
     {
         "source": "We have successfully erased all references to 'tail', so now we can safely drop it.",
-        "suggest": "我们已经成功擦除了所有对 'tail' 的引用，因此现在可以放心地删除它了。",
+        "suggest": "我们已经成功擦除了所有对 'tail' 的引用，因此现在可以放心地丢弃它了。",
         "translate": ""
     },
     {
@@ -2786,7 +2786,7 @@
     },
     {
         "source": "Dropping a channel is pretty simple, we just flag it as disconnected and then wakeup a blocker if there is one.",
-        "suggest": "删除通道非常简单，我们只是将其标记为已断开连接，然后在存在阻塞器时唤醒它。",
+        "suggest": "丢弃通道非常简单，我们只是将其标记为已断开连接，然后在存在阻塞器时唤醒它。",
         "translate": ""
     },
     {
@@ -2801,7 +2801,7 @@
     },
     {
         "source": "The catch for Ports is that we want to drop the entire contents of the queue.",
-        "suggest": "Ports 的要点是我们要删除队列的全部内容。",
+        "suggest": "Ports 的要点是我们要丢弃队列的全部内容。",
         "translate": ""
     },
     {
@@ -2851,7 +2851,7 @@
     },
     {
         "source": "We will continue to fail while active senders send data while we're dropping data, but eventually we're guaranteed to break out of this loop (because there is a bounded number of senders).",
-        "suggest": "当活动发件人在删除数据的同时发送数据时，我们将继续失败，但是最终我们可以保证摆脱这种循环 (因为发件人数量有限)。",
+        "suggest": "当主动发送方在丢弃数据的同时发送数据时，我们将继续失败，但最终我们肯定会打破这个循环 (因为发送方的数量是有限的)。",
         "translate": ""
     },
     {
@@ -3121,7 +3121,7 @@
     },
     {
         "source": "Wakes up a thread, dropping the lock at the correct time",
-        "suggest": "唤醒线程，在正确的时间删除锁",
+        "suggest": "唤醒线程，在正确的时间丢弃锁",
         "translate": ""
     },
     {
@@ -3416,7 +3416,7 @@
     },
     {
         "source": "We drop the `data` explicitly because it's not necessary anymore and the thread still has work to do.",
-        "suggest": "我们明确删除 `data`，因为不再需要 `data`，并且线程仍然有工作要做。",
+        "suggest": "我们明确丢弃 `data`，因为不再需要 `data`，并且线程仍然有工作要做。",
         "translate": ""
     },
     {
@@ -3431,7 +3431,7 @@
     },
     {
         "source": "If we had not dropped the mutex guard, a thread could be waiting forever for it, causing a deadlock.",
-        "suggest": "如果我们没有放弃互斥锁守卫，则线程可能会永远等待它，从而导致死锁。",
+        "suggest": "如果我们没有丢弃互斥锁守卫，则线程可能会永远等待它，从而导致死锁。",
         "translate": ""
     },
     {
@@ -3511,7 +3511,7 @@
     },
     {
         "source": "It is sometimes necessary to manually drop the mutex guard to unlock it sooner than the end of the enclosing scope.",
-        "suggest": "时需要手动删除互斥锁守卫，以便在封闭作用域结束之前将其解锁。",
+        "suggest": "时需要手动丢弃互斥锁守卫，以便在封闭作用域结束之前将其解锁。",
         "translate": ""
     },
     {
@@ -3531,7 +3531,7 @@
     },
     {
         "source": "When this structure is dropped (falls out of scope), the lock will be unlocked.",
-        "suggest": "当此结构体 drop (离开作用域) 时，这个锁将被解锁。",
+        "suggest": "当此结构体被丢弃 (离开作用域) 时，这个锁将被解锁。",
         "translate": ""
     },
     {
@@ -3551,7 +3551,7 @@
     },
     {
         "source": "Immediately drops the guard, and consequently unlocks the mutex.",
-        "suggest": "立即 drop 守卫，从而解锁互斥锁。",
+        "suggest": "立即丢弃这个守卫，从而解锁互斥锁。",
         "translate": ""
     },
     {
@@ -3561,7 +3561,7 @@
     },
     {
         "source": "Alternately, the guard will be automatically dropped when it goes out of scope.",
-        "suggest": "或者，守卫离开作用域时将自动 drop。",
+        "suggest": "或者，守卫离开作用域时将自动丢弃。",
         "translate": ""
     },
     {
@@ -3626,7 +3626,7 @@
     },
     {
         "source": "The lock will be unlocked when the guard is dropped.",
-        "suggest": "当守卫 drop 时，锁将被解锁。",
+        "suggest": "当守卫被丢弃时，锁将被解锁。",
         "translate": ""
     },
     {
@@ -4056,7 +4056,7 @@
     },
     {
         "source": "Will wake up the waiters when it gets dropped, i.e. also on panic.",
-        "suggest": "Drop 时将唤醒等待者，例如在 panic 上。",
+        "suggest": "丢弃时将唤醒等待者，例如在 panic 上。",
         "translate": ""
     },
     {
@@ -4211,7 +4211,7 @@
     },
     {
         "source": "will manage other waiting threads, and wake them up on drop.",
-        "suggest": "将管理其他等待线程，并将其唤醒。",
+        "suggest": "将管理其他等待的线程，并在丢弃时唤醒它们。",
         "translate": ""
     },
     {
@@ -4251,7 +4251,7 @@
     },
     {
         "source": "It is important not to return before being signaled, otherwise we would drop our `Waiter` node and leave a hole in the linked list (and a dangling reference).",
-        "suggest": "重要的是不要在收到信号之前返回，否则我们将删除 `Waiter` 节点，并将 hole 留在链表中 (并悬垂引用)。",
+        "suggest": "重要的是不要在收到信号之前返回，否则我们将丢弃 `Waiter` 节点，并将 hole 留在链表中 (并悬垂引用)。",
         "translate": ""
     },
     {
@@ -4356,7 +4356,7 @@
     },
     {
         "source": "read locks are dropped at this point",
-        "suggest": "此时将删除读锁",
+        "suggest": "此时将丢弃读锁",
         "translate": ""
     },
     {
@@ -4366,7 +4366,7 @@
     },
     {
         "source": "write lock is dropped here",
-        "suggest": "写锁放在这里",
+        "suggest": "写锁在这里被丢弃",
         "translate": ""
     },
     {
@@ -4441,7 +4441,7 @@
     },
     {
         "source": "RAII structure used to release the shared read access of a lock when dropped.",
-        "suggest": "RAII 结构体在释放时用于释放锁的共享读取访问权限。",
+        "suggest": "RAII 结构，用于在丢弃锁时释放锁的共享读取访问。",
         "translate": ""
     },
     {
@@ -4451,7 +4451,7 @@
     },
     {
         "source": "RAII structure used to release the exclusive write access of a lock when dropped.",
-        "suggest": "RAII 结构体在释放时用于释放锁的排他性写访问。",
+        "suggest": "RAII 结构，用于在锁被丢弃时释放对锁的独占写访问。",
         "translate": ""
     },
     {
@@ -4486,7 +4486,7 @@
     },
     {
         "source": "Returns an RAII guard which will release this thread's shared access once it is dropped.",
-        "suggest": "返回 RAII 保护，一旦该线程被删除，它将释放该线程的共享访问。",
+        "suggest": "返回 RAII 保护，一旦该线程被丢弃，它将释放该线程的共享访问。",
         "translate": ""
     },
     {
@@ -4516,7 +4516,7 @@
     },
     {
         "source": "Otherwise, an RAII guard is returned which will release the shared access when it is dropped.",
-        "suggest": "否则，将返回 RAII 保护，当该保护被删除时，该保护将释放共享访问。",
+        "suggest": "否则，将返回 RAII 保护，当该保护被丢弃时，该保护将释放共享访问。",
         "translate": ""
     },
     {
@@ -4541,7 +4541,7 @@
     },
     {
         "source": "Returns an RAII guard which will drop the write access of this rwlock when dropped.",
-        "suggest": "返回一个 RAII 保护，该保护将在删除时删除该 rwlock 的写访问权限。",
+        "suggest": "返回一个 RAII 保护，当该保护被丢弃时，它将丢弃该读写锁的写访问。",
         "translate": ""
     },
     {
@@ -4561,7 +4561,7 @@
     },
     {
         "source": "Otherwise, an RAII guard is returned which will release the lock when it is dropped.",
-        "suggest": "否则，将返回 RAII 守卫，该守卫在被释放时将释放该锁。",
+        "suggest": "否则，将返回 RAII 守卫，它将在锁被丢弃时释放锁。",
         "translate": ""
     },
     {
@@ -4781,7 +4781,7 @@
     },
     {
         "source": "The dropping of the SpinlockGuard will release the lock it was created from.",
-        "suggest": "drop 自旋锁守护程序将会释放创建它的锁。",
+        "suggest": "丢弃自旋锁守护程序将会释放创建它的锁。",
         "translate": ""
     },
     {
@@ -4811,7 +4811,7 @@
     },
     {
         "source": "Only if all sockets are released, the drop method will close the socket.",
-        "suggest": "只有释放了所有套接字，drop 方法才会关闭该套接字。",
+        "suggest": "只有释放了所有套接字，丢弃方法才会关闭该套接字。",
         "translate": ""
     },
     {

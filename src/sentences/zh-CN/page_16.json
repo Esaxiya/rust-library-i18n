@@ -311,7 +311,7 @@
     },
     {
         "source": "we have to call all of these UFCS style right now since method resolution won't implicitly drop the Send+Sync bounds",
-        "suggest": "我们现在必须调用所有这些 UFCS 样式，因为方法解析不会隐式地降低 Send + Sync 边界",
+        "suggest": "我们现在必须调用所有这些 UFCS 样式，因为方法解析不会隐式地丢弃 Send + Sync 边界",
         "translate": ""
     },
     {
@@ -761,7 +761,7 @@
     },
     {
         "source": "drop our &mut reference so we can use f again",
-        "suggest": "drop &mut 引用，以便我们可以再次使用 f",
+        "suggest": "丢弃 &mut 引用，以便我们可以再次使用 f",
         "translate": ""
     },
     {
@@ -1081,7 +1081,7 @@
     },
     {
         "source": "To this end, we use an RAII guard (to protect against panics) which updates the length of the string when it is dropped.",
-        "suggest": "为此，我们使用了 RAII 保护器 (以防止 panics)，该保护器会在删除字符串时更新字符串的长度。",
+        "suggest": "为此，我们使用了 RAII 保护器 (以防止 panics)，该保护器会在丢弃字符串时更新字符串的长度。",
         "translate": ""
     },
     {
@@ -2476,7 +2476,7 @@
     },
     {
         "source": "is dropped here.",
-        "suggest": "放在这里。",
+        "suggest": "在这里丢弃。",
         "translate": ""
     },
     {
@@ -3286,7 +3286,7 @@
     },
     {
         "source": "`a` has not been dropped and references are always aligned, so `b` is a valid address.",
-        "suggest": "`a` 尚未删除，并且引用始终对齐，因此 `b` 是有效地址。",
+        "suggest": "`a` 尚未丢弃，并且引用始终对齐，因此 `b` 是有效地址。",
         "translate": ""
     },
     {

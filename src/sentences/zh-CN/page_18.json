@@ -2371,7 +2371,7 @@
     },
     {
         "source": "a convenience function for explicitly dropping a value.",
-        "suggest": "用于显式删除值的便捷函数。",
+        "suggest": "用于显式丢弃值的便捷函数。",
         "translate": ""
     },
     {
@@ -2971,7 +2971,7 @@
     },
     {
         "source": "Storing through a raw pointer using `*ptr = data` calls `drop` on the old value, so [`write`] must be used if the type has drop glue and memory is not already initialized - otherwise `drop` would be called on the uninitialized memory.",
-        "suggest": "使用 `*ptr = data` 通过裸指针存储会在旧值上调用 `drop`，因此，如果该类型具有滴胶并且尚未初始化内存，则必须使用 [`write`]; 否则，将在未初始化的内存上调用 `drop`。",
+        "suggest": "使用 `*ptr = data` 通过裸指针存储会在旧值上调用 `drop`，因此，如果该类型具有 drop glue 并且尚未初始化内存，则必须使用 [`write`]; 否则，将在未初始化的内存上调用 `drop`。",
         "translate": ""
     },
     {
@@ -3981,12 +3981,12 @@
     },
     {
         "source": "The standard library does *not* automatically wait on child processes (not even if the `Child` is dropped), it is up to the application developer to do so.",
-        "suggest": "标准库不会自动等待子进程 (即使 `Child` 被删除也不会)，这取决于应用程序开发人员。",
+        "suggest": "标准库不会自动等待子进程 (即使 `Child` 被丢弃也不会)，这取决于应用程序开发人员。",
         "translate": ""
     },
     {
         "source": "As a consequence, dropping `Child` handles without waiting on them first is not recommended in long-running applications.",
-        "suggest": "因此，在长时间运行的应用程序中，不建议先删除 `Child` 句柄而不先等待它们。",
+        "suggest": "因此，在长时间运行的应用程序中，不建议先丢弃 `Child` 句柄而不先等待它们。",
         "translate": ""
     },
     {
@@ -4041,7 +4041,7 @@
     },
     {
         "source": "If the child process was blocked on input prior to being dropped, it will become unblocked after dropping.",
-        "suggest": "如果子进程在删除之前已在输入上被阻止，则子进程将在删除后变为未阻止状态。",
+        "suggest": "如果子进程在丢弃之前已在输入上被阻止，则子进程将在丢弃后变为未阻止状态。",
         "translate": ""
     },
     {
@@ -4656,7 +4656,7 @@
     },
     {
         "source": "Note that unlike `wait`, this function will not attempt to drop stdin.",
-        "suggest": "请注意，与 `wait` 不同，此函数不会尝试删除 stdin。",
+        "suggest": "请注意，与 `wait` 不同，此函数不会尝试丢弃 stdin。",
         "translate": ""
     },
     {

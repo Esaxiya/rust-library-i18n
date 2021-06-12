@@ -736,7 +736,7 @@
     },
     {
         "source": "Boxes provide ownership for this allocation, and drop their contents when they go out of scope.",
-        "suggest": "Boxes 提供此分配的所有权，并在离开作用域时删除其内容。",
+        "suggest": "Boxes 为这个分配提供所有权，并在离开作用域时丢弃它们的内容。",
         "translate": ""
     },
     {
@@ -1221,7 +1221,7 @@
     },
     {
         "source": "Dropping the returned reference will cause a memory leak.",
-        "suggest": "删除返回的引用将导致内存泄漏。",
+        "suggest": "丢弃返回的引用将导致内存泄漏。",
         "translate": ""
     },
     {
@@ -1231,7 +1231,7 @@
     },
     {
         "source": "This `Box` can then be dropped which will properly destroy `T` and release the allocated memory.",
-        "suggest": "然后可以删除该 `Box`，这将正确破坏 `T` 并释放分配的内存。",
+        "suggest": "这个 `Box` 可以被丢弃，这将正确销毁 `T` 并释放分配的内存。",
         "translate": ""
     },
     {
@@ -1246,7 +1246,7 @@
     },
     {
         "source": "Unsized data:",
-        "suggest": "大小不一的数据:",
+        "suggest": "未固定大小的数据:",
         "translate": ""
     },
     {
@@ -1266,7 +1266,7 @@
     },
     {
         "source": "Do nothing, drop is currently performed by compiler.",
-        "suggest": "不执行任何操作，删除操作当前由编译器执行。",
+        "suggest": "不执行任何操作，当前由编译器执行丢弃。",
         "translate": ""
     },
     {
@@ -2001,7 +2001,7 @@
     },
     {
         "source": "The remaining elements will be removed on drop in heap order.",
-        "suggest": "其余元素将按堆顺序删除。",
+        "suggest": "其余元素将按堆顺序丢弃。",
         "translate": ""
     },
     {
@@ -2146,7 +2146,7 @@
     },
     {
         "source": "Drops all items from the binary heap.",
-        "suggest": "从二进制堆中删除所有项。",
+        "suggest": "从二进制堆中丢弃所有项。",
         "translate": ""
     },
     {
@@ -2156,7 +2156,7 @@
     },
     {
         "source": "In drop, `Hole` will restore the slice by filling the hole position with the value that was originally removed.",
-        "suggest": "在下拉菜单中，`Hole` 将通过使用最初删除的值填充 hole 位置来恢复切片。",
+        "suggest": "在丢弃时，`Hole` 将通过使用最初删除的值填充 hole 位置来恢复切片。",
         "translate": ""
     },
     {
@@ -2281,12 +2281,12 @@
     },
     {
         "source": "The latter makes it easier for the caller to avoid a leak when a drop handler panicks.",
-        "suggest": "后者使调用者在 drop 处理程序 panic 时更容易避免泄漏。",
+        "suggest": "后者使调用者在丢弃处理程序 panic 时更容易避免泄漏。",
         "translate": ""
     },
     {
         "source": "If both iterators produce the same key, this method drops the pair from the left iterator and appends the pair from the right iterator.",
-        "suggest": "如果两个迭代器都产生相同的键，则此方法将从左迭代器中删除该对，并从右迭代器中追加该对。",
+        "suggest": "如果两个迭代器都产生相同的键，则此方法将从左迭代器中丢弃 pair，并从右迭代器中追加 pair。",
         "translate": ""
     },
     {
@@ -2356,7 +2356,7 @@
     },
     {
         "source": "Increment length every iteration, to make sure the map drops the appended elements even if advancing the iterator panicks.",
-        "suggest": "每次迭代增加长度，以确保 map 即使前进迭代器 panick 也会删除附加的元素。",
+        "suggest": "每次迭代都增加长度，以确保即使推进迭代器崩溃，映射也会丢弃附加的元素。",
         "translate": ""
     },
     {
@@ -2986,7 +2986,7 @@
     },
     {
         "source": "Explicitly consumes the iterator, where most test cases drop it instantly.",
-        "suggest": "显式消耗迭代器，大多数测试用例会立即将其丢弃。",
+        "suggest": "显式地使用迭代器，大多数测试用例会立即丢弃它。",
         "translate": ""
     },
     {
@@ -3106,7 +3106,7 @@
     },
     {
         "source": "first duplicate key, dropped during append",
-        "suggest": "第一个重复键，在追加期间删除",
+        "suggest": "第一个重复键，在追加过程中被丢弃",
         "translate": ""
     },
     {
@@ -3446,12 +3446,12 @@
     },
     {
         "source": "A simplified version of `IntoIter` that is not double-ended and has only one purpose: to drop the remainder of an `IntoIter`.",
-        "suggest": "`IntoIter` 的简化版本，不是双端的，只有一个目的: 删除 `IntoIter` 的其余部分。",
+        "suggest": "`IntoIter` 的简化版本，不是双端的，只有一个目的: 丢弃 `IntoIter` 的其余部分。",
         "translate": ""
     },
     {
         "source": "Therefore it also serves to drop an entire tree without the need to first look up a `back` leaf edge.",
-        "suggest": "因此，它还可以删除整个树，而无需先查找 `back` 叶子边缘。",
+        "suggest": "因此，它还可以丢弃整个树，而无需先查找 `back` 叶子边缘。",
         "translate": ""
     },
     {
@@ -3786,12 +3786,12 @@
     },
     {
         "source": "If the iterator is only partially consumed or not consumed at all, each of the remaining elements is still subjected to the closure, which may change its value and, by returning `true`, have the element removed and dropped.",
-        "suggest": "如果迭代器仅被部分消耗或根本没有消耗，则其余每个元素仍将受到闭包的处理，闭包可能会更改其值，并通过返回 `true` 来删除并删除该元素。",
+        "suggest": "如果迭代器仅被部分消耗或根本没有消耗，则其余每个元素仍将受到闭包的影响，闭包可能会更改其值，并通过返回 `true` 来丢弃该元素。",
         "translate": ""
     },
     {
         "source": "It is unspecified how many more elements will be subjected to the closure if a panic occurs in the closure, or a panic occurs while dropping an element, or if the `DrainFilter` value is leaked.",
-        "suggest": "如果在闭包中出现 panic，或者在删除元素时发生 panic，或者 `DrainFilter` 值泄漏，将有多少个元素受到该闭包的影响，这是不确定的。",
+        "suggest": "如果在闭包中出现 panic，或者在丢弃元素时发生 panic，或者 `DrainFilter` 值泄漏，将有多少个元素受到该闭包的影响，这是不确定的。",
         "translate": ""
     },
     {
@@ -3861,7 +3861,7 @@
     },
     {
         "source": "Wrapped in `Option` to allow drop handler to `take` it.",
-        "suggest": "包装在 `Option` 中，以允许放置处理程序对其进行 `take` 处理。",
+        "suggest": "包装在 `Option` 中，以允许 drop 处理器对其进行 `take` 处理。",
         "translate": ""
     },
     {
@@ -4226,7 +4226,7 @@
     },
     {
         "source": "The only safe way to proceed with the updated handle is to compare it, drop it, call this method again subject to its safety conditions, or call counterpart `next_back_unchecked` subject to its safety conditions.",
-        "suggest": "处理更新后的句柄的唯一安全方法是比较它，drop 它，根据安全条件再次调用这个方法，或者根据安全条件调用对应的 `next_back_unchecked`。",
+        "suggest": "处理更新后的句柄的唯一安全方法是比较它，丢弃它，根据安全条件再次调用这个方法，或者根据安全条件调用对应的 `next_back_unchecked`。",
         "translate": ""
     },
     {
@@ -4241,7 +4241,7 @@
     },
     {
         "source": "The only safe way to proceed with the updated handle is to compare it, drop it, call this method again subject to its safety conditions, or call counterpart `next_unchecked` subject to its safety conditions.",
-        "suggest": " 处理更新后的句柄的唯一安全方法是比较它，drop 它，根据安全条件再次调用这个方法，或者根据安全条件调用对应的 `next_unchecked`。",
+        "suggest": " 处理更新后的句柄的唯一安全方法是比较它，丢弃它，根据安全条件再次调用这个方法，或者根据安全条件调用对应的 `next_unchecked`。",
         "translate": ""
     },
     {
@@ -4961,17 +4961,17 @@
     },
     {
         "source": "the caller will not be able to call further methods on self until the key slice reference is dropped, as we have unique access for the lifetime of the borrow.",
-        "suggest": "除非删除关键片段引用，否则调用者将无法自行调用其他方法，因为我们对借用的生命周期具有唯一的访问权限。",
+        "suggest": "在丢弃切片引用之前，调用者将不能调用 self 上的其他方法，因为我们对借用的生命周期具有唯一的访问权。",
         "translate": ""
     },
     {
         "source": "Borrows exclusive access to an element or slice of the node's value storage area.",
-        "suggest": "借用对节点的值存储区的元素或切片的独占访问权。",
+        "suggest": "借用对节点的值存储区的元素或切片的唯一的访问权。",
         "translate": ""
     },
     {
         "source": "the caller will not be able to call further methods on self until the value slice reference is dropped, as we have unique access for the lifetime of the borrow.",
-        "suggest": "调用者将无法调用自已的其他方法，直到丢弃 `切片引用` 的值为止，因为我们对借用的生命周期具有唯一的访问权限。",
+        "suggest": "调用者将无法调用自已的其他方法，直到丢弃 `切片引用` 的值为止，因为我们对借用的生命周期具有唯一的访问权。",
         "translate": ""
     },
     {
@@ -4981,12 +4981,12 @@
     },
     {
         "source": "is in bounds of 0..CAPACITY + 1",
-        "suggest": "处于 0..CAPACITY +1 的范围内",
+        "suggest": "处于 `0..CAPACITY + 1` 的范围内",
         "translate": ""
     },
     {
         "source": "the caller will not be able to call further methods on self until the edge slice reference is dropped, as we have unique access for the lifetime of the borrow.",
-        "suggest": "在删除 edge 切片引用之前，调用者将无法自行调用其他方法，因为我们对借用的生命周期具有唯一的访问权限。",
+        "suggest": "在丢弃 edge 切片引用之前，调用者将无法自行调用其他方法，因为我们对借用的生命周期具有唯一的访问权。",
         "translate": ""
     },
     {

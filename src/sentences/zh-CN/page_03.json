@@ -121,12 +121,12 @@
     },
     {
         "source": "If the upgraded weak ref was never dropped, the CAS here will fail so we do not care to synchronize.",
-        "suggest": "如果从未删除升级的弱引用，则此处的 CAS 将失败，因此我们不在乎同步。",
+        "suggest": "如果升级后的弱引用从未被丢弃，这里的 CAS 将失败，所以我们不关心同步。",
         "translate": ""
     },
     {
         "source": "This needs to be an `Acquire` to synchronize with the decrement of the `strong` counter in `drop` -- the only access that happens when any but the last reference is being dropped.",
-        "suggest": "它必须是 `Acquire`，才能与 `drop` 中 `strong` 计数器的减量同步 - 唯一的访问是在删除除最后一个引用以外的任何内容时发生的。",
+        "suggest": "它必须是 `Acquire`，才能与 `drop` 中 `strong` 计数器的减量同步 - 唯一的访问是在丢弃最后一个引用以外的任何内容时发生的。",
         "translate": ""
     },
     {
@@ -141,7 +141,7 @@
     },
     {
         "source": "Drops the `Arc`.",
-        "suggest": "drop `Arc`。",
+        "suggest": "丢弃 `Arc`。",
         "translate": ""
     },
     {
@@ -196,7 +196,7 @@
     },
     {
         "source": "operation after dropping a reference (any access to the object",
-        "suggest": "删除引用 (对对象的任何访问权限) 后的操作",
+        "suggest": "丢弃引用 (对对象的任何访问权限) 后的操作",
         "translate": ""
     },
     {
@@ -241,7 +241,7 @@
     },
     {
         "source": "Attempts to upgrade the `Weak` pointer to an [`Arc`], delaying dropping of the inner value if successful.",
-        "suggest": "尝试将 `Weak` 指针升级到 [`Arc`]，如果成功，则延迟内部值的删除。",
+        "suggest": "尝试将 `Weak` 指针升级到 [`Arc`]，如果成功，则延迟内部值的丢弃。",
         "translate": ""
     },
     {
@@ -311,7 +311,7 @@
     },
     {
         "source": "We are careful to *not* create a reference covering the \"data\" field, as the field may be mutated concurrently (for example, if the last `Arc` is dropped, the data field will be dropped in-place).",
-        "suggest": "我们小心 *不要* 创建引用 \"data\" 字段的引用，因为该字段可能会同时发生可变的 (例如，如果最后一个 `Arc` 被删除，则数据字段将被原地删除)。",
+        "suggest": "我们小心 *不要* 创建引用 \"data\" 字段的引用，因为该字段可能会同时发生可变的 (例如，如果最后一个 `Arc` 被丢弃，则数据字段将被原地丢弃)。",
         "translate": ""
     },
     {
@@ -351,7 +351,7 @@
     },
     {
         "source": "It's not necessary to check for the locked state here, because the weak count can only be locked if there was precisely one weak ref, meaning that drop could only subsequently run ON that remaining weak ref, which can only happen after the lock is released.",
-        "suggest": "这里没有必要检查锁定状态，因为弱引用计数只能在恰好有一个弱引用的情况下才被锁定，这意味着 drop 只能随后在剩余的弱引用上运行，这只能在释放锁定之后发生。",
+        "suggest": "这里没有必要检查锁定状态，因为弱引用计数只能在恰好有一个弱引用的情况下才被锁定，这意味着丢弃只能随后在剩余的弱引用上运行，这只能在释放锁定之后发生。",
         "translate": ""
     },
     {
@@ -591,12 +591,12 @@
     },
     {
         "source": "Wake by reference, wrap the waker in ManuallyDrop to avoid dropping it",
-        "suggest": "通过引用唤醒，将唤醒器包裹在 ManuallyDrop 中，以避免 drop",
+        "suggest": "通过引用唤醒，将唤醒器包裹在 ManuallyDrop 中，以避免被丢弃",
         "translate": ""
     },
     {
         "source": "Decrement the reference count of the Arc on drop",
-        "suggest": "减少落弧时的引用计数",
+        "suggest": "丢弃时减少 Arc 的引用计数",
         "translate": ""
     },
     {
@@ -656,7 +656,7 @@
     },
     {
         "source": "Drop a `DropGuard` to move back the non-drained tail of `self`.",
-        "suggest": "drop `DropGuard`，以移回 `self` 的不 draining 的尾巴。",
+        "suggest": "丢弃 `DropGuard`，以移回 `self` 的不 draining 的尾巴。",
         "translate": ""
     },
     {
@@ -696,7 +696,7 @@
     },
     {
         "source": "This is used as a hint in the drop implementation to prevent consumption of the remainder of the `DrainFilter`.",
-        "suggest": "这在放置实现中用作提示，以防止消耗 `DrainFilter` 的其余部分。",
+        "suggest": "这在丢弃实现中用作一个提示，以防止消耗 `DrainFilter` 的其余部分。",
         "translate": ""
     },
     {
@@ -726,7 +726,7 @@
     },
     {
         "source": "The backshift is required to prevent a double-drop of the last successfully drained item prior to a panic in the predicate.",
-        "suggest": "需要进行回移，以防止谓词中的 panic 之前的最后一个成功排出的项出现两次 drop。",
+        "suggest": "需要回退以防止在谓词发生 panic 之前对最后一个成功排出的项进行双重丢弃。",
         "translate": ""
     },
     {
@@ -756,7 +756,7 @@
     },
     {
         "source": "Drops remaining elements and relinquishes the backing allocation.",
-        "suggest": "删除剩余的元素并放弃支持分配。",
+        "suggest": "丢弃剩余的元素并放弃支持分配。",
         "translate": ""
     },
     {
@@ -801,7 +801,7 @@
     },
     {
         "source": "Copy as approximation for !Drop since get_unchecked does not advance self.ptr and thus we can't implement drop-handling",
-        "suggest": "复制为 !Drop 的近似值，因为 get_unchecked 不会推进 self.ptr，因此我们无法实现放置处理",
+        "suggest": "复制为 !Drop 的近似值，因为 get_unchecked 不会推进 self.ptr，因此我们无法实现丢弃处理",
         "translate": ""
     },
     {
@@ -816,7 +816,7 @@
     },
     {
         "source": "now `guard` will be dropped and do the rest",
-        "suggest": "现在，`guard` 将被删除并执行其余的操作",
+        "suggest": "现在，`guard` 将被丢弃并执行其余的操作",
         "translate": ""
     },
     {
@@ -826,12 +826,12 @@
     },
     {
         "source": "A helper struct for in-place iteration that drops the destination slice of iteration, i.e. the head.",
-        "suggest": "用于就地迭代的辅助结构体，该结构体将迭代的目标切片 (即头部) drop。",
+        "suggest": "用于就地迭代的辅助结构体，该结构体将迭代的目标切片 (即头部) 丢弃。",
         "translate": ""
     },
     {
         "source": "The source slice (the tail) is dropped by IntoIter.",
-        "suggest": "源切片 (尾部) 由 IntoIter 删除。",
+        "suggest": "源切片 (尾部) 由 IntoIter 丢弃。",
         "translate": ""
     },
     {
@@ -1266,7 +1266,7 @@
     },
     {
         "source": "In general, `Vec`'s allocation details are very subtle — if you intend to allocate memory using a `Vec` and use it for something else (either to pass to unsafe code, or to build your own memory-backed collection), be sure to deallocate this memory by using `from_raw_parts` to recover the `Vec` and then dropping it.",
-        "suggest": "通常，`Vec` 的分配细节非常微妙 - 如果您打算使用 `Vec` 分配内存并将其用于其他用途 (传递给不安全的代码或构建自己的内存支持的集合)，请确保通过使用 `from_raw_parts` 恢复 `Vec` 然后删除它来释放该内存。",
+        "suggest": "通常，`Vec` 的分配细节非常微妙 - 如果您打算使用 `Vec` 分配内存并将其用于其他用途 (传递给不安全的代码或构建自己的内存支持的集合)，请确保通过使用 `from_raw_parts` 恢复 `Vec` 然后丢弃它来释放该内存。",
         "translate": ""
     },
     {
@@ -1411,7 +1411,7 @@
     },
     {
         "source": "Even if you drop a `Vec`, its buffer may simply be reused by another `Vec`.",
-        "suggest": "即使您删除了 `Vec`，它的缓冲区也可能被另一个 `Vec` 简单地重用。",
+        "suggest": "即使您丢弃了 `Vec`，它的缓冲区也可能被另一个 `Vec` 简单地重用。",
         "translate": ""
     },
     {
@@ -1601,7 +1601,7 @@
     },
     {
         "source": "It will drop down as close as possible to the length but the allocator may still inform the vector that there is space for a few more elements.",
-        "suggest": "它将下降到尽可能接近的长度，但是分配器仍可以通知 vector，还有空间可以容纳更多元素。",
+        "suggest": "它将降低到尽可能接近的长度，但是分配器仍可以通知 vector，还有空间可以容纳更多元素。",
         "translate": ""
     },
     {
@@ -1631,7 +1631,7 @@
     },
     {
         "source": "Shortens the vector, keeping the first `len` elements and dropping the rest.",
-        "suggest": "缩短 vector，保留前 `len` 个元素，其余元素删除。",
+        "suggest": "缩短 vector，保留前 `len` 个元素，并丢弃其他元素。",
         "translate": ""
     },
     {
@@ -1796,7 +1796,7 @@
     },
     {
         "source": "Normally, here, one would use [`clear`] instead to correctly drop the contents and thus not leak memory.",
-        "suggest": "通常，在这里，人们将使用 [`clear`] 来正确删除内容，因此不会泄漏内存。",
+        "suggest": "通常，在这里，人们将使用 [`clear`] 来正确丢弃内容，因此不会泄漏内存。",
         "translate": ""
     },
     {
@@ -1891,12 +1891,12 @@
     },
     {
         "source": "Avoid double drop if the drop guard is not executed, since we may make some holes during the process.",
-        "suggest": "如果不执行防卸装置，请避免双落，因为在此过程中我们可能会产生一些漏洞。",
+        "suggest": "如果不执行丢弃守卫，请避免双重丢弃，因为在此过程中我们可能会产生一些漏洞。",
         "translate": ""
     },
     {
         "source": "Hole: Moved or dropped element slot.",
-        "suggest": "Hole: 移动或放置的元素插槽。",
+        "suggest": "Hole: 移动或丢弃的元素插槽。",
         "translate": ""
     },
     {
@@ -1906,7 +1906,7 @@
     },
     {
         "source": "This drop guard will be invoked when predicate or `drop` of element panicked.",
-        "suggest": "当谓词或元素的 `drop` 发生恐慌时，将调用此放置保护。",
+        "suggest": "当谓词或元素的 `drop` 发生恐慌时，将调用此丢弃守卫。",
         "translate": ""
     },
     {
@@ -1936,12 +1936,12 @@
     },
     {
         "source": "Advance early to avoid double drop if `drop_in_place` panicked.",
-        "suggest": "如果 `drop_in_place` 发生 panic，请提前提早避免两次 drop。",
+        "suggest": "如果 `drop_in_place` 发生 panic，请提前提早避免双重丢弃。",
         "translate": ""
     },
     {
         "source": "We never touch this element again after dropped.",
-        "suggest": "删除后，我们再也不会触碰此元素。",
+        "suggest": "丢弃后，我们再也不会触碰此元素。",
         "translate": ""
     },
     {
@@ -2031,12 +2031,12 @@
     },
     {
         "source": "When the iterator **is** dropped, all elements in the range are removed from the vector, even if the iterator was not fully consumed.",
-        "suggest": "删除迭代器 ** 时，即使未完全消耗迭代器，该范围中的所有元素也会从 vector 中删除。",
+        "suggest": "当迭代器被丢弃时，该范围内的所有元素都将从 vector 中删除，即使迭代器未被完全消耗。",
         "translate": ""
     },
     {
         "source": "If the iterator **is not** dropped (with [`mem::forget`] for example), it is unspecified how many elements are removed.",
-        "suggest": "如果没有 ** 删除迭代器 (例如，使用 [`mem::forget`])，则不确定删除了多少个元素。",
+        "suggest": "如果迭代器没有被丢弃 (例如，使用 [`mem::forget`])，则不确定删除了多少个元素。",
         "translate": ""
     },
     {
@@ -2376,7 +2376,7 @@
     },
     {
         "source": "drop anything that will not be overwritten",
-        "suggest": "删除任何不会被覆盖的内容",
+        "suggest": "丢弃任何不会被覆盖的内容",
         "translate": ""
     },
     {
@@ -2436,7 +2436,7 @@
     },
     {
         "source": "The input iterator `replace_with` is only consumed when the `Splice` value is dropped.",
-        "suggest": "仅当 `Splice` 值 drop 时才使用输入迭代器 `replace_with`。",
+        "suggest": "仅当 `Splice` 值丢弃时才使用输入迭代器 `replace_with`。",
         "translate": ""
     },
     {
@@ -2566,7 +2566,7 @@
     },
     {
         "source": "The items will not double-drop as the `set_len` tells the `Vec` not to also drop them.",
-        "suggest": "由于 `set_len` 告诉 `Vec` 也不要丢弃它们，因此该条目不会被两次丢弃。",
+        "suggest": "由于 `set_len` 告诉 `Vec` 也不要丢弃它们，因此该项不会被双重丢弃。",
         "translate": ""
     },
     {
@@ -2676,7 +2676,7 @@
     },
     {
         "source": "iteration succeeded, don't drop head",
-        "suggest": "迭代成功，不要丢下头",
+        "suggest": "迭代成功，不要丢弃 head",
         "translate": ""
     },
     {
@@ -2701,7 +2701,7 @@
     },
     {
         "source": "drop any remaining values at the tail of the source but prevent drop of the allocation itself once IntoIter goes out of scope if the drop panics then we also leak any elements collected into dst_buf",
-        "suggest": "在源的末尾删除所有剩余值，但一旦分配 panics，则防止分配本身下降到 IntoIter 离开的作用域中，然后我们还将收集到的所有元素泄漏到 dst_buf 中",
+        "suggest": "在源的末尾丢弃所有剩余值，但一旦分配 panics，则防止分配本身下降到 IntoIter 离开的作用域中，然后我们还将收集到的所有元素泄漏到 dst_buf 中",
         "translate": ""
     },
     {
@@ -2911,12 +2911,12 @@
     },
     {
         "source": "Clone a bit and let these get dropped.",
-        "suggest": "克隆一个位，然后让它们 drop。",
+        "suggest": "克隆一个位，让这些被丢弃。",
         "translate": ""
     },
     {
         "source": "Drop what hasn't been here.",
-        "suggest": "删除这里没有的东西。",
+        "suggest": "丢弃这里没有的东西。",
         "translate": ""
     },
     {
@@ -2931,7 +2931,7 @@
     },
     {
         "source": "Exercise the `TrustedLen` implementation when `size_hint()` matches `(_, Some(exact_len))` but where `.next()` drops before the last iteration.",
-        "suggest": "当 `size_hint()` 与 `(_, Some(exact_len))` 匹配但 `.next()` 在最后一次迭代之前 drop 时，请执行 `TrustedLen` 实现。",
+        "suggest": "当 `size_hint()` 与 `(_, Some(exact_len))` 匹配但 `.next()` 在最后一次迭代之前丢弃时，请执行 `TrustedLen` 实现。",
         "translate": ""
     },
     {
@@ -3201,7 +3201,7 @@
     },
     {
         "source": "If the unsafe block didn't drop things properly, we blow up here.",
-        "suggest": "如果 unsafe 块没有正确地 drop 东西，我们就在这里销毁。",
+        "suggest": "如果 unsafe 块没有正确地丢弃东西，我们就在这里销毁。",
         "translate": ""
     },
     {
@@ -3296,7 +3296,7 @@
     },
     {
         "source": "When xs is dropped, +5.",
-        "suggest": "当 xs drop 后，+ 5。",
+        "suggest": "当 xs 被丢弃后，+ 5。",
         "translate": ""
     },
     {
@@ -3331,7 +3331,7 @@
     },
     {
         "source": "Check that the most recent versions of values were dropped.",
-        "suggest": "检查是否删除了最新版本的值。",
+        "suggest": "检查是否丢弃了最新版本的值。",
         "translate": ""
     },
     {
@@ -3816,7 +3816,7 @@
     },
     {
         "source": "Here tv goes out of scope, tv.y should be dropped, but not tv.x.",
-        "suggest": "tv 离开作用域时，应该删除 tv.y，但不要删除 tv.x。",
+        "suggest": "tv 离开作用域时，应该丢弃 tv.y，但不要丢弃 tv.x。",
         "translate": ""
     },
     {
@@ -3826,7 +3826,7 @@
     },
     {
         "source": "Double drop",
-        "suggest": "双重释放",
+        "suggest": "双重丢弃",
         "translate": ""
     },
     {
@@ -3861,12 +3861,12 @@
     },
     {
         "source": "Other elements are dropped when `drop` of one element panicked.",
-        "suggest": "当一个元素的 `drop` 发生紧急情况时，其他元素将被删除。",
+        "suggest": "当一个元素的 `drop` 发生 panic 时，其他元素将被丢弃。",
         "translate": ""
     },
     {
         "source": "The panicked wrapper also has its Rc dropped.",
-        "suggest": "panic 的包装器的 Rc 也 drop 了。",
+        "suggest": "panic 的包装器的 Rc 也丢弃了。",
         "translate": ""
     },
     {
@@ -3906,7 +3906,7 @@
     },
     {
         "source": "Pull an element from the iterator, then drop it.",
-        "suggest": "从迭代器中取出一个元素，然后 drop 它。",
+        "suggest": "从迭代器中取出一个元素，然后丢弃它。",
         "translate": ""
     },
     {
@@ -4061,7 +4061,7 @@
     },
     {
         "source": "Previously just appended item was leaked, making drop_count = 3, instead of 4.",
-        "suggest": "以前刚刚追加的项被泄漏，使 drop_count=3 而不是 4。",
+        "suggest": "以前刚刚追加的项被泄漏，让 drop_count = 3 而不是 4。",
         "translate": ""
     },
     {

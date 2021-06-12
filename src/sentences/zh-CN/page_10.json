@@ -216,12 +216,12 @@
     },
     {
         "source": "Drop order",
-        "suggest": "Drop 命令",
+        "suggest": "Drop 指令",
         "translate": ""
     },
     {
         "source": "Which of our two `HasDrop` drops first, though?",
-        "suggest": "但是，我们的两个 `HasDrop` 哪个先 drop 掉?",
+        "suggest": "但是，我们的两个 `HasDrop` 哪个先丢弃掉?",
         "translate": ""
     },
     {
@@ -241,7 +241,7 @@
     },
     {
         "source": "Unlike for structs, local variables are dropped in reverse order:",
-        "suggest": "与结构体不同，局部变量以相反的顺序删除:",
+        "suggest": "与结构体不同，局部变量以相反的顺序丢弃:",
         "translate": ""
     },
     {
@@ -311,7 +311,7 @@
     },
     {
         "source": "Note that even if this panics, the value is considered to be dropped;",
-        "suggest": "请注意，即使此 panics，该值也被视为已删除;",
+        "suggest": "请注意，即使此 panics，该值也被视为已丢弃;",
         "translate": ""
     },
     {
@@ -1881,7 +1881,7 @@
     },
     {
         "source": "If the option already contains a value, the old value is dropped.",
-        "suggest": "如果该选项已包含值，则将删除旧值。",
+        "suggest": "如果该选项已包含值，则将丢弃旧值。",
         "translate": ""
     },
     {
@@ -2651,12 +2651,12 @@
     },
     {
         "source": "is okay because we know this value is never used again after being dropped.",
-        "suggest": "可以，因为我们知道此值在删除后再也不会使用了。",
+        "suggest": "可以，因为我们知道此值在丢弃后再也不会使用了。",
         "translate": ""
     },
     {
         "source": "Actual drop code goes here.",
-        "suggest": "实际的放置代码在此处。",
+        "suggest": "实际丢弃的代码在此处。",
         "translate": ""
     },
     {
@@ -2731,7 +2731,7 @@
     },
     {
         "source": "At a high level, a [`Pin<P>`] ensures that the pointee of any pointer type `P` has a stable location in memory, meaning it cannot be moved elsewhere and its memory cannot be deallocated until it gets dropped.",
-        "suggest": "在较高的层次上，[`Pin<P>`] 确保任何指针类型 `P` 的指针都在内存中具有稳定的位置，这意味着它不能被移动到其他地方，并且在删除之前不能释放其内存。",
+        "suggest": "在较高的层次上，[`Pin<P>`] 确保任何指针类型 `P` 的指针都在内存中具有稳定的位置，这意味着它不能被移动到其他地方，并且在丢弃之前不能释放其内存。",
         "translate": ""
     },
     {
@@ -2766,7 +2766,7 @@
     },
     {
         "source": "when a [`Pin`]`<`[`Box`]`<T>>` gets dropped, so do its contents, and the memory gets",
-        "suggest": "当 [`Pin`]`<`[`Box`]`<T>>` 被删除时，它的内容也被删除，并且内存被删除",
+        "suggest": "当 [`Pin`]`<`[`Box`]`<T>>` 被丢弃时，它的内容也被丢弃，并且内存被丢弃",
         "translate": ""
     },
     {
@@ -3356,7 +3356,7 @@
     },
     {
         "source": "This constructor is unsafe because we cannot guarantee that the data pointed to by `pointer` is pinned, meaning that the data will not be moved or its storage invalidated until it gets dropped.",
-        "suggest": "此构造函数是不安全的，因为我们不能保证 `pointer` 指向的数据是固定的，这意味着在删除数据之前，数据将不会移动或存储空间无效。",
+        "suggest": "此构造函数是不安全的，因为我们不能保证 `pointer` 指向的数据是固定的，这意味着在丢弃数据之前，数据将不会移动或存储空间无效。",
         "translate": ""
     },
     {
@@ -4796,7 +4796,7 @@
     },
     {
         "source": "Note that the first three are special because they’re necessary to allocate, drop, and deallocate any trait object.",
-        "suggest": "请注意，前三个是特殊的，因为它们是分配，删除和取消分配任何 trait 对象所必需的。",
+        "suggest": "请注意，前三个是特殊的，因为它们是分配，丢弃和取消分配任何 trait 对象所必需的。",
         "translate": ""
     },
     {
@@ -4856,7 +4856,7 @@
     },
     {
         "source": "Shorten `v` to prevent the last item from being dropped.",
-        "suggest": "缩短 `v`，以防止删除最后一个项。",
+        "suggest": "缩短 `v`，以防止丢弃最后一个项。",
         "translate": ""
     },
     {
@@ -4871,7 +4871,7 @@
     },
     {
         "source": "Ensure that the last item was dropped.",
-        "suggest": "确保删除了最后一个项目。",
+        "suggest": "确保丢弃了最后一项。",
         "translate": ""
     },
     {
@@ -4936,7 +4936,7 @@
     },
     {
         "source": "Exiting at this point (either by explicitly returning or by calling a function which panics) would cause the value in `tmp` to be dropped while the same value is still referenced by `a`.",
-        "suggest": "此时退出 (通过显式返回或调用 panics 的函数) 将导致 `tmp` 中的值被删除，而 `a` 仍引用相同的值。",
+        "suggest": "此时退出 (通过显式返回或调用 panics 的函数) 将导致 `tmp` 中的值被丢弃，而 `a` 仍引用相同的值。",
         "translate": ""
     },
     {
@@ -4966,7 +4966,7 @@
     },
     {
         "source": "has been moved (`write` takes ownership of its second argument), so nothing is dropped implicitly here.",
-        "suggest": "已被移动 (`write` 拥有其第二个参数的所有权)，因此此处未隐式删除任何内容。",
+        "suggest": "已被移动 (`write` 拥有其第二个参数的所有权)，因此此处未隐式丢弃任何内容。",
         "translate": ""
     },
     {
@@ -4991,7 +4991,7 @@
     },
     {
         "source": "can be used to overwrite a value without dropping it.",
-        "suggest": "可用于覆盖一个值而不删除它。",
+        "suggest": "可用于覆盖一个值而不丢弃它。",
         "translate": ""
     },
     {

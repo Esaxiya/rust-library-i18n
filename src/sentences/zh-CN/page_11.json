@@ -176,22 +176,22 @@
     },
     {
         "source": "It is *required* to use `drop_in_place` to drop unsized types like trait objects, because they can't be read out onto the stack and dropped normally.",
-        "suggest": "强制要求使用 `drop_in_place` 删除未缩放的类型 (例如 trait 对象)，因为它们无法被读取到栈上并且无法正常删除。",
+        "suggest": "强制要求使用 `drop_in_place` 丢弃未缩放的类型 (例如 trait 对象)，因为它们无法被读取到栈上并且无法正常丢弃。",
         "translate": ""
     },
     {
         "source": "It is friendlier to the optimizer to do this over [`ptr::read`] when dropping manually allocated memory (e.g., in the implementations of `Box`/`Rc`/`Vec`), as the compiler doesn't need to prove that it's sound to elide the copy.",
-        "suggest": "当删除手动分配的内存时 (例如，在 `Box`/`Rc`/`Vec` 的实现中)，通过 [`ptr::read`] 进行此操作对优化器来说更友好，因为编译器不需要证明删除副本是合理的。",
+        "suggest": "当丢弃手动分配的内存时 (例如，在 `Box`/`Rc`/`Vec` 的实现中)，通过 [`ptr::read`] 进行此操作对优化器来说更友好，因为编译器不需要证明丢弃副本是合理的。",
         "translate": ""
     },
     {
         "source": "It can be used to drop [pinned] data when `T` is not `repr(packed)` (pinned data must not be moved before it is dropped).",
-        "suggest": "当 `T` 不是 `repr(packed)` 时，可用于删除 [pinned] 数据 (在删除固定的数据之前，不得移动固定的数据)。",
+        "suggest": "当 `T` 不是 `repr(packed)` 时，可用于丢弃 [pinned] 数据 (在丢弃固定的数据之前，不得移动固定的数据)。",
         "translate": ""
     },
     {
         "source": "Unaligned values cannot be dropped in place, they must be copied to an aligned location first using [`ptr::read_unaligned`].",
-        "suggest": "未对齐的值不能放在适当的位置，必须先使用 [`ptr::read_unaligned`] 将它们复制到对齐的位置。",
+        "suggest": "未对齐的值不能被直接丢弃，必须先使用 [`ptr::read_unaligned`] 将它们复制到对齐的位置。",
         "translate": ""
     },
     {
@@ -201,7 +201,7 @@
     },
     {
         "source": "This means the fields of packed structs are not dropped in-place.",
-        "suggest": "这意味着堆积的结构体的字段不会被原地放置。",
+        "suggest": "这意味着已打包结构的字段不会被原地丢弃。",
         "translate": ""
     },
     {
@@ -211,7 +211,7 @@
     },
     {
         "source": "The value `to_drop` points to must be valid for dropping, which may mean it must uphold additional invariants - this is type-dependent.",
-        "suggest": "`to_drop` 指向的值必须对删除有效，这可能意味着它必须支持其他不变式 - 这与类型有关。",
+        "suggest": "`to_drop` 指向的值必须对丢弃有效，这可能意味着它必须支持其他不变式 - 这与类型有关。",
         "translate": ""
     },
     {
@@ -246,7 +246,7 @@
     },
     {
         "source": "Code here does not matter - this is replaced by the real drop glue by the compiler.",
-        "suggest": "此处的代码无关紧要 - 编译器将其替换为实际的粘贴。",
+        "suggest": "编译器会将其替换为真正的 drop glue。",
         "translate": ""
     },
     {
@@ -376,7 +376,7 @@
     },
     {
         "source": "We do not have to worry about drops: `MaybeUninit` does nothing when dropped.",
-        "suggest": "我们不必担心掉线: 掉线时 `MaybeUninit` 不会执行任何操作。",
+        "suggest": "我们不必担心丢弃: `MaybeUninit` 在丢弃时什么也不做。",
         "translate": ""
     },
     {
@@ -571,7 +571,7 @@
     },
     {
         "source": "Note that assigning to `*src` counts as a use because it will attempt to drop the value at `*src`.",
-        "suggest": "请注意，将分配给 `*src` 视为一种用途，因为它将尝试删除 `* src` 处的值。",
+        "suggest": "请注意，将分配给 `*src` 视为一种用途，因为它将尝试丢弃 `*src` 处的值。",
         "translate": ""
     },
     {
@@ -656,22 +656,22 @@
     },
     {
         "source": "Overwrites a memory location with the given value without reading or dropping the old value.",
-        "suggest": "用给定值覆盖存储位置，而无需读取或删除旧值。",
+        "suggest": "用给定值覆盖存储位置，而无需读取或丢弃旧值。",
         "translate": ""
     },
     {
         "source": "does not drop the contents of `dst`.",
-        "suggest": "不会删除 `dst` 的内容。",
+        "suggest": "不会丢弃 `dst` 的内容。",
         "translate": ""
     },
     {
         "source": "This is safe, but it could leak allocations or resources, so care should be taken not to overwrite an object that should be dropped.",
-        "suggest": "这是安全的，但可能会泄漏分配或资源，因此应注意不要覆盖应删除的对象。",
+        "suggest": "这是安全的，但可能会泄漏分配或资源，因此应注意不要覆盖应丢弃的对象。",
         "translate": ""
     },
     {
         "source": "Additionally, it does not drop `src`.",
-        "suggest": "此外，它不会删除 `src`。",
+        "suggest": "此外，它不会丢弃 `src`。",
         "translate": ""
     },
     {
@@ -786,7 +786,7 @@
     },
     {
         "source": "Performs a volatile write of a memory location with the given value without reading or dropping the old value.",
-        "suggest": "使用给定值对存储单元执行易失性写操作，而无需读取或删除旧值。",
+        "suggest": "使用给定值对存储单元执行易失性写操作，而无需读取或丢弃旧值。",
         "translate": ""
     },
     {
@@ -1291,7 +1291,7 @@
     },
     {
         "source": "Replaces the value at `self` with `src`, returning the old value, without dropping either.",
-        "suggest": "用 `src` 替换 `self` 处的值，返回旧值，但不删除任何一个。",
+        "suggest": "用 `src` 替换 `self` 处的值，返回旧值，但不丢弃任何一个。",
         "translate": ""
     },
     {

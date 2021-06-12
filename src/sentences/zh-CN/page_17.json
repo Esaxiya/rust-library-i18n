@@ -511,7 +511,7 @@
     },
     {
         "source": "to make sure dropck understands we're dropping T in our Drop impl.",
-        "suggest": "以确保 dropck 理解我们在 Drop impl 中删除了 T。",
+        "suggest": "以确保 dropck 理解我们在 Drop impl 中丢弃了 T。",
         "translate": ""
     },
     {
@@ -626,7 +626,7 @@
     },
     {
         "source": "With the current implementation, if `g` panics, the value from `f` will not be dropped.",
-        "suggest": "在当前实现中，如果 `g` panics，则不会删除 `f` 中的值。",
+        "suggest": "在当前实现中，如果 `g` panics，则不会丢弃 `f` 中的值。",
         "translate": ""
     },
     {
@@ -701,7 +701,7 @@
     },
     {
         "source": "The cell is initialized and being dropped, so it can't be accessed again.",
-        "suggest": "单元已初始化并已删除，因此无法再次访问。",
+        "suggest": "cell 已初始化并已丢弃，因此无法再次访问。",
         "translate": ""
     },
     {
@@ -3491,7 +3491,7 @@
     },
     {
         "source": "The connection will be closed when the value is dropped.",
-        "suggest": "删除该值时，连接将关闭。",
+        "suggest": "丢弃该值时，连接将关闭。",
         "translate": ""
     },
     {
@@ -3521,7 +3521,7 @@
     },
     {
         "source": "The socket will be closed when the value is dropped.",
-        "suggest": "删除该值时，套接字将关闭。",
+        "suggest": "丢弃该值时，套接字将关闭。",
         "translate": ""
     },
     {

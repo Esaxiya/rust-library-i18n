@@ -1011,7 +1011,7 @@
     },
     {
         "source": "Safe because we're !Unpin + !Drop, and this is just a field projection.",
-        "suggest": "安全，因为我们是 !Unpin + !Drop，这只是一个场投影。",
+        "suggest": "安全，因为我们是 `!Unpin + !Drop`，这只是一个字段推断。",
         "translate": ""
     },
     {
@@ -1941,7 +1941,7 @@
     },
     {
         "source": "Truncate `src` without dropping its contents.",
-        "suggest": "截断 `src` 而不删除其内容。",
+        "suggest": "截断 `src` 而不丢弃其内容。",
         "translate": ""
     },
     {
@@ -1991,7 +1991,7 @@
     },
     {
         "source": "At this point, using or dropping `v` results in undefined behavior.",
-        "suggest": "此时，使用或删除 `v` 会导致未定义的行为。",
+        "suggest": "此时，使用或丢弃 `v` 会导致未定义的行为。",
         "translate": ""
     },
     {
@@ -2136,7 +2136,7 @@
     },
     {
         "source": "see `ptr::drop_in_place`",
-        "suggest": "见 `ptr::drop_in_place`",
+        "suggest": "请参见 `ptr::drop_in_place`",
         "translate": ""
     },
     {
@@ -2896,7 +2896,7 @@
     },
     {
         "source": "Moves a value out of scope without running drop glue.",
-        "suggest": "将值移出作用域。 而无需运行 drop 。",
+        "suggest": "将值移出作用域。 而无需运行丢弃守卫。",
         "translate": ""
     },
     {
@@ -3066,7 +3066,7 @@
     },
     {
         "source": "Returns `true` if the actual type given as `T` requires drop glue;",
-        "suggest": "如果 `T` 给出的实际类型需要滴胶，则返回 `true`; 否则返回 `true`。",
+        "suggest": "如果 `T` 给出的实际类型需要丢弃 glue，则返回 `true`。",
         "translate": ""
     },
     {
@@ -3076,7 +3076,7 @@
     },
     {
         "source": "If the actual type neither requires drop glue nor implements `Copy`, then the return value of this function is unspecified.",
-        "suggest": "如果实际类型既不需要滴胶也不需要实现 `Copy`，则该函数的返回值不确定。",
+        "suggest": "如果实际类型既不需要丢弃 glue 也不需要实现 `Copy`，则该函数的返回值不确定。",
         "translate": ""
     },
     {
@@ -4421,7 +4421,7 @@
     },
     {
         "source": "Callers may only replace the reference when they stopped iteration and drop the iterator pipeline after extracting the source.",
-        "suggest": "调用者只有在停止迭代并在提取源之后删除迭代器管道时才可以替换 quot。",
+        "suggest": "调用者只有在停止迭代并在提取源之后丢弃迭代器管道时才可以替换引用。",
         "translate": ""
     },
     {
@@ -4851,7 +4851,7 @@
     },
     {
         "source": "An additional method returning the number of times the source has been logically advanced (without calling next()) would be needed to properly drop the remainder of the source.",
-        "suggest": "另一种方法返回源已被逻辑高级化的次数 (需要调用 next()) 才能正确删除源的其余部分。",
+        "suggest": "另一种方法返回源已被逻辑高级化的次数 (需要调用 next()) 才能正确丢弃源的其余部分。",
         "translate": ""
     },
     {
@@ -4916,7 +4916,7 @@
     },
     {
         "source": "It must also be safe to drop `self` after calling `get_unchecked`.",
-        "suggest": "调用 `get_unchecked` 后 drop `self` 也必须是安全的。",
+        "suggest": "调用 `get_unchecked` 后丢弃 `self` 也必须是安全的。",
         "translate": ""
     },
     {

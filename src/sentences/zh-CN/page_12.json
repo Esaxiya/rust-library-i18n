@@ -1076,7 +1076,7 @@
     },
     {
         "source": "If a following comparison operation panics, `hole` will get dropped and automatically write the element back into the slice.",
-        "suggest": "如果执行以下比较操作 panics，则 `hole` 将被删除并自动将元素写回到切片中。",
+        "suggest": "如果执行以下比较操作 panics，则 `hole` 将被丢弃并自动将元素写回到切片中。",
         "translate": ""
     },
     {

@@ -1076,12 +1076,12 @@
     },
     {
         "source": "If the iterator is only partially consumed or not consumed at all, each of the remaining values will still be subjected to the closure and removed and dropped if it returns true.",
-        "suggest": "如果迭代器仅被部分消耗或根本没有消耗，则其余所有值仍将受到闭包的处理，如果返回 true，则将其删除并删除。",
+        "suggest": "如果迭代器仅被部分消耗或根本没有消耗，则其余所有值仍将受到闭包的处理，如果返回 true，则将其删除并丢弃。",
         "translate": ""
     },
     {
         "source": "It is unspecified how many more values will be subjected to the closure if a panic occurs in the closure, or if a panic occurs while dropping a value, or if the `DrainFilter` itself is leaked.",
-        "suggest": "如果在闭包中出现 panic，或者在删除值时出现 panic，或者 `DrainFilter` 本身泄漏，则不确定要给闭包再处理多少个值。",
+        "suggest": "如果在闭包中出现 panic，或者在丢弃值时出现 panic，或者 `DrainFilter` 本身被泄漏，那么还有多少值将被关闭，这是未指定的。",
         "translate": ""
     },
     {
@@ -1196,7 +1196,7 @@
     },
     {
         "source": "Events are `clone`, `drop` or some anonymous `query`.",
-        "suggest": "事件是 `clone`，`drop` 或某些匿名 `query`。",
+        "suggest": "事件是 `clone`，`drop` 或一些匿名 `query`。",
         "translate": ""
     },
     {
@@ -1231,7 +1231,7 @@
     },
     {
         "source": "Returns how many times instances of the dummy have been dropped.",
-        "suggest": "返回已删除虚拟实例的次数。",
+        "suggest": "返回虚拟实例被丢弃的次数。",
         "translate": ""
     },
     {
@@ -1326,12 +1326,12 @@
     },
     {
         "source": "This caused the RHS's dtor to walk up into the LHS at drop and delete all of its nodes.",
-        "suggest": "这导致 RHS 的 dtor 掉入 LHS 并删除其所有节点。",
+        "suggest": "这导致 RHS 的 dtor 在丢弃时进入 LHS 并删除其所有节点。",
         "translate": ""
     },
     {
         "source": "Dropping this now should not cause laundry consumption",
-        "suggest": "现在 drop 不应该导致 laundry 消耗",
+        "suggest": "现在丢弃它应该不会导致 laundry 消耗",
         "translate": ""
     },
     {
@@ -2291,7 +2291,7 @@
     },
     {
         "source": "Runs the destructor for all items in the slice when it gets dropped (normally or during unwinding).",
-        "suggest": "当切片中的所有项被删除时 (通常或在展开期间) 运行析构函数。",
+        "suggest": "当切片中的所有项被丢弃时 (正常情况下或在展开期间)，对切片中的所有项运行析构函数。",
         "translate": ""
     },
     {
@@ -2526,7 +2526,7 @@
     },
     {
         "source": "It will drop down as close as possible to the length but the allocator may still inform the `VecDeque` that there is space for a few more elements.",
-        "suggest": "它会尽可能地下降到长度附近，但是分配器仍可以通知 `VecDeque` 还有更多元素的空间。",
+        "suggest": "它将 drop 到尽可能接近长度的位置，但分配器仍可能通知 `VecDeque` 还有空间容纳更多的元素。",
         "translate": ""
     },
     {
@@ -2571,7 +2571,7 @@
     },
     {
         "source": "Shortens the `VecDeque`, keeping the first `len` elements and dropping the rest.",
-        "suggest": "缩短 `VecDeque`，保留第一个 `len` 元素，然后删除其余的元素。",
+        "suggest": "缩短 `VecDeque`，保留第一个 `len` 元素，然后丢弃其余的元素。",
         "translate": ""
     },
     {
@@ -2586,7 +2586,7 @@
     },
     {
         "source": "Any slice passed to `drop_in_place` is valid;",
-        "suggest": "传递给 `drop_in_place` 的任何切片均有效;",
+        "suggest": "传递给 `drop_in_place` 的任何切片都是有效的;",
         "translate": ""
     },
     {
@@ -2601,7 +2601,7 @@
     },
     {
         "source": "Make sure the second half is dropped even when a destructor in the first one panics.",
-        "suggest": "确保即使在第一个 panics 中有析构函数时也将下半部分删除。",
+        "suggest": "即使第一个中的析构函数发生 panic，也要确保后半部分被丢弃。",
         "translate": ""
     },
     {
@@ -2666,12 +2666,12 @@
     },
     {
         "source": "Note 1: The element range is removed even if the iterator is not consumed until the end.",
-        "suggest": "注 1: 即使直到最后才消耗迭代器，元素范围也会被删除。",
+        "suggest": "注意 1: 即使直到最后才消耗迭代器，元素范围也会被删除。",
         "translate": ""
     },
     {
         "source": "Note 2: It is unspecified how many elements are removed from the deque, if the `Drain` value is not dropped, but the borrow it holds expires (e.g., due to `mem::forget`).",
-        "suggest": "注 2: 如果未删除 `Drain` 值，但持有的借用已过期 (例如，由于 `mem::forget`)，则未指定从双端队列中删除了多少个元素。",
+        "suggest": "注意 2: 如果 `Drain` 值没有被丢弃，但持有的借用已过期 (例如，由于 `mem::forget`)，则未指定从双端队列中删除了多少个元素。",
         "translate": ""
     },
     {
@@ -3391,7 +3391,7 @@
     },
     {
         "source": "We do this while it's still in the `Vec` so the items will drop on panic.",
-        "suggest": "我们在它仍在 `Vec` 中时执行此操作，因此该项将落在 panic 上。",
+        "suggest": "我们在它仍在 `Vec` 中时执行此操作，所以该项会因为 panic 而被丢弃。",
         "translate": ""
     },
     {
@@ -4601,7 +4601,7 @@
     },
     {
         "source": "This will still evaluate `expr`, however, and immediately drop the resulting value, so be mindful of side effects.",
-        "suggest": "但是，这仍将评估 `expr`，并立即降低结果值，因此请注意副作用。",
+        "suggest": "然而，这仍然会计算 `expr`，并立即丢弃结果值，因此请注意副作用。",
         "translate": ""
     },
     {
@@ -4816,7 +4816,7 @@
     },
     {
         "source": "When dropped it *will* free its memory, but it *won't* try to drop its contents.",
-        "suggest": "删除后，它会 *释放其内存，但不会* 尝试删除其内容。",
+        "suggest": "当丢弃后，它会释放其内存，但不会尝试丢弃其内容。",
         "translate": ""
     },
     {

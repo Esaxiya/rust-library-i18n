@@ -2621,7 +2621,7 @@
     },
     {
         "source": "Dropping a file will ignore errors in synchronizing this in-memory data.",
-        "suggest": "删除文件将忽略同步此内存中数据的错误。",
+        "suggest": "丢弃文件将忽略同步此内存中数据的错误。",
         "translate": ""
     },
     {
@@ -3981,17 +3981,17 @@
     },
     {
         "source": "It is critical to call [`flush`] before `BufWriter<W>` is dropped.",
-        "suggest": "在删除 `BufWriter<W>` 之前，调用 [`flush`] 至关重要。",
+        "suggest": "在丢弃 `BufWriter<W>` 之前，调用 [`flush`] 至关重要。",
         "translate": ""
     },
     {
         "source": "Though dropping will attempt to flush the contents of the buffer, any errors that happen in the process of dropping will be ignored.",
-        "suggest": "尽管删除将尝试刷新缓冲区的内容，但删除过程中发生的任何错误都将被忽略。",
+        "suggest": "尽管丢弃将尝试刷新缓冲区的内容，但丢弃过程中发生的任何错误都将被忽略。",
         "translate": ""
     },
     {
         "source": "Calling [`flush`] ensures that the buffer is empty and thus dropping will not even attempt file operations.",
-        "suggest": "调用 [`flush`] 可确保缓冲区为空，因此删除操作甚至不会尝试文件操作。",
+        "suggest": "调用 [`flush`] 可确保缓冲区为空，因此丢弃操作甚至不会尝试文件操作。",
         "translate": ""
     },
     {
@@ -4056,7 +4056,7 @@
     },
     {
         "source": "It tracks the number of written bytes and drains them all from the front of the buffer when dropped.",
-        "suggest": "它跟踪已写入的字节数，并在丢弃时将其全部从缓冲区的前面排出。",
+        "suggest": "它跟踪写入的字节数，并在丢弃时从缓冲区的前端排出所有字节。",
         "translate": ""
     },
     {
@@ -4241,7 +4241,7 @@
     },
     {
         "source": "The last line of the poem doesn't end in a newline, so we have to flush or drop the `LineWriter` to finish writing.",
-        "suggest": "这首诗的最后一行不是以换行符结束的，所以我们必须刷新或 drop `LineWriter` 来完成写作。",
+        "suggest": "这首诗的最后一行不是以换行符结束的，所以我们必须刷新或丢弃 `LineWriter` 来完成写作。",
         "translate": ""
     },
     {
@@ -4291,7 +4291,7 @@
     },
     {
         "source": "If there's still a partial line in the buffer when the `LineWriter` is dropped, it will flush those contents.",
-        "suggest": "如果删除 `LineWriter` 时缓冲区中仍然有部分行，它将刷新这些内容。",
+        "suggest": "如果丢弃 `LineWriter` 时缓冲区中仍然有部分行，它将刷新这些内容。",
         "translate": ""
     },
     {

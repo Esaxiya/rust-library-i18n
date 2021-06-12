@@ -841,7 +841,7 @@
     },
     {
         "source": "This in turn implies that when your type is dropped, it may drop one or more instances of the type `T`.",
-        "suggest": "反过来，这意味着删除您的类型时，它可能会删除一个或多个 `T` 类型的实例。",
+        "suggest": "反过来，这意味着丢弃您的类型时，它可能会丢弃一个或多个 `T` 类型的实例。",
         "translate": ""
     },
     {
@@ -961,12 +961,12 @@
     },
     {
         "source": "will be dropped after `children`.",
-        "suggest": "`children` 之后将被删除。",
+        "suggest": "将在 `children` 之后被丢弃。",
         "translate": ""
     },
     {
         "source": "Rust guarantees that fields are dropped in the order of declaration.",
-        "suggest": "Rust 保证按声明顺序删除字段。",
+        "suggest": "Rust 保证按声明顺序丢弃字段。",
         "translate": ""
     },
     {
@@ -981,7 +981,7 @@
     },
     {
         "source": "This drops the `Box`.",
-        "suggest": "这将使 `Box` drop。",
+        "suggest": "这将使 `Box` 丢弃。",
         "translate": ""
     },
     {
@@ -1021,7 +1021,7 @@
     },
     {
         "source": "This means that a `ManuallyDrop<T>` whose content has been dropped must not be exposed through a public safe API.",
-        "suggest": "这意味着其内容已被删除的 `ManuallyDrop<T>` 一定不能通过公共安全 API 公开。",
+        "suggest": "这意味着其内容已被丢弃的 `ManuallyDrop<T>` 一定不能通过公共安全 API 公开。",
         "translate": ""
     },
     {
@@ -1031,7 +1031,7 @@
     },
     {
         "source": "and drop order.",
-        "suggest": "和 drop 命令。",
+        "suggest": "和 drop 指令。",
         "translate": ""
     },
     {
@@ -1041,22 +1041,22 @@
     },
     {
         "source": "To make sure that fields or locals are dropped in a specific order, reorder the declarations such that the implicit drop order is the correct one.",
-        "suggest": "为确保按特定顺序删除字段或局部变量，请对声明重新排序，以使隐式删除顺序正确。",
+        "suggest": "为确保按特定顺序丢弃字段或局部变量，请对声明重新排序，以使隐式丢弃顺序正确。",
         "translate": ""
     },
     {
         "source": "It is possible to use `ManuallyDrop` to control the drop order, but this requires unsafe code and is hard to do correctly in the presence of unwinding.",
-        "suggest": "可以使用 `ManuallyDrop` 来控制投递顺序，但这需要不安全的代码，并且在展开状态下很难正确执行。",
+        "suggest": "可以使用 `ManuallyDrop` 来控制丢弃顺序，但这需要不安全的代码，并且在展开状态下很难正确执行。",
         "translate": ""
     },
     {
         "source": "For example, if you want to make sure that a specific field is dropped after the others, make it the last field of a struct:",
-        "suggest": "例如，如果要确保将特定字段放在其他字段之后，则将其作为结构体的最后一个字段:",
+        "suggest": " 例如，如果你想要确保一个特定的字段在其他字段之后被丢弃，将它作为结构的最后一个字段:",
         "translate": ""
     },
     {
         "source": "Wrap a value to be manually dropped.",
-        "suggest": "包装一个要手动删除的值。",
+        "suggest": "包装一个要手动丢弃的值。",
         "translate": ""
     },
     {
@@ -1066,7 +1066,7 @@
     },
     {
         "source": "This allows the value to be dropped again.",
-        "suggest": "这样可以再次删除该值。",
+        "suggest": "这样可以再次丢弃该值。",
         "translate": ""
     },
     {
@@ -1076,7 +1076,7 @@
     },
     {
         "source": "This method is primarily intended for moving out values in drop.",
-        "suggest": "此方法主要用于移出液滴中的值。",
+        "suggest": "此方法主要用于在 drop 中移出值。",
         "translate": ""
     },
     {
@@ -1106,7 +1106,7 @@
     },
     {
         "source": "Manually drops the contained value.",
-        "suggest": "手动删除包含的值。",
+        "suggest": "手动丢弃包含的值。",
         "translate": ""
     },
     {
@@ -1116,7 +1116,7 @@
     },
     {
         "source": "As such, unless the contained value is a packed struct, the destructor will be called in-place without moving the value, and thus can be used to safely drop [pinned] data.",
-        "suggest": "这样，除非所包含的值是包装的结构体，否则析构函数将在不移动值的情况下就地调用，因此可用于安全地删除 [pinned] 数据。",
+        "suggest": "这样，除非所包含的值是包装的结构体，否则析构函数将在不移动值的情况下就地调用，因此可用于安全地丢弃 [pinned] 数据。",
         "translate": ""
     },
     {
@@ -1141,7 +1141,7 @@
     },
     {
         "source": "To use a value after it's been dropped, or drop a value multiple times, can cause Undefined Behavior (depending on what `drop` does).",
-        "suggest": "在删除值或多次删除值后使用该值可能会导致未定义行为 (取决于 `drop` 的作用)。",
+        "suggest": "在丢弃值或多次丢弃值后使用该值可能会导致未定义行为 (取决于 `drop` 的作用)。",
         "translate": ""
     },
     {
@@ -1151,12 +1151,12 @@
     },
     {
         "source": "we are dropping the value pointed to by a mutable reference which is guaranteed to be valid for writes.",
-        "suggest": "我们将删除变量引用所指向的值，该值对于写操作是有效的。",
+        "suggest": "我们将丢弃变量引用所指向的值，该值对于写操作是有效的。",
         "translate": ""
     },
     {
         "source": "It is up to the caller to make sure that `slot` isn't dropped again.",
-        "suggest": "取决于调用方，以确保不会再次丢弃 `slot`。",
+        "suggest": "取决于调用者，以确保不会再次丢弃 `slot`。",
         "translate": ""
     },
     {
@@ -1201,7 +1201,7 @@
     },
     {
         "source": "does not drop the old contents, which is important.",
-        "suggest": "不会删除旧内容，这一点很重要。",
+        "suggest": "不会丢弃老的内容，这一点很重要。",
         "translate": ""
     },
     {
@@ -1211,7 +1211,7 @@
     },
     {
         "source": "This also makes sure the vector gets properly dropped.",
-        "suggest": "这也可以确保正确删除 vector。",
+        "suggest": "这也可以确保正确丢弃 vector。",
         "translate": ""
     },
     {
@@ -1226,7 +1226,7 @@
     },
     {
         "source": "Dropping a `MaybeUninit` does nothing.",
-        "suggest": "删除 `MaybeUninit` 不会执行任何操作。",
+        "suggest": "丢弃 `MaybeUninit` 不会执行任何操作。",
         "translate": ""
     },
     {
@@ -1256,7 +1256,7 @@
     },
     {
         "source": "For each item in the array, drop if we allocated it.",
-        "suggest": "对于数组中的每个项，如果我们分配了它，则将其删除。",
+        "suggest": "对于数组中的每个项，如果我们分配了它，则将其丢弃。",
         "translate": ""
     },
     {
@@ -1326,7 +1326,7 @@
     },
     {
         "source": "We now created two copies of the same vector, leading to a double-free ⚠️ when they both get dropped!",
-        "suggest": "现在，我们创建了同一 vector 的两个副本，当它们都 drop 时，将导致双重释放!",
+        "suggest": "现在，我们创建了同一 vector 的两个副本，当它们都被丢弃时，将导致双重释放!",
         "translate": ""
     },
     {
@@ -1491,7 +1491,7 @@
     },
     {
         "source": "Creating such a `Vec<T>` does not cause *immediate* undefined behavior, but will cause undefined behavior with most safe operations (including dropping it).",
-        "suggest": "创建这样的 `Vec<T>` 不会立即导致未定义的行为，但是在大多数安全操作 (包括删除操作) 中都将导致未定义的行为。",
+        "suggest": "创建这样的 `Vec<T>` 不会立即导致未定义的行为，但是在大多数安全操作 (包括丢弃操作) 中都将导致未定义的行为。",
         "translate": ""
     },
     {
@@ -1636,7 +1636,7 @@
     },
     {
         "source": "It is your responsibility to make sure `T` gets dropped if it got initialized.",
-        "suggest": "确保 `T` 在初始化时被删除是您的责任。",
+        "suggest": "确保 `T` 在初始化时被丢弃是您的责任。",
         "translate": ""
     },
     {
@@ -1706,7 +1706,7 @@
     },
     {
         "source": "This overwrites any previous value without dropping it, so be careful not to use this twice unless you want to skip running the destructor.",
-        "suggest": "这将覆盖任何先前的值而不将其删除，因此请注意不要重复使用此两次，除非您要跳过运行析构函数。",
+        "suggest": "这将覆盖任何先前的值而不将其丢弃，因此请注意不要重复使用此两次，除非您要跳过运行析构函数。",
         "translate": ""
     },
     {
@@ -1766,7 +1766,7 @@
     },
     {
         "source": "This is a great way to ensure that the data will get dropped, because the resulting `T` is subject to the usual drop handling.",
-        "suggest": "这是确保数据将被删除的好方法，因为生成的 `T` 受到通常的删除处理。",
+        "suggest": "这是确保数据将被丢弃的好方法，因为生成的 `T` 受到通常的丢弃处理。",
         "translate": ""
     },
     {
@@ -1796,7 +1796,7 @@
     },
     {
         "source": "The resulting `T` is subject to the usual drop handling.",
-        "suggest": "所得的 `T` 受到通常的墨滴处理。",
+        "suggest": "结果 `T` 受通常的 drop 处理影响。",
         "translate": ""
     },
     {
@@ -1821,7 +1821,7 @@
     },
     {
         "source": "Drops the contained value in place.",
-        "suggest": "将包含的值放到适当的位置。",
+        "suggest": "将包含的值放置到位。",
         "translate": ""
     },
     {
@@ -1926,7 +1926,7 @@
     },
     {
         "source": "MaybeUnint does not drop, so there are no double-frees And thus the conversion is safe",
-        "suggest": "也许 Unint 不会 drop，所以没有双重释放，因此转换是安全的",
+        "suggest": "也许 Unint 不会丢弃，所以没有双重释放，因此转换是安全的",
         "translate": ""
     },
     {
@@ -2021,7 +2021,7 @@
     },
     {
         "source": "Any already initalized elements will not be dropped.",
-        "suggest": "任何已经初始化的元素都不会被删除。",
+        "suggest": "任何已经初始化的元素都不会被丢弃。",
         "translate": ""
     },
     {
@@ -2031,7 +2031,7 @@
     },
     {
         "source": "This is similar to [`slice::clone_from_slice`] but does not drop existing elements.",
-        "suggest": "这类似于 [`slice::clone_from_slice`]，但不会删除现有元素。",
+        "suggest": "这类似于 [`slice::clone_from_slice`]，但不会丢弃现有元素。",
         "translate": ""
     },
     {
@@ -2041,7 +2041,7 @@
     },
     {
         "source": "If there is a panic, the already cloned elements will be dropped.",
-        "suggest": "如果存在 panic，将删除已经克隆的元素。",
+        "suggest": "如果存在 panic，将丢弃已经克隆的元素。",
         "translate": ""
     },
     {
@@ -2051,7 +2051,7 @@
     },
     {
         "source": "this raw slice will contain only initialized objects that's why, it is allowed to drop it.",
-        "suggest": "此原始切片将仅包含初始化的对象，这就是为什么允许将其删除。",
+        "suggest": "此原始切片将仅包含初始化的对象，这就是为什么允许将其丢弃。",
         "translate": ""
     },
     {
@@ -2086,12 +2086,12 @@
     },
     {
         "source": "is implicitly dropped and its memory deallocated.",
-        "suggest": "被隐式删除，并且其内存被释放。",
+        "suggest": "被隐式丢弃，并且其内存被释放。",
         "translate": ""
     },
     {
         "source": "Before we disassemble `v` into its raw parts, make sure it does not get dropped!",
-        "suggest": "在将 `v` 拆解为原始零件之前，请确保它不会 drop 掉!",
+        "suggest": "在将 `v` 拆解为原始零件之前，请确保它不会丢弃掉!",
         "translate": ""
     },
     {
@@ -2201,7 +2201,7 @@
     },
     {
         "source": "drop the data",
-        "suggest": "drop 数据",
+        "suggest": "丢弃数据",
         "translate": ""
     },
     {
@@ -2221,7 +2221,7 @@
     },
     {
         "source": "explicitly drop the vector",
-        "suggest": "显式 drop vector",
+        "suggest": "显式丢弃 vector",
         "translate": ""
     },
     {
@@ -2231,12 +2231,12 @@
     },
     {
         "source": "a copy of `x` is moved and dropped",
-        "suggest": "`x` 的副本已移动并 drop",
+        "suggest": "`x` 的副本已移动并丢弃",
         "translate": ""
     },
     {
         "source": "a copy of `y` is moved and dropped",
-        "suggest": "`y` 的副本已移动并 drop",
+        "suggest": "`y` 的副本已移动并丢弃",
         "translate": ""
     },
     {
@@ -2661,7 +2661,7 @@
     },
     {
         "source": "Returns `true` if dropping values of type `T` matters.",
-        "suggest": "如果删除类型为 `T` 的值很重要，则返回 `true`。",
+        "suggest": "如果丢弃类型为 `T` 的值很重要，则返回 `true`。",
         "translate": ""
     },
     {
@@ -2671,7 +2671,7 @@
     },
     {
         "source": "it may return `true` for types that don't actually need to be dropped.",
-        "suggest": "对于实际上不需要删除的类型，它可能返回 `true`。",
+        "suggest": "对于实际上不需要丢弃的类型，它可能返回 `true`。",
         "translate": ""
     },
     {
@@ -2681,12 +2681,12 @@
     },
     {
         "source": "However if this function actually returns `false`, then you can be certain dropping `T` has no side effect.",
-        "suggest": "但是，如果此函数实际返回 `false`，则可以确定删除 `T` 没有副作用。",
+        "suggest": "但是，如果此函数实际返回 `false`，则可以确定丢弃 `T` 没有副作用。",
         "translate": ""
     },
     {
         "source": "Low level implementations of things like collections, which need to manually drop their data, should use this function to avoid unnecessarily trying to drop all their contents when they are destroyed.",
-        "suggest": "需要手动删除其数据的诸如集合之类的底层实现，应使用此函数来避免在销毁它们时不必要地删除其所有内容。",
+        "suggest": "需要手动丢弃其数据的诸如集合之类的底层实现，应使用此函数来避免在销毁它们时不必要地丢弃其所有内容。",
         "translate": ""
     },
     {
@@ -2711,7 +2711,7 @@
     },
     {
         "source": "Types like [`HashMap`], on the other hand, have to drop values one at a time and should use this API.",
-        "suggest": "另一方面，像 [`HashMap`] 这样的类型必须一次删除一个值，并且应使用此 API。",
+        "suggest": "另一方面，像 [`HashMap`] 这样的类型必须一次丢弃一个值，并且应使用此 API。",
         "translate": ""
     },
     {
@@ -2881,7 +2881,7 @@
     },
     {
         "source": "Neither value is dropped.",
-        "suggest": "这两个值都不会被 drop。",
+        "suggest": "这两个值都不会被丢弃。",
         "translate": ""
     },
     {
@@ -2916,7 +2916,7 @@
     },
     {
         "source": "Nothing is dropped and nothing here can panic.",
-        "suggest": "什么都不会被 drop 掉，也什么都不会 panic。",
+        "suggest": "什么都不会被丢弃掉，也什么都不会 panic。",
         "translate": ""
     },
     {
@@ -2951,7 +2951,7 @@
     },
     {
         "source": "Because `_x` is moved into the function, it is automatically dropped before the function returns.",
-        "suggest": "由于 `_x` 已移入函数，因此它会在函数返回之前自动删除。",
+        "suggest": "由于 `_x` 已移入函数，因此它会在函数返回之前自动丢弃。",
         "translate": ""
     },
     {
@@ -3506,7 +3506,7 @@
     },
     {
         "source": "Get the original value of the control word to restore it later, when the `FPUControlWord` structure is dropped",
-        "suggest": "删除 `FPUControlWord` 结构体时，获取控制字的原始值以在以后还原它",
+        "suggest": "丢弃 `FPUControlWord` 结构体时，获取控制字的原始值以在以后还原它",
         "translate": ""
     },
     {

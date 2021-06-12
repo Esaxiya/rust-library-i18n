@@ -181,7 +181,7 @@
     },
     {
         "source": "After we've actually go the lock we simply acquire it, and our `Init` handle we hand out will be responsible for dropping it eventually.",
-        "suggest": "实际执行锁定后，我们只需获取它，然后我们递出的 `Init` 句柄将最终负责将其删除。",
+        "suggest": "实际执行锁定后，我们只需获取它，然后我们递出的 `Init` 句柄将最终负责将其丢弃。",
         "translate": ""
     },
     {
@@ -1221,7 +1221,7 @@
     },
     {
         "source": "As a bit of a cop-out for now we mmap the file, read the file header information, then drop the mmap.",
-        "suggest": "现在，作为一点补偿，我们对文件进行 mmap，读取文件头信息，然后删除 mmap。",
+        "suggest": "现在，作为一点补偿，我们对文件进行 mmap，读取文件头信息，然后丢弃 mmap。",
         "translate": ""
     },
     {
@@ -3316,7 +3316,7 @@
     },
     {
         "source": "Memory blocks returned from an allocator must point to valid memory and retain their validity until the instance and all of its clones are dropped,",
-        "suggest": "从分配器返回的内存块必须指向有效内存并保持其有效性，直到删除实例及其所有克隆为止，",
+        "suggest": "从分配器返回的内存块必须指向有效内存并保持其有效性，直到丢弃实例及其所有克隆为止，",
         "translate": ""
     },
     {
@@ -3946,7 +3946,7 @@
     },
     {
         "source": "Until then, we can use `mem::transmute_copy` to create a bitwise copy as a different type, then forget `array` so that it is not dropped.",
-        "suggest": "在此之前，我们可以使用 `mem::transmute_copy` 创建不同类型的按位副本，然后忘记 `array` 以便不删除它。",
+        "suggest": "在此之前，我们可以使用 `mem::transmute_copy` 创建不同类型的按位副本，然后忘记 `array`，这样它就不会被丢弃。",
         "translate": ""
     },
     {
@@ -4026,7 +4026,7 @@
     },
     {
         "source": "This is safe: `as_mut_slice` returns exactly the sub-slice of elements that have not been moved out yet and that remain to be dropped.",
-        "suggest": "这是安全的: `as_mut_slice` 精确地返回尚未移出但仍要删除的元素的子切片。",
+        "suggest": "这是安全的: `as_mut_slice` 精确地返回尚未移出但仍要丢弃的元素的子切片。",
         "translate": ""
     },
     {
@@ -4071,7 +4071,7 @@
     },
     {
         "source": "If cloning panics, we'll correctly drop the previous items.",
-        "suggest": "如果克隆 panics，我们将正确删除前一个项目。",
+        "suggest": "如果克隆发生 panics，我们将正确丢弃前一个项。",
         "translate": ""
     },
     {
@@ -4286,7 +4286,7 @@
     },
     {
         "source": "If `iter.next()` panicks, all items already yielded by the iterator are dropped.",
-        "suggest": "如果 `iter.next()` 出现问题，则将删除迭代器已经产生的所有项。",
+        "suggest": "如果 `iter.next()` 出现 panic，则丢弃迭代器已经生成的所有项。",
         "translate": ""
     },
     {
@@ -4321,7 +4321,7 @@
     },
     {
         "source": "Also note that `guard` is dropped here, dropping all already initialized elements.",
-        "suggest": "还要注意的是，这里将 `guard` 放在了这里，删除了所有已经初始化的元素。",
+        "suggest": "还要注意的是，这里将 `guard` 放在了这里，丢弃了所有已经初始化的元素。",
         "translate": ""
     },
     {
@@ -4856,7 +4856,7 @@
     },
     {
         "source": "Additionally, the [`set`](Cell::set) method replaces the interior value, dropping the replaced value.",
-        "suggest": "此外，[`set`](Cell::set) 方法替换内部值，删除替换后的值。",
+        "suggest": "此外，[`set`](Cell::set) 方法替换内部值，丢弃替换后的值。",
         "translate": ""
     },
     {
