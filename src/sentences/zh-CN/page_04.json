@@ -2826,7 +2826,7 @@
     },
     {
         "source": "(Note that layouts are *not* required to have non-zero size, even though `GlobalAlloc` requires that all memory requests be non-zero in size.",
-        "suggest": "(请注意，即使 `GlobalAlloc` 要求所有内存请求的大小均非零，也不需要 * 布局具有非零的大小。",
+        "suggest": "(请注意，布局不要求具有非零大小，即使 `GlobalAlloc` 要求所有内存请求的大小为非零。",
         "translate": ""
     },
     {

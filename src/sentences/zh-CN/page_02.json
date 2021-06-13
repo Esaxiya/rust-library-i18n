@@ -2826,7 +2826,7 @@
     },
     {
         "source": "arbitrary non-zero size fallback",
-        "suggest": "任意非零大小的后备",
+        "suggest": "任意非零大小的回退",
         "translate": ""
     },
     {

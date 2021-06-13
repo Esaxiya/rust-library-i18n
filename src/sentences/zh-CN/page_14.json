@@ -3101,7 +3101,7 @@
     },
     {
         "source": "Iteration over zero sized values is a noop.",
-        "suggest": "零大小值上的迭代是无问题的。",
+        "suggest": "对零大小的值进行迭代是是一个空操作。",
         "translate": ""
     },
     {
