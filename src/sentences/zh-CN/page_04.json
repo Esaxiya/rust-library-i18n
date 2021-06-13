@@ -1,12 +1,12 @@
 [
     {
         "source": "The thinking is that we can globally cache it and use it between calls to the API, avoiding expensive loads/unloads.",
-        "suggest": "我们的想法是，我们可以全局缓存它，并在调用 API 之间使用它，从而避免了昂贵的 loads/unloads。",
+        "suggest": "这种想法是，我们可以全局缓存它，并在调用 API 之间使用它，避免昂贵的加载/卸载。",
         "translate": ""
     },
     {
         "source": "If this is a problem for leak detectors or something like that we can cross the bridge when we get there.",
-        "suggest": "如果这对于检漏仪或类似的设备来说是个问题，我们可以在到达那里时过桥。",
+        "suggest": "如果这是泄漏检测器之类的问题，我们可以在到达那里时桥接。",
         "translate": ""
     },
     {
