@@ -741,12 +741,12 @@
     },
     {
         "source": "It offers core types, like [`Vec<T>`] and [`Option<T>`], library-defined [operations on language primitives](#primitives), [standard macros](#macros), [I/O] and [multithreading], among [many other things][other].",
-        "suggest": "它提供了核心类型，例如 [`Vec<T>`] 和 [`Option<T>`]，库定义的对 [语言原语](#primitives) 的操作，[标准库宏](#macros)，[I/O] 和 [multithreading]，以及 [其他][other] 许多功能。",
+        "suggest": "它提供了核心类型，例如 [`Vec<T>`] 和 [`Option<T>`]，库定义的对 [语言原语](#primitives) 的操作，[标准库宏](#macros)，[I/O] 和 [multithreading]，以及许多 [其他][other] 东西。",
         "translate": ""
     },
     {
         "source": "is available to all Rust crates by default.",
-        "suggest": "默认情况下可用于所有 Rust crates。",
+        "suggest": "默认情况下可用于所有的 Rust crates。",
         "translate": ""
     },
     {

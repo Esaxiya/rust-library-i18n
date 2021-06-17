@@ -1326,7 +1326,7 @@
     },
     {
         "source": "This ensures no unnecessary allocations or deallocations occur.",
-        "suggest": "这样可以确保不会发生不必要的分配或取消分配。",
+        "suggest": "这样可以确保不会发生不必要的分配或释放。",
         "translate": ""
     },
     {
@@ -1511,7 +1511,7 @@
     },
     {
         "source": "The ownership of `ptr` is effectively transferred to the `Vec<T>` which may then deallocate, reallocate or change the contents of memory pointed to by the pointer at will.",
-        "suggest": "`ptr` 的所有权有效地转移到 `Vec<T>`，然后 `Vec<T>` 可以随意取消分配，重新分配或更改指针所指向的内存的内容。",
+        "suggest": "`ptr` 的所有权有效地转移到 `Vec<T>`，然后 `Vec<T>` 可以随意释放，重新分配或更改指针所指向的内存的内容。",
         "translate": ""
     },
     {
@@ -2956,7 +2956,7 @@
     },
     {
         "source": "re-enable emscripten once it can unwind again",
-        "suggest": "一旦重新展开，可以重新启用脚本",
+        "suggest": "当它可以再次展开时，请重新启用 emscripten",
         "translate": ""
     },
     {
@@ -4466,7 +4466,7 @@
     },
     {
         "source": "This module contains the ability to unwind the stack using libunwind-style APIs.",
-        "suggest": "该模块包含使用 libunwind 样式的 API 展开栈的功能。",
+        "suggest": "该模块包含了使用 libunwind 样式的 API 展开栈的功能。",
         "translate": ""
     },
     {

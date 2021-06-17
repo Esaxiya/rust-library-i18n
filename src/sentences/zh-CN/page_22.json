@@ -586,37 +586,37 @@
     },
     {
         "source": "Besides thread-local \"keys\" (pointer-sized non-addressable thread-local store with an associated destructor), many platforms also provide thread-local destructors that are not associated with any particular data.",
-        "suggest": "除了线程本地 \"keys\" (具有关联的析构函数的指针大小的不可寻址线程本地存储) 之外，许多平台还提供不与任何特定数据关联的线程本地析构函数。",
+        "suggest": "除了线程本地 \"keys\" (具有关联的析构函数的指针大小的不可寻址线程本地存储) 之外，许多平台还提供与任何特定数据都不关联的线程本地析构函数。",
         "translate": ""
     },
     {
         "source": "These are often more efficient.",
-        "suggest": "这些通常更有效。",
+        "suggest": "这些往往效率更高。",
         "translate": ""
     },
     {
         "source": "This module provides a fallback implementation for that interface, based on the less efficient thread-local \"keys\".",
-        "suggest": "该模块基于效率较低的线程本地 \"keys\"，为该接口提供了一个后备实现。",
+        "suggest": "该模块基于效率较低的线程本地 \"keys\"，为该接口提供了一个回退实现。",
         "translate": ""
     },
     {
         "source": "Each platform provides a `thread_local_dtor` module which will either re-export the fallback, or implement something more efficient.",
-        "suggest": "每个平台都提供一个 `thread_local_dtor` 模块，该模块将重载后备功能，或者实现更有效的功能。",
+        "suggest": "每个平台都提供一个 `thread_local_dtor` 模块，该模块将重新导出回退，或者实现一些更有效的东西。",
         "translate": ""
     },
     {
         "source": "The fallback implementation uses a vanilla OS-based TLS key to track the list of destructors that need to be run for this thread.",
-        "suggest": "后备实现使用基于香草操作系统的 TLS 密钥来跟踪需要为此线程运行的析构函数的列表。",
+        "suggest": "回退实现使用一个普通的基于操作系统的TLS密钥来跟踪这个线程需要运行的析构函数列表。",
         "translate": ""
     },
     {
         "source": "The key then has its own destructor which runs all the other destructors.",
-        "suggest": "然后，键具有自己的析构函数，该析构函数运行所有其他析构函数。",
+        "suggest": "然后，键有自己的析构函数，它运行所有其他的析构函数。",
         "translate": ""
     },
     {
         "source": "The destructor for DTORS is a little special in that it has a `while` loop to continuously drain the list of registered destructors.",
-        "suggest": "DTORS 的析构函数有点特殊之处在于它具有 `while` 循环，可以连续 drain 注册的析构函数列表。",
+        "suggest": "DTORS 的析构函数有点特殊，因为它有一个 `while` 循环来不断地清除已注册的析构函数列表。",
         "translate": ""
     },
     {
@@ -626,42 +626,42 @@
     },
     {
         "source": "deallocate this TLS slot.",
-        "suggest": "取消分配此 TLS 插槽。",
+        "suggest": "释放此 TLS 插槽。",
         "translate": ""
     },
     {
         "source": "OS-based thread local storage",
-        "suggest": "基于 OS 的线程本地存储",
+        "suggest": "基于操作系统的线程本地存储",
         "translate": ""
     },
     {
         "source": "This module provides an implementation of OS-based thread local storage, using the native OS-provided facilities (think `TlsAlloc` or `pthread_setspecific`).",
-        "suggest": "该模块使用原生 OS 提供的功能 (例如 `TlsAlloc` 或 `pthread_setspecific`) 提供基于 OS 的线程本地存储的实现。",
+        "suggest": "该模块提供了一个基于操作系统的线程本地存储的实现，使用了本地操作系统提供的工具 (想想 `TlsAlloc` 或 `pthread_setspecific`)。",
         "translate": ""
     },
     {
         "source": "The interface of this differs from the other types of thread-local-storage provided in this crate in that OS-based TLS can only get/set pointer-sized data, possibly with an associated destructor.",
-        "suggest": "此接口与此 crate 中提供的其他类型的线程本地存储不同，因为基于 OS 的 TLS 只能 get/set 指针大小的数据，可能带有关联的析构函数。",
+        "suggest": "它的接口与此 crate 中提供的其他类型的线程本地存储不同，因为基于操作系统的 TLS 只能获取/设置指针大小的数据，可能带有关联的析构函数。",
         "translate": ""
     },
     {
         "source": "This module also provides two flavors of TLS.",
-        "suggest": "该模块还提供两种 TLS。",
+        "suggest": "该模块还提供了两种 TLS。",
         "translate": ""
     },
     {
         "source": "One is intended for static initialization, and does not contain a `Drop` implementation to deallocate the OS-TLS key.",
-        "suggest": "一种用于静态初始化，不包含用于取消分配 OS-TLS 密钥的 `Drop` 实现。",
+        "suggest": "其中一个用于静态初始化，不包含用于释放 OS-TLS 密钥的 `Drop` 实现。",
         "translate": ""
     },
     {
         "source": "The other is a type which does implement `Drop` and hence has a safe interface.",
-        "suggest": "另一种是确实实现 `Drop` 并因此具有安全接口的类型。",
+        "suggest": "另一个是实现了 `Drop` 的类型，因此有一个安全的接口。",
         "translate": ""
     },
     {
         "source": "This module should likely not be used directly unless other primitives are being built on.",
-        "suggest": "除非正在构建其他原语，否则不应直接使用此模块。",
+        "suggest": "除非在其他原语的基础上构建，否则不应该直接使用此模块。",
         "translate": ""
     },
     {
@@ -676,7 +676,7 @@
     },
     {
         "source": "Note that this key can be shared among many threads via an `Arc`.",
-        "suggest": "请注意，可以通过 `Arc` 在许多线程之间共享此密钥。",
+        "suggest": "请注意，这个键可以通过 `Arc` 在多个线程中共享。",
         "translate": ""
     },
     {
@@ -691,7 +691,7 @@
     },
     {
         "source": "This type is entirely `unsafe` to use as it does not protect against use-after-deallocation or use-during-deallocation.",
-        "suggest": "该类型完全使用 `unsafe`，因为它不能防止在释放后使用或在释放中使用。",
+        "suggest": "使用此类型是完全 `unsafe` 的，因为它不能防止在释放后使用或释放​​期间使用。",
         "translate": ""
     },
     {
@@ -726,7 +726,7 @@
     },
     {
         "source": "This type allocates an OS TLS key when it is initialized and will deallocate the key when it falls out of scope.",
-        "suggest": "初始化时，此类型分配 OS TLS 密钥; 当它离开离开作用域时，将取消分配该密钥。",
+        "suggest": "初始化时，此类型分配 OS TLS 密钥; 当它离开离开作用域时，将释放该密钥。",
         "translate": ""
     },
     {
@@ -1731,17 +1731,17 @@
     },
     {
         "source": "Publicity and attributes for each static are allowed.",
-        "suggest": "允许每个静态变量进行公开和属性宣传。",
+        "suggest": "允许每个静态的公开和属性。",
         "translate": ""
     },
     {
         "source": "See [`LocalKey` documentation][`std::thread::LocalKey`] for more information.",
-        "suggest": "有关更多信息，请参见 [`LocalKey` documentation][`std::thread::LocalKey`]。",
+        "suggest": "有关更多信息，请参见 [`LocalKey` 文档][`std::thread::LocalKey`]。",
         "translate": ""
     },
     {
         "source": "empty (base case for the recursion)",
-        "suggest": "空 (递归的终止条件)",
+        "suggest": "空 (递归的基本情况)",
         "translate": ""
     },
     {
@@ -1756,7 +1756,7 @@
     },
     {
         "source": "remove the #[allow(...)] marker when macros don't raise warning for missing/extraneous unsafe blocks anymore.",
-        "suggest": "当宏不再对 missing/extraneous 不安全块发出警告时，请删除 #[allow(...)] 标记。",
+        "suggest": "当宏不再对丢失/额外不安全块发出警告时，请删除 #[allow(...)] 标记。",
         "translate": ""
     },
     {
@@ -1776,17 +1776,17 @@
     },
     {
         "source": "This function will `panic!()` if the key currently has its destructor running, and it **may** panic if the destructor has previously been run for this thread.",
-        "suggest": "如果该键当前正在运行其析构函数，则此函数将为 `panic!()`; 如果先前已为此线程运行了析构函数，则该函数将 ** panic。",
+        "suggest": "如果该键当前正在运行其析构函数，则此函数将为 `panic!()`; 如果先前已为此线程运行了析构函数，则它可能 panic。",
         "translate": ""
     },
     {
         "source": "If the key has been destroyed (which may happen if this is called in a destructor), this function will return an [`AccessError`].",
-        "suggest": "如果密钥已被销毁 (如果在析构函数中调用此密钥，则可能会发生)，此函数将返回 [`AccessError`]。",
+        "suggest": "如果密钥已被销毁 (如果在析构函数中调用它可能会发生这种情况)，此函数将返回 [`AccessError`]。",
         "translate": ""
     },
     {
         "source": "This function will still `panic!()` if the key is uninitialized and the key's initializer panics.",
-        "suggest": "如果未初始化密钥并且密钥的初始化 panics，则此函数仍为 `panic!()`。",
+        "suggest": "如果未初始化密钥并且密钥的初始化 panics，则此函数仍将 `panic!()`。",
         "translate": ""
     },
     {
@@ -2146,32 +2146,32 @@
     },
     {
         "source": "An executing Rust program consists of a collection of native OS threads, each with their own stack and local state.",
-        "suggest": "执行中的 Rust 程序由一组原生 OS 线程组成，每个线程都有自己的栈和本地状态。",
+        "suggest": "一个正在执行的 Rust 程序由一组原生操作系统线程组成​​，每个线程都有自己的栈和本地状态。",
         "translate": ""
     },
     {
         "source": "Threads can be named, and provide some built-in support for low-level synchronization.",
-        "suggest": "线程可以被命名，并提供一些内置的同步同步支持。",
+        "suggest": "线程可以被命名，并为底层同步提供一些内置支持。",
         "translate": ""
     },
     {
         "source": "Communication between threads can be done through [channels], Rust's message-passing types, along with [other forms of thread synchronization](../../std/sync/index.html) and shared-memory data structures.",
-        "suggest": "线程之间的通信可以通过 [channels]，Rust 的消息传递类型以及 [其他形式的线程同步](../../std/sync/index.html) 和共享内存数据结构来完成。",
+        "suggest": "线程之间的通信可以通过 [channels]、Rust 的消息传递类型、以及 [其他形式的线程同步](../../std/sync/index.html) 和共享内存数据结构来完成。",
         "translate": ""
     },
     {
         "source": "In particular, types that are guaranteed to be threadsafe are easily shared between threads using the atomically-reference-counted container,",
-        "suggest": "特别是，使用原子引用计数的容器可以轻松地在线程之间共享保证线程安全的类型，",
+        "suggest": "特别是，保证线程安全的类型很容易在使用原子引用计数容器的线程之间共享，",
         "translate": ""
     },
     {
         "source": "Fatal logic errors in Rust cause *thread panic*, during which a thread will unwind the stack, running destructors and freeing owned resources.",
-        "suggest": "Rust 中的致命逻辑错误导致 *thread panic*，在此期间，线程将 unwind 栈，运行析构函数并释放拥有的资源。",
+        "suggest": "Rust 中的致命逻辑错误导致 *线程 panic*，在此期间，线程将展开栈，运行析构函数并释放所拥有的资源。",
         "translate": ""
     },
     {
         "source": "While not meant as a 'try/catch' mechanism, panics in Rust can nonetheless be caught (unless compiling with `panic=abort`) with [`catch_unwind`](../../std/panic/fn.catch_unwind.html) and recovered from, or alternatively be resumed with [`resume_unwind`](../../std/panic/fn.resume_unwind.html).",
-        "suggest": "尽管不是 'try/catch' 机制，但仍可以使用 [`catch_unwind`](../../std/panic/fn.catch_unwind.html) 捕获 Rust 中的 panics (除非使用 `panic=abort` 进行编译)，然后从 [`resume_unwind`](../../std/panic/fn.resume_unwind.html) 恢复或恢复。",
+        "suggest": "尽管不是 'try/catch' 机制，但仍可以使用 [`catch_unwind`](../../std/panic/fn.catch_unwind.html) 捕获 Rust 中的 panics (除非使用 `panic=abort` 进行编译) 并从中恢复，或者使用 [`resume_unwind`](../../std/panic/fn.resume_unwind.html) 恢复。",
         "translate": ""
     },
     {
@@ -2181,37 +2181,37 @@
     },
     {
         "source": "If the main thread panics without the panic being caught, the application will exit with a non-zero exit code.",
-        "suggest": "如果主线程 panics 没有捕获到 panic，则应用程序将以非零退出代码退出。",
+        "suggest": "如果主线程 panic 而没有捕获 panic，应用程序将以非零退出码退出。",
         "translate": ""
     },
     {
         "source": "When the main thread of a Rust program terminates, the entire program shuts down, even if other threads are still running.",
-        "suggest": "当 Rust 程序的主线程终止时，即使其他线程仍在运行，整个程序也会关闭。",
+        "suggest": "当 Rust 程序的主线程终止时，整个程序将关闭，即使其他线程仍在运行也不例外。",
         "translate": ""
     },
     {
         "source": "However, this module provides convenient facilities for automatically waiting for the termination of a child thread (i.e., join).",
-        "suggest": "但是，此模块为自动等待子线程的终止 (即加入) 提供了便利的功能。",
+        "suggest": "但是，该模块为自动等待子线程的终止 (即 join) 提供了便利的功能。",
         "translate": ""
     },
     {
         "source": "Spawning a thread",
-        "suggest": "产生线程",
+        "suggest": "生成一个线程",
         "translate": ""
     },
     {
         "source": "A new thread can be spawned using the [`thread::spawn`][`spawn`] function:",
-        "suggest": "可以使用 [`thread::spawn`][`spawn`] 函数产生一个新线程:",
+        "suggest": "可以使用 [`thread::spawn`][`spawn`] 函数来生成一个新线程:",
         "translate": ""
     },
     {
         "source": "In this example, the spawned thread is \"detached\" from the current thread.",
-        "suggest": "在此示例中，新建线程是当前线程的 \"detached\"。",
+        "suggest": "在这个例子中，衍生的线程是从当前线程分离出来的。",
         "translate": ""
     },
     {
         "source": "This means that it can outlive its parent (the thread that spawned it), unless this parent is the main thread.",
-        "suggest": "这意味着它可以超过其父级 (产生它的线程)，除非该父级是主线程。",
+        "suggest": "这意味着它可以比它的父线程 (产生它的线程) 活得长，除非这个父线程是主线程。",
         "translate": ""
     },
     {
@@ -2221,12 +2221,12 @@
     },
     {
         "source": "a call to [`spawn`] produces a [`JoinHandle`], which provides a `join` method for waiting:",
-        "suggest": "调用 [`spawn`] 会产生一个 [`JoinHandle`]，它提供了一种 `join` 的方法来等待:",
+        "suggest": "调用 [`spawn`] 会产生一个 [`JoinHandle`]，它提供了一个用于等待的 `join` 方法:",
         "translate": ""
     },
     {
         "source": "The [`join`] method returns a [`thread::Result`] containing [`Ok`] of the final value produced by the child thread, or [`Err`] of the value given to a call to [`panic!`] if the child panicked.",
-        "suggest": "[`join`] 方法返回一个 [`thread::Result`]，该 [`thread::Result`] 包含由子线程产生的最终值的 [`Ok`]，或者如果子进程感到恐慌，则将给定调用值的 [`Err`] 返回给 [`panic!`]。",
+        "suggest": "[`join`] 方法返回一个 [`thread::Result`]，其中包含子线程产生的最终值 [`Ok`]，或者如果子进程 panic，则返回给调用 [`panic!`] 的值的 [`Err`]。",
         "translate": ""
     },
     {
@@ -2236,7 +2236,7 @@
     },
     {
         "source": "A new thread can be configured before it is spawned via the [`Builder`] type, which currently allows you to set the name and stack size for the child thread:",
-        "suggest": "可以在通过 [`Builder`] 类型生成新线程之前对其进行配置，当前该类型允许您设置子线程的名称和栈大小:",
+        "suggest": "一个新线程可以在通过 [`Builder`] 类型生成之前进行配置，它目前允许您设置子线程的名称和堆栈大小:",
         "translate": ""
     },
     {
@@ -2246,12 +2246,12 @@
     },
     {
         "source": "Threads are represented via the [`Thread`] type, which you can get in one of two ways:",
-        "suggest": "线程通过 [`Thread`] 类型表示，您可以通过以下两种方式之一来获取:",
+        "suggest": "线程是通过 [`Thread`] 类型来表示的，您可以通过以下两种方式之一获得该类型:",
         "translate": ""
     },
     {
         "source": "By spawning a new thread, e.g., using the [`thread::spawn`][`spawn`] function, and calling [`thread`][`JoinHandle::thread`] on the [`JoinHandle`].",
-        "suggest": "通过产生一个新线程，例如使用 [`thread::spawn`][`spawn`] 函数，并在 [`JoinHandle`] 上调用 [`thread`][`JoinHandle::thread`]。",
+        "suggest": "通过生成一个新线程，例如使用 [`thread::spawn`][`spawn`] 函数，并在 [`JoinHandle`] 上调用 [`thread`][`JoinHandle::thread`]。",
         "translate": ""
     },
     {
@@ -2261,7 +2261,7 @@
     },
     {
         "source": "The [`thread::current`] function is available even for threads not spawned by the APIs of this module.",
-        "suggest": "[`thread::current`] 函数甚至可用于该模块的 API 未产生的线程。",
+        "suggest": "[`thread::current`] 函数甚至可用于不是由该模块的 API 生成的线程。",
         "translate": ""
     },
     {
@@ -2276,7 +2276,7 @@
     },
     {
         "source": "Thread-local storage is a method of storing data into a global variable that each thread in the program will have its own copy of.",
-        "suggest": "线程本地存储是一种将数据存储到变量中的方法，程序中的每个线程都有其自己的副本。",
+        "suggest": "线程本地存储是一种将数据存储到全局变量的方法，程序中的每个线程都有自己的副本。",
         "translate": ""
     },
     {
@@ -2286,12 +2286,12 @@
     },
     {
         "source": "A thread-local key owns the value it contains and will destroy the value when the thread exits.",
-        "suggest": "线程局部键拥有其包含的值，并且在线程退出时将销毁该值。",
+        "suggest": "线程本地键拥有它所包含的值，并在线程退出时销毁该值。",
         "translate": ""
     },
     {
         "source": "It is created with the [`thread_local!`] macro and can contain any value that is `'static` (no borrowed pointers).",
-        "suggest": "它是使用 [`thread_local!`] 宏创建的，可以包含 `'static` 的任何值 (无借用指针)。",
+        "suggest": "它是使用 [`thread_local!`] 宏创建的，可以包含 `'static` 的任何值 (没有借用指针)。",
         "translate": ""
     },
     {
@@ -2301,7 +2301,7 @@
     },
     {
         "source": "Thread-local keys allow only shared access to values, as there would be no way to guarantee uniqueness if mutable borrows were allowed.",
-        "suggest": "线程局部键仅允许共享访问值，因为如果允许使用可变借用，则无法保证唯一性。",
+        "suggest": "线程本地键只允许共享访问值，因为如果允许可变借用，就无法保证惟一性。",
         "translate": ""
     },
     {
@@ -2316,12 +2316,12 @@
     },
     {
         "source": "Threads are able to have associated names for identification purposes.",
-        "suggest": "线程能够具有关联的名称以用于识别。",
+        "suggest": "出于识别目的，线程可以有关联的名称。",
         "translate": ""
     },
     {
         "source": "By default, spawned threads are unnamed.",
-        "suggest": "默认情况下，新建线程是未命名的。",
+        "suggest": "默认情况下，生成的线程是未命名的。",
         "translate": ""
     },
     {
@@ -2331,22 +2331,22 @@
     },
     {
         "source": "To retrieve the thread name from within the thread, use [`Thread::name`].",
-        "suggest": "要从线程内检索线程名称，请使用 [`Thread::name`]。",
+        "suggest": "要从线程内检索线程名，请使用 [`Thread::name`]。",
         "translate": ""
     },
     {
         "source": "A couple examples of where the name of a thread gets used:",
-        "suggest": "几个使用线程名称的地方的例子:",
+        "suggest": "下面是使用线程名的几个例子:",
         "translate": ""
     },
     {
         "source": "If a panic occurs in a named thread, the thread name will be printed in the panic message.",
-        "suggest": "如果在命名线程中出现 panic，则线程名称将显示在 panic 消息中。",
+        "suggest": "如果在命名线程中出现 panic，则线程名将显示在 panic 消息中。",
         "translate": ""
     },
     {
         "source": "The thread name is provided to the OS where applicable (e.g., `pthread_setname_np` in unix-like platforms).",
-        "suggest": "线程名称在适用的情况下提供给 OS (例如，在类 Unix 平台中为 `pthread_setname_np`)。",
+        "suggest": "线程名在适用的情况下提供给操作系统 (例如，在类 Unix 平台中为 `pthread_setname_np`)。",
         "translate": ""
     },
     {
@@ -2356,12 +2356,12 @@
     },
     {
         "source": "The default stack size for spawned threads is 2 MiB, though this particular stack size is subject to change in the future.",
-        "suggest": "新建线程的默认栈大小为 2 MiB，尽管此特定栈大小可能会在 future 中进行更改。",
+        "suggest": "衍生线程的默认栈大小为 2 MiB，尽管这个特定的堆栈大小会在将来发生改变。",
         "translate": ""
     },
     {
         "source": "There are two ways to manually specify the stack size for spawned threads:",
-        "suggest": "有两种方法可以手动指定新建线程的栈大小:",
+        "suggest": "有两种方法可以手动指定衍生线程的栈大小:",
         "translate": ""
     },
     {
@@ -2401,7 +2401,7 @@
     },
     {
         "source": "The OS thread local key type is accessed via platform-specific API calls and is slow, while the fast key type is accessed via code generated via LLVM, where TLS keys are set up by the elf linker.",
-        "suggest": "OS 线程本地密钥类型是通过平台特定的 API 调用访问的，速度很慢，而快速密钥类型是通过 LLVM 生成的代码访问的，其中 LL 密钥是由 elf 链接器设置的。",
+        "suggest": "OS 线程本地密钥类型是通过平台特定的 API 调用访问的，速度很慢，而快速密钥类型是通过 LLVM 生成的代码访问的，其中 TLS 密钥是由 elf 链接器设置的。",
         "translate": ""
     },
     {
@@ -2411,7 +2411,7 @@
     },
     {
         "source": "end-user code is compiled with fast TLS where available, but both are needed.",
-        "suggest": "最终用户代码在可用的情况下使用快速 TLS 进行编译，但两者都需要。",
+        "suggest": "最终用户代码在可用的情况下使用快速 TLS 进行编译，但两者都是必需的。",
         "translate": ""
     },
     {
@@ -2421,12 +2421,12 @@
     },
     {
         "source": "Methods can be chained on it in order to configure it.",
-        "suggest": "可以在其上链接方法以进行配置。",
+        "suggest": "可以在其上链接方法以对其进行配置。",
         "translate": ""
     },
     {
         "source": "The two configurations available are:",
-        "suggest": "可用的两种配置是:",
+        "suggest": "有两种配置可供选择:",
         "translate": ""
     },
     {
@@ -2436,32 +2436,32 @@
     },
     {
         "source": "specifies the [desired stack size for the thread][stack-size]",
-        "suggest": "指定 [线程所需的堆栈大小][stack-size]",
+        "suggest": "指定 [线程所需的栈大小][stack-size]",
         "translate": ""
     },
     {
         "source": "The [`spawn`] method will take ownership of the builder and create an [`io::Result`] to the thread handle with the given configuration.",
-        "suggest": "[`spawn`] 方法将拥有构建器的所有权，并使用给定的配置为线程句柄创建 [`io::Result`]。",
+        "suggest": "[`spawn`] 方法将获取构建器的所有权，并使用给定的配置为线程句柄创建 [`io::Result`]。",
         "translate": ""
     },
     {
         "source": "The [`thread::spawn`] free function uses a `Builder` with default configuration and [`unwrap`]s its return value.",
-        "suggest": "[`thread::spawn`] 免费函数使用默认配置的 `Builder`，并返回其值 [`unwrap`]。",
+        "suggest": "[`thread::spawn`] 自由函数使用默认配置的 `Builder`，并返回其值 [`unwrap`]。",
         "translate": ""
     },
     {
         "source": "You may want to use [`spawn`] instead of [`thread::spawn`], when you want to recover from a failure to launch a thread, indeed the free function will panic where the `Builder` method will return a [`io::Result`].",
-        "suggest": "当您想从启动线程失败中恢复时，您可能想使用 [`spawn`] 而不是 [`thread::spawn`]，实际上，免费函数实际上是 panic，其中 `Builder` 方法将返回 [`io::Result`]。",
+        "suggest": "当您想从启动线程失败中恢复时，您可能想使用 [`spawn`] 而不是 [`thread::spawn`]，实际上，实际上自由函数会在 `Builder` 方法返回 [`io::Result`] 时 panic。",
         "translate": ""
     },
     {
         "source": "A name for the thread-to-be, for identification in panic messages",
-        "suggest": "待线程的名称，以在 panic 消息中进行标识",
+        "suggest": "未来线程的名称，以在 panic 消息中进行标识",
         "translate": ""
     },
     {
         "source": "The size of the stack for the spawned thread in bytes",
-        "suggest": "新建线程的栈大小 (以字节为单位)",
+        "suggest": "衍生线程的栈大小 (以字节为单位)",
         "translate": ""
     },
     {
@@ -2471,22 +2471,22 @@
     },
     {
         "source": "Names the thread-to-be.",
-        "suggest": "命名将要使用的线程。",
+        "suggest": "命名未来线程。",
         "translate": ""
     },
     {
         "source": "Currently the name is used for identification only in panic messages.",
-        "suggest": "当前，该名称仅在 panic 消息中用于标识。",
+        "suggest": "当前，该名称仅用于 panic 消息中的标识。",
         "translate": ""
     },
     {
         "source": "The name must not contain null bytes (`\\0`).",
-        "suggest": "该名称不得包含空字节 (`\\0`)。",
+        "suggest": "该名称不能包含空字节 (`\\0`)。",
         "translate": ""
     },
     {
         "source": "For more information about named threads, see [this module-level documentation][naming-threads].",
-        "suggest": "有关命名线程的更多信息，请参见 [这个模块级文档][naming-threads]。",
+        "suggest": "有关命名线程的更多信息，请参见 [模块级文档][naming-threads]。",
         "translate": ""
     },
     {
@@ -2496,27 +2496,27 @@
     },
     {
         "source": "The actual stack size may be greater than this value if the platform specifies a minimal stack size.",
-        "suggest": "如果平台指定最小栈大小，则实际栈大小可能大于此值。",
+        "suggest": "如果平台指定最小栈大小，则实际栈大小可能大于这个值。",
         "translate": ""
     },
     {
         "source": "For more information about the stack size for threads, see [this module-level documentation][stack-size].",
-        "suggest": "有关线程的栈大小的更多信息，请参见 [这个模块级文档][stack-size]。",
+        "suggest": "有关线程的栈大小的更多信息，请参见 [模块级文档][stack-size]。",
         "translate": ""
     },
     {
         "source": "Spawns a new thread by taking ownership of the `Builder`, and returns an [`io::Result`] to its [`JoinHandle`].",
-        "suggest": "通过拥有 `Builder` 来产生新线程，并将 [`io::Result`] 返回到其 [`JoinHandle`]。",
+        "suggest": "通过获取 `Builder` 的所有权产生一个新线程，并向其 [`JoinHandle`] 返回一个 [`io::Result`]。",
         "translate": ""
     },
     {
         "source": "The spawned thread may outlive the caller (unless the caller thread is the main thread; the whole process is terminated when the main thread finishes).",
-        "suggest": "新建线程可能会超出调用者的生命 (除非调用者线程是主线程; 当主线程结束时，整个进程被终止)。",
+        "suggest": "衍生的线程可能比调用者活得长 (除非调用者线程是主线程; 当主线程结束时，整个进程将终止)。",
         "translate": ""
     },
     {
         "source": "The join handle can be used to block on termination of the child thread, including recovering its panics.",
-        "suggest": "联接句柄可用于阻止子线程终止，包括恢复其 panics。",
+        "suggest": "join 句柄可用于阻塞子线程的终止，包括恢复其 panic。",
         "translate": ""
     },
     {
@@ -2526,12 +2526,12 @@
     },
     {
         "source": "Unlike the [`spawn`] free function, this method yields an [`io::Result`] to capture any failure to create the thread at the OS level.",
-        "suggest": "与 [`spawn`] 免费函数不同，此方法产生 [`io::Result`] 来捕获在操作系统级别创建线程的任何失败。",
+        "suggest": "与 [`spawn`] 自由函数不同，此方法产生 [`io::Result`] 来捕获在操作系统级别创建线程的任何失败。",
         "translate": ""
     },
     {
         "source": "Panics if a thread name was set and it contained null bytes.",
-        "suggest": "Panics (如果设置了线程名称，并且其中包含空字节)。",
+        "suggest": "如果设置了线程名称并且它包含空字节，则会出现 panic。",
         "translate": ""
     },
     {
@@ -2566,12 +2566,12 @@
     },
     {
         "source": "the stack guard passed is the one for the current thread.",
-        "suggest": "传递的栈保护是当前线程的保护。",
+        "suggest": "传递的堆栈守卫是当前线程的守卫。",
         "translate": ""
     },
     {
         "source": "This means the current thread's stack and the new thread's stack are properly set and protected from each other.",
-        "suggest": "这意味着当前线程的栈和新线程的栈已正确设置并相互保护。",
+        "suggest": "这意味着当前线程的栈和新线程的栈已被正确设置并相互保护。",
         "translate": ""
     },
     {

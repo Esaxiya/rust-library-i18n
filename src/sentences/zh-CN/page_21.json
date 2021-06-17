@@ -4151,7 +4151,7 @@
     },
     {
         "source": "Currently we don't even support deallocating TLS keys, so normal operation doesn't need to deallocate a destructor.",
-        "suggest": "当前，我们甚至不支持取消分配 TLS 密钥，因此正常操作不需要取消分配析构函数。",
+        "suggest": "当前，我们甚至不支持释放 TLS 密钥，因此正常操作不需要释放析构函数。",
         "translate": ""
     },
     {

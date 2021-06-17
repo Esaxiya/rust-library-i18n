@@ -136,7 +136,7 @@
     },
     {
         "source": "If the given amount is 0, actually completely deallocates.",
-        "suggest": "如果给定的数量为 0，则实际上完全取消分配。",
+        "suggest": "如果给定的数量为 0，则实际上完全释放。",
         "translate": ""
     },
     {
@@ -3641,7 +3641,7 @@
     },
     {
         "source": "The ownership of `buf` is effectively transferred to the `String` which may then deallocate, reallocate or change the contents of memory pointed to by the pointer at will.",
-        "suggest": "`buf` 的所有权有效地转移到 `String`，然后 `String` 可以随意取消分配，重新分配或更改指针所指向的内存的内容。",
+        "suggest": "`buf` 的所有权有效地转移到 `String`，然后 `String` 可以随意释放，重新分配或更改指针所指向的内存的内容。",
         "translate": ""
     },
     {

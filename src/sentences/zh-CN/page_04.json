@@ -3241,7 +3241,7 @@
     },
     {
         "source": "An implementation of `Allocator` can allocate, grow, shrink, and deallocate arbitrary blocks of data described via [`Layout`][].",
-        "suggest": "`Allocator` 的实现可以分配，增长，收缩和取消分配通过 [`Layout`][] 描述的任意数据块。",
+        "suggest": "`Allocator` 的实现可以分配，增长，收缩和释放通过 [`Layout`][] 描述的任意数据块。",
         "translate": ""
     },
     {
@@ -3371,7 +3371,7 @@
     },
     {
         "source": "Deallocates the memory referenced by `ptr`.",
-        "suggest": "取消分配 `ptr` 引用的内存。",
+        "suggest": "释放 `ptr` 引用的内存。",
         "translate": ""
     },
     {

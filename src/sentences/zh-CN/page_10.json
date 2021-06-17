@@ -4796,7 +4796,7 @@
     },
     {
         "source": "Note that the first three are special because they’re necessary to allocate, drop, and deallocate any trait object.",
-        "suggest": "请注意，前三个是特殊的，因为它们是分配，丢弃和取消分配任何 trait 对象所必需的。",
+        "suggest": "请注意，前三个是特殊的，因为它们是分配，丢弃和释放任何 trait 对象所必需的。",
         "translate": ""
     },
     {

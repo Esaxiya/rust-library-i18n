@@ -3776,7 +3776,7 @@
     },
     {
         "source": "Constructing a `ThinBox` without consuming and deallocating a `Box` requires either the unstable `Unsize` marker trait, or the unstable `unsized_locals` language feature, or taking `&dyn T` and restricting to `T: Copy`.",
-        "suggest": "构造 `ThinBox` 而不消耗和取消分配 `Box` 既需要不稳定的 `Unsize` 标记 trait，也需要不稳定的 `unsized_locals` 语言功能，或者采用 `&dyn T` 并限制为 `T: Copy`。",
+        "suggest": "创建一个 `ThinBox` 而不消耗和释放 `Box` 既需要不稳定的 `Unsize` 标记 trait，也需要不稳定的 `unsized_locals` 语言特性，或者使用 `&dyn T` 并限制为 `T: Copy`。",
         "translate": ""
     },
     {
