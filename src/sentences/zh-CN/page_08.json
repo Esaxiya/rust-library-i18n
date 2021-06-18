@@ -1051,7 +1051,7 @@
     },
     {
         "source": "For example, if you want to make sure that a specific field is dropped after the others, make it the last field of a struct:",
-        "suggest": " 例如，如果你想要确保一个特定的字段在其他字段之后被丢弃，将它作为结构的最后一个字段:",
+        "suggest": " 例如，如果您想要确保一个特定的字段在其他字段之后被丢弃，将它作为结构的最后一个字段:",
         "translate": ""
     },
     {

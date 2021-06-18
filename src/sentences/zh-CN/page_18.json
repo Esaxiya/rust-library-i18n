@@ -3956,7 +3956,7 @@
     },
     {
         "source": "There is no implementation of [`Drop`] for child processes, so if you do not ensure the `Child` has exited then it will continue to run, even after the `Child` handle to the child process has gone out of scope.",
-        "suggest": "子进程没有 [`Drop`] 的实现，所以如果你不确保 `Child` 已经退出，那么它会继续运行，即使在子进程的 `Child` 句柄已经离开作用域之后。",
+        "suggest": "子进程没有 [`Drop`] 的实现，所以如果您不确保 `Child` 已经退出，那么它会继续运行，即使在子进程的 `Child` 句柄已经离开作用域之后。",
         "translate": ""
     },
     {

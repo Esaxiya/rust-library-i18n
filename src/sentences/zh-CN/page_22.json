@@ -4501,7 +4501,7 @@
     },
     {
         "source": "(Note that if instruction and data caches are separate, privileged cache maintenance operations would be needed in order to unify the caches.)",
-        "suggest": "(请注意，如果指令缓存和数据缓存是分开的，则需要特权缓存维护操作来统一缓存。)",
+        "suggest": "(请注意，如果指令缓存和数据缓存是分开的，则需要权限缓存维护操作来统一缓存。)",
         "translate": ""
     },
     {

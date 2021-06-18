@@ -2646,7 +2646,7 @@
     },
     {
         "source": "a) no ZSTs as there would be no allocation to reuse and pointer arithmetic would panic b) size match as required by Alloc contract c) alignments match as required by Alloc contract",
-        "suggest": "a) 没有 ZST，因为没有分配给重用，并且指针算术将为 panic b) 大小符合 Alloc 合约的要求 c) 对齐方式符合 Alloc 合约的要求",
+        "suggest": "a) 没有 ZST，因为没有分配给重用，并且指针算术将为 panic b) 大小符合 Alloc 契约的要求 c) 对齐方式符合 Alloc 契约的要求",
         "translate": ""
     },
     {
