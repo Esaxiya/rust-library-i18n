@@ -826,7 +826,7 @@
     },
     {
         "source": "We track the Rust type using a phantom type parameter on the struct `ExternalResource` which wraps a handle.",
-        "suggest": "我们使用包裹句柄的结构体 `ExternalResource` 上的幻影类型参数来跟踪 Rust 类型。",
+        "suggest": "我们使用包裹句柄的结构体 `ExternalResource` 上的 `phantom` 类型参数来跟踪 Rust 类型。",
         "translate": ""
     },
     {

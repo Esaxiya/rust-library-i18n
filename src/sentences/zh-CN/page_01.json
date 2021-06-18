@@ -2816,7 +2816,7 @@
     },
     {
         "source": "At most len/2 - 1 elements will be moved.",
-        "suggest": "最多 len/2 - 将移动 1 个元素。",
+        "suggest": "最多移动 `len/2 - 1`个元素。",
         "translate": ""
     },
     {

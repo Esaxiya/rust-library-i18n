@@ -396,12 +396,12 @@
     },
     {
         "source": "Gadget Man now gets destroyed as well.",
-        "suggest": "小工具人现在也被摧毁。",
+        "suggest": "`Gadget` 现在也被摧毁。",
         "translate": ""
     },
     {
         "source": "Note that we've put the `Owner`'s vector of `Gadget`s inside a `RefCell` so that we can mutate it through a shared reference.",
-        "suggest": "请注意，我们已将小工具的所有者的 vector 放在 `RefCell` 内，以便我们可以通过共享的引用对其进行可变。",
+        "suggest": "请注意，我们已将 `Gadget` 的所有者的 vector 放在 `RefCell` 内，以便我们可以通过共享的引用对其进行可变。",
         "translate": ""
     },
     {
@@ -451,7 +451,7 @@
     },
     {
         "source": "There are now no strong (`Rc`) pointers to the gadgets, so they are destroyed.",
-        "suggest": "现在没有指向该小工具的强大 (`Rc`) 指针，因此它们已被销毁。",
+        "suggest": "现在没有指向该 `Gadget` 的强大 (`Rc`) 指针，因此它们已被销毁。",
         "translate": ""
     },
     {
