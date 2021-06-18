@@ -1076,7 +1076,7 @@
     },
     {
         "source": "Remnants from old libtest code that used the padding value in order to indicate benchmarks.",
-        "suggest": "来自旧的 libtest 代码的残差，这些残差代码使用填充值来指示基准。",
+        "suggest": "旧 libtest 代码的残余部分，这些代码使用填充值来指示基准。",
         "translate": ""
     },
     {
@@ -2589,7 +2589,6 @@
         "suggest": "回环地址",
         "translate": ""
     },
-
     {
         "source": "*Exception flags* report which exceptions occurred since last they were reset.",
         "suggest": "*异常标志* 报告自上次重置后发生了哪些异常。",
@@ -2603,6 +2602,2396 @@
     {
         "source": "*Rounding mode flags* control the rounding mode of floating point instructions.",
         "suggest": "*舍入模式标志* 控制浮点指令的舍入模式。",
+        "translate": ""
+    },
+    {
+        "source": "2 casts x 4 bytes x 100",
+        "suggest": "2 次转换 x 4 字节 x 100",
+        "translate": ""
+    },
+    {
+        "source": "Rebuild assuming data[0..start] is still a proper heap.",
+        "suggest": "重建假设 data[0..start] 仍然是一个合适的堆。",
+        "translate": ""
+    },
+    {
+        "source": "takes O(self.len()) operations and about 2 * self.len() comparisons in the worst case while repeating `sift_up` takes O(tail_len * log(start)) operations and about 1 * tail_len * log_2(start) comparisons in the worst case, assuming start >= tail_len.",
+        "suggest": "在最坏的情况下进行 O(self.len()) 次操作和大约 2 * self.len() 次比较，而在最坏情况下重复 `sift_up` 需要进行 O(tail_len * log(start)) 次操作和大约 1 * tail_len * log_2(start) 次比较，假设 start >= tail_len。",
+        "translate": ""
+    },
+    {
+        "source": "The index `i` is always less than self.len().",
+        "suggest": "索引 `i` 始终小于 self.len()。",
+        "translate": ""
+    },
+    {
+        "source": "data[0..first_removed] is untouched, so we only need to rebuild the tail:",
+        "suggest": "data[0..first_removed] 没有改变，所以我们只需要重建尾部:",
+        "translate": ""
+    },
+    {
+        "source": "Returns a slice of all values in the underlying vector, in arbitrary order.",
+        "suggest": "以任意顺序返回基础 vector 中所有值的切片。",
+        "translate": ""
+    },
+    {
+        "source": "If such distinct edges exist, returns them in ascending order, meaning that a non-zero number of calls to `next_unchecked` on the `front` of the result and/or calls to `next_back_unchecked` on the `back` of the result will eventually reach the same edge.",
+        "suggest": "如果存在这种不同的 edges，则按升序返回它们，这意味着在结果的 `front` 上对 `next_unchecked` 的非零调用次数或者对结果的 `back` 上的 `next_back_unchecked` 调用最终将达到相同的 edge。",
+        "translate": ""
+    },
+    {
+        "source": "If there are no such edges, i.e., if the tree contains no key within the range, returns a pair of empty options.",
+        "suggest": "如果没有这样的 edges，即，如果树不包含范围内的键，则返回一对空选项。",
+        "translate": ""
+    },
+    {
+        "source": "Unless `BorrowType` is `Immut`, do not use the handles to visit the same KV twice.",
+        "suggest": "除非 `BorrowType` 是 `Immut`，否则不要使用句柄两次访问同一个 KV。",
+        "translate": ""
+    },
+    {
+        "source": "Any pointer to an `InternalNode` can be directly cast to a pointer to the underlying `LeafNode` portion of the node, allowing code to act on leaf and internal nodes generically without having to even check which of the two a pointer is pointing at.",
+        "suggest": "任何指向 `InternalNode` 的指针都可以直接转换为指向节点底层 `LeafNode` 部分的指针，从而允许代码在一般情况下作用于叶节点和内部节点，甚至无需检查指针指向的两个节点中的哪一个。",
+        "translate": ""
+    },
+    {
+        "source": "Temporarily takes out another mutable reference to the same node.",
+        "suggest": "临时取出对同一节点的另一个可变引用。",
+        "translate": ""
+    },
+    {
+        "source": "Temporarily takes out another immutable handle on the same location.",
+        "suggest": "临时取出同一位置的另一个不可变句柄。",
+        "translate": ""
+    },
+    {
+        "source": "Temporarily takes out another mutable handle on the same location.",
+        "suggest": "临时取出同一位置的另一个可变句柄。",
+        "translate": ""
+    },
+    {
+        "source": "If found, returns an `Ok` with that node, the strictly ascending pair of edge indices in the node delimiting the range, and the corresponding pair of bounds for continuing the search in the child nodes, in case the node is internal.",
+        "suggest": "如果找到，则返回带有该节点的 `Ok`，该节点中限定范围的严格递增的一对边缘索引，以及在该节点是内部节点的情况下，在子节点中继续搜索的相应一对边界。",
+        "translate": ""
+    },
+    {
+        "source": "As a diagnostic service, panics if the range specifies impossible bounds.",
+        "suggest": "作为诊断服务，如果范围指定不可能的界限，则会发生 panics。",
+        "translate": ""
+    },
+    {
+        "source": "Returns either the KV index in the node at which the key (or an equivalent) exists, or the edge index where the key belongs, starting from a particular index.",
+        "suggest": "返回键 (或等效项) 所在节点中的 KV 索引，或键所属的 edge 索引，从特定索引开始。",
+        "translate": ""
+    },
+    {
+        "source": "must be a valid edge index for the node.",
+        "suggest": "必须是节点的有效 edge 索引。",
+        "translate": ""
+    },
+    {
+        "source": "Mirror image of `find_lower_bound_index` for the upper bound, with an additional parameter to skip part of the key array.",
+        "suggest": "上限的 `find_lower_bound_index` 的镜像，使用一个附加参数来跳过键数组的一部分。",
+        "translate": ""
+    },
+    {
+        "source": "Safety: The TrustedRandomAccess contract requires that callers only  pass an index that is in bounds.",
+        "suggest": "安全性: TrustedRandomAccess 契约要求调用方只传递一个在边界内的索引。",
+        "translate": ""
+    },
+    {
+        "source": "Assumes that the `VecDeque` is sorted by the key, for instance with [`make_contiguous().sort_by_key()`] using the same key extraction function.",
+        "suggest": "假设 `VecDeque` 是按键排序的，例如 [`make_contiguous().sort_by_key()`] 使用相同的键提取函数。",
+        "translate": ""
+    },
+    {
+        "source": "The deque is assumed to be partitioned according to the given predicate.",
+        "suggest": "假定双端队列根据给定的谓词进行了分区。",
+        "translate": ""
+    },
+    {
+        "source": "This means that all elements for which the predicate returns true are at the start of the deque and all elements for which the predicate returns false are at the end.",
+        "suggest": "这意味着谓词返回 true 的所有元素都在双端队列的开头，而谓词返回 false 的所有元素都在末尾。",
+        "translate": ""
+    },
+    {
+        "source": "If this deque is not partitioned, the returned result is unspecified and meaningless, as this method performs a kind of binary search.",
+        "suggest": "如果此双端队列未分区，则返回的结果是未指定且无意义的，因为此方法执行一种二分查找。",
+        "translate": ""
+    },
+    {
+        "source": "Positive signs are never printed by default, and the negative sign is only printed by default for signed values.",
+        "suggest": "默认情况下从不打印正号，默认情况下仅对有符号值打印负号。",
+        "translate": ""
+    },
+    {
+        "source": "pretty-print the [`Debug`] formatting (adds linebreaks and indentation)",
+        "suggest": "漂亮地打印 [`Debug`] 格式 (添加换行符和缩进)",
+        "translate": ""
+    },
+    {
+        "source": "This exists because stable `const fn` can only call stable `const fn`, so they cannot call `Self::new()`.",
+        "suggest": "这是因为稳定的 `const fn` 只能调用稳定的 `const fn`，所以不能调用 `Self::new()`。",
+        "translate": ""
+    },
+    {
+        "source": "If you change `RawVec<T>::new` or dependencies, please take care to not introduce anything that would truly const-call something unstable.",
+        "suggest": "如果您更改 `RawVec<T>::new` 或依赖项，请注意不要引入任何真正不稳定的东西。",
+        "translate": ""
+    },
+    {
+        "source": "Callers expect this function to be very cheap when there is already sufficient capacity.",
+        "suggest": "当已经有足够的容量时，调用者希望这个函数非常便宜。",
+        "translate": ""
+    },
+    {
+        "source": "Therefore, we move all the resizing and error-handling logic from grow_amortized and handle_reserve behind a call, while making sure that the this function is likely to be inlined as just a comparison and a call if the comparison fails.",
+        "suggest": "因此，我们将所有调整大小和错误处理逻辑从 grow_amortized 和 handle_reserve 移到一个调用之后，同时确保如果比较失败，这个函数很可能被内联为一个比较和一个调用。",
+        "translate": ""
+    },
+    {
+        "source": "Increments the strong reference count on the `Rc<T>` associated with the provided pointer by one.",
+        "suggest": "将与提供的指针关联的 `Rc<T>` 上的强引用计数增加 1。",
+        "translate": ""
+    },
+    {
+        "source": "The pointer must have been obtained through `Rc::into_raw`, and the associated `Rc` instance must be valid (i.e.",
+        "suggest": "指针必须是通过 `Rc::into_raw` 获得的，并且关联的 `Rc` 实例必须是有效的 (即",
+        "translate": ""
+    },
+    {
+        "source": "Retain Rc, but don't touch refcount by wrapping in ManuallyDrop",
+        "suggest": "保留 Rc，但不要通过包装在手动丢弃中来触及引用计数",
+        "translate": ""
+    },
+    {
+        "source": "Decrements the strong reference count on the `Rc<T>` associated with the provided pointer by one.",
+        "suggest": "将与提供的指针关联的 `Rc<T>` 上的强引用计数减一。",
+        "translate": ""
+    },
+    {
+        "source": "This method can be used to release the final `Rc` and backing storage, but **should not** be called after the final `Rc` has been released.",
+        "suggest": "此方法可用于释放最终的 `Rc` 和后备存储，但**不应**在最终的 `Rc` 释放后调用。",
+        "translate": ""
+    },
+    {
+        "source": "TrustedLen contract guarantees that `upper_bound == `None` implies an iterator length exceeding `usize::MAX`.",
+        "suggest": "TrustedLen 契约保证 `upper_bound == `None` 意味着迭代器长度超过 `usize::MAX`。",
+        "translate": ""
+    },
+    {
+        "source": "The default implementation would collect into a vec which would panic.",
+        "suggest": "默认实现将收集到一个 vec 中，这将是 panic。",
+        "translate": ""
+    },
+    {
+        "source": "Thus we panic here immediately without invoking `Vec` code.",
+        "suggest": "因此，我们立即在此处 panic 而不调用 `Vec` 代码。",
+        "translate": ""
+    },
+    {
+        "source": "Use a `Wake`-able type as a `Waker`.",
+        "suggest": "使用 `Wake` 类型作为 `Waker`。",
+        "translate": ""
+    },
+    {
+        "source": "No heap allocations or atomic operations are used for this conversion.",
+        "suggest": "此转换不使用堆分配或原子操作。",
+        "translate": ""
+    },
+    {
+        "source": "Use a `Wake`-able type as a `RawWaker`.",
+        "suggest": "使用 `Wake` 类型作为 `RawWaker`。",
+        "translate": ""
+    },
+    {
+        "source": "However, the pointer might not actually point to allocated memory.",
+        "suggest": "但是，指针实际上可能并不指向分配的内存。",
+        "translate": ""
+    },
+    {
+        "source": "that in this case the `Vec` might not report a [`capacity`] of 0*.",
+        "suggest": "在这种情况下，`Vec` 可能不会报告 [`capacity`] 为 0*。",
+        "translate": ""
+    },
+    {
+        "source": "Even if you zero a `Vec`'s memory first, that might not actually happen because the optimizer does not consider this a side-effect that must be preserved.",
+        "suggest": "即使您先将 `Vec` 的内存清零，这可能不会实际发生，因为优化器不认为这是一个必须保留的副作用。",
+        "translate": ""
+    },
+    {
+        "source": "This method provides unique access to all vec parts at once in `extend_from_within`.",
+        "suggest": "此方法提供对 `extend_from_within` 中所有 vec 部分的唯一访问权。",
+        "translate": ""
+    },
+    {
+        "source": "Element was just initialized with `MaybeUninit::write`, so it's ok to increase len",
+        "suggest": "Element 刚刚用 `MaybeUninit::write` 初始化，所以可以增加 len",
+        "translate": ""
+    },
+    {
+        "source": "Allocate a `Vec<T>` and fill it by cloning `s`'s items.",
+        "suggest": "分配一个 `Vec<T>` 并通过克隆 `s` 的项来填充它。",
+        "translate": ""
+    },
+    {
+        "source": "Allocate a `Vec<T>` and move `s`'s items into it.",
+        "suggest": "分配一个 `Vec<T>` 并将 `s` 的项移到其中。",
+        "translate": ""
+    },
+    {
+        "source": "Convert a clone-on-write slice into a vector.",
+        "suggest": "将写时克隆切片转换为 vector。",
+        "translate": ""
+    },
+    {
+        "source": "If `s` already owns a `Vec<T>`, it will be returned directly.",
+        "suggest": "如果 `s` 已经拥有 `Vec<T>`，则直接返回。",
+        "translate": ""
+    },
+    {
+        "source": "If `s` is borrowing a slice, a new `Vec<T>` will be allocated and filled by cloning `s`'s items into it.",
+        "suggest": "如果 `s` 是借用了一个切片，将通过克隆 `s` 的项来分配和填充一个新的 `Vec`。",
+        "translate": ""
+    },
+    {
+        "source": "Convert a boxed slice into a vector by transferring ownership of the existing heap allocation.",
+        "suggest": "通过转移现有堆分配的所有权，将 boxed 切片转换为 vector。",
+        "translate": ""
+    },
+    {
+        "source": "Convert a vector into a boxed slice.",
+        "suggest": "将 vector 转换为 boxed。",
+        "translate": ""
+    },
+    {
+        "source": "If `v` has excess capacity, its items will be moved into a newly-allocated buffer with exactly the right capacity.",
+        "suggest": "如果 `v` 有多余的容量，它的项将被移动到新分配的缓冲区中，缓冲区的容量恰好是正确的。",
+        "translate": ""
+    },
+    {
+        "source": "Allocate a `Vec<u8>` and fill it with a UTF-8 string.",
+        "suggest": "分配一个 `Vec<u8>` 并用 UTF-8 字符串填充它。",
+        "translate": ""
+    },
+    {
+        "source": "Helper trait to hold specialized implementations of the in-place iterate-collect loop",
+        "suggest": "Helper trait 用来保存原地迭代收集循环的专门实现",
+        "translate": ""
+    },
+    {
+        "source": "Collects an iterator (`self`) into the destination buffer (`dst`) and returns the number of items collected.",
+        "suggest": "将迭代器 (`self`) 收集到目标缓冲区 (`dst`) 中并返回收集的项数。",
+        "translate": ""
+    },
+    {
+        "source": "is the last writable element of the allocation and used for bounds checks.",
+        "suggest": "是分配的最后一个可写元素，用于边界检查。",
+        "translate": ""
+    },
+    {
+        "source": "Safety: InplaceIterable contract guarantees that for every element we read one slot in the underlying storage will have been freed up and we can immediately write back the result.",
+        "suggest": "安全性: InplaceIterable 契约保证我们读取底层存储中的一个槽位的每个元素都将被释放，我们可以立即写回结果。",
+        "translate": ""
+    },
+    {
+        "source": "Per TrustedLen contract a `None` upper bound means that the iterator length truly exceeds usize::MAX, which would eventually lead to a capacity overflow anyway.",
+        "suggest": "每个 TrustedLen 契约的 `None` 上限意味着迭代器长度确实超过 usize::MAX，无论如何最终都会导致容量溢出。",
+        "translate": ""
+    },
+    {
+        "source": "Since the other branch already panics eagerly (via `reserve()`) we do the same here.",
+        "suggest": "由于另一个分支已经 panics 急切地 (通过 `reserve()`) 我们在这里做同样的事情。",
+        "translate": ""
+    },
+    {
+        "source": "This avoids additional codegen for a fallback code path which would eventually panic anyway.",
+        "suggest": "这避免了额外的 codegen 用于回退代码路径，最终 panic 无论如何。",
+        "translate": ""
+    },
+    {
+        "source": "TrustedLen contract guarantees that `size_hint() == (_, None)` means that there are more than `usize::MAX` elements.",
+        "suggest": "TrustedLen 契约保证 `size_hint() == (_, None)` 意味着有多个 `usize::MAX` 元素。",
+        "translate": ""
+    },
+    {
+        "source": "Since the previous branch would eagerly panic if the capacity is too large (via `with_capacity`) we do the same here.",
+        "suggest": "因为如果容量太大 (通过 `with_capacity`)，前一个分支会急切地使用 panic，所以我们在这里做同样的事情。",
+        "translate": ""
+    },
+    {
+        "source": "reuse extend specialization for TrustedLen",
+        "suggest": "重用 TrustedLen 的扩展专业化",
+        "translate": ""
+    },
+    {
+        "source": "Check that 20 moved into 10's place.",
+        "suggest": "检查 20 是否移动到 10 的位置。",
+        "translate": ""
+    },
+    {
+        "source": "clean up the leak to keep miri happy",
+        "suggest": "清理泄漏，让 miri 开心",
+        "translate": ""
+    },
+    {
+        "source": "regression test for issue #85322.",
+        "suggest": "issue #85322 的回归测试。",
+        "translate": ""
+    },
+    {
+        "source": "Peekable previously implemented InPlaceIterable, but due to an interaction with IntoIter's current Clone implementation it failed to uphold the contract.",
+        "suggest": "Peekable 之前实现了 InPlaceIterable，但由于与 IntoIter 当前 Clone 实现的交互，它未能遵守契约。",
+        "translate": ""
+    },
+    {
+        "source": "Apache License, Version 2.0, ([LICENSE-APACHE](LICENSE-APACHE) or https://www.apache.org/licenses/LICENSE-2.0)",
+        "suggest": "Apache 许可证，版本 2.0、([LICENSE-APACHE](LICENSE-APACHE) 或 https://www.apache.org/licenses/LICENSE-2.0)",
+        "translate": ""
+    },
+    {
+        "source": "MIT license ([LICENSE-MIT](LICENSE-MIT) or https://opensource.org/licenses/MIT)",
+        "suggest": "MIT 许可证 ([LICENSE-MIT](LICENSE-MIT) 或 https://opensource.org/licenses/MIT)",
+        "translate": ""
+    },
+    {
+        "source": "Backtrace accuracy",
+        "suggest": "回溯的准确性",
+        "translate": ""
+    },
+    {
+        "source": "This crate implements best-effort attempts to get the native backtrace.",
+        "suggest": "这个 crate 尽最大努力尝试获取本机回溯。",
+        "translate": ""
+    },
+    {
+        "source": "This is not always guaranteed to work, and some platforms don't return any backtrace at all.",
+        "suggest": "这并不总是能保证工作，有些平台根本不返回任何回溯。",
+        "translate": ""
+    },
+    {
+        "source": "If your application requires accurate backtraces then it's recommended to closely evaluate this crate to see whether it's suitable for your use case on your target platforms.",
+        "suggest": "如果您的应用程序需要准确的回溯，那么建议仔细评估此 crate 以查看它是否适合您在目标平台上的用例。",
+        "translate": ""
+    },
+    {
+        "source": "Even on supported platforms, there's a number of reasons that backtraces may be less-than-accurate, including but not limited to:",
+        "suggest": "即使在受支持的平台上，回溯也有很多不准确的原因，包括但不限于:",
+        "translate": ""
+    },
+    {
+        "source": "Unwind information may not be available.",
+        "suggest": "展开信息可能不可用。",
+        "translate": ""
+    },
+    {
+        "source": "This crate primarily implements backtraces by unwinding the stack, but not all functions may have unwinding information (e.g.",
+        "suggest": "这个 crate 主要是通过展开栈来实现回溯，但并不是所有的函数都有展开信息 (例如",
+        "translate": ""
+    },
+    {
+        "source": "DWARF unwinding information).",
+        "suggest": "DWARF 展开信息)。",
+        "translate": ""
+    },
+    {
+        "source": "Rust code may be compiled without unwinding information for some functions.",
+        "suggest": "对于某些函数，Rust 代码可能在没有展开信息的情况下编译。",
+        "translate": ""
+    },
+    {
+        "source": "This can also happen for Rust code compiled with `-Cpanic=abort`.",
+        "suggest": "使用 `-Cpanic=abort` 编译的 Rust 代码也可能发生这种情况。",
+        "translate": ""
+    },
+    {
+        "source": "You can remedy this, however, with `-Cforce-unwind-tables` as a compiler option.",
+        "suggest": "但是，您可以使用 `-Cforce-unwind-tables` 作为编译器选项来解决此问题。",
+        "translate": ""
+    },
+    {
+        "source": "Unwind information may be inaccurate or corrupt.",
+        "suggest": "展开信息可能不准确或损坏。",
+        "translate": ""
+    },
+    {
+        "source": "In the worst case inaccurate unwind information can lead this library to segfault.",
+        "suggest": "在最坏的情况下，不准确的展开信息可能导致该库出现段错误。",
+        "translate": ""
+    },
+    {
+        "source": "In the best case inaccurate information will result in a truncated stack trace.",
+        "suggest": "在最好的情况下，不准确的信息将导致栈跟踪被截断。",
+        "translate": ""
+    },
+    {
+        "source": "Backtraces may not report filenames/line numbers correctly due to missing or corrupt debug information.",
+        "suggest": "由于调试信息丢失或损坏，回溯可能无法正确报告文件名/行号。",
+        "translate": ""
+    },
+    {
+        "source": "This won't lead to segfaults unlike corrupt unwinding information, but missing or malformed debug information will mean that filenames and line numbers will not be available.",
+        "suggest": "与损坏的展开信息不同，这不会导致段错误，但缺少或格式错误的调试信息将意味着文件名和行号将不可用。",
+        "translate": ""
+    },
+    {
+        "source": "This may be because debug information wasn't generated by the compiler, or it's just missing on the filesystem.",
+        "suggest": "这可能是因为调试信息不是由编译器生成的，或者它只是在文件系统中丢失了。",
+        "translate": ""
+    },
+    {
+        "source": "Not all platforms are supported.",
+        "suggest": "并非所有平台都受支持。",
+        "translate": ""
+    },
+    {
+        "source": "For example there's no way to get a backtrace on WebAssembly at the moment.",
+        "suggest": "例如，目前无法在 WebAssembly 上获得回溯。",
+        "translate": ""
+    },
+    {
+        "source": "Crate features may be disabled.",
+        "suggest": "Crate 特性可能被禁用。",
+        "translate": ""
+    },
+    {
+        "source": "Currently this crate supports using Gimli libbacktrace on non-Windows platforms for reading debuginfo for backtraces.",
+        "suggest": "目前这个 crate 支持在非 Windows 平台上使用 Gimli libbacktrace 来读取回溯的调试信息。",
+        "translate": ""
+    },
+    {
+        "source": "If both crate features are disabled, however, then these platforms will generate a backtrace but be unable to generate symbols for it.",
+        "suggest": "但是，如果禁用了 crate 的两个特性，那么这些平台将生成回溯但不能为它生成符号。",
+        "translate": ""
+    },
+    {
+        "source": "In most standard workflows for most standard platforms you generally don't need to worry about these caveats.",
+        "suggest": "在大多数标准平台的大多数标准工作流程中，您通常不需要担心这些警告。",
+        "translate": ""
+    },
+    {
+        "source": "We'll try to fix ones where we can over time, but otherwise it's important to be aware of the limitations of unwinding-based backtraces!",
+        "suggest": "随着时间的推移，我们将尝试修复那些可以修复的问题，但除此之外，重要的是要注意基于展开的回溯的局限性!",
+        "translate": ""
+    },
+    {
+        "source": "We know this is deprecated, it's only here for back-compat reasons.",
+        "suggest": "我们知道这已被弃用，它仅用于向后兼容的原因。",
+        "translate": ""
+    },
+    {
+        "source": "Haiku implements the image_info struct and the get_next_image_info() functions to iterate through the loaded executable images.",
+        "suggest": "Haiku 实现了 image_info 结构和 get_next_image_info() 函数来迭代加载的可执行图像。",
+        "translate": ""
+    },
+    {
+        "source": "The image_info struct contains a pointer to the start of the .text section within the virtual address space, as well as the size of that section.",
+        "suggest": "image_info 结构体包含一个指向虚拟地址空间内 .text 部分开头的指针，以及该部分的大小。",
+        "translate": ""
+    },
+    {
+        "source": "All the read-only segments of the ELF-binary are in that part of the address space.",
+        "suggest": "ELF 二进制文件的所有只读段都在地址空间的这一部分。",
+        "translate": ""
+    },
+    {
+        "source": "Load the first image to get a valid info struct",
+        "suggest": "加载第一张图片以获取有效信息结构体",
+        "translate": ""
+    },
+    {
+        "source": "Request the current link map from the runtime linker:",
+        "suggest": "从运行时链接器请求当前链接 map:",
+        "translate": ""
+    },
+    {
+        "source": "Each entry in the link map represents a loaded object:",
+        "suggest": "链接 map 中的每个条目代表一个加载的对象:",
+        "translate": ""
+    },
+    {
+        "source": "Fetch the fully qualified path of the loaded object:",
+        "suggest": "获取加载的对象的完全限定路径:",
+        "translate": ""
+    },
+    {
+        "source": "The base address of the object loaded into memory:",
+        "suggest": "加载到内存中的对象的基地址:",
+        "translate": ""
+    },
+    {
+        "source": "Use the ELF header for this object to locate the program header:",
+        "suggest": "使用此 object 的 ELF 标头来定位程序标头:",
+        "translate": ""
+    },
+    {
+        "source": "Program header addresses for the base executable are already absolute.",
+        "suggest": "基本可执行文件的程序头地址已经是绝对的。",
+        "translate": ""
+    },
+    {
+        "source": "Other addresses are relative to the object base.",
+        "suggest": "其他地址是相对于对象库的。",
+        "translate": ""
+    },
+    {
+        "source": "Everything else should doesn't know how to load native libraries.",
+        "suggest": "其他的一切都不应该知道如何加载本机库。",
+        "translate": ""
+    },
+    {
+        "source": "the `#[rustc_skip_array_during_method_dispatch]` on `trait IntoIterator` hides this implementation from explicit `.into_iter()` calls on editions < 2021, so those calls will still resolve to the slice implementation, by reference.",
+        "suggest": "`trait IntoIterator` 上的 `#[rustc_skip_array_during_method_dispatch]` 对小于 2021 的版本显式 `.into_iter()` 调用隐藏了此实现，因此这些调用仍将通过引用解析为 slice 实现。",
+        "translate": ""
+    },
+    {
+        "source": "Creates a consuming iterator, that is, one that moves each value out of the array (from start to end).",
+        "suggest": "创建一个消费迭代器，即将每个值移出数组 (从开始到结束)。",
+        "translate": ""
+    },
+    {
+        "source": "The array cannot be used after calling this unless `T` implements `Copy`, so the whole array is copied.",
+        "suggest": "除非 `T` 实现了 `Copy`，否则调用此数组后不能使用数组，因此整个数组都会被复制。",
+        "translate": ""
+    },
+    {
+        "source": "Arrays have special behavior when calling `.into_iter()` prior to the",
+        "suggest": "在调用 `.into_iter()` 之前，数组具有特殊行为",
+        "translate": ""
+    },
+    {
+        "source": "2021 edition -- see the [array] Editions section for more information.",
+        "suggest": "2021 版 -- 有关更多信息，请参见 [array] 版本部分。",
+        "translate": ""
+    },
+    {
+        "source": "Stores the location of the earliest currently active borrow.",
+        "suggest": "存储当前最早活动借用的位置。",
+        "translate": ""
+    },
+    {
+        "source": "This gets updated whenver we go from having zero borrows to having a single borrow.",
+        "suggest": "每当我们从零借用变为单一借用时，这个就会更新。",
+        "translate": ""
+    },
+    {
+        "source": "When a borrow occurs, this gets included in the generated `BorroeError/`BorrowMutError`",
+        "suggest": "当借用发生时，这将包含在生成的 `BorroeError/`BorrowMutError` 中",
+        "translate": ""
+    },
+    {
+        "source": "is always the *first* active borrow",
+        "suggest": "总是第一个主动借用",
+        "translate": ""
+    },
+    {
+        "source": "If a borrow occured, then we must already have an outstanding borrow, so `borrowed_at` will be `Some`",
+        "suggest": "如果发生借用，那么我们肯定已经有一个未偿还的借用，所以 `borrowed_at` 就是 `Some`",
+        "translate": ""
+    },
+    {
+        "source": "An extended version of `escape_debug` that optionally permits escaping Extended Grapheme codepoints, single quotes, and double quotes.",
+        "suggest": "`escape_debug` 的扩展版本，可选择允许转义扩展字素代码点、单引号和双引号。",
+        "translate": ""
+    },
+    {
+        "source": "This allows us to format characters like nonspacing marks better when they're at the start of a string, and allows escaping single quotes in characters, and double quotes in strings.",
+        "suggest": "这允许我们在字符串开头时更好地格式化像非空格标记这样的字符，并允许转义字符中的单引号和字符串中的双引号。",
+        "translate": ""
+    },
+    {
+        "source": "Escape Extended Grapheme codepoints?",
+        "suggest": "转义扩展字素代码点?",
+        "translate": ""
+    },
+    {
+        "source": "Escape single quotes?",
+        "suggest": "转义单引号?",
+        "translate": ""
+    },
+    {
+        "source": "Escape double quotes?",
+        "suggest": "转义双引号?",
+        "translate": ""
+    },
+    {
+        "source": "Pattern `Some(Less | Eq)` optimizes worse than negating `None | Some(Greater)`.",
+        "suggest": "模式 `Some(Less | Eq)` 优化比否定 `None | Some(Greater)` 更糟糕。",
+        "translate": ""
+    },
+    {
+        "source": "The root cause was fixed upstream in LLVM with:",
+        "suggest": "根本原因已在 LLVM 上游修复:",
+        "translate": ""
+    },
+    {
+        "source": "Revert this workaround once support for LLVM 12 gets dropped.",
+        "suggest": "一旦获得对 LLVM 12 的支持，就恢复此变通方法。",
+        "translate": ""
+    },
+    {
+        "source": "Rustdocs on the impl block show a \"[+] show undocumented items\" toggle.",
+        "suggest": "impl 块上的 Rustdocs 显示了 \"[+] show undocumented items\" 切换。",
+        "translate": ""
+    },
+    {
+        "source": "Rustdocs on functions do not.",
+        "suggest": "函数上的 Rustdocs 没有。",
+        "translate": ""
+    },
+    {
+        "source": "This method is meant as a convenience, but its implementation is also explicitly left unspecified.",
+        "suggest": "此方法是为了方便起见，但它的实现也明确未指定。",
+        "translate": ""
+    },
+    {
+        "source": "It isn't guaranteed to be equivalent to repeated calls of [`hash`] and implementations of [`Hash`] should keep that in mind and call [`hash`] themselves if the slice isn't treated as a whole unit in the [`PartialEq`] implementation.",
+        "suggest": "它不能保证等同于 [`hash`] 的重复调用，并且 [`Hash`] 的实现应该记住这一点，如果在 [`PartialEq`] 实现中没有将 6 视为整个单元，则调用 [`hash`] 本身。",
+        "translate": ""
+    },
+    {
+        "source": "For example, a [`VecDeque`] implementation might naïvely call [`as_slices`] and then [`hash_slice`] on each slice, but this is wrong since the two slices can change with a call to [`make_contiguous`] without affecting the [`PartialEq`] result.",
+        "suggest": "例如，一个 [`VecDeque`] 实现可能天真地调用 [`as_slices`] 然后 [`hash_slice`] 对每个调用 [`hash_slice`]，但这是错误的，因为两个切片可以随调用更改为 [`make_contiguous`] 而不会影响 [`PartialEq`] 结果。",
+        "translate": ""
+    },
+    {
+        "source": "Since these slices aren't treated as singular units, and instead part of a larger deque, this method cannot be used.",
+        "suggest": "由于这些切片不被视为单一单元，而是更大双端队列的一部分，因此无法使用此方法。",
+        "translate": ""
+    },
+    {
+        "source": "This trait makes no assumptions about how the various `write_*` methods are defined and implementations of [`Hash`] should not assume that they work one way or another.",
+        "suggest": "这个 trait 不假设各种 `write_*` 方法是如何定义的，并且 [`Hash`] 的实现不应该假设它们以一种或另一种方式工作。",
+        "translate": ""
+    },
+    {
+        "source": "You cannot assume, for example, that a [`write_u32`] call is equivalent to four calls of [`write_u8`].",
+        "suggest": "例如，您不能假设一个 [`write_u32`] 调用等同于 [`write_u8`] 的四个调用。",
+        "translate": ""
+    },
+    {
+        "source": "ResultShunt::next calls I::find, which has to advance `iter` in order to return `Some(_)`.",
+        "suggest": "ResultShunt::next 调用 I::find，它必须提前 `iter` 才能返回 `Some(_)`。",
+        "translate": ""
+    },
+    {
+        "source": "Since `iter` has type `I: InPlaceIterable` it's guaranteed that at least one item will be moved out from the underlying source.",
+        "suggest": "由于 `iter` 的类型为 `I: InPlaceIterable`，因此可以保证至少一个项将从基础源中移出。",
+        "translate": ""
+    },
+    {
+        "source": "Nested zips are also possible:",
+        "suggest": "嵌套 zip 也可以:",
+        "translate": ""
+    },
+    {
+        "source": "This `struct` is created by [`zip`] or [`Iterator::zip`].",
+        "suggest": "这个 `struct` 是由 [`zip`] 或 [`Iterator::zip`] 创建的。",
+        "translate": ""
+    },
+    {
+        "source": "Converts the arguments to iterators and zips them.",
+        "suggest": "将参数转换为迭代器并压缩它们。",
+        "translate": ""
+    },
+    {
+        "source": "See the documentation of [`Iterator::zip`] for more.",
+        "suggest": "有关更多信息，请参见 [`Iterator::zip`] 的文档。",
+        "translate": ""
+    },
+    {
+        "source": "Safety: This macro must only be used on types that are `Copy` and result in ranges which have an exact `size_hint()` where the upper bound must not be `None`.",
+        "suggest": "安全性: 这个宏只能用于 `Copy` 的类型，并导致具有精确 `size_hint()` 的范围，其中上限不能是 `None`。",
+        "translate": ""
+    },
+    {
+        "source": "The TrustedRandomAccess contract requires that callers only  pass an index that is in bounds.",
+        "suggest": "TrustedRandomAccess 契约要求调用者只传递一个在边界内的索引。",
+        "translate": ""
+    },
+    {
+        "source": "Additionally Self: TrustedRandomAccess is only implemented for Copy types which means even repeated reads of the same index would be safe.",
+        "suggest": "另外 Self: TrustedRandomAccess 仅针对 Copy 类型实现，这意味着即使重复读取同一索引也是安全的。",
+        "translate": ""
+    },
+    {
+        "source": "put a value into the iterator",
+        "suggest": "将一个值放入迭代器",
+        "translate": ""
+    },
+    {
+        "source": "The value reappears as the iterator continues",
+        "suggest": "随着迭代器的继续，该值重新出现",
+        "translate": ""
+    },
+    {
+        "source": "Take the first two words.",
+        "suggest": "以前两个单词为例。",
+        "translate": ""
+    },
+    {
+        "source": "Collect the rest of the words.",
+        "suggest": "收集剩下的单词。",
+        "translate": ""
+    },
+    {
+        "source": "We can only do this because we used `by_ref` earlier.",
+        "suggest": "我们只能这样做，因为我们之前使用了 `by_ref`。",
+        "translate": ""
+    },
+    {
+        "source": "Creates an iterator which can use the [`peek`] and [`peek_mut`] methods to look at the next element of the iterator without consuming it.",
+        "suggest": "创建一个迭代器，它可以使用 [`peek`] 和 [`peek_mut`] 方法查看迭代器的下一个元素而不消耗它。",
+        "translate": ""
+    },
+    {
+        "source": "See their documentation for more information.",
+        "suggest": "有关更多信息，请参见他们的文档。",
+        "translate": ""
+    },
+    {
+        "source": "Note that the underlying iterator is still advanced when [`peek`] or [`peek_mut`] are called for the first time: In order to retrieve the next element, [`next`] is called on the underlying iterator, hence any side effects (i.e.",
+        "suggest": "注意，第一次调用 [`peek`] 或 [`peek_mut`] 时，底层迭代器仍然在前进: 为了检索下一个元素，在底层迭代器上调用 [`next`]，因此会产生任何副作用 (即",
+        "translate": ""
+    },
+    {
+        "source": "Using [`peek_mut`] to mutate the next item without advancing the iterator:",
+        "suggest": "使用 [`peek_mut`] 在不推进迭代器的情况下改变下一个项:",
+        "translate": ""
+    },
+    {
+        "source": "skips elements until `n` elements are skipped or the end of the iterator is reached (whichever happens first).",
+        "suggest": "跳过元素，直到跳过 `n` 个元素或到达迭代器的末尾 (以先发生者为准)。",
+        "translate": ""
+    },
+    {
+        "source": "After that, all the remaining elements are yielded.",
+        "suggest": "之后，产生所有剩余的元素。",
+        "translate": ""
+    },
+    {
+        "source": "In particular, if the original iterator is too short, then the returned iterator is empty.",
+        "suggest": "特别是，如果原始迭代器太短，则返回的迭代器为空。",
+        "translate": ""
+    },
+    {
+        "source": "Creates an iterator that yields the first `n` elements, or fewer if the underlying iterator ends sooner.",
+        "suggest": "创建一个迭代器，它产生第一个 `n` 元素，如果底层迭代器提前结束，则产生更少的元素。",
+        "translate": ""
+    },
+    {
+        "source": "yields elements until `n` elements are yielded or the end of the iterator is reached (whichever happens first).",
+        "suggest": "产生元素直到 `n` 元素被产生或到达迭代器的末尾 (以先发生的为准)。",
+        "translate": ""
+    },
+    {
+        "source": "The returned iterator is a prefix of length `n` if the original iterator contains at least `n` elements, otherwise it contains all of the (fewer than `n`) elements of the original iterator.",
+        "suggest": "如果原始迭代器包含至少 `n` 个元素，则返回的迭代器是一个长度为 `n` 的前缀，否则它包含原始迭代器的所有 (少于 `n`) 个元素。",
+        "translate": ""
+    },
+    {
+        "source": "Note that the [`Fuse`] wrapper is a no-op on iterators that implement the [`FusedIterator`] trait.",
+        "suggest": "请注意，[`Fuse`] 包装器对实现 [`FusedIterator`] trait 的迭代器是无操作的。",
+        "translate": ""
+    },
+    {
+        "source": "may therefore behave incorrectly if the [`FusedIterator`] trait is improperly implemented.",
+        "suggest": "因此，如果 [`FusedIterator`] trait 实现不当，则可能会出现错误行为。",
+        "translate": ""
+    },
+    {
+        "source": "Initializing the `name` field Using `write` instead of assignment via `=` to not call `drop` on the old, uninitialized value.",
+        "suggest": "初始化 `name` 字段 使用 `write` 而不是通过 `=` 赋值，而不是在旧的、未初始化的值上调用 `drop`。",
+        "translate": ""
+    },
+    {
+        "source": "However, using `.assume_init()` may trigger a `memcpy` of the 1024 bytes.",
+        "suggest": "但是，使用 `.assume_init()` 可能会触发 1024 字节的 `memcpy`。",
+        "translate": ""
+    },
+    {
+        "source": "To assert our buffer has been initialized without copying it, we upgrade the `&mut MaybeUninit<[u8; 1024]>` to a `&mut [u8; 1024]`:",
+        "suggest": "为了断言我们的缓冲区已经初始化而不复制它，我们将 `&mut MaybeUninit<[u8; 1024]>` 升级为 `&mut [u8; 1024]`:",
+        "translate": ""
+    },
+    {
+        "source": "in a future Rust version this method may become unnecessary when Rust allows [inline const expressions](https://github.com/rust-lang/rust/issues/76001).",
+        "suggest": "在 future Rust 版本中，当 Rust 允许 [inline const expressions](https://github.com/rust-lang/rust/issues/76001) 时，此方法可能变得不必要。",
+        "translate": ""
+    },
+    {
+        "source": "The example below could then use `let mut buf = [const { MaybeUninit::<u8>::uninit() }; 32];`.",
+        "suggest": "下面的示例可以使用 `let mut buf = [const { MaybeUninit::<u8>::uninit() }; 32];`。",
+        "translate": ""
+    },
+    {
+        "source": "Prints `-` for any negative value.",
+        "suggest": "为任何负值打印 `-`。",
+        "translate": ""
+    },
+    {
+        "source": "Prints `-` for any negative value, or `+` otherwise.",
+        "suggest": "为任何负值打印 `-`，否则打印 `+`。",
+        "translate": ""
+    },
+    {
+        "source": "This computes the integer `q` such that `self = q * rhs + r`, with `r = self.rem_euclid(rhs)` and `0 <= r < abs(rhs)`.",
+        "suggest": "这将计算整数 `q`，使得 `self = q * rhs + r`、`r = self.rem_euclid(rhs)` 和 `0 <= r < abs(rhs)`。",
+        "translate": ""
+    },
+    {
+        "source": "In other words, the result is `self / rhs` rounded to the integer `q` such that `self >= q * rhs`.",
+        "suggest": "换句话说，结果是 `self / rhs` 舍入为整数 `q`，使得 `self >= q * rhs`。",
+        "translate": ""
+    },
+    {
+        "source": "Returns an iterator that produces an escaped version of a `u8`, treating it as an ASCII character.",
+        "suggest": "返回生成 `u8` 的转义版本的迭代器，将其视为 ASCII 字符。",
+        "translate": ""
+    },
+    {
+        "source": "The behavior is identical to [`ascii::escape_default`].",
+        "suggest": "行为与 [`ascii::escape_default`] 相同。",
+        "translate": ""
+    },
+    {
+        "source": "If you'd like to explicitly call the destructor of a value, [`mem::drop`] can be used instead.",
+        "suggest": "如果您想显式调用一个值的析构函数，可以使用 [`mem::drop`] 代替。",
+        "translate": ""
+    },
+    {
+        "source": "May panic if the index is out of bounds.",
+        "suggest": "如果索引越界，则可能为 panic。",
+        "translate": ""
+    },
+    {
+        "source": "This is used, for example, on the accumulator in `try_fold`:",
+        "suggest": "例如，这用于 `try_fold` 中的累加器:",
+        "translate": ""
+    },
+    {
+        "source": "The `?` operator and `try {}` blocks.",
+        "suggest": "`?` 运算符和 `try {}` 块。",
+        "translate": ""
+    },
+    {
+        "source": "methods typically involve a type implementing this trait.",
+        "suggest": "方法通常涉及实现此 trait 的类型。",
+        "translate": ""
+    },
+    {
+        "source": "For example, the closures passed to [`Iterator::try_fold`] and [`Iterator::try_for_each`] must return such a type.",
+        "suggest": "例如，传递给 [`Iterator::try_fold`] 和 [`Iterator::try_for_each`] 的闭包必须返回这样的类型。",
+        "translate": ""
+    },
+    {
+        "source": "types are typically those containing two or more categories of values, some subset of which are so commonly handled via early returns that it's worth providing a terse (but still visible) syntax to make that easy.",
+        "suggest": "类型通常是那些包含两个或更多类别值的类型，其中一些子集通常通过早期返回处理，因此值得提供一个简洁 (但仍然可见) 的语法来简化它。",
+        "translate": ""
+    },
+    {
+        "source": "This is most often seen for error handling with [`Result`] and [`Option`].",
+        "suggest": "这在 [`Result`] 和 [`Option`] 的错误处理中最常见。",
+        "translate": ""
+    },
+    {
+        "source": "The quintessential implementation of this trait is on [`ControlFlow`].",
+        "suggest": "这个 trait 的典型实现是在 [`ControlFlow`] 上。",
+        "translate": ""
+    },
+    {
+        "source": "Using `Try` in Generic Code",
+        "suggest": "在泛型代码中使用 `Try`",
+        "translate": ""
+    },
+    {
+        "source": "was stabilized to call back in Rust 1.27, but this trait is much newer.",
+        "suggest": "在 Rust 1.27 中稳定到调用，但是这个 trait 更新了很多。",
+        "translate": ""
+    },
+    {
+        "source": "To illustrate the various associated types and methods, let's implement our own version.",
+        "suggest": "为了说明各种关联类型和方法，让我们实现我们自己的版本。",
+        "translate": ""
+    },
+    {
+        "source": "As a reminder, an infallible version of a fold looks something like this:",
+        "suggest": "提醒一下，一个可靠的折叠版本看起来像这样:",
+        "translate": ""
+    },
+    {
+        "source": "So instead of `f` returning just an `A`, we'll need it to return some other type that produces an `A` in the \"don't short circuit\" path.",
+        "suggest": "因此，不是 `f` 只返回一个 `A`，我们需要它返回一些在不要短路路径中产生一个 `A` 的其他类型。",
+        "translate": ""
+    },
+    {
+        "source": "Conveniently, that's also the type we need to return from the function.",
+        "suggest": "方便的是，这也是我们需要从函数返回的类型。",
+        "translate": ""
+    },
+    {
+        "source": "Let's add a new generic parameter `R` for that type, and bound it to the output type that we want:",
+        "suggest": "让我们为该类型添加一个新的泛型参数 `R`，并将其绑定到我们想要的输出类型:",
+        "translate": ""
+    },
+    {
+        "source": "If we get through the entire iterator, we need to wrap up the accumulator into the return type using [`Try::from_output`]:",
+        "suggest": "如果我们遍历整个迭代器，我们需要使用 [`Try::from_output`] 将累加器包装成返回类型:",
+        "translate": ""
+    },
+    {
+        "source": "We'll also need [`FromResidual::from_residual`] to turn the residual back into the original type.",
+        "suggest": "我们还需要 [`FromResidual::from_residual`] 将 residual 恢复为原始类型。",
+        "translate": ""
+    },
+    {
+        "source": "But because it's a supertrait of `Try`, we don't need to mention it in the bounds.",
+        "suggest": "但因为它是 `Try` 的一个 super trait，所以我们不必在界限内提及它。",
+        "translate": ""
+    },
+    {
+        "source": "All types which implement `Try` can be recreated from their corresponding residual, so we'll just call it:",
+        "suggest": "所有实现 `Try` 的类型都可以从它们对应的 residual 中重新创建，所以我们将调用它:",
+        "translate": ""
+    },
+    {
+        "source": "But this \"call `branch`, then `match` on it, and `return` if it was a `Break`\" is exactly what happens inside the `?` operator.",
+        "suggest": "但是这个 \"调用`branch`，然后在它上面进行 `match`，如果它是 `Break`，则 `return`\" 正是在 `?` 操作符内部发生的事情。",
+        "translate": ""
+    },
+    {
+        "source": "So rather than do all this manually, we can just use `?` instead:",
+        "suggest": "因此，我们可以使用 `?` 代替手动完成所有这些操作:",
+        "translate": ""
+    },
+    {
+        "source": "The type of the value produced by `?` when *not* short-circuiting.",
+        "suggest": "当不短路时，`?` 产生的值的类型。",
+        "translate": ""
+    },
+    {
+        "source": "The type of the value passed to [`FromResidual::from_residual`] as part of `?` when short-circuiting.",
+        "suggest": "短路时作为 `?` 的一部分传递给 [`FromResidual::from_residual`] 的值的类型。",
+        "translate": ""
+    },
+    {
+        "source": "This represents the possible values of the `Self` type which are *not* represented by the `Output` type.",
+        "suggest": "这表示 `Self` 类型的可能值，而不是 `Output` 类型所表示的值。",
+        "translate": ""
+    },
+    {
+        "source": "The choice of this type is critical to interconversion.",
+        "suggest": "这种类型的选择对于相互转化至关重要。",
+        "translate": ""
+    },
+    {
+        "source": "Unlike the `Output` type, which will often be a raw generic type, this type is typically a newtype of some sort to \"color\" the type so that it's distinguishable from the residuals of other types.",
+        "suggest": "与 `Output` 类型不同，它通常是原始泛型类型，这种类型通常是某种类型的 newtype 到 \"color\" 类型，以便与其他类型的 residual 区别开来。",
+        "translate": ""
+    },
+    {
+        "source": "This is why `Result<T, E>::Residual` is not `E`, but `Result<Infallible, E>`.",
+        "suggest": "这就是为什么 `Result<T, E>::Residual` 不是 `E`，而是 `Result<Infallible, E>`。",
+        "translate": ""
+    },
+    {
+        "source": "That way it's distinct from `ControlFlow<E>::Residual`, for example, and thus `?` on `ControlFlow` cannot be used in a method returning `Result`.",
+        "suggest": "例如，这样它就不同于 `ControlFlow<E>::Residual`，因此 `ControlFlow` 上的 `?` 不能用于返回 `Result` 的方法中。",
+        "translate": ""
+    },
+    {
+        "source": "If you're making a generic type `Foo<T>` that implements `Try<Output = T>`, then typically you can use `Foo<std::convert::Infallible>` as its `Residual` type: that type will have a \"hole\" in the correct place, and will maintain the \"foo-ness\" of the residual so other types need to opt-in to interconversion.",
+        "suggest": "如果您正在创建实现 `Try<Output = T>` 的泛型 `Foo<T>`，那么通常您可以使用 `Foo<std::convert::Infallible>` 作为它的 `Residual` 类型: 该类型将在正确位置有一个 \"hole\"，并将保留 residual 的 \"foo-ness\"，因此其他类型需要选择加入到相互转换中。",
+        "translate": ""
+    },
+    {
+        "source": "Constructs the type from its `Output` type.",
+        "suggest": "从它的 `Output` 类型构造类型。",
+        "translate": ""
+    },
+    {
+        "source": "This should be implemented consistently with the `branch` method such that applying the `?` operator will get back the original value:",
+        "suggest": "这应该与 `branch` 方法一致实现，以便应用 `?` 运算符将返回原始值:",
+        "translate": ""
+    },
+    {
+        "source": "Used in `?` to decide whether the operator should produce a value (because this returned [`ControlFlow::Continue`]) or propagate a value back to the caller (because this returned [`ControlFlow::Break`]).",
+        "suggest": "在 `?` 来决定操作符是应该生成一个值 (因为它返回了 [`ControlFlow::Continue`])，还是将一个值传播回调用者(因为它返回了 [`ControlFlow::Break`])。",
+        "translate": ""
+    },
+    {
+        "source": "Used to specify which residuals can be converted into which [`Try`] types.",
+        "suggest": "用于指定哪些 residuals 可以转换为哪些 [`Try`] 类型。",
+        "translate": ""
+    },
+    {
+        "source": "Every `Try` type needs to be recreatable from its own associated `Residual` type, but can also have additional `FromResidual` implementations to support interconversion with other `Try` types.",
+        "suggest": "每个 `Try` 类型都需要从它自己关联的 `Residual` 类型重新创建，但也可以有额外的 `FromResidual` 实现来支持与其他 `Try` 类型的相互转换。",
+        "translate": ""
+    },
+    {
+        "source": "Constructs the type from a compatible `Residual` type.",
+        "suggest": "从兼容的 `Residual` 类型构造类型。",
+        "translate": ""
+    },
+    {
+        "source": "This should be implemented consistently with the `branch` method such that applying the `?` operator will get back an equivalent residual:",
+        "suggest": "这应该与 `branch` 方法一致地实现，以便应用 `?` 运算符将得到等效的 residual:",
+        "translate": ""
+    },
+    {
+        "source": "(It may not be an *identical* residual when interconversion is involved.)",
+        "suggest": "(当涉及到相互转换时，它可能不是一个相同的 residual。)",
+        "translate": ""
+    },
+    {
+        "source": "Returns the provided default result (if none), or applies a function to the contained value (if any).",
+        "suggest": "返回提供的默认结果 (如果没有)，或将函数应用于包含的值 (如果有)。",
+        "translate": ""
+    },
+    {
+        "source": "Computes a default function result (if none), or applies a different function to the contained value (if any).",
+        "suggest": "计算 default 函数的结果 (如果没有)，或将不同的函数应用于包含的值 (如果有)。",
+        "translate": ""
+    },
+    {
+        "source": "Entry-like operations to insert a value and return a reference",
+        "suggest": "类似条目的操作，插入一个值并返回一个引用",
+        "translate": ""
+    },
+    {
+        "source": "See also [`Option::get_or_insert`], which doesn't update the value if the option already contains [`Some`].",
+        "suggest": "另请参见 [`Option::get_or_insert`]，如果选项已包含 [`Some`]，则不会更新值。",
+        "translate": ""
+    },
+    {
+        "source": "See also [`Option::insert`], which updates the value even if the option already contains [`Some`].",
+        "suggest": "另请参见 [`Option::insert`]，即使选项已包含 [`Some`]，它也会更新值。",
+        "translate": ""
+    },
+    {
+        "source": "At a high level, a <code>[Pin]\\<P></code> ensures that the pointee of any pointer type `P` has a stable location in memory, meaning it cannot be moved elsewhere and its memory cannot be deallocated until it gets dropped.",
+        "suggest": "在高层次上，<code>[Pin]\\</code><P> 确保任何指针类型 `P` 的指针在内存中都有一个稳定的位置，这意味着它不能被移动到其他地方，并且它的内存不能被释放，直到它被丢弃。",
+        "translate": ""
+    },
+    {
+        "source": "Rust allows passing all types by-value, and common smart-pointer types such as <code>[Box]\\<T></code> and <code>[&mut] T</code> allow replacing and moving the values they contain: you can move out of a <code>[Box]\\<T></code>, or you can use [`mem::swap`].",
+        "suggest": "Rust 允许按值传递所有类型，以及常见的智能指针类型，例如 <code>[Box]\\</code><T> 和 <code>[&mut] T</code> 允许替换和移动它们包含的值: 您可以移出 <code>[Box]\\</code><T>，或者您可以使用 [`mem::swap`]。",
+        "translate": ""
+    },
+    {
+        "source": "<code>[Pin]\\<P></code> wraps a pointer type `P`, so <code>[Pin]<[Box]\\<T>></code> functions much like a regular <code>[Box]\\<T></code>:",
+        "suggest": "<code>[Pin]\\</code><P> 包装一个指针类型 `P`，所以 <code>[Pin]<[Box]\\></code><T><code>[Pin]<[Box]\\></code> 函数很像一个普通的 <code>[Box]\\</code><T>:",
+        "translate": ""
+    },
+    {
+        "source": "when a <code>[Pin]<[Box]\\<T>></code> gets dropped, so do its contents, and the memory gets deallocated.",
+        "suggest": "当 <code>[Pin]<[Box]\\></code><T><code>[Pin]<[Box]\\></code> 被丢弃，其内容也被丢弃，内存被释放。",
+        "translate": ""
+    },
+    {
+        "source": "Similarly, <code>[Pin]<[&mut] T></code> is a lot like <code>[&mut] T</code>.",
+        "suggest": "类似地，<code>[Pin]<[&mut] T></code>很像 <code>[&mut] T</code>。",
+        "translate": ""
+    },
+    {
+        "source": "However, <code>[Pin]\\<P></code> does not let clients actually obtain a <code>[Box]\\<T></code> or <code>[&mut] T</code> to pinned data, which implies that you cannot use operations such as [`mem::swap`]:",
+        "suggest": "然而，<code>[Pin]\\</code><P> 不让客户实际获得 <code>[Box]\\</code><T> 或 <code>[&mut] T</code> 固定数据，这意味着您不能使用 [`mem::swap`] 之类的操作:",
+        "translate": ""
+    },
+    {
+        "source": "It is worth reiterating that <code>[Pin]\\<P></code> does *not* change the fact that a Rust compiler considers all types movable.",
+        "suggest": "值得重申的是 <code>[Pin]\\</code><P> 不会改变一个事实，即 Rust 编译器认为所有类型都是可移动的。",
+        "translate": ""
+    },
+    {
+        "source": "remains callable for any `T`.",
+        "suggest": "对于任何 `T` 仍然可以调用。",
+        "translate": ""
+    },
+    {
+        "source": "Instead, <code>[Pin]\\<P></code> prevents certain *values* (pointed to by pointers wrapped in <code>[Pin]\\<P></code>) from being moved by making it impossible to call methods that require <code>[&mut] T</code> on them (like [`mem::swap`]).",
+        "suggest": "相反，<code>[Pin]\\</code><P> 防止某些值 (由 <code>[Pin]\\</code><P>) 使其无法调用需要 <code>[&mut] T</code> 方法 (如 [`mem::swap`]) 而被移动。",
+        "translate": ""
+    },
+    {
+        "source": "<code>[Pin]\\<P></code> can be used to wrap any pointer type `P`, and as such it interacts with [`Deref`] and [`DerefMut`].",
+        "suggest": "<code>[Pin]\\</code><P> 可用于包装任何指针类型 `P`，因此它与 [`Deref`] 和 [`DerefMut`] 交互。",
+        "translate": ""
+    },
+    {
+        "source": "A <code>[Pin]\\<P></code> where <code>P: [Deref]</code> should be considered as a \"`P`-style pointer\" to a pinned <code>P::[Target]</code> – so, a <code>[Pin]<[Box]\\<T>></code> is an owned pointer to a pinned `T`, and a <code>[Pin]<[Rc]\\<T>></code> is a reference-counted pointer to a pinned `T`.",
+        "suggest": "<code>[Pin]\\</code><P>其中 <code>P: [Deref]</code> 应被视为固定 <code>P::[Target]</code>的 \"`P`-style pointer\" - 因此，<code>[Pin]<[Box]\\></code><T><code>[Pin]<[Box]\\></code>是指向固定 `T` 的拥有指针，以及 <code>[Pin]<[Rc]\\></code><T><code>[Pin]<[Rc]\\></code> 是指向固定 `T` 的引用计数指针。",
+        "translate": ""
+    },
+    {
+        "source": "For correctness, <code>[Pin]\\<P></code> relies on the implementations of [`Deref`] and [`DerefMut`] not to move out of their `self` parameter, and only ever to return a pointer to pinned data when they are called on a pinned pointer.",
+        "suggest": "为正确起见，<code>[Pin]\\</code><P> 依赖于 [`Deref`] 和 [`DerefMut`] 的实现不会移出它们的 `self` 参数，并且只在固定指针上调用它们时才返回指向固定数据的指针。",
+        "translate": ""
+    },
+    {
+        "source": "Types that do not care about pinning implement the [`Unpin`] auto-trait, which cancels the effect of <code>[Pin]\\<P></code>.",
+        "suggest": "不关心 pinning 的类型实现了 [`Unpin`] auto-trait，取消了 <code>[Pin]\\</code><P>.",
+        "translate": ""
+    },
+    {
+        "source": "For <code>T: [Unpin]</code>, <code>[Pin]<[Box]\\<T>></code> and <code>[Box]\\<T></code> function identically, as do <code>[Pin]<[&mut] T></code> and <code>[&mut] T</code>.",
+        "suggest": "对于 <code>T: [Unpin]</code>, <code>[Pin]<[Box]\\></code><T><code>[Pin]<[Box]\\></code> 和 <code>[Box]\\</code><T> 函数相同，<code>[Pin]<[&mut] T></code> 和 <code>[&mut] T</code>。",
+        "translate": ""
+    },
+    {
+        "source": "Note that pinning and [`Unpin`] only affect the pointed-to type <code>P::[Target]</code>, not the pointer type `P` itself that got wrapped in <code>[Pin]\\<P></code>.",
+        "suggest": "请注意，固定和 [`Unpin`] 仅影响指向类型 <code>P::[Target]</code>，而不影响包含在 <code>[Pin]\\</code> 的指针类型 `P` 本身 <P>.",
+        "translate": ""
+    },
+    {
+        "source": "For example, whether or not <code>[Box]\\<T></code> is [`Unpin`] has no effect on the behavior of <code>[Pin]<[Box]\\<T>></code> (here, `T` is the pointed-to type).",
+        "suggest": "例如，是否 <code>[Box]\\</code><T> 是 [`Unpin`] 对 <code>[Pin]<[Box]\\></code> 的行为没有影响 <T><code>[Pin]<[Box]\\></code> (这里，`T` 是指向类型)。",
+        "translate": ""
+    },
+    {
+        "source": "Before we go into more details to explain the guarantees and choices associated with <code>[Pin]\\<P></code>, we discuss some examples for how it might be used.",
+        "suggest": "在我们详细解释与 <code>[Pin]\\</code> 相关的保证和选择之前 <code>[Pin]\\</code><P>，我们讨论了一些如何使用它的例子。",
+        "translate": ""
+    },
+    {
+        "source": "Moreover, the [`Drop`][Drop] implementation of a linked list element will patch the pointers of its predecessor and successor to remove itself from the list.",
+        "suggest": "此外，链表元素的 [`Drop`][Drop] 实现将修补其前任和后继的指针以将其从列表中删除。",
+        "translate": ""
+    },
+    {
+        "source": "Memory can be \"invalidated\" by deallocation, but also by replacing a <code>[Some]\\(v)</code> by [`None`], or calling [`Vec::set_len`] to \"kill\" some elements off of a vector.",
+        "suggest": "内存可以通过解除分配为 \"invalidated\"，也可以通过将 <code>[Some]\\(v)</code> 替换为 [`None`]，或将 vector 中的某些元素从 [`Vec::set_len`] 调用到 \"kill\"。",
+        "translate": ""
+    },
+    {
+        "source": "It is still completely okay not ever to call [`drop`] on a pinned element (e.g., you can still call [`mem::forget`] on a <code>[Pin]<[Box]\\<T>></code>).",
+        "suggest": "永远不要在固定元素上调用 [`drop`] 仍然是完全可以的 (例如，您仍然可以在 <code>[Pin]<[Box]\\></code><T><code>[Pin]<[Box]\\></code>)。",
+        "translate": ""
+    },
+    {
+        "source": "If your type uses pinning (such as the two examples above), you have to be careful when implementing [`Drop`][Drop].",
+        "suggest": "如果您的类型使用固定 (例如上面的两个示例)，则在实现 [`Drop`][Drop] 时必须小心。",
+        "translate": ""
+    },
+    {
+        "source": "The [`drop`] function takes <code>[&mut] self</code>, but this is called *even if your type was previously pinned*!",
+        "suggest": "[`drop`] 函数采用 <code>[&mut] self</code>，但这被称为即使您的类型之前已固定!</code>",
+        "translate": ""
+    },
+    {
+        "source": "This can never cause a problem in safe code because implementing a type that relies on pinning requires unsafe code, but be aware that deciding to make use of pinning in your type (for example by implementing some operation on <code>[Pin]<[&]Self></code> or <code>[Pin]<[&mut] Self></code>) has consequences for your [`Drop`][Drop]implementation as well: if an element of your type could have been pinned, you must treat [`Drop`][Drop] as implicitly taking <code>[Pin]<[&mut] Self></code>.",
+        "suggest": "这永远不会在安全代码中导致问题，因为实现依赖于固定的类型需要不安全的代码，但请注意决定在您的类型中使用固定 (例如通过对 <code>[Pin]<[&] Self></code> 或 <code>[Pin]<[&mut] Self></code>) 对您的 [`Drop`][Drop] 实现也有影响: 如果您的类型的元素可以被固定，则您必须将 [`Drop`][Drop] 视为隐式使用 <code>[Pin]<[&mut] Self></code> .",
+        "translate": ""
+    },
+    {
+        "source": "For example, you could implement [`Drop`][Drop] as follows:",
+        "suggest": "例如，您可以按如下方式实现 [`Drop`][Drop]:",
+        "translate": ""
+    },
+    {
+        "source": "When working with pinned structs, the question arises how one can access the fields of that struct in a method that takes just <code>[Pin]<[&mut] Struct></code>.",
+        "suggest": "在使用固定结构体时，问题是如何在只需要 <code>[Pin]<[&mut] 结构体></code> 的方法中访问该结构体的字段。",
+        "translate": ""
+    },
+    {
+        "source": "The usual approach is to write helper methods (so called *projections*) that turn <code>[Pin]<[&mut] Struct></code> into a reference to the field, but what type should that reference have?",
+        "suggest": "通常的方法是编写辅助方法 (所谓的 *projections*)，将 <code>[Pin]<[&mut] 结构体 ></code> 转换为对字段的引用，但该引用应该具有什么类型?",
+        "translate": ""
+    },
+    {
+        "source": "Is it <code>[Pin]<[&mut] Field></code> or <code>[&mut] Field</code>?",
+        "suggest": "是 <code>[Pin]<[&mut] Field></code> 还是 <code>[&mut] Field</code>?</code>",
+        "translate": ""
+    },
+    {
+        "source": "The same question arises with the fields of an `enum`, and also when considering container/wrapper types such as <code>[Vec]\\<T></code>, <code>[Box]\\<T></code>, or <code>[RefCell]\\<T></code>.",
+        "suggest": "`enum` 的字段以及在考虑 container/wrapper 类型 (例如 <code>[Vec]\\</code><T>, <code>[Box]\\</code><T>, 或 <code>[RefCell]\\</code><T>.",
+        "translate": ""
+    },
+    {
+        "source": "It turns out that it is actually up to the author of the data structure to decide whether the pinned projection for a particular field turns <code>[Pin]<[&mut] Struct></code> into <code>[Pin]<[&mut] Field></code> or <code>[&mut] Field</code>.",
+        "suggest": "事实证明，实际上是由数据结构的作者决定特定字段的固定 projection 是将 <code>[Pin]<[&mut] 结构体 ></code> 转换为 <code>[Pin]<[&mut] Field></code> 或 <code>[&mut] Field</code>.</code>",
+        "translate": ""
+    },
+    {
+        "source": "It may seem counter-intuitive that the field of a pinned struct might not be pinned, but that is actually the easiest choice: if a <code>[Pin]<[&mut] Field></code> is never created, nothing can go wrong!",
+        "suggest": "固定结构体的字段可能不被固定似乎违反直觉，但这实际上是最简单的选择: 如果从未创建 <code>[Pin]<[&mut] Field></code> 则不会出错!",
+        "translate": ""
+    },
+    {
+        "source": "Fields without structural pinning may have a projection method that turns <code>[Pin]<[&mut] Struct></code> into <code>[&mut] Field</code>:",
+        "suggest": "没有结构固定的字段可能具有将 <code>[Pin]<[&mut] 结构体 ></code> 转换为 <code>[&mut] Field</code>:</code> 的 projection 方法 <code>[&mut] Field</code>:</code>",
+        "translate": ""
+    },
+    {
+        "source": "You may also <code>impl [Unpin] for Struct</code> *even if* the type of `field` is not [`Unpin`].",
+        "suggest": "您也可以 <code>impl [Unpin] for Struct</code> *even if* the type of `field` is not [`Unpin`].</code>",
+        "translate": ""
+    },
+    {
+        "source": "What that type thinks about pinning is not relevant when no <code>[Pin]<[&mut] Field></code> is ever created.",
+        "suggest": "当没有创建 <code>[Pin]<[&mut] Field></code>时，该类型对固定的看法 <code>[Pin]<[&mut] Field></code>。",
+        "translate": ""
+    },
+    {
+        "source": "This allows writing a projection that creates a <code>[Pin]<[&mut] Field></code>, thus witnessing that the field is pinned:",
+        "suggest": "这允许编写一个创建 <code>[Pin]<[&mut] Field></code> 的 projection，从而见证该字段被固定:",
+        "translate": ""
+    },
+    {
+        "source": "This is the default, but [`Unpin`] is a safe trait, so as the author of the struct it is your responsibility *not* to add something like <code>impl\\<T> [Unpin] for Struct\\<T></code>.",
+        "suggest": "这是默认值，但 [`Unpin`] 是一个安全的 trait，因此作为结构体的作者，您有责任*不*添加类似 <code>impl\\[Unpin] for 结构体 \\</code><T> <code>impl\\[Unpin] for 结构体 \\</code><T>.",
+        "translate": ""
+    },
+    {
+        "source": "(Notice that adding a projection operation requires unsafe code, so the fact that [`Unpin`] is a safe trait does not break the principle that you only have to worry about any of this if you use [`unsafe`].)",
+        "suggest": "(请注意，添加投影操作需要不安全的代码，因此 [`Unpin`] 是安全的 trait 的事实并没有破坏您只需要在使用 [`unsafe`] 时担心任何这些的原则。)",
+        "translate": ""
+    },
+    {
+        "source": "This is the exact point that was raised in the [previous section][drop-impl]: [`drop`] takes <code>[&mut] self</code>, but the struct (and hence its fields) might have been pinned before.",
+        "suggest": "这正是 [上一节][drop-impl] 中提出的要点: [`drop`] 采用 <code>[&mut] self</code>，但是结构体 (以及它的字段) 之前可能已经被固定了。</code>",
+        "translate": ""
+    },
+    {
+        "source": "You have to guarantee that you do not move a field inside your [`Drop`][Drop] implementation.",
+        "suggest": "您必须保证不会在您的 [`Drop`][Drop] 实现中移动任何字段。",
+        "translate": ""
+    },
+    {
+        "source": "This can be tricky, as witnessed by <code>[VecDeque]\\<T></code>: the destructor of <code>[VecDeque]\\<T></code> can fail to call [`drop`] on all elements if one of the destructors panics.",
+        "suggest": "这可能很棘手，正如 <code>[VecDeque]\\</code><T>: <code>[VecDeque]\\</code> 的析构函数 <code>[VecDeque]\\</code><T> 如果析构函数 panics 之一，则可能无法在所有元素上调用 [`drop`]。",
+        "translate": ""
+    },
+    {
+        "source": "This violates the [`Drop`][Drop] guarantee, because it can lead to elements being deallocated without their destructor being called.",
+        "suggest": "这违反了 [`Drop`][Drop] 保证，因为它可能导致元素在没有调用析构函数的情况下被释放。",
+        "translate": ""
+    },
+    {
+        "source": "(<code>[VecDeque]\\<T></code> has no pinning projections, so this does not cause unsoundness.)",
+        "suggest": "(<code>[VecDeque]\\</code><T> 没有固定 projection，所以这不会导致不稳定。)",
+        "translate": ""
+    },
+    {
+        "source": "For example, if the struct contains an <code>[Option]\\<T></code> and there is a [`take`][Option::take]-like operation with type <code>fn([Pin]<[&mut] Struct\\<T>>) -> [Option]\\<T></code>, that operation can be used to move a `T` out of a pinned `Struct<T>` – which means pinning cannot be structural for the field holding this data.",
+        "suggest": "例如，如果结构体包含一个 <code>[Option]\\</code><T>并且有一个类似 [`take`][Option::take] 的操作，类型为 <code>fn ([Pin]<[&mut] 结构体 \\>) -> [Option]\\</code><T> <code>fn ([Pin]<[&mut] 结构体 \\>) -> [Option]\\</code><T>，该操作可用于将 `T` 从固定的 `Struct<T>` 中移出 - 这意味着固定不能对保存此数据的字段进行结构化。",
+        "translate": ""
+    },
+    {
+        "source": "For a more complex example of moving data out of a pinned type, imagine if <code>[RefCell]\\<T></code> had a method <code>fn get_pin_mut(self: [Pin]<[&mut] Self>) -> [Pin]<[&mut] T></code>.",
+        "suggest": "有关将数据移出固定类型的更复杂示例，请想象如果 <code>[RefCell]\\</code><T>有一个方法 <code>fn get_pin_mut(self: [Pin]<[&mut] Self>) -> [Pin]<[&mut] T></code>。",
+        "translate": ""
+    },
+    {
+        "source": "This is catastrophic, it means we can first pin the content of the <code>[RefCell]\\<T></code> (using <code>[RefCell]::get_pin_mut</code>) and then move that content using the mutable reference we got later.",
+        "suggest": "这是灾难性的，这意味着我们可以先固定 <code>[RefCell]\\</code><T> (使用 <code>[RefCell]::get_pin_mut</code> ) 然后使用我们稍后获得的 <code>[RefCell]::get_pin_mut</code> 引用移动该内容。",
+        "translate": ""
+    },
+    {
+        "source": "For a type like <code>[Vec]\\<T></code>, both possibilities (structural pinning or not) make sense.",
+        "suggest": "对于像 <code>[Vec]\\</code> 这样的类型 <T>，两种可能性 (结构固定与否) 都有意义。",
+        "translate": ""
+    },
+    {
+        "source": "A <code>[Vec]\\<T></code> with structural pinning could have `get_pin`/`get_pin_mut` methods to get pinned references to elements.",
+        "suggest": "<code>[Vec]\\</code><T> 使用结构固定可以有 `get_pin`/`get_pin_mut` 方法来固定引用到元素。",
+        "translate": ""
+    },
+    {
+        "source": "However, it could *not* allow calling [`pop`][Vec::pop] on a pinned <code>[Vec]\\<T></code> because that would move the (structurally pinned) contents!",
+        "suggest": "但是，它可能*不允许*在固定的 <code>[Vec]\\</code> 上调用 [`pop`][Vec::pop]<T> 因为那会移动 (结构固定的) 内容!",
+        "translate": ""
+    },
+    {
+        "source": "A <code>[Vec]\\<T></code> without structural pinning could <code>impl\\<T> [Unpin] for [Vec]\\<T></code>, because the contents are never pinned and the <code>[Vec]\\<T></code> itself is fine with being moved as well.",
+        "suggest": "<code>[Vec]\\</code><T>没有结构固定可以 <code>impl\\[Unpin] for [Vec]\\</code><T> <code>impl\\[Unpin] for [Vec]\\</code><T>，因为内容永远不会被固定并且 <code>[Vec]\\</code><T> 本身也可以移动。",
+        "translate": ""
+    },
+    {
+        "source": "This is why <code>[Box]\\<T>: [Unpin]</code> holds for all `T`.",
+        "suggest": "这就是为什么 <code>[Box]\\: [Unpin]</code><T><code>[Box]\\: [Unpin]</code> Unpin <code>[Box]\\: [Unpin]</code> 适用于所有 `T`。",
+        "translate": ""
+    },
+    {
+        "source": "It makes sense to do this for pointer types, because moving the <code>[Box]\\<T></code> does not actually move the `T`: the <code>[Box]\\<T></code> can be freely movable (aka [`Unpin`]) even if the `T` is not.",
+        "suggest": "对指针类型这样做是有意义的，因为移动 <code>[Box]\\</code><T> 实际上并没有移动 `T`: <code>[Box]\\</code><T> 即使 `T` 不是，也可以自由移动 (又名 [`Unpin`])。",
+        "translate": ""
+    },
+    {
+        "source": "In fact, even <code>[Pin]<[Box]\\<T>></code> and <code>[Pin]<[&mut] T></code> are always [`Unpin`] themselves, for the same reason:",
+        "suggest": "事实上，即使 <code>[Pin]<[Box]\\></code><T><code>[Pin]<[Box]\\></code> 和 <code>[Pin]<[&mut] T></code> 总是 [`Unpin`] 本身，原因相同:",
+        "translate": ""
+    },
+    {
+        "source": "their contents (the `T`) are pinned, but the pointers themselves can be moved without moving the pinned data.",
+        "suggest": "它们的内容 (`T`) 是固定的，但指针本身可以在不移动固定数据的情况下移动。",
+        "translate": ""
+    },
+    {
+        "source": "For both <code>[Box]\\<T></code> and <code>[Pin]<[Box]\\<T>></code>, whether the content is pinned is entirely independent of whether the pointer is pinned, meaning pinning is *not* structural.",
+        "suggest": "对于 <code>[Box]\\</code><T> 和 <code>[Pin]<[Box]\\></code><T><code>[Pin]<[Box]\\></code>，内容是否固定完全独立于指针是否固定，意味着固定是*非*结构的。",
+        "translate": ""
+    },
+    {
+        "source": "But if your combinator contains any other data that does not need to be pinned, you can make those fields not structural and hence freely access them with a mutable reference even when you just have <code>[Pin]<[&mut] Self></code> (such as in your own [`poll`] implementation).",
+        "suggest": "但是，如果您的组合器包含任何其他不需要固定的数据，您可以使这些字段不是结构化的，因此即使您只有 <code>[Pin]<[&mut] Self></code> (例如在您自己的 [`poll`] 实现中)。",
+        "translate": ""
+    },
+    {
+        "source": "Both the starting and resulting pointer must be either in bounds or one byte past the end of the same [allocated object].",
+        "suggest": "起始指针和结果指针都必须在边界内或在同一个 [allocated object] 的末尾之后一个字节。",
+        "translate": ""
+    },
+    {
+        "source": "The resulting pointer \"remembers\" the [allocated object] that `self` points to;",
+        "suggest": "结果指针 \"remembers\" 是 `self` 指向的 [allocated object];",
+        "translate": ""
+    },
+    {
+        "source": "it may not be used to read or write other allocated objects.",
+        "suggest": "它不能用于读取或写入其他分配的对象。",
+        "translate": ""
+    },
+    {
+        "source": "Both the starting and other pointer must be either in bounds or one byte past the end of the same [allocated object].",
+        "suggest": "起始指针和其他指针都必须在边界内或在同一个 [allocated object] 的末尾之后一个字节。",
+        "translate": ""
+    },
+    {
+        "source": "The entire memory range of this slice must be contained within a single [allocated object]!",
+        "suggest": "整个内存范围必须包含在单个 [allocated object] 内!",
+        "translate": ""
+    },
+    {
+        "source": "would create a reference to an uninitialized `bool`, and thus be Undefined Behavior!",
+        "suggest": "将创建对未初始化的 `bool` 的引用，因此是未定义的行为!",
+        "translate": ""
+    },
+    {
+        "source": "Allocated object",
+        "suggest": "分配对象",
+        "translate": ""
+    },
+    {
+        "source": "For several operations, such as [`offset`] or field projections (`expr.field`), the notion of an \"allocated object\" becomes relevant.",
+        "suggest": "对于一些操作，例如 [`offset`] 或 projection (`expr.field`)，\"allocated object\" 的概念变得相关。",
+        "translate": ""
+    },
+    {
+        "source": "An allocated object is a contiguous region of memory.",
+        "suggest": "分配的对象是一个连续的内存区域。",
+        "translate": ""
+    },
+    {
+        "source": "Common examples of allocated objects include stack-allocated variables (each variable is a separate allocated object), heap allocations (each allocation created by the global allocator is a separate allocated object), and `static` variables.",
+        "suggest": "分配对象的常见示例包括栈分配变量 (每个变量都是一个单独的分配对象)、堆分配 (每个分配器创建的分配都是一个单独的分配对象) 和 `static` 变量。",
+        "translate": ""
+    },
+    {
+        "source": "SPIR-V's Logical addressing model doesn't allow for arbitrary reinterpretation of values as (chunkable) byte arrays, and the loop in the block optimization in `swap_nonoverlapping_bytes` is hard to rewrite back into the (unoptimized) direct swapping implementation, so we disable it.",
+        "suggest": "SPIR-V 的逻辑寻址模型不允许将值任意重新解释为 (chunkable) 字节数组，并且 `swap_nonoverlapping_bytes` 中块优化中的循环很难重写回 (unoptimized) 直接交换实现，因此我们禁用它。",
+        "translate": ""
+    },
+    {
+        "source": "the block optimization also prevents MIR optimizations from understanding `mem::replace`, `Option::take`, etc. - a better overall solution might be to make `swap_nonoverlapping` into an intrinsic, which a backend can choose to implement using the block optimization, or not.",
+        "suggest": "块优化还阻止 MIR 优化理解 `mem::replace`、`Option::take` 等 - 更好的整体解决方案可能是使 `swap_nonoverlapping` 成为内在函数，后端可以选择使用块优化来实现或不实现。",
+        "translate": ""
+    },
+    {
+        "source": "Only apply the block optimization in `swap_nonoverlapping_bytes` for types at least as large as the block size, to avoid pessimizing codegen.",
+        "suggest": "仅对至少与块大小一样大的类型应用 `swap_nonoverlapping_bytes` 中的块优化，以避免对 codegen 产生负面影响。",
+        "translate": ""
+    },
+    {
+        "source": "Direct swapping, for the cases not going through the block optimization.",
+        "suggest": "直接交换，用于未经过块优化的情况。",
+        "translate": ""
+    },
+    {
+        "source": "Note, however, that the `expr` in `addr_of!(expr)` is still subject to all the usual rules.",
+        "suggest": "但是请注意，`addr_of!(expr)` 中的 `expr` 仍受所有常规规则的约束。",
+        "translate": ""
+    },
+    {
+        "source": "In particular, `addr_of!(*ptr::null())` is Undefined Behavior because it dereferences a NULL pointer.",
+        "suggest": "特别是，`addr_of!(*ptr::null())` 是未定义行为，因为它引用了 NULL 指针。",
+        "translate": ""
+    },
+    {
+        "source": "See [`addr_of_mut`] for how to create a pointer to unininitialized data.",
+        "suggest": "有关如何创建指向未初始化数据的指针，请参见 [`addr_of_mut`]。",
+        "translate": ""
+    },
+    {
+        "source": "Doing that with `addr_of` would not make much sense since one could only read the data, and that would be Undefined Behavior.",
+        "suggest": "用 `addr_of` 这样做没有多大意义，因为人们只能读取数据，这将是未定义行为。",
+        "translate": ""
+    },
+    {
+        "source": "Note, however, that the `expr` in `addr_of_mut!(expr)` is still subject to all the usual rules.",
+        "suggest": "但请注意，`addr_of_mut!(expr)` 中的 `expr` 仍受所有常规规则的约束。",
+        "translate": ""
+    },
+    {
+        "source": "In particular, `addr_of_mut!(*ptr::null_mut())` is Undefined Behavior because it dereferences a NULL pointer.",
+        "suggest": "特别是，`addr_of_mut!(*ptr::null_mut())` 是未定义行为，因为它引用了 NULL 指针。",
+        "translate": ""
+    },
+    {
+        "source": "Creating a pointer to unaligned data:",
+        "suggest": "创建指向未对齐数据的指针:",
+        "translate": ""
+    },
+    {
+        "source": "Creating a pointer to uninitialized data:",
+        "suggest": "创建指向未初始化数据的指针:",
+        "translate": ""
+    },
+    {
+        "source": "Returns the provided default (if [`Err`]), or applies a function to the contained value (if [`Ok`]),",
+        "suggest": "返回提供的默认值 (如果 [`Err`])，或者将函数应用于包含的值 (如果 [`Ok`])，",
+        "translate": ""
+    },
+    {
+        "source": "Maps a `Result<T, E>` to `U` by applying a fallback function to a contained [`Err`] value, or a default function to a contained [`Ok`] value.",
+        "suggest": "Maps 通过将回退函数应用于包含的 [`Err`] 值，或将默认函数应用于包含的 [`Ok`] 值，将 `Result<T, E>` 转换为 `U`。",
+        "translate": ""
+    },
+    {
+        "source": "Returns the contained [`Err`] value, but never panics.",
+        "suggest": "返回包含的 [`Err`] 值，但从不返回 panics。",
+        "translate": ""
+    },
+    {
+        "source": "Unlike [`unwrap_err`], this method is known to never panic on the result types it is implemented for.",
+        "suggest": "与 [`unwrap_err`] 不同，已知此方法永远不会在其实现的结果类型上使用 panic。",
+        "translate": ""
+    },
+    {
+        "source": "Therefore, it can be used instead of `unwrap_err` as a maintainability safeguard that will fail to compile if the ok type of the `Result` is later changed to a type that can actually occur.",
+        "suggest": "因此，它可以代替 `unwrap_err` 用作可维护性保障，如果 `Result` 的 ok 类型稍后更改为实际可以发生的类型，则将无法编译。",
+        "translate": ""
+    },
+    {
+        "source": "Returns an iterator that produces an escaped version of this slice, treating it as an ASCII string.",
+        "suggest": "返回一个迭代器，该迭代器产生此转义版本的一个 ASCII 字符串，将其视为一个 ASCII 字符串。",
+        "translate": ""
+    },
+    {
+        "source": "An iterator over the escaped version of a byte slice.",
+        "suggest": "一个字节的转义版本的迭代器。",
+        "translate": ""
+    },
+    {
+        "source": "This `struct` is created by the [`slice::escape_ascii`] method.",
+        "suggest": "这个 `struct` 是由 [`slice::escape_ascii`] 方法创建的。",
+        "translate": ""
+    },
+    {
+        "source": "Convert pair of `ops::Bound`s into `ops::Range` without performing any bounds checking and (in debug) overflow checking",
+        "suggest": "将一对 `ops::Bound` 转换为 `ops::Range` 而不执行任何边界检查和 (在调试中) 溢出检查",
+        "translate": ""
+    },
+    {
+        "source": "Convert pair of `ops::Bound`s into `ops::Range`.",
+        "suggest": "将一对 `ops::Bound` 转换为 `ops::Range`。",
+        "translate": ""
+    },
+    {
+        "source": "Returns `None` on overflowing indices.",
+        "suggest": "在索引溢出时返回 `None`。",
+        "translate": ""
+    },
+    {
+        "source": "Don't bother with checking `start < end` and `end <= len` since these checks are handled by `Range` impls",
+        "suggest": "不要费心检查 `start < end` 和 `end <= len`，因为这些检查是由 `Range` impls 处理的",
+        "translate": ""
+    },
+    {
+        "source": "Panics on overflowing indices.",
+        "suggest": "Panics 关于溢出的索引。",
+        "translate": ""
+    },
+    {
+        "source": "same as the `get_unchecked` above",
+        "suggest": "与上面的 `get_unchecked` 相同",
+        "translate": ""
+    },
+    {
+        "source": "The size_of check above ensures that values are 1 byte wide, as required for the transmute and write_bytes",
+        "suggest": "上述检查的大小确保值为 1 字节宽，这是转换和写入字节所需要的",
+        "translate": ""
+    },
+    {
+        "source": "Returns the byte position of the next character, or the length of the underlying string if there are no more characters.",
+        "suggest": "返回下一个字符的字节位置，如果没有更多字符，则返回底层字符串的长度。",
+        "translate": ""
+    },
+    {
+        "source": "May vary by platform as necessary.",
+        "suggest": "根据平台的需要可能有所不同。",
+        "translate": ""
+    },
+    {
+        "source": "Must be able to contain the difference between two instances of [`Instant`] or two instances of [`SystemTime`].",
+        "suggest": "必须能够包含两个 [`Instant`] 实例或两个 [`SystemTime`] 实例之间的差异。",
+        "translate": ""
+    },
+    {
+        "source": "This constraint gives it a value of about 584,942,417,355 years in practice, which is currently used on all platforms.",
+        "suggest": "该约束使其在实践中的值约为 584,942,417,355 年，目前在所有平台上都使用。",
+        "translate": ""
+    },
+    {
+        "source": "Remove this test when `std::raw` is removed.",
+        "suggest": "移除 `std::raw` 时移除此测试。",
+        "translate": ""
+    },
+    {
+        "source": "The replacement pointer metadata APIs are tested in library/core/tests/ptr.rs",
+        "suggest": "替换指针元数据 API 在 library/core/tests/ptr.rs 中测试",
+        "translate": ""
+    },
+    {
+        "source": "IEEE 754 floating point compliance tests",
+        "suggest": "IEEE 754 浮点符合性测试",
+        "translate": ""
+    },
+    {
+        "source": "To understand IEEE 754's requirements on a programming language, one must understand that the requirements of IEEE 754 rest on the total programming environment, and not entirely on any one component.",
+        "suggest": "要了解 IEEE 754 对编程语言的要求，必须了解 IEEE 754 的要求取决于整个编程环境，而不是完全取决于任何一个组件。",
+        "translate": ""
+    },
+    {
+        "source": "That means the hardware, language, and even libraries are considered part of conforming floating point support in a programming environment.",
+        "suggest": "这意味着硬件、语言甚至库都被视为编程环境中符合浮点支持的一部分。",
+        "translate": ""
+    },
+    {
+        "source": "A programming language's duty, accordingly, is:",
+        "suggest": "因此，编程语言的职责是:",
+        "translate": ""
+    },
+    {
+        "source": "offer access to the hardware where the hardware offers support",
+        "suggest": "提供对硬件提供支持的硬件的访问",
+        "translate": ""
+    },
+    {
+        "source": "provide operations that fulfill the remaining requirements of the standard",
+        "suggest": "提供满足标准剩余要求的操作",
+        "translate": ""
+    },
+    {
+        "source": "provide the ability to write additional software that can fulfill those requirements",
+        "suggest": "提供编写能够满足这些需求的附加软件的能力",
+        "translate": ""
+    },
+    {
+        "source": "This may be fulfilled in any combination that the language sees fit.",
+        "suggest": "这可以通过语言认为合适的任何组合来实现。",
+        "translate": ""
+    },
+    {
+        "source": "However, to claim that a language supports IEEE 754 is to suggest that it has fulfilled requirements 1 and 2, without deferring minimum requirements to libraries.",
+        "suggest": "然而，声称一种语言支持 IEEE 754 是在暗示它已经满足了要求 1 和 2，而没有将最低要求提交给库",
+        "translate": ""
+    },
+    {
+        "source": "This is because support for IEEE 754 is defined as complete support for at least one specified floating point type as an \"arithmetic\" and \"interchange\" format, plus specified type conversions to \"external character sequences\" and integer types.",
+        "suggest": "这是因为对 IEEE 754 的支持被定义为完全支持至少一种指定的浮点类型，如算术和交换格式，以及到外部字符序列和整数类型的指定类型转换。",
+        "translate": ""
+    },
+    {
+        "source": "For our purposes, \"interchange format\"          => f32, f64 \"arithmetic format\"           => f32, f64, and any \"soft floats\" \"external character sequence\" => str from any float \"integer format\"              => {i,u}{8,16,32,64,128}",
+        "suggest": "出于我们的目的，\"交换格式\" => f32、f64 \"算术格式\" => f32、f64 和任何 \"软浮点数\" \"外部字符序列\" => 来自任何浮点数 \"整数格式\" => {i,u}{8,16,32,64,128} 的 str",
+        "translate": ""
+    },
+    {
+        "source": "None of these tests are against Rust's own implementation.",
+        "suggest": "这些测试都不是针对 Rust 自己的实现的。",
+        "translate": ""
+    },
+    {
+        "source": "They are only tests against the standard.",
+        "suggest": "它们只是针对标准的测试。",
+        "translate": ""
+    },
+    {
+        "source": "That is why they accept wildly diverse inputs or may seem to duplicate other tests.",
+        "suggest": "这就是为什么他们接受各种各样的输入或似乎重复其他测试的原因。",
+        "translate": ""
+    },
+    {
+        "source": "Please consider this carefully when adding, removing, or reorganizing these tests.",
+        "suggest": "在添加、删除或重新组织这些测试时，请仔细考虑这一点。",
+        "translate": ""
+    },
+    {
+        "source": "They are here so that it is clear what tests are required by the standard and what can be changed.",
+        "suggest": "它们在这里是为了清楚标准要求哪些测试以及可以更改哪些测试。",
+        "translate": ""
+    },
+    {
+        "source": "IEEE 754 for many tests is applied to specific bit patterns.",
+        "suggest": "许多测试的 IEEE 754 适用于特定的位模式。",
+        "translate": ""
+    },
+    {
+        "source": "These generally are not applicable to NaN, however.",
+        "suggest": "但是，这些通常不适用于 NaN。",
+        "translate": ""
+    },
+    {
+        "source": "ToString uses the default fmt::Display impl without special concerns, and bypasses other parts of the formatting infrastructure, which makes it ideal for testing here.",
+        "suggest": "ToString 使用默认的 fmt::Display impl 没有特别的顾虑，并绕过格式结构体的其他部分，这使得它非常适合这里的测试。",
+        "translate": ""
+    },
+    {
+        "source": "We must preserve signs on all numbers.",
+        "suggest": "我们必须保留所有数字上的符号。",
+        "translate": ""
+    },
+    {
+        "source": "That includes zero.",
+        "suggest": "这包括零。",
+        "translate": ""
+    },
+    {
+        "source": "and 0 are == normally, so test bit equality.",
+        "suggest": "和 0 通常是 ==，所以测试位相等。",
+        "translate": ""
+    },
+    {
+        "source": "\"+\"?(\"inf\"|\"infinity\") in any case => Infinity",
+        "suggest": "\"+\"?(\"inf\"|\"infinity\") 在任何情况下 => 无穷大",
+        "translate": ""
+    },
+    {
+        "source": "yes! this means you are weLcOmE tO mY iNfInItElY tWiStEd MiNd",
+        "suggest": "是的。这意味着欢迎您来到我无限扭曲的心灵",
+        "translate": ""
+    },
+    {
+        "source": "\"-inf\"|\"-infinity\" in any case => Negative Infinity",
+        "suggest": "\"-inf\"|\"-infinity\" 在任何情况下 => 负无穷大",
+        "translate": ""
+    },
+    {
+        "source": "(\"+\"|\"-\"\")?\"s\"?\"nan\" in any case => qNaN",
+        "suggest": "(\"+\"|\"-\"\")?\"s\"?\"nan\" 在任何情况下 => qNaN",
+        "translate": ""
+    },
+    {
+        "source": "Forward the abort message to libc's android_set_abort_message.",
+        "suggest": "将终止消息转发到 libc 的 android_set_abort_message。",
+        "translate": ""
+    },
+    {
+        "source": "We try our best to populate the message but as this function may already be called as part of a failed allocation, it may not be possible to do so.",
+        "suggest": "我们尽最大努力填充消息，但是由于该函数可能已经作为失败分配的一部分被调用，因此可能无法这样做。",
+        "translate": ""
+    },
+    {
+        "source": "Some methods of core are on purpose avoided (such as try_reserve) as these rely on the correct resolution of rust_eh_personality which is loosely defined in panic_abort.",
+        "suggest": "core 的一些方法是故意避免的 (例如 try_reserve)，因为这些方法依赖于 rust_eh_personality 的正确解析，它在 panic_abort 中松散地定义。",
+        "translate": ""
+    },
+    {
+        "source": "Weakly resolve the symbol for android_set_abort_message.",
+        "suggest": "弱解析 android_set_abort_message 的符号。",
+        "translate": ""
+    },
+    {
+        "source": "This function is only available for API >= 21.",
+        "suggest": "此函数仅适用于 API >= 21。",
+        "translate": ""
+    },
+    {
+        "source": "Allocate a new buffer to append the null byte.",
+        "suggest": "分配一个新缓冲区以附加空字节。",
+        "translate": ""
+    },
+    {
+        "source": "allocation failure",
+        "suggest": "分配失败",
+        "translate": ""
+    },
+    {
+        "source": "has the ability to attach a message as part of the abort.",
+        "suggest": "能够附加消息作为终止的一部分。",
+        "translate": ""
+    },
+    {
+        "source": "Note that the returned iterator will not check if the environment variables are valid Unicode.",
+        "suggest": "请注意，返回的迭代器不会检查环境变量是否为有效的 Unicode。",
+        "translate": ""
+    },
+    {
+        "source": "If you want to panic on invalid UTF-8, use the [`vars`] function instead.",
+        "suggest": "如果您想在无效的 UTF-8 上使用 panic，请改用 [`vars`] 函数。",
+        "translate": ""
+    },
+    {
+        "source": "Errors if the environment variable is not present.",
+        "suggest": "如果环境变量不存在，则会出错。",
+        "translate": ""
+    },
+    {
+        "source": "Errors if the environment variable is not valid Unicode.",
+        "suggest": "如果环境变量不是有效的 Unicode，则会出错。",
+        "translate": ""
+    },
+    {
+        "source": "If this is not desired, consider using [`var_os`].",
+        "suggest": "如果不需要，请考虑使用 [`var_os`]。",
+        "translate": ""
+    },
+    {
+        "source": "Note that the method will not check if the environment variable is valid Unicode.",
+        "suggest": "请注意，该方法不会检查环境变量是否为有效的 Unicode。",
+        "translate": ""
+    },
+    {
+        "source": "If you want to have an error on invalid UTF-8, use the [`var`] function instead.",
+        "suggest": "如果您想在无效的 UTF-8 上出错，请改用 [`var`] 函数。",
+        "translate": ""
+    },
+    {
+        "source": "glibc passes `argc`, `argv`, and `envp` to functions in `.init_array`, as a non-standard extension.",
+        "suggest": "glibc 将 `argc`、`argv` 和 `envp` 作为非标准扩展传递给 `.init_array` 中的函数。",
+        "translate": ""
+    },
+    {
+        "source": "The returned iterator will panic during iteration if any argument to the process is not valid Unicode.",
+        "suggest": "如果进程的任何参数不是有效的 Unicode，则返回的迭代器将在迭代期间 panic。",
+        "translate": ""
+    },
+    {
+        "source": "This allows `std::env::args_os` to work even in a `cdylib` or `staticlib`, as it does on macOS and Windows.",
+        "suggest": "这使得 `std::env::args_os` 甚至可以在 `cdylib` 或 `staticlib` 中工作，就像在 macOS 和 Windows 上一样。",
+        "translate": ""
+    },
+    {
+        "source": "Note that the returned iterator will not check if the arguments to the process are valid Unicode.",
+        "suggest": "请注意，返回的迭代器不会检查进程的参数是否为有效的 Unicode。",
+        "translate": ""
+    },
+    {
+        "source": "If you want to panic on invalid UTF-8, use the [`args`] function instead.",
+        "suggest": "如果您想在无效的 UTF-8 上使用 panic，请改用 [`args`] 函数。",
+        "translate": ""
+    },
+    {
+        "source": "Errors must describe themselves through the [`Display`] and [`Debug`] traits.",
+        "suggest": "错误必须通过 [`Display`] 和 [`Debug`] traits 来描述自己。",
+        "translate": ""
+    },
+    {
+        "source": "Error messages are typically concise lowercase sentences without trailing punctuation:",
+        "suggest": "错误消息通常是简洁的小写句子，没有尾随标点符号:",
+        "translate": ""
+    },
+    {
+        "source": "Errors may provide cause chain information.",
+        "suggest": "错误可能会提供原因链信息。",
+        "translate": ""
+    },
+    {
+        "source": "[`Error::source()`] is generally used when errors cross \"abstraction boundaries\".",
+        "suggest": "[`Error::source()`] 通常在错误交叉 \"abstraction boundaries\" 时使用。",
+        "translate": ""
+    },
+    {
+        "source": "CString has a length at least 1",
+        "suggest": "CString 的长度至少为 1",
+        "translate": ""
+    },
+    {
+        "source": "to_bytes_with_nul returns slice with length at least 1",
+        "suggest": "to_bytes_with_nul 返回长度至少为 1 的字节",
+        "translate": ""
+    },
+    {
+        "source": "Converts a [`Box`]`<`[`OsStr`]`>` into an [`OsString`] without copying or allocating.",
+        "suggest": "无需复制或分配即可将 [`Box`]`<`[`OsStr`]`>` 转换为 [`OsString`]。",
+        "translate": ""
+    },
+    {
+        "source": "is neither a regular file nor a symlink to a regular file.",
+        "suggest": "既不是普通文件，也不是普通文件的符号链接。",
+        "translate": ""
+    },
+    {
+        "source": "The current process does not have the permission rights to read `from` or write `to`.",
+        "suggest": "当前进程没有读取 `from` 或写入 `to` 的权限。",
+        "translate": ""
+    },
+    {
+        "source": "is a fat pointer, but &&str is a thin pointer.",
+        "suggest": "是一个胖指针，而 && str 是一个瘦指针。",
+        "translate": ""
+    },
+    {
+        "source": "This operation is unsupported on this platform.",
+        "suggest": "此平台不支持此操作。",
+        "translate": ""
+    },
+    {
+        "source": "This means that the operation can never succeed.",
+        "suggest": "这意味着操作永远不会成功。",
+        "translate": ""
+    },
+    {
+        "source": "Creates a new I/O error from a known kind of error as well as a constant message.",
+        "suggest": "从已知类型的错误以及恒定消息创建一个新的 I/O 错误。",
+        "translate": ""
+    },
+    {
+        "source": "This function does not allocate.",
+        "suggest": "这个函数不分配。",
+        "translate": ""
+    },
+    {
+        "source": "This function should maybe change to",
+        "suggest": "这个函数应该改成",
+        "translate": ""
+    },
+    {
+        "source": "in the future, when const generics allow that.",
+        "suggest": "在 future 中，当 const 泛型允许时。",
+        "translate": ""
+    },
+    {
+        "source": "For more information on the `move` keyword, see the [closures][closure] section of the Rust book or the [threads] section.",
+        "suggest": "有关 `move` 关键字的更多信息，请参见 Rust 书籍的 [closures][closure] 部分或 [threads] 部分。",
+        "translate": ""
+    },
+    {
+        "source": "Do not assume that this type has the same memory layout as the underlying system representation.",
+        "suggest": "不要假设此类型与底层系统表示具有相同的内存布局。",
+        "translate": ""
+    },
+    {
+        "source": "Do not assume that this struct is implemented as the underlying system representation.",
+        "suggest": "不要假设这个结构体是作为底层系统表示实现的。",
+        "translate": ""
+    },
+    {
+        "source": "The memory layout is not part of the stable interface that std exposes.",
+        "suggest": "内存布局不是 std 公开的稳定接口的一部分。",
+        "translate": ""
+    },
+    {
+        "source": "Notably, octal numbers and hexadecimal numbers are not allowed per [IETF RFC 6943].",
+        "suggest": "值得注意的是，每个 [IETF RFC 6943] 不允许使用八进制数和十六进制数。",
+        "translate": ""
+    },
+    {
+        "source": "This corresponds to the constant `INADDR_ANY` in other languages.",
+        "suggest": "这对应于其他语言中的常量 `INADDR_ANY`。",
+        "translate": ""
+    },
+    {
+        "source": "Peek the next character from the input",
+        "suggest": "Peek 输入的下一个字符",
+        "translate": ""
+    },
+    {
+        "source": "Disallow octal number in IP string.",
+        "suggest": "禁止在 IP 字符串中使用八进制数。",
+        "translate": ""
+    },
+    {
+        "source": "Converts an [`OsString`] into a [`PathBuf`]",
+        "suggest": "将 [`OsString`] 转换为 [`PathBuf`]",
+        "translate": ""
+    },
+    {
+        "source": "Converts a [`PathBuf`] into an [`OsString`]",
+        "suggest": "将 [`PathBuf`] 转换为 [`OsString`]",
+        "translate": ""
+    },
+    {
+        "source": "Converts a [`String`] into a [`PathBuf`]",
+        "suggest": "将 [`String`] 转换为 [`PathBuf`]",
+        "translate": ""
+    },
+    {
+        "source": "Converts a [`PathBuf`] into an [`Arc`] by moving the [`PathBuf`] data into a new [`Arc`] buffer.",
+        "suggest": "通过将 [`PathBuf`] 数据移动到新的 [`Arc`] 缓冲区，将 [`PathBuf`] 转换为 [`Arc`]。",
+        "translate": ""
+    },
+    {
+        "source": "Converts a [`Path`] into an [`Arc`] by copying the [`Path`] data into a new [`Arc`] buffer.",
+        "suggest": "通过将 [`Path`] 数据复制到新的 [`Arc`] 缓冲区，将 [`Path`] 转换为 [`Arc`]。",
+        "translate": ""
+    },
+    {
+        "source": "Converts a [`PathBuf`] into an [`Rc`] by moving the [`PathBuf`] data into a new `Rc` buffer.",
+        "suggest": "通过将 [`PathBuf`] 数据移动到新的 `Rc` 缓冲区，将 [`PathBuf`] 转换为 [`Rc`]。",
+        "translate": ""
+    },
+    {
+        "source": "Converts a [`Path`] into an [`Rc`] by copying the [`Path`] data into a new `Rc` buffer.",
+        "suggest": "通过将 [`Path`] 数据复制到新的 `Rc` 缓冲区，将 [`Path`] 转换为 [`Rc`]。",
+        "translate": ""
+    },
+    {
+        "source": "<code>[std::marker]::{[Copy], [Send], [Sized], [Sync], [Unpin]}</code>, marker traits that indicate fundamental properties of types.",
+        "suggest": "<code>[std::marker]::{[Copy], [Send], [Sized], [Sync], [Unpin]}</code>，指示类型基本属性的标记 traits。",
+        "translate": ""
+    },
+    {
+        "source": "<code>[std::ops]::{[Drop], [Fn], [FnMut], [FnOnce]}</code>, various operations for both destructors and overloading `()`.",
+        "suggest": "<code>[std::ops]::{[丢弃], [Fn], [FnMut], [FnOnce]}</code>，用于析构函数和重载 `()` 的各种操作。",
+        "translate": ""
+    },
+    {
+        "source": "<code>[std::mem]::[drop][mem::drop]</code>, a convenience function for explicitly dropping a value.",
+        "suggest": "<code>[std::mem]::[丢弃][mem:: 丢弃]</code>，一种用于明确丢弃值的便利功能。",
+        "translate": ""
+    },
+    {
+        "source": "<code>[std::boxed]::[Box]</code>, a way to allocate values on the heap.",
+        "suggest": "<code>[std::boxed]::[Box]</code>，一种在堆上分配值的方法。",
+        "translate": ""
+    },
+    {
+        "source": "<code>[std::borrow]::[ToOwned]</code>, the conversion trait that defines [`to_owned`], the generic method for creating an owned type from a borrowed type.",
+        "suggest": "<code>[std:: 借用]::[ToOwned]</code>，定义 [`to_owned`] 的转换 trait，泛型从借用类型创建拥有所有权的类型的方法。",
+        "translate": ""
+    },
+    {
+        "source": "<code>[std::clone]::[Clone]</code>, the ubiquitous trait that defines [`clone`][Clone::clone], the method for producing a copy of a value.",
+        "suggest": "<code>[std::clone]::[Clone]</code>，无处不在的 trait 定义了 [`clone`][Clone::clone]，生成值的副本的方法。",
+        "translate": ""
+    },
+    {
+        "source": "<code>[std::cmp]::{[PartialEq], [PartialOrd], [Eq], [Ord]}</code>, the comparison traits, which implement the comparison operators and are often seen in trait bounds.",
+        "suggest": "<code>[std::cmp]::{[PartialEq], [PartialOrd], [Eq], [Ord]}</code>，比较 traits，实现比较一致，经常在 trait bounds 中看到。",
+        "translate": ""
+    },
+    {
+        "source": "<code>[std::convert]::{[AsRef], [AsMut], [Into], [From]}</code>, generic conversions, used by savvy API authors to create overloaded methods.",
+        "suggest": "<code>[std::convert]::{[AsRef], [AsMut], [Into], [From]}</code>, 泛型转换，由精明的 API 作者用来创建重载方法。",
+        "translate": ""
+    },
+    {
+        "source": "<code>[std::default]::[Default]</code>, types that have default values.",
+        "suggest": "<code>[std::default]::[Default]</code>，具有默认值的类型。",
+        "translate": ""
+    },
+    {
+        "source": "<code>[std::iter]::{[Iterator], [Extend], [IntoIterator], [DoubleEndedIterator], [ExactSizeIterator]}</code>, iterators of various kinds.",
+        "suggest": "<code>[std::iter]::{[Iterator], [Extend], [IntoIterator], [DoubleEndedIterator], [ExactSizeIterator]}</code>，各种迭代器。",
+        "translate": ""
+    },
+    {
+        "source": "<code>[std::option]::[Option]::{[self][Option], [Some], [None]}</code>, a type which expresses the presence or absence of a value.",
+        "suggest": "<code>[std::option]::[Option]::{[self][Option], [Some], [None]}</code>，一种表示值存在与否的类型。",
+        "translate": ""
+    },
+    {
+        "source": "<code>[std::result]::[Result]::{[self][Result], [Ok], [Err]}</code>, a type for functions that may succeed or fail.",
+        "suggest": "<code>[std::result]::[Result]::{[self][Result], [Ok], [Err]}</code>，一种可能成功或失败的函数类型。",
+        "translate": ""
+    },
+    {
+        "source": "<code>[std::string]::{[String], [ToString]}</code>, heap-allocated strings.",
+        "suggest": "<code>[std::string]::{[String], [ToString]}</code>，堆分配的字符串。",
+        "translate": ""
+    },
+    {
+        "source": "<code>[std::vec]::[Vec]</code>, a growable, heap-allocated vector.",
+        "suggest": "<code>[std::vec]::[Vec]</code>，一个可增长的、堆分配的 vector。",
+        "translate": ""
+    },
+    {
+        "source": "override our `deny(warnings)`",
+        "suggest": "覆盖我们的 `deny(warnings)`",
+        "translate": ""
+    },
+    {
+        "source": "This creates a slice iterator, producing references to each value.",
+        "suggest": "这将创建一个切片迭代器，产生对每个值的引用。",
+        "translate": ""
+    },
+    {
+        "source": "The `array_into_iter` lint suggests this change for future compatibility:",
+        "suggest": "`array_into_iter` lint 建议进行此更改以实现未来兼容性:",
+        "translate": ""
+    },
+    {
+        "source": "You can explicitly iterate an array by value using `IntoIterator::into_iter` or `std::array::IntoIter::new`:",
+        "suggest": "您可以使用 `IntoIterator::into_iter` 或 `std::array::IntoIter::new` 按值显式迭代数组:",
+        "translate": ""
+    },
+    {
+        "source": "ignored because 2021 testing is still unstable",
+        "suggest": "被忽略，因为 2021 测试仍然不稳定",
+        "translate": ""
+    },
+    {
+        "source": "This iterates by reference:",
+        "suggest": "这通过引用进行迭代:",
+        "translate": ""
+    },
+    {
+        "source": "This iterates by value:",
+        "suggest": "这是按值迭代的:",
+        "translate": ""
+    },
+    {
+        "source": "IntoIter can also start a chain.",
+        "suggest": "IntoIter 也可以启动一个链。",
+        "translate": ""
+    },
+    {
+        "source": "(implemented for `[T; N]`, `&[T; N]` and `&mut [T; N]`)",
+        "suggest": "(为 `[T; N]`、`&[T; N]` 和 `&mut [T; N]` 实现)",
+        "translate": ""
+    },
+    {
+        "source": "You can also iterate over reference to the array's elements:",
+        "suggest": "您还可以迭代数组元素的引用:",
+        "translate": ""
+    },
+    {
+        "source": "Prior to Rust 1.53, arrays did not implement `IntoIterator` by value, so the method call `array.into_iter()` auto-referenced into a slice iterator.",
+        "suggest": "在 Rust 1.53 之前，数组没有通过值实现 `IntoIterator`，因此该方法调用 `array.into_iter()` 自动引用到切片迭代器中。",
+        "translate": ""
+    },
+    {
+        "source": "Right now, the old behavior is preserved in the 2015 and 2018 editions of Rust for compatibility, ignoring `IntoIterator` by value.",
+        "suggest": "现在，为了兼容性，旧的行为被保留在 2015 和 2018 年版本的 Rust 中，忽略了 `IntoIterator` 的值。",
+        "translate": ""
+    },
+    {
+        "source": "In the future, the behavior on the 2015 and 2018 edition might be made consistent to the behavior of later editions.",
+        "suggest": "将来，2015 年和 2018 年版本的行为可能会与以后版本的行为一致。",
+        "translate": ""
+    },
+    {
+        "source": "Starting in the 2021 edition, `array.into_iter()` will use `IntoIterator` normally to iterate by value, and `iter()` should be used to iterate by reference like previous editions.",
+        "suggest": "从 2021 年版开始，`array.into_iter()` 通常会使用 `IntoIterator` 按值迭代，`iter()` 应该像以前的版本一样用于按引用迭代。",
+        "translate": ""
+    },
+    {
+        "source": "Future language versions might start treating the `array.into_iter()` syntax on editions 2015 and 2018 the same as on edition 2021.",
+        "suggest": "未来的语言版本可能会开始将 2015 和 2018 版的 `array.into_iter()` 语法与 2021 版相同。",
+        "translate": ""
+    },
+    {
+        "source": "So code using those older editions should still be written with this change in mind, to prevent breakage in the future.",
+        "suggest": "因此，在编写使用这些旧版本的代码时仍应牢记这一更改，以防止将来出现破坏。",
+        "translate": ""
+    },
+    {
+        "source": "The safest way to accomplish this is to avoid the `into_iter` syntax on those editions.",
+        "suggest": "实现这一点最安全的方法是避免这些版本中的 `into_iter` 语法。",
+        "translate": ""
+    },
+    {
+        "source": "If an edition update is not viable/desired, there are multiple alternatives:",
+        "suggest": "如果版本更新不是不可行/不理想，则有多种选择:",
+        "translate": ""
+    },
+    {
+        "source": "use `iter`, equivalent to the old behavior, creating references",
+        "suggest": "使用 `iter`，相当于旧行为，创建引用",
+        "translate": ""
+    },
+    {
+        "source": "use [`array::IntoIter`], equivalent to the post-2021 behavior (Rust 1.51+)",
+        "suggest": "使用 [`array::IntoIter`]，相当于 2021 年后的行为 (Rust 1.51+)",
+        "translate": ""
+    },
+    {
+        "source": "replace `for ...",
+        "suggest": "替换 `for ....",
+        "translate": ""
+    },
+    {
+        "source": "in array.into_iter() {` with `for ...",
+        "suggest": "in array.into_iter() {` 和 `for ...",
+        "translate": ""
+    },
+    {
+        "source": "in array {`, equivalent to the post-2021 behavior (Rust 1.53+)",
+        "suggest": "in array {`，相当于 2021 年后的行为 (Rust 1.53+)",
+        "translate": ""
+    },
+    {
+        "source": "Additionally, `f32` can represent some special values:",
+        "suggest": "此外，`f32` 可以表示一些特殊值:",
+        "translate": ""
+    },
+    {
+        "source": "−0.0: IEEE 754 floating point numbers have a bit that indicates their sign, so −0.0 is a possible value.",
+        "suggest": "-0.0: IEEE 754 浮点数有一个表示它们的符号的位，所以 `-0.0` 是一个可能的值。",
+        "translate": ""
+    },
+    {
+        "source": "For comparison −0.0 = +0.0, but floating point operations can carry the sign bit through arithmetic operations.",
+        "suggest": "对于比较 `-0.0 = +0.0`，但浮点运算可以通过算术运算携带符号位。",
+        "translate": ""
+    },
+    {
+        "source": "This means −0.0 × +0.0 produces −0.0 and a negative number rounded to a value smaller than a float can represent also produces −0.0.",
+        "suggest": "这意味着 `-0.0 × +0.0` 产生 `-0.0`，四舍五入到小于浮点值的负数也产生 `-0.0`。",
+        "translate": ""
+    },
+    {
+        "source": "Only called once during runtime initialization.",
+        "suggest": "在运行时初始化期间只调用一次。",
+        "translate": ""
+    },
+    {
+        "source": "Luckily `park` comes with the guarantee that if it got an `unpark` just before on an unparked thread it does not park.",
+        "suggest": "幸运的是，`park` 保证如果它在未停放的线程上获得 `unpark`，则它不会 park。",
+        "translate": ""
+    },
+    {
+        "source": "This is generally created by methods like [`Mutex::lock`](crate::sync::Mutex::lock) or [`RwLock::read`](crate::sync::RwLock::read).",
+        "suggest": "这通常是由 [`Mutex::lock`](crate::sync::Mutex::lock) 或 [`RwLock::read`](crate::sync::RwLock::read) 之类的方法创建的。",
+        "translate": ""
+    },
+    {
+        "source": "This module contains code that is shared between all platforms, mostly utility or fallback code.",
+        "suggest": "该模块包含在所有平台之间共享的代码，主要是实用程序或回退代码。",
+        "translate": ""
+    },
+    {
+        "source": "This explicitly does not include code that is shared between only a few platforms, such as when reusing an implementation from `unix` or `unsupported`.",
+        "suggest": "这明确不包括仅在少数平台之间共享的代码，例如当重用来自 `unix` 或 `unsupported` 的实现时。",
+        "translate": ""
+    },
+    {
+        "source": "In those cases the desired code should be included directly using the #[path] attribute, not moved to this module.",
+        "suggest": "在这些情况下，应使用 #[path] 属性直接包含所需的代码，而不是移动到此模块中。",
+        "translate": ""
+    },
+    {
+        "source": "Currently `sys_common` contains a lot of code that should live in this module, ideally `sys_common` would only contain platform-independent abstractions on top of `sys`.",
+        "suggest": "目前 `sys_common` 包含很多应该存在于这个模块中的代码，理想情况下 `sys_common` 将只包含在 `sys` 之上的与平台无关的抽象。",
+        "translate": ""
+    },
+    {
+        "source": "Progress on this is tracked in #84187.",
+        "suggest": "在 #84187 中跟踪了这方面的进展。",
+        "translate": ""
+    },
+    {
+        "source": "must be called only once during runtime initialization.",
+        "suggest": "在运行时初始化期间只能调用一次。",
+        "translate": ""
+    },
+    {
+        "source": "this is not guaranteed to run, for example when Rust code is called externally.",
+        "suggest": "这不能保证运行，例如在外部调用 Rust 代码时。",
+        "translate": ""
+    },
+    {
+        "source": "must be called only once during runtime cleanup.",
+        "suggest": "在运行时清理期间只能调用一次。",
+        "translate": ""
+    },
+    {
+        "source": "this is not guaranteed to run, for example when the program aborts.",
+        "suggest": "这不能保证运行，例如当程序中止时。",
+        "translate": ""
+    },
+    {
+        "source": "This module provides a synchronization primitive that does not use thread local variables.",
+        "suggest": "这个模块提供了一个不使用线程局部变量的同步原语。",
+        "translate": ""
+    },
+    {
+        "source": "This is needed for signaling that a thread has finished execution.",
+        "suggest": "这需要发出线程已完成执行的信号。",
+        "translate": ""
+    },
+    {
+        "source": "The signal is sent once all TLS destructors have finished at which point no new thread locals should be created.",
+        "suggest": "一旦所有 TLS 析构函数完成，就发送信号，此时不应创建新的线程局部变量。",
+        "translate": ""
+    },
+    {
+        "source": "Notify the waiter.",
+        "suggest": "通知等待者。",
+        "translate": ""
+    },
+    {
+        "source": "The waiter is either notified right away (if currently blocked in `Waiter::wait()`) or later when it calls the `Waiter::wait()` method.",
+        "suggest": "等待者要么立即收到通知 (如果当前在 `Waiter::wait()` 中被阻止)，要么稍后在调用 `Waiter::wait()` 方法时收到通知。",
+        "translate": ""
+    },
+    {
+        "source": "Wait for a notification.",
+        "suggest": "等待通知。",
+        "translate": ""
+    },
+    {
+        "source": "If `Notifier::notify()` has already been called, this will return immediately, otherwise the current thread is blocked until notified.",
+        "suggest": "如果 `Notifier::notify()` 已经被调用，这将立即返回，否则当前线程被阻塞直到通知。",
+        "translate": ""
+    },
+    {
+        "source": "These symbols are all defined by `libm`, or by `compiler-builtins` on unsupported platforms.",
+        "suggest": "这些符号都是由 `libm` 定义的，或者在不受支持的平台上由 `compiler-builtins` 定义。",
+        "translate": ""
+    },
+    {
+        "source": "continue working in sandbox",
+        "suggest": "继续在沙盒中工作",
+        "translate": ""
+    },
+    {
+        "source": "Change the root directory of the current process to the specified path.",
+        "suggest": "将当前进程的根目录更改为指定路径。",
+        "translate": ""
+    },
+    {
+        "source": "This typically requires privileges, such as root or a specific capability.",
+        "suggest": "这通常需要权限，例如 root 或特定功能。",
+        "translate": ""
+    },
+    {
+        "source": "This does not change the current working directory;",
+        "suggest": "这不会改变当前的工作目录;",
+        "translate": ""
+    },
+    {
+        "source": "you should call [`std::env::set_current_dir`][`crate::env::set_current_dir`] afterwards.",
+        "suggest": "之后您应该调用 [`std::env::set_current_dir`][`crate::env::set_current_dir`]。",
+        "translate": ""
+    },
+    {
+        "source": "Use linux as the default platform when documenting on other platforms like Windows",
+        "suggest": "在 Windows 等其他平台上进行记录时，使用 linux 作为默认平台",
+        "translate": ""
+    },
+    {
+        "source": "requires that the control pointer is NULL when the len is 0.",
+        "suggest": "当 len 为 0 时，要求控制指针为 NULL。",
+        "translate": ""
+    },
+    {
+        "source": "Most operating systems, but not Linux or emscripten, return the previous pointer when its length is zero.",
+        "suggest": "大多数操作系统，但不是 Linux 或 emscripten，当其长度为零时返回前一个指针。",
+        "translate": ""
+    },
+    {
+        "source": "Therefore, check if the previous pointer is the same as the current one.",
+        "suggest": "因此，请检查前一个指针是否与当前指针相同。",
+        "translate": ""
+    },
+    {
+        "source": "Returns `true` if the ancillary data is empty.",
+        "suggest": "如果辅助数据为空，则返回 `true`。",
+        "translate": ""
+    },
+    {
+        "source": "This is only possible if the status came from a `wait` system call which was passed `WUNTRACED`, and was then converted into an `ExitStatus`.",
+        "suggest": "这仅在状态来自 `wait` 系统调用时才可能，该系统调用通过 `WUNTRACED`，然后转换为 `ExitStatus`。",
+        "translate": ""
+    },
+    {
+        "source": "This is only possible if the status came from a `wait` system call which was passed `WCONTINUED`, and was then converted into an `ExitStatus`.",
+        "suggest": "这只有在状态来自 `wait` 系统调用时才有可能，该系统调用通过 `WCONTINUED`，然后转换为 `ExitStatus`。",
+        "translate": ""
+    },
+    {
+        "source": "pre_exec closures are ignored on VxWorks",
+        "suggest": "在 VxWorks 上忽略 pre_exec 闭包",
+        "translate": ""
+    },
+    {
+        "source": "This method is not yet properly implemented on VxWorks",
+        "suggest": "此方法尚未在 VxWorks 上正确实现",
+        "translate": ""
+    },
+    {
+        "source": "FreeBSD's stack autogrows, and optionally includes a guard page at the bottom.",
+        "suggest": "FreeBSD 的栈会自动增长，并且可以选择在底部包含一个保护页面。",
+        "translate": ""
+    },
+    {
+        "source": "If we try to remap the bottom of the stack ourselves, FreeBSD's guard page moves upwards.",
+        "suggest": "如果我们自己尝试重新映射栈底，FreeBSD 的保护页面就会向上移动。",
+        "translate": ""
+    },
+    {
+        "source": "So we'll just use the builtin guard page.",
+        "suggest": "所以我们将只使用内置的保护页面。",
+        "translate": ""
+    },
+    {
+        "source": "Technically the number of guard pages is tunable and controlled by the security.bsd.stack_guard_page sysctl, but there are few reasons to change it from the default.",
+        "suggest": "从技术上讲，保护页面的数量是由 security.bsd.stack_guard_page sysctl 可调和控制的，但几乎没有理由将其从默认值更改。",
+        "translate": ""
+    },
+    {
+        "source": "The default value has been 1 ever since FreeBSD 11.1 and 10.4.",
+        "suggest": "自 FreeBSD 11.1 和 10.4 以来，默认值一直为 1。",
+        "translate": ""
+    },
+    {
+        "source": "Header must fit in the padding before an aligned pointer",
+        "suggest": "标题必须适合对齐指针之前的填充",
+        "translate": ""
+    },
+    {
+        "source": "Heap memory management on Windows is done by using the system Heap API (heapapi.h)",
+        "suggest": "Windows 上的堆内存管理是通过使用系统 Heap API (heapapi.h) 完成的",
+        "translate": ""
+    },
+    {
+        "source": "Flag to indicate that the memory returned by `HeapAlloc` should be zeroed.",
+        "suggest": "指示 `HeapAlloc` 返回的内存应清零的标志。",
+        "translate": ""
+    },
+    {
+        "source": "Get a handle to the default heap of the current process, or null if the operation fails.",
+        "suggest": "获取当前进程的默认堆的句柄，如果操作失败，则为 null。",
+        "translate": ""
+    },
+    {
+        "source": "Successful calls to this function within the same process are assumed to always return the same handle, which remains valid for the entire lifetime of the process.",
+        "suggest": "假设在同一进程中成功调用此函数会返回相同的句柄，该句柄在整个进程生命周期内始终有效。",
+        "translate": ""
+    },
+    {
+        "source": "Allocate a block of `dwBytes` bytes of memory from a given heap `hHeap`.",
+        "suggest": "从给定的堆 `hHeap` 分配一块 `dwBytes` 字节的内存。",
+        "translate": ""
+    },
+    {
+        "source": "The allocated memory may be uninitialized, or zeroed if `dwFlags` is set to `HEAP_ZERO_MEMORY`.",
+        "suggest": "如果 `dwFlags` 设置为 `HEAP_ZERO_MEMORY`，分配的内存可能未初始化或归零。",
+        "translate": ""
+    },
+    {
+        "source": "Returns a pointer to the newly-allocated memory or null if the operation fails.",
+        "suggest": "返回指向新分配内存的指针，如果操作失败，则返回 null。",
+        "translate": ""
+    },
+    {
+        "source": "The returned pointer will be aligned to at least `MIN_ALIGN`.",
+        "suggest": "返回的指针将至少与 `MIN_ALIGN` 对齐。",
+        "translate": ""
+    },
+    {
+        "source": "must be a non-null handle returned by `GetProcessHeap`.",
+        "suggest": "必须是 `GetProcessHeap` 返回的非空句柄。",
+        "translate": ""
+    },
+    {
+        "source": "must be set to either zero or `HEAP_ZERO_MEMORY`.",
+        "suggest": "必须设置为零或 `HEAP_ZERO_MEMORY`。",
         "translate": ""
     }
 ]

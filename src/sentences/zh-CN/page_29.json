@@ -1,1792 +1,1997 @@
 [
     {
-        "source": "pub fn simd_fpowi pub fn simd_fpow",
-        "suggest": "酒吧 fn simd_fpowi 酒吧 fn simd_fpow",
-        "translate": false
+        "source": "Note that `dwBytes` is allowed to be zero, contrary to some other allocators.",
+        "suggest": "请注意，与其他一些分配器相反，`dwBytes` 可以为零。",
+        "translate": ""
     },
     {
-        "source": "pub unsafe fn i8x16_bitmask(a: v128) -> i32 {",
-        "suggest": "酒吧不安全 fn i8x16_bitmask(a: v128) -> i32 {",
-        "translate": false
+        "source": "Reallocate a block of memory behind a given pointer `lpMem` from a given heap `hHeap`, to a block of at least `dwBytes` bytes, either shrinking the block in place, or allocating at a new location, copying memory, and freeing the original location.",
+        "suggest": "将给定指针 `lpMem` 后面的一块内存从给定的堆 `hHeap` 重新分配到至少 `dwBytes` 字节的块，要么将块缩小到位，要么在新位置分配，复制内存并释放原始位置。",
+        "translate": ""
     },
     {
-        "source": "pub unsafe fn i16x8_bitmask(a: v128) -> i32 {",
-        "suggest": "酒吧不安全 fn i16x8_bitmask(a: v128) -> i32 {",
-        "translate": false
+        "source": "Returns a pointer to the reallocated memory or null if the operation fails.",
+        "suggest": "返回指向重新分配的内存的指针，如果操作失败，则返回 null。",
+        "translate": ""
     },
     {
-        "source": "pub unsafe fn i32x4_bitmask(a: v128) -> i32 {",
-        "suggest": "酒吧不安全 fn i32x4_bitmask(a: v128) -> i32 {",
-        "translate": false
+        "source": "If the operation fails the given block will never have been freed.",
+        "suggest": "如果操作失败，给定的块将永远不会被释放。",
+        "translate": ""
     },
     {
-        "source": "FIXME vmovntdq",
-        "suggest": "修复 vmovntdq",
-        "translate": false
+        "source": "must be set to zero.",
+        "suggest": "必须设置为零。",
+        "translate": ""
     },
     {
-        "source": "FIXME movntdq",
-        "suggest": "修复 movntdq",
-        "translate": false
+        "source": "must be a non-null pointer to an allocated block returned by `HeapAlloc` or `HeapReAlloc`, that has not already been freed.",
+        "suggest": "必须是一个非空指针，指向由 `HeapAlloc` 或 `HeapReAlloc` 返回的尚未被释放的已分配块。",
+        "translate": ""
     },
     {
-        "source": "FIXME movntpd",
-        "suggest": "修复 movntpd",
-        "translate": false
+        "source": "If the block was successfully reallocated at a new location, pointers pointing to the freed memory, such as `lpMem`, must not be dereferenced ever again.",
+        "suggest": "如果块在新位置成功重新分配，则不能再次解引用指向已释放内存的指针，例如 `lpMem`。",
+        "translate": ""
     },
     {
-        "source": "use drop for [T]",
-        "suggest": "对 [T] 使用 drop",
-        "translate": false
+        "source": "Free a block of memory behind a given pointer `lpMem` from a given heap `hHeap`.",
+        "suggest": "从给定的堆 `hHeap` 中释放给定指针 `lpMem` 后面的一块内存。",
+        "translate": ""
     },
     {
-        "source": "T = self.tail;",
-        "suggest": "T= self.tail;",
-        "translate": false
+        "source": "Returns a nonzero value if the operation is successful, and zero if the operation fails.",
+        "suggest": "如果操作成功则返回一个非零值，如果操作失败则返回零。",
+        "translate": ""
     },
     {
-        "source": "H = self.head;",
-        "suggest": "H= self.head;",
-        "translate": false
+        "source": "must be a pointer to an allocated block returned by `HeapAlloc` or `HeapReAlloc`, that has not already been freed.",
+        "suggest": "必须是 `HeapAlloc` 或 `HeapReAlloc` 返回的一个尚未被释放的已分配块的指针。",
+        "translate": ""
     },
     {
-        "source": "self:  [a b c|d e f] other: [0 1 2 3|4 5] front = 3, mid = 1, [a b c] == [0 1 2] && [d] == [3] && [e f] == [4 5]",
-        "suggest": "self: [a b c|d e f] 其他: [0 1 2 3|4 5] 前 = 3，中 = 1，[a b c] == [0 1 2]&&[d] == [3]&&[e f] == [4 5]",
-        "translate": false
+        "source": "If the block was successfully freed, pointers pointing to the freed memory, such as `lpMem`, must not be dereferenced ever again.",
+        "suggest": "如果块被成功释放，指向被释放内存的指针，如 `lpMem`，不得再次解引用。",
+        "translate": ""
     },
     {
-        "source": "for item in iter.into_iter() {",
-        "suggest": "用于 iter.into_iter() 中的项 {",
-        "translate": false
+        "source": "Note that `lpMem` is allowed to be null, which will not cause the operation to fail.",
+        "suggest": "注意 `lpMem` 允许为空，这不会导致操作失败。",
+        "translate": ""
     },
     {
-        "source": "([0 1], [a b]) (\\[2\\], \\[c\\]) ([3 4], [d e])",
-        "suggest": "([0 1]，[a b]) (\\[2\\]，\\[c\\]) ([3 4]，[d e])",
-        "translate": false
+        "source": "Cached handle to the default heap of the current process.",
+        "suggest": "缓存到当前进程的默认堆的句柄。",
+        "translate": ""
     },
     {
-        "source": "0, 1, 2, .., len - 1",
-        "suggest": "0，1，2，..，len-1",
-        "translate": false
+        "source": "Either a non-null handle returned by `GetProcessHeap`, or null when not yet initialized or `GetProcessHeap` failed.",
+        "suggest": "`GetProcessHeap` 返回的非空句柄，或在尚未初始化或 `GetProcessHeap` 失败时为空。",
+        "translate": ""
     },
     {
-        "source": "\"Hello   Some(\"hi\")   !\"",
-        "suggest": "`您好 Some(\"hi\")! `",
-        "translate": false
+        "source": "If this operation is successful, `HEAP` will be successfully initialized and contain a non-null handle returned by `GetProcessHeap`.",
+        "suggest": "如果此操作成功，则 `HEAP` 将成功初始化并包含 `GetProcessHeap` 返回的非空句柄。",
+        "translate": ""
     },
     {
-        "source": "Hello {arg 0 (\"x\")} is {arg 1 (0.01) with precision specified inline (5)}",
-        "suggest": "您好 {arg 0 (\"x\")} 是 {arg 1 (0.01) with precision specified inline (5)}",
-        "translate": false
+        "source": "has not yet been successfully initialized",
+        "suggest": "尚未成功初始化",
+        "translate": ""
     },
     {
-        "source": "Hello {arg 1 (\"x\")} is {arg 2 (0.01) with precision specified in arg 0 (5)}",
-        "suggest": "您好 {arg 1 (\"x\")} 是 {arg 2 (0.01) with precision specified in arg 0 (5)}",
-        "translate": false
+        "source": "No locking is needed because within the same process, successful calls to `GetProcessHeap` will always return the same value, even on different threads.",
+        "suggest": "不需要锁定，因为在同一个进程中，成功调用 `GetProcessHeap` 将始终返回相同的值，即使在不同的线程上也是如此。",
+        "translate": ""
     },
     {
-        "source": "Hello {arg 0 (\"x\")} is {arg 2 (0.01) with precision specified in arg 1 (5)}",
-        "suggest": "您好 {arg 0 (\"x\")} 是 {arg 2 (0.01) with precision specified in arg 1 (5)}",
-        "translate": false
+        "source": "`HEAP` contains a non-null handle returned by `GetProcessHeap`",
+        "suggest": "`HEAP` 包含一个由 `GetProcessHeap` 返回的非空句柄",
+        "translate": ""
     },
     {
-        "source": "Hello {next arg (\"x\")} is {second of next two args (0.01) with precision specified in first of next two args (5)}",
-        "suggest": "您好 {next arg (\"x\")} 是 {second of next two args (0.01) with precision specified in first of next two args (5)}",
-        "translate": false
+        "source": "Could not get the current process heap.",
+        "suggest": "无法获取当前进程堆。",
+        "translate": ""
     },
     {
-        "source": "Hello {next arg (\"x\")} is {arg 2 (0.01) with precision specified in its predecessor (5)}",
-        "suggest": "您好 {next arg (\"x\")} 是 {arg 2 (0.01) with precision specified in its predecessor (5)}",
-        "translate": false
+        "source": "Get a non-null handle to the default heap of the current process.",
+        "suggest": "获取当前进程默认堆的非空句柄。",
+        "translate": ""
     },
     {
-        "source": "Hello {next arg (\"x\")} is {arg \"number\" (0.01) with precision specified in arg \"prec\" (5)}",
-        "suggest": "您好 {next arg (\"x\")} 是 {arg \"number\" (0.01) with precision specified in arg \"prec\" (5)}",
-        "translate": false
+        "source": "`HEAP` must have been successfully initialized.",
+        "suggest": "`HEAP` 必须已成功初始化。",
+        "translate": ""
     },
     {
-        "source": "*nothing* ⇒ [`Display`]",
-        "suggest": "*nothing* ⇒ [`Display`]",
-        "translate": false
+        "source": "Header containing a pointer to the start of an allocated block.",
+        "suggest": "包含指向已分配块开头的指针的标头。",
+        "translate": ""
     },
     {
-        "source": "X = None, | = lo",
-        "suggest": "X = 无，|= 罗",
-        "translate": false
+        "source": "Size and alignment must be <= `MIN_ALIGN`.",
+        "suggest": "大小和对齐方式必须 <= `MIN_ALIGN`。",
+        "translate": ""
     },
     {
-        "source": "pub struct NEON128 { pub Low: ULONG64, pub High: LONG64, }",
-        "suggest": "酒馆结构体 NEON128 { pub Low: ULONG64, pub High: LONG64, }",
-        "translate": false
+        "source": "Allocate a block of optionally zeroed memory for a given `layout`.",
+        "suggest": "为给定的 `layout` 分配一块可选为零的内存。",
+        "translate": ""
     },
     {
-        "source": "pub type PNEON128 = *mut NEON128;",
-        "suggest": "pub 类型 PNEON128= *mut NEON128;",
-        "translate": false
+        "source": "Returns a pointer satisfying the guarantees of `System` about allocated pointers, or null if the operation fails.",
+        "suggest": "返回一个满足 `System` 关于已分配指针的保证的指针，如果操作失败，则返回 null。",
+        "translate": ""
     },
     {
-        "source": "pub Q:",
-        "suggest": "酒吧 Q:",
-        "translate": false
+        "source": "If this returns non-null `HEAP` will have been successfully initialized.",
+        "suggest": "如果返回非空，那么 `HEAP` 将被成功初始化。",
+        "translate": ""
     },
     {
-        "source": "pub S:",
-        "suggest": "酒吧 S:",
-        "translate": false
+        "source": "Allocation has failed, could not get the current process heap.",
+        "suggest": "分配失败，无法获取当前进程堆。",
+        "translate": ""
     },
     {
-        "source": "b'a' + 0x1F == 0x80 == 0b1000_0000 b'z' + 0x1F == 0x98 == 0b1001_1000",
-        "suggest": "b'a'+ 0x1F == 0x80 == 0b1000_0000 b'z'+ 0x1F == 0x98 == 0b1001_1000",
-        "translate": false
+        "source": "Allocated memory will be either zeroed or uninitialized.",
+        "suggest": "分配的内存将被清零或未初始化。",
+        "translate": ""
     },
     {
-        "source": "b'a' + 0x05 == 0x66 == 0b0110_0110 b'z' + 0x05 == 0x7F == 0b0111_1111",
-        "suggest": "b'a'+ 0x05 == 0x66 == 0b0110_0110 b'z'+ 0x05 == 0x7F == 0b0111_1111",
-        "translate": false
+        "source": "`heap` is a non-null handle returned by `GetProcessHeap`.",
+        "suggest": "`heap` 是 `GetProcessHeap` 返回的非空句柄。",
+        "translate": ""
     },
     {
-        "source": "_0 _1 _2 _3 _4 _5 _6 _7 _8 _9 _a _b _c _d _e _f",
-        "suggest": "_0 _1 _2 _3 _4 _5 _6 _7 _8 _9 _a_b _c_d _e_f",
-        "translate": false
+        "source": "The returned pointer points to the start of an allocated block.",
+        "suggest": "返回的指针指向已分配块的开始。",
+        "translate": ""
     },
     {
-        "source": "struct FooUse(Foo<[i32]>);",
-        "suggest": "结构体 FooUse(Foo<[i32]>);",
-        "translate": false
+        "source": "Allocate extra padding in order to be able to satisfy the alignment.",
+        "suggest": "分配额外的填充以便能够满足对齐。",
+        "translate": ""
     },
     {
-        "source": "let y: &dyn Bar = &Impl;",
-        "suggest": "令 y: &dyn Bar= &Impl;",
-        "translate": false
+        "source": "Allocation has failed.",
+        "suggest": "分配失败。",
+        "translate": ""
     },
     {
-        "source": "0 bool | 1 u8 | 1 u16 | 2 u32 | 4 u64 | 8 u128 | 16 i8 | 1 i16 | 2 i32 | 4 i64 | 8 i128 | 16 f32 | 4 f64 | 8 char | 4",
-        "suggest": "0 bool |1 u8 |1 个 u16 |2 u32 |4 u64 |8 u128 |16 i8 |1 i16 |2 i32 |4 i64 |8 i128 |16 f32 |4 f64 |8 个字符 | 4",
-        "translate": false
+        "source": "Create a correctly aligned pointer offset from the start of the allocated block, and write a header before it.",
+        "suggest": "从分配的块的开头创建一个正确对齐的指针偏移量，并在它之前写入一个头。",
+        "translate": ""
     },
     {
-        "source": "by William D.",
-        "suggest": "威廉・D。",
-        "translate": false
+        "source": "`MIN_ALIGN` <= `offset` <= `layout.align()` and the size of the allocated block is `layout.align() + layout.size()`.",
+        "suggest": "`MIN_ALIGN` <= `offset` <= `layout.align()`，分配块的大小为 `layout.align() + layout.size()`。",
+        "translate": ""
     },
     {
-        "source": "Clinger, available online:",
-        "suggest": "克林格 (Clinger)，在线可用:",
-        "translate": false
+        "source": "will thus be a correctly aligned pointer inside the allocated block with at least `layout.size()` bytes after it and at least `MIN_ALIGN` bytes of padding before it.",
+        "suggest": "因此将是分配块内正确对齐的指针，其后面至少有 `layout.size()` 字节，前面至少有 `MIN_ALIGN` 字节的填充。",
+        "translate": ""
     },
     {
-        "source": "Panics for `e >= CEIL_LOG5_OF_MAX_SIG`.",
-        "suggest": "`e >= CEIL_LOG5_OF_MAX_SIG` 的 Panics。",
-        "translate": false
+        "source": "Because the size and alignment of a header is <= `MIN_ALIGN` and `aligned` is aligned to at least `MIN_ALIGN` and has at least `MIN_ALIGN` bytes of padding before it, it is safe to write a header directly before it.",
+        "suggest": "因为标头的大小和对齐方式 <= `MIN_ALIGN` 并且 `aligned` 至少与 `MIN_ALIGN` 对齐并且在它之前至少有 `MIN_ALIGN` 个字节的填充，所以直接在它之前写入标头是安全的。",
+        "translate": ""
     },
     {
-        "source": "2^(nbits-1) < mant <= 2^nbits if mant > 0",
-        "suggest": "2 ^ (nbits-1) <mant <= 2 ^ nbits (如果 mant> 0",
-        "translate": false
+        "source": "The returned pointer does not point to the to the start of an allocated block, but there is a header readable directly before it containing the location of the start of the block.",
+        "suggest": "返回的指针不指向已分配块的开始，但在它包含块开始位置之前有一个直接可读的标头。",
+        "translate": ""
     },
     {
-        "source": "x 10^exp = 1.234 x 10^(exp-1)",
-        "suggest": "x 10 ^ exp= 1.234 x 10 ^ (exp-1)",
-        "translate": false
+        "source": "All pointers returned by this allocator have, in addition to the guarantees of `GlobalAlloc`, the following properties:",
+        "suggest": "此分配器返回的所有指针除了 `GlobalAlloc` 的保证外，还具有以下属性:",
+        "translate": ""
     },
     {
-        "source": "Burger, R.",
-        "suggest": "汉堡河",
-        "translate": false
+        "source": "If the pointer was allocated or reallocated with a `layout` specifying an alignment <= `MIN_ALIGN` the pointer will be aligned to at least `MIN_ALIGN` and point to the start of the allocated block.",
+        "suggest": "如果使用 `layout` 指定对齐 <= `MIN_ALIGN` 分配或重新分配指针，则指针将至少与 `MIN_ALIGN` 对齐并指向已分配块的开头。",
+        "translate": ""
     },
     {
-        "source": "Florian Loitsch.",
-        "suggest": "弗洛里安・洛伊奇 (Florian Loitsch)。",
-        "translate": false
+        "source": "If the pointer was allocated or reallocated with a `layout` specifying an alignment > `MIN_ALIGN` the pointer will be aligned to the specified alignment and not point to the start of the allocated block.",
+        "suggest": "如果使用 `layout` 指定对齐 > `MIN_ALIGN` 分配或重新分配指针，则指针将与指定对齐对齐，而不指向已分配块的开头。",
+        "translate": ""
     },
     {
-        "source": "10**-i; e = 4 * i - 80",
-        "suggest": "10 **-i;e=4* i-80",
-        "translate": false
+        "source": "Instead there will be a header readable directly before the returned pointer, containing the actual location of the start of the block.",
+        "suggest": "相反，在返回的指针之前会有一个直接可读的标头，包含块开始的实际位置。",
+        "translate": ""
     },
     {
-        "source": "(f, e, k)",
-        "suggest": "(f，e，k)",
-        "translate": false
+        "source": "Pointers returned by `allocate` satisfy the guarantees of `System`",
+        "suggest": "`allocate` 返回的指针满足 `System` 的保证",
+        "translate": ""
     },
     {
-        "source": "(v - 1 ulp)",
-        "suggest": "(v-1 ulp)",
-        "translate": false
+        "source": "The location of the start of the block is stored in the padding before `ptr`.",
+        "suggest": "块开始的位置存储在 `ptr` 之前的填充中。",
+        "translate": ""
     },
     {
-        "source": "(v + 1 ulp)",
-        "suggest": "(v +1 ulp)",
-        "translate": false
+        "source": "Because of the contract of `System`, `ptr` is guaranteed to be non-null and have a header readable directly before it.",
+        "suggest": "由于 `System` 的约定，`ptr` 被保证为非空并且在它之前有一个直接可读的标头。",
+        "translate": ""
     },
     {
-        "source": ":|1 ulp|1 ulp|  :",
-        "suggest": ": | 1 ulp | 1 ulp |:",
-        "translate": false
+        "source": "because `ptr` has been successfully allocated with this allocator, `HEAP` must have been successfully initialized.",
+        "suggest": "因为 `ptr` 已经用这个分配器成功分配了，所以 `HEAP` 一定已经成功初始化了。",
+        "translate": ""
     },
     {
-        "source": "std::mem::swap(&mut *still_unmoved, &mut *new_unmoved);",
-        "suggest": "std::swap (&mut *still_unmoved，&mut* new_unmoved);",
-        "translate": false
+        "source": "`heap` is a non-null handle returned by `GetProcessHeap`, `block` is a pointer to the start of an allocated block.",
+        "suggest": "`heap` 是 `GetProcessHeap` 返回的非空句柄，`block` 是指向已分配块开头的指针。",
+        "translate": ""
     },
     {
-        "source": "s = String::from(\"bar\");",
-        "suggest": "s=String::from (`bar`) ;",
-        "translate": false
+        "source": "`heap` is a non-null handle returned by `GetProcessHeap`, `ptr` is a pointer to the start of an allocated block.",
+        "suggest": "`heap` 是 `GetProcessHeap` 返回的非空句柄，`ptr` 是指向已分配块开头的指针。",
+        "translate": ""
     },
     {
-        "source": "xy ≡ 1 (mod 2ⁿ) → xy (2 - xy) ≡ 1 (mod 2²ⁿ)",
-        "suggest": "xy≡1 (mod2ⁿ) →xy (2-xy) ≡1 (mod2²ⁿ)",
-        "translate": false
+        "source": "`realloc_fallback` is implemented using `dealloc` and `alloc`, which will correctly handle `ptr` and return a pointer satisfying the guarantees of `System`",
+        "suggest": "`realloc_fallback` 使用 `dealloc` 和 `alloc` 实现，它们将正确处理 `ptr` 并返回满足 `System` 保证的指针",
+        "translate": ""
     },
     {
-        "source": "y = y * (2 - xy) mod n",
-        "suggest": "y=y * (2-xy) mod n",
-        "translate": false
+        "source": "only close the socket interface if it has actually been started",
+        "suggest": "只有在套接字接口已经启动时才关闭它",
+        "translate": ""
     },
     {
-        "source": "Arndt:",
-        "suggest": "Arndt:",
-        "translate": false
+        "source": "This is because `sys_common` not only contains platform-independent code, but also code that is shared between the different platforms in `sys`.",
+        "suggest": "这是因为 `sys_common` 不仅包含与平台无关的代码，还包含 `sys` 中不同平台之间共享的代码。",
+        "translate": ""
     },
     {
-        "source": "<=> `i < ln / 2 - (chunk - 1) < ln / 2 < ln`.",
-        "suggest": "<=> `i < ln / 2 - (chunk - 1) < ln / 2 < ln`。",
-        "translate": false
+        "source": "Ideally all that shared code should be moved to `sys::common`, and the dependencies between `std`, `sys_common` and `sys` all would form a dag.",
+        "suggest": "理想情况下，所有共享代码都应该移动到 `sys::common`，并且 `std`、`sys_common` 和 `sys` 之间的依赖关系都会形成一个 dag。",
+        "translate": ""
     },
     {
-        "source": "Us = lcm(size_of::<T>, size_of::<U>) / size_of::<U> Ts = lcm(size_of::<T>, size_of::<U>) / size_of::<T>",
-        "suggest": "我们 = lcm(size_of::<T>, size_of::<U>)/size_of::<U>Ts= lcm(size_of::<T>, size_of::<U>)/size_of::</u><T>",
-        "translate": false
+        "source": "One-time runtime initialization.",
+        "suggest": "一次性运行时初始化。",
+        "translate": ""
     },
     {
-        "source": "Us = size_of::<T> / gcd(size_of::<T>, size_of::<U>) Ts = size_of::<U> / gcd(size_of::<T>, size_of::<U>)",
-        "suggest": "我们 = size_of::<T>/gcd(size_of::<T>, size_of::<U>) Ts=size_of::<U>/gcd(size_of::<T>, size_of::<U>)</u>",
-        "translate": false
+        "source": "Runs before `main`.",
+        "suggest": "在 `main` 之前运行。",
+        "translate": ""
     },
     {
-        "source": "struct $forward_iterator($internal_iterator);",
-        "suggest": "结构体 $forward_iterator($internal_iterator);",
-        "translate": false
+        "source": "Runs after `main` or at program exit.",
+        "suggest": "在 `main` 之后或在程序退出时运行。",
+        "translate": ""
     },
     {
-        "source": "struct $reverse_iterator($internal_iterator);",
-        "suggest": "结构体 $reverse_iterator($internal_iterator);",
-        "translate": false
+        "source": "Flush stdout and disable buffering.",
+        "suggest": "刷新 stdout 并禁用缓冲。",
+        "translate": ""
     },
     {
-        "source": "impl DoubleEndedIterator for $forward_iterator where P::Searcher: DoubleEndedSearcher",
-        "suggest": "$forward_iterator 的 impl DoubleEndedIterator，其中 P::Searcher: DoubleEndedSearcher",
-        "translate": false
+        "source": "Only called once during runtime cleanup.",
+        "suggest": "仅在运行时清理期间调用一次。",
+        "translate": ""
     },
     {
-        "source": "impl Iterator for $reverse_iterator where P::Searcher: ReverseSearcher",
-        "suggest": "$reverse_iterator 的 impl 迭代器，其中 P::Searcher: ReverseSearcher",
-        "translate": false
+        "source": "This test tests that TLS destructors have run before the thread joins.",
+        "suggest": "此测试测试 TLS 析构函数在线程加入之前是否已运行。",
+        "translate": ""
     },
     {
-        "source": "impl DoubleEndedIterator for $reverse_iterator where P::Searcher: DoubleEndedSearcher",
-        "suggest": "$reverse_iterator 的 impl DoubleEndedIterator，其中 P::Searcher: DoubleEndedSearcher",
-        "translate": false
+        "source": "The test has no false positives (meaning: if the test fails, there's actually an ordering problem).",
+        "suggest": "测试没有误报 (意思是: 如果测试失败，实际上存在排序问题)。",
+        "translate": ""
     },
     {
-        "source": "Impl for F: FnMut(char) -> bool",
-        "suggest": "F 的 Impl: FnMut(char) -> bool",
-        "translate": false
+        "source": "It may have false negatives, where the test passes but join is not guaranteed to be after the TLS destructors.",
+        "suggest": "它可能有误报，其中测试通过但不保证连接在 TLS 析构函数之后。",
+        "translate": ""
     },
     {
-        "source": "Impl for &&str",
-        "suggest": "&&str 的 Impl",
-        "translate": false
+        "source": "However, false negatives should be exceedingly rare due to judicious use of thread::yield_now and running the test several times.",
+        "suggest": "然而，由于 thread::yield_now 的明智使用和多次运行测试，假阴性应该是非常罕见的。",
+        "translate": ""
     },
     {
-        "source": "w] case",
-        "suggest": "w] 情况",
-        "translate": false
+        "source": "We emulate a synchronous MPSC rendezvous channel using only atomics and thread::yield_now.",
+        "suggest": "我们仅使用原子和 thread::yield_now 模拟同步 MPSC 会合通道。",
+        "translate": ""
     },
     {
-        "source": "Relaxed  | Relaxed | Relaxed Acquire  | Acquire | Acquire Release  | Release | Relaxed AcqRel   | AcqRel  | Acquire SeqCst   | SeqCst  | SeqCst",
-        "suggest": "放松 | 放松 | 轻松获取 | 取得 | 获取发布 | 发布 | 轻松的 AcqRel |AcqRel | 采集 SeqCst |SeqCst | 序列号",
-        "translate": false
+        "source": "We can't use std::mpsc as the implementation itself may rely on thread locals.",
+        "suggest": "我们不能使用 std::mpsc，因为实现本身可能依赖于线程局部变量。",
+        "translate": ""
     },
     {
-        "source": "Always 0 <= nanos < NANOS_PER_SEC",
-        "suggest": "始终为 0 <= 纳米 < NANOS_PER_SEC",
-        "translate": false
+        "source": "The basic state machine for an SPSC rendezvous channel is:",
+        "suggest": "SPSC 会合通道的基本状态机是:",
+        "translate": ""
     },
     {
-        "source": ":D",
-        "suggest": ": D",
-        "translate": false
+        "source": "FRESH -> THREAD1_WAITING -> MAIN_THREAD_RENDEZVOUS where the first transition is done by the “receiving” thread and the 2nd transition is done by the “sending” thread.",
+        "suggest": "FRESH -> THREAD1_WAITING -> MAIN_THREAD_RENDEZVOUS 其中第一个转换由接收线程完成，第二个转换由发送线程完成。",
+        "translate": ""
     },
     {
-        "source": "ptr::write_unaligned(unaligned_ptr, u16::from_ne_bytes([0x23, 0x45]));",
-        "suggest": "ptr::write_unaligned (unaligned_ptr，u16::from_ne_bytes ([0x23，0x45]) ) ;",
-        "translate": false
+        "source": "We add an additional state `THREAD2_LAUNCHED` between `FRESH` and `THREAD1_WAITING` to block until all threads are actually running.",
+        "suggest": "我们在 `FRESH` 和 `THREAD1_WAITING` 之间添加一个额外的状态 `THREAD2_LAUNCHED` 来阻塞直到所有线程实际运行。",
+        "translate": ""
     },
     {
-        "source": "Produces: None, Some(2), Some(3), None, ...",
-        "suggest": "产生: 无，Some(2)，Some(3)，无，...",
-        "translate": false
+        "source": "A thread that joins on the “receiving” thread completion should never observe the channel in the `THREAD1_WAITING` state.",
+        "suggest": "在接收线程完成时加入的线程不应该在 `THREAD1_WAITING` 状态下观察通道。",
+        "translate": ""
     },
     {
-        "source": "2^-1074 = 4.94065...",
-        "suggest": "2 ^-1074=4.94065 ...",
-        "translate": false
+        "source": "If this does occur, we switch to the “poison” state `THREAD2_JOINED` and panic all around.",
+        "suggest": "如果发生这种情况，我们会切换到中毒状态 `THREAD2_JOINED` 并 panic。",
+        "translate": ""
     },
     {
-        "source": "* 10^-324 (2^53-1) * 2^971 = 1.79763...",
-        "suggest": "*10 ^-324 (2^53-1)* 2 ^ 971=1.79763 ...",
-        "translate": false
+        "source": "(This is equivalent to “sending” from an alternate producer thread.)",
+        "suggest": "(这相当于从备用生产者线程发送。)",
+        "translate": ""
     },
     {
-        "source": "10^3 * 0.1 (exact)",
-        "suggest": "10 ^ 3 * 0.1 (exact)",
-        "translate": false
+        "source": "used to generate the `LocalKey` value for const-initialized thread locals",
+        "suggest": "用于为常量初始化的线程局部变量生成 `LocalKey` 值",
+        "translate": ""
     },
     {
-        "source": "10^1 * 0.100000762939453125 (exact)",
-        "suggest": "10 ^ 1 * 0.100000762939453125 (exact)",
-        "translate": false
+        "source": "without atomics maps directly to `static mut`, and dtors aren't implemented because thread dtors aren't really a thing on wasm right now",
+        "suggest": "没有原子 maps 直接到 `static mut`，并且没有实现 dtor，因为线程 dtor 现在在 wasm 上并不是真正的东西",
+        "translate": ""
     },
     {
-        "source": "10^18 * 0.3141592 (exact)",
-        "suggest": "10 ^ 18 * 0.3141592 (exact)",
-        "translate": false
+        "source": "this should come after the `target_thread_local` block.",
+        "suggest": "这应该在 `target_thread_local` 块之后。",
+        "translate": ""
     },
     {
-        "source": "pathological case: high = 10^23 (exact).",
-        "suggest": "病理情况: 高 = 10 ^ 23 (exact)。",
-        "translate": false
+        "source": "If the platform has support for `#[thread_local]`, use it.",
+        "suggest": "如果平台支持 `#[thread_local]`，请使用它。",
+        "translate": ""
     },
     {
-        "source": "Some: &Option<T: Deref>::Some(T) -> Option<&T::Deref::Target>::Some(&*T)",
-        "suggest": "一些: &Option<T: Deref>::Some (T) -> Option <&T::Target>::Some (&* T)",
-        "translate": false
+        "source": "If a dtor isn't needed we can do something \"very raw\" and just get going.",
+        "suggest": "如果不需要 dtor，我们可以做一些 \"very raw\" 的事情，然后开始。",
+        "translate": ""
     },
     {
-        "source": "None: &Option<T: Deref>>::None -> None",
-        "suggest": "无: &Option<T: Deref >>:: 无 -> 无",
-        "translate": false
+        "source": "0 == dtor not registered",
+        "suggest": "0 == dtor 未注册",
+        "translate": ""
     },
     {
-        "source": "Some: &mut Option<T: Deref>::Some(T) -> Option<&mut T::Deref::Target>::Some(&mut *T)",
-        "suggest": "某些: &mut Option<T: Deref>::Some (T) -> Option <&mut T::Target>::Some (&mut *T)",
-        "translate": false
+        "source": "1 == dtor registered, dtor not run",
+        "suggest": "1 == dtor 已注册，dtor 未运行",
+        "translate": ""
     },
     {
-        "source": "None: &mut Option<T: Deref>>::None -> None",
-        "suggest": "无: &mut Option<T: Deref >>:: 无 -> 无",
-        "translate": false
+        "source": "2 == dtor registered and is running or has run",
+        "suggest": "2 == dtor 已注册并正在运行或已运行",
+        "translate": ""
     },
     {
-        "source": "Deref, E>::Ok(T).as_deref() -> Result<&T::Deref::Target, &E>::Ok(&*T)",
-        "suggest": "Deref，E>::Ok (T) .as_deref () -> 结果 <&T::Target，&E>::Ok (&* T)",
-        "translate": false
+        "source": "0 == we haven't registered a destructor, so do so now.",
+        "suggest": "0 == 我们还没有注册析构函数，所以现在注册。",
+        "translate": ""
     },
     {
-        "source": "Deref, E>::Err(T).as_deref() -> Result<&T::Deref::Target, &E>::Err(&*E)",
-        "suggest": "Deref，E>::Err (T) .as_deref () -> 结果 <&T::Target，&E>::Err (&* E)",
-        "translate": false
+        "source": "1 == the destructor is registered and the value is valid, so return the pointer.",
+        "suggest": "1 == 析构函数已注册且值有效，因此返回指针。",
+        "translate": ""
     },
     {
-        "source": "Result<T: DerefMut, E>::Ok(T).as_deref_mut() -> Result<&mut T::DerefMut::Target, &mut E>::Ok(&mut *T)",
-        "suggest": "结果 <T: DerefMut, E>::Ok (T) .as_deref_mut () -> 结果 <&mut T::DerefMut::Target，&mut E>::Ok (&mut *T)",
-        "translate": false
+        "source": "otherwise the destructor has already run, so we can't give access.",
+        "suggest": "否则析构函数已经运行，所以我们不能授予访问权限。",
+        "translate": ""
     },
     {
-        "source": "Result<T: DerefMut, E>::Err(T).as_deref_mut() -> Result<&mut T, &mut E>::Err(&mut *E)",
-        "suggest": "结果 <T: DerefMut, E>::Err (T) .as_deref_mut () -> 结果 <&mut T，&mut E>::Err (&mut *E)",
-        "translate": false
+        "source": "On platforms without `#[thread_local]` we fall back to the same implementation as below for os thread locals.",
+        "suggest": "在没有 `#[thread_local]` 的平台上，我们回退到与下面的 os 线程局部变量相同的实现。",
+        "translate": ""
     },
     {
-        "source": "The tl;dr;",
-        "suggest": "The tl;dr;",
-        "translate": false
+        "source": "used to generate the `LocalKey` value for `thread_local!`",
+        "suggest": "用于为 `thread_local!` 生成 `LocalKey` 值",
+        "translate": ""
     },
     {
-        "source": "EAX, EDX",
-        "suggest": "EAX，EDX",
-        "translate": false
+        "source": "note that this is just a publically-callable function only for the const-initialized form of thread locals, basically a way to call the free `register_dtor` function defined elsewhere in libstd.",
+        "suggest": "请注意，这只是一个可公开调用的函数，仅适用于线程局部变量的常量初始化形式，基本上是调用 libstd 中其他地方定义的免费 `register_dtor` 函数的一种方式。",
+        "translate": ""
     },
     {
-        "source": "RAX, RDX",
-        "suggest": "RAX，RDX",
-        "translate": false
+        "source": "This is only used to make thread locals with `const { ..",
+        "suggest": "这仅用于使用 `const {..",
+        "translate": ""
     },
     {
-        "source": "os=none (\"bare metal\" targets)",
-        "suggest": "os=none (\"bare metal\" 目标)",
-        "translate": false
+        "source": "}` initialization expressions unstable.",
+        "suggest": "}` 初始化表达式不稳定。",
+        "translate": ""
     },
     {
-        "source": "struct rust_panic {",
-        "suggest": "结构体 rust_panic {",
-        "translate": false
+        "source": "If and/or when that syntax is stabilized with thread locals this will simply be removed.",
+        "suggest": "如果或者当该语法使用线程局部变量稳定时，这将被简单地删除。",
+        "translate": ""
     },
     {
-        "source": "void foo() { rust_panic a = {0, 1};",
-        "suggest": "无效 foo() { rust_panic a = {0, 1};",
-        "translate": false
+        "source": "not implment yet",
+        "suggest": "尚未实现",
+        "translate": ""
     },
     {
-        "source": "throw a;",
-        "suggest": "扔",
-        "translate": false
+        "source": "For each of the 128-bit low and high halves of the vectors, the last",
+        "suggest": "对于 vectors的 128 位低半部分和高半部分中，最后一个",
+        "translate": ""
     },
     {
-        "source": "tvos (aarch64-apple-tvos, x86_64-apple-tvos)",
-        "suggest": "tvos (aarch64-apple-tvos，x86_64-apple-tvos)",
-        "translate": false
+        "source": "4 bits of each byte of `b` are used as addresses into the respective low or high 16 bytes of `a`.",
+        "suggest": "`b` 的每个字节的 4 位用作 `a` 相应低 16 字节或高 16 字节的地址。",
+        "translate": ""
     },
     {
-        "source": "uefi (x86_64-unknown-uefi, i686-unknown-uefi)",
-        "suggest": "uefi (x86_64-unknown-uefi，i686-unknown-uefi)",
-        "translate": false
+        "source": "That is, the halves are shuffled separately.",
+        "suggest": "也就是说，两半分开打乱。",
+        "translate": ""
     },
     {
-        "source": "Sequences: [`Vec`], [`VecDeque`],",
-        "suggest": "序列: [`Vec`]，[`VecDeque`]，",
-        "translate": false
+        "source": "Convert packed single-precision (32-bit) floating-point elements in two 128-bit vectors a and b to packed BF16 (16-bit) floating-point elements, and store the results in a",
+        "suggest": "将两个 128 位 vectors a 和 b 中的包装的单精度 (32-bit) 浮点元素转换为包装的 BF16 (16-bit) 浮点元素，并将结果存入 a",
+        "translate": ""
     },
     {
-        "source": "Maps: [`HashMap`],",
-        "suggest": "Maps: [`HashMap`]，",
-        "translate": false
+        "source": "128-bit wide vector.",
+        "suggest": "128 位宽 vector。",
+        "translate": ""
     },
     {
-        "source": "Sets: [`HashSet`],",
-        "suggest": "套装: [`HashSet`]，",
-        "translate": false
+        "source": "Convert packed single-precision (32-bit) floating-point elements in two vectors a and b to packed BF16 (16-bit) floating-point elements, and store the results in single vector dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "将两个 vectors a 和 b 中的包装的单精度 (32-bit) 浮点元素转换为包装的 BF16 (16-bit) 浮点元素，并使用 writemask k 将结果存储在单个 vector dst 中 (当对应的掩码位为没有设置)。",
+        "translate": ""
     },
     {
-        "source": "Line 1\\n Line 2\\n Line 3\\n Line 4",
-        "suggest": "1\\n 线 2\\n 线 3\\n 线 4",
-        "translate": false
+        "source": "Convert packed single-precision (32-bit) floating-point elements in two vectors a and b to packed BF16 (16-bit) floating-point elements, and store the results in single vector dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将两个 vectors a 和 b 中的包装的单精度 (32-bit) 浮点元素转换为包装的 BF16 (16-bit) 浮点元素，并使用 zeromask k 将结果存储在单个 vector dst 中 (当对应的掩码位不存在时，元素归零放)。",
+        "translate": ""
     },
     {
-        "source": "Line 1\\n Line 2\\n Line 3",
-        "suggest": "1\\n 线 2\\n 线 3",
-        "translate": false
+        "source": "Convert packed single-precision (32-bit) floating-point elements in two 256-bit vectors a and b to packed BF16 (16-bit) floating-point elements, and store the results in a",
+        "suggest": "将两个 256 位 vectors a 和 b 中的包装的单精度 (32-bit) 浮点元素转换为包装的 BF16 (16-bit) 浮点元素，并将结果存入 a",
+        "translate": ""
     },
     {
-        "source": "true, blah: \"hello!\".to_string(), }`.",
-        "suggest": "是的，等等: `hello! `。to_string ()，}`。",
-        "translate": false
+        "source": "256-bit wide vector.",
+        "suggest": "256 位宽 vector。",
+        "translate": ""
     },
     {
-        "source": "vs `ref`",
-        "suggest": "与 `ref`",
-        "translate": false
+        "source": "Convert packed single-precision (32-bit) floating-point elements in two vectors a and b to packed BF16 (16-bit) floating-point elements and and store the results in single vector dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "将两个 vectors a 和 b 中的包装的单精度 (32-bit) 浮点元素转换为包装的 BF16 (16-bit) 浮点元素，并使用 writemask k 将结果存储在单个 vector dst 中 (当相应的掩码位为没有设置)。",
+        "translate": ""
     },
     {
-        "source": "`let thing =",
-        "suggest": "` 让事物 =",
-        "translate": false
+        "source": "Convert packed single-precision (32-bit) floating-point elements in two 512-bit vectors a and b to packed BF16 (16-bit) floating-point elements, and store the results in a",
+        "suggest": "将两个 512 位 vectors a 和 b 中的包装的单精度 (32-bit) 浮点元素转换为包装的 BF16 (16-bit) 浮点元素，并将结果存入 a",
+        "translate": ""
     },
     {
-        "source": "[`SocketAddrV6`], `(`[`IpAddr`]`, `[`u16`]`)`, `(`[`Ipv4Addr`]`, `[`u16`]`)`, `(`[`Ipv6Addr`]`,",
-        "suggest": "[`SocketAddrV6`]，`(`[`IpAddr`]`，`[`u16`]`)`，`(`[`Ipv4Addr`]`，`[`u16`]`)`，`(`[`Ipv6Addr`]`，",
-        "translate": false
+        "source": "512-bit wide vector.",
+        "suggest": "512 位宽 vector。",
+        "translate": ""
     },
     {
-        "source": "perl -n < library/std/src/os/raw/mod.rs -e 'next unless m/type_alias\\!/; die \"$_ ?\" unless m/, (c_\\w+) = (\\w+), NonZero_(\\w+) = NonZero(\\w+)/; die \"$_ ?\" unless $3 eq $1 and $4 eq ucfirst $2'",
-        "suggest": "perl -n <library/std/src/os/raw/mod.rs -e next 除非 m/type_alias\\!/; 除非 m/，(c_\\w+) = (\\w+)，NonZero_(\\w+) =NonZero (\\w +) /; 除非 $3 eq $1 和 $4 eq ucfirst $ 2'",
-        "translate": false
+        "source": "Convert packed single-precision (32-bit) floating-point elements in a to packed BF16 (16-bit) floating-point elements, and store the results in dst.",
+        "suggest": "将包装在 a 中的单精度 (32-bit) 浮点元素转换为包装的 BF16 (16-bit) 浮点元素，并将结果存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "[`PartialOrd`], [`Eq`],",
-        "suggest": "[`PartialOrd`]，[`Eq`]，",
-        "translate": false
+        "source": "Convert packed single-precision (32-bit) floating-point elements in a to packed BF16 (16-bit) floating-point elements, and store the results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "将包装在 a 中的单精度 (32-bit) 浮点元素转换为包装的 BF16 (16-bit) 浮点元素，并使用 writemask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素从 src 复制)。",
+        "translate": ""
     },
     {
-        "source": "pub use crate::sys_common::fs::remove_dir_all;",
-        "suggest": "pub 使用 crate::sys_common::fs::remove_dir_all;",
-        "translate": false
+        "source": "Convert packed single-precision (32-bit) floating-point elements in a to packed BF16 (16-bit) floating-point elements, and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将包装的单精度 (32-bit) 浮点元素在 a 中转换为包装的 BF16 (16-bit) 浮点元素，并使用 zeromask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": ",-------> /---------\\ next ---,",
-        "suggest": "，------ -> /---------\\ 下一个 ---，",
-        "translate": false
+        "source": "Compute dot-product of BF16 (16-bit) floating-point pairs in a and b, accumulating the intermediate single-precision (32-bit) floating-point elements with elements in src, and store the results in dst.",
+        "suggest": "计算 a 和 b 中 BF16 (16-bit) 浮点对的点积，将中间单精度 (32-bit) 浮点元素与 src 中的元素相加，并将结果存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "prev \\-----/ <--- prev",
-        "suggest": "上一页 \\-----/<--- 上一页",
-        "translate": false
+        "source": "Compute dot-product of BF16 (16-bit) floating-point pairs in a and b, accumulating the intermediate single-precision (32-bit) floating-point elements with elements in src, and store the results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "计算 a 和 b 中 BF16 (16-bit) 浮点对的点积，将中间的单精度 (32-bit) 浮点元素与 src 中的元素相加，并使用 writemask k 将结果存储在 dst 中 (当对应的元素从 src 复制时掩码位未设置)。",
+        "translate": ""
     },
     {
-        "source": "local_source remote_end (write)  +-------->   (splice to) write_end",
-        "suggest": "local_source remote_end (write) +- ------ -> (剪接) write_end",
-        "translate": false
+        "source": "Compute dot-product of BF16 (16-bit) floating-point pairs in a and b, accumulating the intermediate single-precision (32-bit) floating-point elements with elements in src, and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "计算 a 和 b 中 BF16 (16-bit) 浮点对的点积，将中间单精度 (32-bit) 浮点元素与 src 中的元素进行累加，并将结果存储在 dst 中使用 zeromask k (当对应的掩码为位未设置)。",
+        "translate": ""
     },
     {
-        "source": "si_signo, si_errno, si_code",
-        "suggest": "si_signo，si_errno，si_code",
-        "translate": false
+        "source": "Compute dot-product of BF16 (16-bit) floating-point pairs in a and b, accumulating the intermediate single-precision (32-bit) floating-point elements with elements in src, and store the results in dst.Compute dot-product of BF16 (16-bit) floating-point pairs in a and b, accumulating the intermediate single-precision (32-bit) floating-point elements with elements in src, and store the results in dst.",
+        "suggest": "计算 a 和 b 中 BF16 (16-bit) 浮点对的点积，将中间单精度 (32-bit) 浮点元素与 src 中的元素累加，结果存储在 BF16 (16-bit) 浮点对的 dst.Compute 点积中 b、将中间的单精度 (32-bit) 浮点元素与 src 中的元素进行累加，并将结果存入 dst。",
+        "translate": ""
     },
     {
-        "source": "unsafe { imp::destroy(self.key) }",
-        "suggest": "不安全的 { imp::destroy(self.key) }",
-        "translate": false
+        "source": "Load 256-bits (composed of 16 packed 16-bit integers) from memory into dst.",
+        "suggest": "将 256 位 (由 16 个包装的 16 位整数组成) 从内存加载到 dst 中。",
+        "translate": ""
     },
     {
-        "source": "windows, x86_64, AWS",
-        "suggest": "windows，x86_64，AWS",
-        "translate": false
+        "source": "Load 128-bits (composed of 8 packed 16-bit integers) from memory into dst.",
+        "suggest": "将 128 位 (由 8 个包装的 16 位整数组成) 从内存加载到 dst 中。",
+        "translate": ""
     },
     {
-        "source": "16-bit floats test_vcombine!(test_vcombine_f16 => vcombine_f16([3_f16, 4., 5., 6.], [13_f16, 14., 15., 16.]));",
-        "suggest": "16 位浮点数 test_vcombine! (test_vcombine_f16 => vcombine_f16([3_f16, 4., 5., 6.], [13_f16, 14., 15., 16.]));",
-        "translate": false
+        "source": "Load 256-bits (composed of 32 packed 8-bit integers) from memory into dst.",
+        "suggest": "将 256 位 (由 32 个包装的 8 位整数组成) 从内存加载到 dst 中。",
+        "translate": ""
     },
     {
-        "source": "**ARMv5TE** - `+v4t +v5te`",
-        "suggest": "**ARMv5TE**-`+v4t +v5te`",
-        "translate": false
+        "source": "Load 128-bits (composed of 16 packed 8-bit integers) from memory into dst.",
+        "suggest": "将 128 位 (由 16 个包装的 8 位整数组成) 从内存加载到 dst 中。",
+        "translate": ""
     },
     {
-        "source": "**ARMv6** - `+v4t +v5te +v6`",
-        "suggest": "**ARMv6**-`+v4t +v5te +v6`",
-        "translate": false
+        "source": "Store 256-bits (composed of 16 packed 16-bit integers) from a into memory.",
+        "suggest": "将 a 中的 256 位 (由 16 个包装的 16 位整数组成) 存储到内存中。",
+        "translate": ""
     },
     {
-        "source": "**ARMv6-M** - `+v4t +v5te +v6 +thumb-mode +mclass`",
-        "suggest": "**ARMv6-M**-`+v4t +v5te +v6 +thumb-mode +mclass`",
-        "translate": false
+        "source": "Store 128-bits (composed of 8 packed 16-bit integers) from a into memory.",
+        "suggest": "将 a 中的 128 位 (由 8 个包装的 16 位整数组成) 存储到内存中。",
+        "translate": ""
     },
     {
-        "source": "**ARMv7-A** - `+v4t +v5te +v6 +v6k +v6t2 +v7 +dsp +thumb2 +aclass`",
-        "suggest": "**ARMv7-A**-`+v4t +v5te +v6 +v6k +v6t2 +v7 +dsp +thumb2 +aclass`",
-        "translate": false
+        "source": "Store 256-bits (composed of 32 packed 8-bit integers) from a into memory.",
+        "suggest": "将 a 中的 256 位 (由 32 个包装的 8 位整数组成) 存储到内存中。",
+        "translate": ""
     },
     {
-        "source": "**ARMv7-R** - `+v4t +v5te +v6 +v6k +v6t2  +v7 +dsp +thumb2 +rclass`",
-        "suggest": "**ARMv7-R**-`+v4t +v5te +v6 +v6k +v6t2 +v7 +dsp +thumb2 +rclass`",
-        "translate": false
+        "source": "Store 128-bits (composed of 16 packed 8-bit integers) from a into memory.",
+        "suggest": "将 a 中的 128 位 (由 16 个包装的 8 位整数组成) 存储到内存中。",
+        "translate": ""
     },
     {
-        "source": "**ARMv7-M** - `+v4t +v5te +v6 +v6k +v6t2 +v7 +thumb2 +thumb-mode +mclass`",
-        "suggest": "**ARMv7-M**-`+v4t +v5te +v6 +v6k +v6t2 +v7 +thumb2 +thumb-mode +mclass`",
-        "translate": false
+        "source": "Convert packed signed 16-bit integers in a to packed 8-bit integers with signed saturation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将包装在 a 中的有符号 16 位整数转换为有符号饱和的包装的 8 位整数，并将活动结果 (那些在 writemask k 中设置了相应位的结果) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "**ARMv7E-M** - `+v4t +v5te +v6 +v6k +v6t2 +v7 +dsp +thumb2 +thumb-mode +mclass`",
-        "suggest": "**ARMv7E-M**-`+v4t +v5te +v6 +v6k +v6t2 +v7 +dsp +thumb2 +thumb-mode +mclass`",
-        "translate": false
+        "source": "Convert packed 16-bit integers in a to packed 8-bit integers with truncation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将 a 中的包装的 16 位整数转换为带有截断的包装的 8 位整数，并将活动结果 (那些在 writemask k 中设置了相应位的结果) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "**ARMv8-M** - `+v4t +v5te +v6 +v6k +v6t2 +v7 +thumb2 +thumb-mode +mclass`",
-        "suggest": "**ARMv8-M**-`+v4t +v5te +v6 +v6k +v6t2 +v7 +thumb2 +thumb-mode +mclass`",
-        "translate": false
+        "source": "Convert packed unsigned 16-bit integers in a to packed unsigned 8-bit integers with unsigned saturation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将包装在 a 中的无符号 16 位整数转换为具有无符号饱和的包装的无符号 8 位整数，并将活动结果 (在 writemask k 中设置了相应位的那些) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "**ARMv8-R** - `+v4t +v5te +v6 +v6k +v6t2 +v7 +v8 +thumb2 +rclass`",
-        "suggest": "**ARMv8-R**-`+v4t +v5te +v6 +v6k +v6t2 +v7 +v8 +thumb2 +rclass`",
-        "translate": false
+        "source": "Compute the absolute value of packed signed 32-bit integers in a, and store the unsigned results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "计算 a 中包装的有符号 32 位整数的绝对值，并使用 writemask k 将无符号结果存储在 dst 中 (当相应的掩码位未设置时，从 src 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "**ARMv8-A (AArch64)** - `+fp +neon`",
-        "suggest": "**ARMv8-A (AArch64)**-`+fp +neon`",
-        "translate": false
+        "source": "Compute the absolute value of packed signed 32-bit integers in a, and store the unsigned results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "计算 a 中包装的有符号 32 位整数的绝对值，并使用 zeromask k 将无符号结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "v7-A, v7-R",
-        "suggest": "v7-A，v7-R",
-        "translate": false
+        "source": "is a properly initialized i64x4",
+        "suggest": "是正确初始化的 i64x4",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __ssat16",
-        "suggest": "\\[\\] __ssat16",
-        "translate": false
+        "source": "Sign extend packed 8-bit integers in the low 4 bytes of a to packed 64-bit integers, and store the results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "将 a 的低 4 字节中的 8 位整数符号扩展为包装的 64 位整数，并使用 writemask k 将结果存储在 dst 中 (当相应的掩码位未设置时，从 src 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __usat16",
-        "suggest": "\\[\\] __usat16",
-        "translate": false
+        "source": "Sign extend packed 8-bit integers in the low 4 bytes of a to packed 64-bit integers, and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将 a 的低 4 字节中的 8 位整数符号扩展为包装的 64 位整数，并使用 zeromask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __sxtab16",
-        "suggest": "\\[\\] __sxtab16",
-        "translate": false
+        "source": "Sign extend packed 8-bit integers in the low 2 bytes of a to packed 64-bit integers, and store the results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "将 a 的低 2 字节中的 8 位整数符号扩展为包装的 64 位整数，并使用 writemask k 将结果存入 dst 中 (未设置相应掩码位时从 src 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __sxtb16",
-        "suggest": "\\[\\] __sxtb16",
-        "translate": false
+        "source": "Sign extend packed 8-bit integers in the low 2 bytes of a to packed 64-bit integers, and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将 a 的低 2 字节中的 8 位整数符号扩展为包装的 64 位整数，并使用 zeromask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __uxtab16",
-        "suggest": "\\[\\] __uxtab16",
-        "translate": false
+        "source": "Zero extend packed unsigned 8-bit integers in the low 8 bytes of a to packed 32-bit integers, and store the results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "零扩展包装的无符号 8 位整数在 a 的低 8 字节到包装的 32 位整数，并使用 writemask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素从 src 复制)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __uxtb16",
-        "suggest": "\\[\\] __uxtb16",
-        "translate": false
+        "source": "Zero extend packed unsigned 8-bit integers in the low 8 bytes of a to packed 32-bit integers, and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "零扩展包装的无符号 8 位整数 a 的低 8 字节到包装的 32 位整数，并使用 zeromask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __uadd8",
-        "suggest": "\\[\\] __uadd8",
-        "translate": false
+        "source": "Zero extend packed unsigned 8-bit integers in the low 4 bytes of a to packed 32-bit integers, and store the results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "零扩展包装的无符号 8 位整数在 a 的低 4 字节到包装的 32 位整数，并使用 writemask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素从 src 复制)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __uhadd8",
-        "suggest": "\\[\\] __uhadd8",
-        "translate": false
+        "source": "Zero extend packed unsigned 8-bit integers in th elow 4 bytes of a to packed 32-bit integers, and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "零扩展包装的无符号 8 位整数 a 的后 4 个字节到包装的 32 位整数，并使用 zeromask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __uhsub8",
-        "suggest": "\\[\\] __uhsub8",
-        "translate": false
+        "source": "Zero extend packed unsigned 8-bit integers in the low 4 bytes of a to packed 64-bit integers, and store the results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "零扩展包装的无符号 8 位整数在 a 的低 4 字节到包装的 64 位整数，并使用 writemask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素从 src 复制)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __uqadd8",
-        "suggest": "\\[\\] __uqadd8",
-        "translate": false
+        "source": "Zero extend packed unsigned 8-bit integers in the low 4 bytes of a to packed 64-bit integers, and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "零扩展包装的无符号 8 位整数在 a 的低 4 字节到包装的 64 位整数，并使用 zeromask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __uqsub8",
-        "suggest": "\\[\\] __uqsub8",
-        "translate": false
+        "source": "Zero extend packed unsigned 8-bit integers in the low 2 bytes of a to packed 64-bit integers, and store the results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "零扩展包装的无符号 8 位整数在 a 的低 2 字节到包装的 64 位整数，并使用 writemask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素从 src 复制)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __shasx",
-        "suggest": "\\[\\] __shasx",
-        "translate": false
+        "source": "Zero extend packed unsigned 8-bit integers in the low 2 bytes of a to packed 64-bit integers, and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "零扩展包装的无符号 8 位整数在 a 的低 2 字节到包装的 64 位整数，并使用 zeromask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __shsax",
-        "suggest": "\\[\\] __shsax",
-        "translate": false
+        "source": "Zero extend packed unsigned 16-bit integers in the low 8 bytes of a to packed 64-bit integers, and store the results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "零扩展包装的无符号 16 位整数 a 的低 8 字节到包装的 64 位整数，并使用 writemask k 将结果存储在 dst 中 (当相应的掩码位未设置时，从 src 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __ssax",
-        "suggest": "\\[\\] __ssax",
-        "translate": false
+        "source": "Zero extend packed unsigned 16-bit integers in the low 8 bytes of a to packed 64-bit integers, and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "零扩展包装的无符号 16 位整数 a 的低 8 字节到包装的 64 位整数，并使用 zeromask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __ssub16",
-        "suggest": "\\[\\] __ssub16",
-        "translate": false
+        "source": "Zero extend packed unsigned 16-bit integers in the low 4 bytes of a to packed 64-bit integers, and store the results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "零扩展包装的无符号 16 位整数 a 的低 4 字节到包装的 64 位整数，并使用 writemask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素从 src 复制)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __uadd16",
-        "suggest": "\\[\\] __uadd16",
-        "translate": false
+        "source": "Zero extend packed unsigned 16-bit integers in the low 4 bytes of a to packed 64-bit integers, and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "零扩展包装的无符号 16 位整数在 a 的低 4 字节到包装的 64 位整数，并使用 zeromask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __uasx",
-        "suggest": "\\[\\] __uasx",
-        "translate": false
+        "source": "Shift packed 64-bit integers in a right by count while shifting in zeros, and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将包装的 64 位整数右移计数，同时移入零，并使用 zeromask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __uhadd16",
-        "suggest": "\\[\\] __uhadd16",
-        "translate": false
+        "source": "shoud be vpermq",
+        "suggest": "应该是 vpermq",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __uhasx",
-        "suggest": "\\[\\] __uhasx",
-        "translate": false
+        "source": "should be vpermq",
+        "suggest": "应该是 vpermq",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __uhsax",
-        "suggest": "\\[\\] __uhsax",
-        "translate": false
+        "source": "shoud be vpermpd",
+        "suggest": "应该是 vpermpd",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __uhsub16",
-        "suggest": "\\[\\] __uhsub16",
-        "translate": false
+        "source": "should be vpermd",
+        "suggest": "应该是 vpermd",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __uqadd16",
-        "suggest": "\\[\\] __uqadd16",
-        "translate": false
+        "source": "llvm use llvm.x86.avx2.permd",
+        "suggest": "llvm 使用 llvm.x86.avx2.permd",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __uqasx",
-        "suggest": "\\[\\] __uqasx",
-        "translate": false
+        "source": "Shuffle single-precision (32-bit) floating-point elements in a using the control in imm8, and store the results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "使用 imm8 中的控件 shuffle a 中的单精度 (32-bit) 浮点元素，并使用 writemask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素从 src 复制)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __uqsub16",
-        "suggest": "\\[\\] __uqsub16",
-        "translate": false
+        "source": "Shuffle single-precision (32-bit) floating-point elements in a using the control in imm8, and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "使用 imm8 中的控件对 a 中的单精度 (32-bit) 浮点元素进行打乱，并使用 zeromask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素会被清零)。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __usax",
-        "suggest": "\\[\\] __usax",
-        "translate": false
+        "source": "should be vshufi32x4",
+        "suggest": "应该是 vshufi32x4",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __usub16",
-        "suggest": "\\[\\] __usub16",
-        "translate": false
+        "source": "should be vshufi64x2",
+        "suggest": "应该是 vshufi64x2",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __smladx",
-        "suggest": "\\[\\] __smladx",
-        "translate": false
+        "source": "should be vshuff32x4",
+        "suggest": "应该是 vshuff32x4",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __smlald",
-        "suggest": "\\[\\] __smlald",
-        "translate": false
+        "source": "should be vshuff64x2",
+        "suggest": "应该是 vshuff64x2",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __smlaldx",
-        "suggest": "\\[\\] __smlaldx",
-        "translate": false
+        "source": "should be vextractf32x4",
+        "suggest": "应该是 vextractf32x4",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __smlsdx",
-        "suggest": "\\[\\] __smlsdx",
-        "translate": false
+        "source": "should be vinsertf32x4",
+        "suggest": "应该是 vinsertf32x4",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __smlsld",
-        "suggest": "\\[\\] __smlsld",
-        "translate": false
+        "source": "Copy the lower 32-bit integer in a to dst.",
+        "suggest": "将 a 中的低 32 位整数复制到 dst。",
+        "translate": ""
     },
     {
-        "source": "\\[ \\] __smlsldx",
-        "suggest": "\\[\\] __smlsldx",
-        "translate": false
+        "source": "Concatenate a and b into a 64-byte immediate result, shift the result right by imm8 32-bit elements, and store the low 32 bytes (8 elements) in dst.",
+        "suggest": "将 a 和 b 连接成一个 64 字节的 immediate 结果，将结果右移 imm8 个 32 位元素，并将低 32 字节 (8 个元素) 存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "res\\[0\\] = a\\[0\\] + b\\[0\\] res\\[1\\] = a\\[1\\] + b\\[1\\] res\\[2\\] = a\\[2\\] + b\\[2\\] res\\[3\\] = a\\[3\\] + b\\[3\\]",
-        "suggest": "res\\[0\\]=a\\[0\\] + b\\[0\\] res\\[1\\]=a\\[1\\] + b\\[1\\] res\\[2\\]=a\\[2\\] + b\\[2\\] res\\[3\\]=a\\[3\\] + b\\[3\\]",
-        "translate": false
+        "source": "Concatenate a and b into a 64-byte immediate result, shift the result right by imm8 32-bit elements, and store the low 32 bytes (8 elements) in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "将 a 和 b 连接成 64 字节的 immediate 结果，将结果右移 imm8 个 32 位元素，并使用 writemask k 将低 32 字节 (8 个元素) 存储在 dst 中 (当相应的掩码位为没有设置)。",
+        "translate": ""
     },
     {
-        "source": "res\\[0\\] = a\\[0\\] - b\\[0\\] res\\[1\\] = a\\[1\\] - b\\[1\\] res\\[2\\] = a\\[2\\] - b\\[2\\] res\\[3\\] = a\\[3\\] - b\\[3\\]",
-        "suggest": "res\\[0\\]=a\\[0\\]-b\\[0\\] res\\[1\\]=a\\[1\\]-b\\[1\\] res\\[2\\]=a\\[2\\]-b\\[2\\] res\\[3\\]=a\\[3\\]-b\\[3\\]",
-        "translate": false
+        "source": "Concatenate a and b into a 64-byte immediate result, shift the result right by imm8 32-bit elements, and store the low 32 bytes (8 elements) in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将 a 和 b 连接成一个 64 字节的 immediate 结果，将结果右移 imm8 个 32 位元素，并使用 zeromask k 将低 32 字节 (8 个元素) 存储在 dst 中 (当相应的掩码位不存在时，元素被清零放)。",
+        "translate": ""
     },
     {
-        "source": "res\\[0\\] = a\\[0\\] - b\\[0\\] res\\[1\\] = a\\[1\\] - b\\[1\\]",
-        "suggest": "res\\[0\\]=a\\[0\\]-b\\[0\\] res\\[1\\]=a\\[1\\]-b\\[1\\]",
-        "translate": false
+        "source": "Concatenate a and b into a 32-byte immediate result, shift the result right by imm8 32-bit elements, and store the low 16 bytes (4 elements) in dst.",
+        "suggest": "将 a 和 b 连接成一个 32 字节的 immediate 结果，将结果右移 imm8 个 32 位元素，并将低 16 字节 (4 个元素) 存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "res\\[0\\] = a\\[0\\] + b\\[0\\] res\\[1\\] = a\\[1\\] + b\\[1\\]",
-        "suggest": "res\\[0\\]=a\\[0\\] + b\\[0\\] res\\[1\\]=a\\[1\\] + b\\[1\\]",
-        "translate": false
+        "source": "should be valignd",
+        "suggest": "应该是 valigned",
+        "translate": ""
     },
     {
-        "source": "res\\[0\\] = a\\[0\\] - b\\[1\\] res\\[1\\] = a\\[1\\] + b\\[0\\]",
-        "suggest": "res\\[0\\]=a\\[0\\]-b\\[1\\] res\\[1\\]=a\\[1\\] + b\\[0\\]",
-        "translate": false
+        "source": "Concatenate a and b into a 32-byte immediate result, shift the result right by imm8 32-bit elements, and store the low 16 bytes (4 elements) in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "将 a 和 b 连接成一个 32 字节的 immediate 结果，将结果右移 imm8 个 32 位元素，并使用 writemask k 将低 16 字节 (4 个元素) 存储在 dst 中 (当对应的掩码位为没有设置)。",
+        "translate": ""
     },
     {
-        "source": "res\\[0\\] = a\\[0\\] + b\\[1\\] res\\[1\\] = a\\[1\\] - b\\[0\\]",
-        "suggest": "res\\[0\\]=a\\[0\\] + b\\[1\\] res\\[1\\]=a\\[1\\]-b\\[0\\]",
-        "translate": false
+        "source": "Concatenate a and b into a 32-byte immediate result, shift the result right by imm8 32-bit elements, and store the low 16 bytes (4 elements) in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将 a 和 b 连接成 32 字节的 immediate 结果，将结果右移 imm8 个 32 位元素，并使用 zeromask k 将低 16 字节 (4 个元素) 存储在 dst 中 (当相应的掩码位不存在时，元素被清零放)。",
+        "translate": ""
     },
     {
-        "source": "res\\[0\\] = a\\[0\\] + b\\[1\\] res\\[1\\] = a\\[1\\] + b\\[0\\]",
-        "suggest": "res\\[0\\]=a\\[0\\] + b\\[1\\] res\\[1\\]=a\\[1\\] + b\\[0\\]",
-        "translate": false
+        "source": "Concatenate a and b into a 64-byte immediate result, shift the result right by imm8 64-bit elements, and store the low 32 bytes (4 elements) in dst.",
+        "suggest": "将 a 和 b 连接成 64 字节的 immediate 结果，将结果右移 imm8 个 64 位元素，并将低 32 字节 (4 个元素) 存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "res\\[0\\] = a\\[0\\] + b\\[1\\] res\\[1\\] = a\\[1\\] + b\\[0\\] res\\[2\\] = a\\[2\\] + b\\[2\\] res\\[3\\] = a\\[3\\] + b\\[3\\]",
-        "suggest": "res\\[0\\]=a\\[0\\] + b\\[1\\] res\\[1\\]=a\\[1\\] + b\\[0\\] res\\[2\\]=a\\[2\\] + b\\[2\\] res\\[3\\]=a\\[3\\] + b\\[3\\]",
-        "translate": false
+        "source": "Concatenate a and b into a 64-byte immediate result, shift the result right by imm8 64-bit elements, and store the low 32 bytes (4 elements) in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "将 a 和 b 连接成 64 字节的 immediate 结果，将结果右移 imm8 个 64 位元素，并使用 writemask k 将低 32 字节 (4 个元素) 存储在 dst 中 (当相应的掩码位为没有设置)。",
+        "translate": ""
     },
     {
-        "source": "res\\[0\\] = GE\\[0\\] ? a\\[0\\] : b\\[0\\] res\\[1\\] = GE\\[1\\] ? a\\[1\\] : b\\[1\\] res\\[2\\] = GE\\[2\\] ? a\\[2\\] : b\\[2\\] res\\[3\\] = GE\\[3\\] ? a\\[3\\] : b\\[3\\]",
-        "suggest": "res\\[0\\]=GE\\[0\\]? a\\[0\\]: b\\[0\\] res\\[1\\]=GE\\[1\\] a\\[1\\]: b\\[1\\] res\\[2\\]=GE\\[2\\] 吗? a\\[2\\]: b\\[2\\] res\\[3\\]=GE\\[3\\]? a\\[3\\]: b\\[3\\]",
-        "translate": false
+        "source": "Concatenate a and b into a 64-byte immediate result, shift the result right by imm8 64-bit elements, and store the low 32 bytes (4 elements) in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将 a 和 b 连接成 64 字节的 immediate 结果，将结果右移 imm8 个 64 位元素，并使用 zeromask k 将低 32 字节 (4 个元素) 存储在 dst 中 (当相应的掩码位不存在时，元素被清零放)。",
+        "translate": ""
     },
     {
-        "source": "res\\[0\\] = (a\\[0\\] + b\\[0\\]) / 2 res\\[1\\] = (a\\[1\\] + b\\[1\\]) / 2 res\\[2\\] = (a\\[2\\] + b\\[2\\]) / 2 res\\[3\\] = (a\\[3\\] + b\\[3\\]) / 2",
-        "suggest": "res\\[0\\]= (a\\[0\\] + b\\[0\\]) /2 res\\[1\\]= (a\\[1\\] + b\\[1\\]) /2 res\\[2\\]= (a\\[2\\] + b\\[2\\]) /2 res\\[3\\]= (a\\[3\\] + b\\[3\\]) /2",
-        "translate": false
+        "source": "Concatenate a and b into a 32-byte immediate result, shift the result right by imm8 64-bit elements, and store the low 16 bytes (2 elements) in dst.",
+        "suggest": "将 a 和 b 连接成一个 32 字节的 immediate 结果，将结果右移 imm8 个 64 位元素，并将低 16 字节 (2 个元素) 存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "res\\[0\\] = (a\\[0\\] + b\\[0\\]) / 2 res\\[1\\] = (a\\[1\\] + b\\[1\\]) / 2",
-        "suggest": "res\\[0\\]= (a\\[0\\] + b\\[0\\]) /2 res\\[1\\]= (a\\[1\\] + b\\[1\\]) /2",
-        "translate": false
+        "source": "should be valignq",
+        "suggest": "应该是 valignq",
+        "translate": ""
     },
     {
-        "source": "res\\[0\\] = (a\\[0\\] - b\\[0\\]) / 2 res\\[1\\] = (a\\[1\\] - b\\[1\\]) / 2 res\\[2\\] = (a\\[2\\] - b\\[2\\]) / 2 res\\[3\\] = (a\\[3\\] - b\\[3\\]) / 2",
-        "suggest": "res\\[0\\]= (a\\[0\\]-b\\[0\\]) /2 res\\[1\\]= (a\\[1\\]-b\\[1\\]) /2 res\\[2\\]= (a\\[2\\]-b\\[2\\]) /2 res\\[3\\]= (a\\[3\\]-b\\[3\\]) /2",
-        "translate": false
+        "source": "Concatenate a and b into a 32-byte immediate result, shift the result right by imm8 64-bit elements, and store the low 16 bytes (2 elements) in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "将 a 和 b 连接成 32 字节的 immediate 结果，将结果右移 imm8 个 64 位元素，并使用 writemask k 将低 16 字节 (2 个元素) 存储在 dst 中 (当相应的掩码位为没有设置)。",
+        "translate": ""
     },
     {
-        "source": "res\\[0\\] = a\\[0\\] - a\\[0\\] res\\[1\\] = a\\[1\\] - a\\[1\\] res\\[2\\] = a\\[2\\] - a\\[2\\] res\\[3\\] = a\\[3\\] - a\\[3\\]",
-        "suggest": "res\\[0\\]=a\\[0\\]-a\\[0\\] res\\[1\\]=a\\[1\\]-a\\[1\\] res\\[2\\]=a\\[2\\]-a\\[2\\] res\\[3\\]=a\\[3\\]-a\\[3\\]",
-        "translate": false
+        "source": "Concatenate a and b into a 32-byte immediate result, shift the result right by imm8 64-bit elements, and store the low 16 bytes (2 elements) in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将 a 和 b 连接成 32 字节的 immediate 结果，将结果右移 imm8 个 64 位元素，并使用 zeromask k 将低 16 字节 (2 个元素) 存储在 dst 中 (当相应的掩码位不存在时，元素被清零放)。",
+        "translate": ""
     },
     {
-        "source": "res\\[0\\] = (a\\[0\\] - b\\[0\\]) / 2 res\\[1\\] = (a\\[1\\] - b\\[1\\]) / 2",
-        "suggest": "res\\[0\\]= (a\\[0\\]-b\\[0\\]) /2 res\\[1\\]= (a\\[1\\]-b\\[1\\]) /2",
-        "translate": false
+        "source": "Performs element-by-element bitwise AND between packed 32-bit integer elements of a and b, storing the results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "在包装的 a 和 b 的 32 位整数元素之间执行逐个元素的按位 AND，使用 writemask k 将结果存储在 dst 中 (当相应的掩码位未设置时，从 src 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "pub struct float16x4_t(f16, f16, f16, f16);",
-        "suggest": "pub 结构体 float16x4_t(f16, f16, f16, f16);",
-        "translate": false
+        "source": "Compute the bitwise AND of packed 64-bit integers in a and b, and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "计算 a 和 b 中包装的 64 位整数的按位与，并使用 zeromask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "unsafe fn test_msa_ceqi_d() {",
-        "suggest": "不安全的 fn test_msa_ceqi_d() {",
-        "translate": false
+        "source": "should be vpord",
+        "suggest": "应该是 vpord",
+        "translate": ""
     },
     {
-        "source": "unsafe fn test_msa_cfcmsa() {",
-        "suggest": "不安全的 fn test_msa_cfcmsa() {",
-        "translate": false
+        "source": "should be vporq",
+        "suggest": "应该是 vporq",
+        "translate": ""
     },
     {
-        "source": "unsafe fn test_msa_clei_s_d() {",
-        "suggest": "不安全的 fn test_msa_clei_s_d() {",
-        "translate": false
+        "source": "should be vpxord",
+        "suggest": "应该是 vpxord",
+        "translate": ""
     },
     {
-        "source": "unsafe fn test_msa_clti_s_d() {",
-        "suggest": "不安全的 fn test_msa_clti_s_d() {",
-        "translate": false
+        "source": "should be vpxorq",
+        "suggest": "应该是 vpxorq",
+        "translate": ""
     },
     {
-        "source": "unsafe fn test_msa_ctcmsa() {}",
-        "suggest": "不安全的 Fn test_msa_ctcmsa() {}",
-        "translate": false
+        "source": "should be vcmpps",
+        "suggest": "应该是 vcmpps",
+        "translate": ""
     },
     {
-        "source": "unsafe fn test_msa_fexupl_w() {",
-        "suggest": "不安全的 fn test_msa_fexupl_w() {",
-        "translate": false
+        "source": "should be vcmps",
+        "suggest": "应该是 vcmps",
+        "translate": ""
     },
     {
-        "source": "unsafe fn test_msa_fexupr_w() {",
-        "suggest": "不安全的 fn test_msa_fexupr_w() {",
-        "translate": false
+        "source": "should be vcmppd",
+        "suggest": "应该是 vcmppd",
+        "translate": ""
     },
     {
-        "source": "unsafe fn test_msa_ldi_d() {",
-        "suggest": "不安全的 fn test_msa_ldi_d() {",
-        "translate": false
+        "source": "should be vpcmpud",
+        "suggest": "应该是 vpcmpud",
+        "translate": ""
     },
     {
-        "source": "unsafe fn test_msa_maxi_s_d() {",
-        "suggest": "不安全的 fn test_msa_maxi_s_d() {",
-        "translate": false
+        "source": "should be vpcmpd",
+        "suggest": "应该是 vpcmpd",
+        "translate": ""
     },
     {
-        "source": "unsafe fn test_msa_mini_s_d() {",
-        "suggest": "不安全的 fn test_msa_mini_s_d() {",
-        "translate": false
+        "source": "should be vpcmpuq",
+        "suggest": "应该是 vpcmpuq",
+        "translate": ""
     },
     {
-        "source": "pub struct vector_Float16 = f16x8;",
-        "suggest": "pub struct vector_Float16 = f16x8;",
-        "translate": false
+        "source": "should be vpcmpq",
+        "suggest": "应该是 vpcmpq",
+        "translate": ""
     },
     {
-        "source": "pub struct vector_signed_long_long = vector_signed_long;",
-        "suggest": "pub 结构体 vector_signed_long_long=vector_signed_long;",
-        "translate": false
+        "source": "Load 256-bits (composed of 8 packed 32-bit integers) from memory into dst.",
+        "suggest": "将 256 位 (由 8 个包装的 32 位整数组成) 从内存加载到 dst 中。",
+        "translate": ""
     },
     {
-        "source": "pub struct vector_unsigned_long_long = vector_unsigned_long;",
-        "suggest": "pub 结构体 vector_unsigned_long_long=vector_unsigned_long;",
-        "translate": false
+        "source": "Load 128-bits (composed of 4 packed 32-bit integers) from memory into dst.",
+        "suggest": "将 128 位 (由 4 个包装的 32 位整数组成) 从内存加载到 dst 中。",
+        "translate": ""
     },
     {
-        "source": "pub struct vector_bool_long_long = vector_bool_long;",
-        "suggest": "pub 结构体 vector_bool_long_long=vector_bool_long;",
-        "translate": false
+        "source": "Convert packed 32-bit integers in a to packed 16-bit integers with truncation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将 a 中的包装的 32 位整数转换为带截断的包装的 16 位整数，并将活动结果 (在 writemask k 中设置了相应位的那些) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "pub struct vector_signed___int128 = i128x1;",
-        "suggest": "pub 结构体 vector_signed___int128=i128x1;",
-        "translate": false
+        "source": "Convert packed signed 32-bit integers in a to packed 16-bit integers with signed saturation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将包装在 a 中的有符号 32 位整数转换为具有符号饱和的包装的 16 位整数，并将活动结果 (那些在 writemask k 中设置了相应位的结果) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "pub struct vector_unsigned___int128 = i128x1;",
-        "suggest": "pub 结构体 vector_unsigned___int128=i128x1;",
-        "translate": false
+        "source": "Convert packed unsigned 32-bit integers in a to packed 16-bit integers with unsigned saturation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将包装在 a 中的无符号 32 位整数转换为具有无符号饱和的包装的 16 位整数，并将活动结果 (在 writemask k 中设置了相应位的那些) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "2, 3, 6, 7.",
-        "suggest": "2、3、6、7",
-        "translate": false
+        "source": "Convert packed unsigned 32-bit integers in a to packed unsigned 16-bit integers with unsigned saturation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将包装在 a 中的无符号 32 位整数转换为具有无符号饱和的包装的无符号 16 位整数，并将活动结果 (在 writemask k 中设置了相应位的那些) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "TODO _mm256_stream_load_si256 (__m256i const* mem_addr)",
-        "suggest": "TODO _mm256_stream_load_si256 (__m256i const * mem_addr)",
-        "translate": false
+        "source": "Convert packed 32-bit integers in a to packed 8-bit integers with truncation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将包装的 32 位整数在 a 中转换为带有截断的包装的 8 位整数，并将活动结果 (那些在 writemask k 中设置了相应位的结果) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "msvc: vbroadcasti64x4, linux: vperm",
-        "suggest": "msvc: vbroadcasti64x4，linux: vperm",
-        "translate": false
+        "source": "Convert packed signed 32-bit integers in a to packed 8-bit integers with signed saturation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将包装在 a 中的有符号 32 位整数转换为具有符号饱和的包装的 8 位整数，并将活动结果 (那些在 writemask k 中设置了相应位的结果) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "msvc: vbroadcastf32x4, linux: vshuf",
-        "suggest": "msvc: vbroadcastf32x4，linux: vshuf",
-        "translate": false
+        "source": "Convert packed unsigned 32-bit integers in a to packed 8-bit integers with unsigned saturation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将包装在 a 中的无符号 32 位整数转换为具有无符号饱和的包装的 8 位整数，并将活动结果 (在 writemask k 中设置了相应位的那些) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "msvc: vbroadcastf32x4, linux: vshu",
-        "suggest": "msvc: vbroadcastf32x4，linux: vshu",
-        "translate": false
+        "source": "Convert packed 64-bit integers in a to packed 16-bit integers with truncation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将 a 中的包装的 64 位整数转换为带截断的包装的 16 位整数，并将活动结果 (在 writemask k 中设置了相应位的那些) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "msvc: vbroadcastf64x4, linux: vperm",
-        "suggest": "msvc: vbroadcastf64x4，linux: vperm",
-        "translate": false
+        "source": "Convert packed signed 64-bit integers in a to packed 16-bit integers with signed saturation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将包装在 a 中的有符号 64 位整数转换为具有符号饱和的包装的 16 位整数，并将活动结果 (在 writemask k 中设置了相应位的那些) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "msvc: vbroadcastf64x4, linux: vper",
-        "suggest": "msvc: vbroadcastf64x4，linux: vper",
-        "translate": false
+        "source": "Convert packed unsigned 64-bit integers in a to packed 16-bit integers with unsigned saturation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将包装在 a 中的无符号 64 位整数转换为具有无符号饱和的包装的 16 位整数，并将活动结果 (在 writemask k 中设置了相应位的那些) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "ord b.extract(0)",
-        "suggest": "奥德 b.extract(0)",
-        "translate": false
+        "source": "Convert packed 64-bit integers in a to packed 8-bit integers with truncation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将 a 中包装的 64 位整数转换为包装的 8 位整数并截断，并将活动结果 (在 writemask k 中设置了相应位的那些) 存储到 base_addr 的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "ord c.extract(0)",
-        "suggest": "奥德 c.extract(0)",
-        "translate": false
+        "source": "Convert packed signed 64-bit integers in a to packed 8-bit integers with signed saturation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将包装在 a 中的有符号 64 位整数转换为具有符号饱和的包装的 8 位整数，并将活动结果 (在 writemask k 中设置了相应位的那些) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "ord d.extract(0)",
-        "suggest": "奥德 d.extract(0)",
-        "translate": false
+        "source": "Convert packed unsigned 64-bit integers in a to packed 8-bit integers with unsigned saturation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将包装的无符号 64 位整数在 a 中转换为具有无符号饱和的包装的 8 位整数，并将活动结果 (在 writemask k 中设置了相应位的那些) 存储到 base_addr 的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "unord b.extract(0)",
-        "suggest": "下级 b.extract(0)",
-        "translate": false
+        "source": "Convert packed 64-bit integers in a to packed 32-bit integers with truncation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将 a 中的包装的 64 位整数转换为带截断的包装的 32 位整数，并将活动结果 (在 writemask k 中设置了相应位的那些) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "unord c.extract(0)",
-        "suggest": "下级 c.extract(0)",
-        "translate": false
+        "source": "Convert packed signed 64-bit integers in a to packed 32-bit integers with signed saturation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将包装在 a 中的有符号 64 位整数转换为具有符号饱和的包装的 32 位整数，并将活动结果 (在 writemask k 中设置了相应位的那些) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "unord d.extract(0)",
-        "suggest": "下级 d.extract(0)",
-        "translate": false
+        "source": "Convert packed unsigned 64-bit integers in a to packed 32-bit integers with unsigned saturation, and store the active results (those with their respective bit set in writemask k) to unaligned memory at base_addr.",
+        "suggest": "将包装的无符号 64 位整数在 a 中转换为具有无符号饱和的包装的 32 位整数，并将活动结果 (在 writemask k 中设置了相应位的那些) 存储到 base_addr 处的未对齐内存中。",
+        "translate": ""
     },
     {
-        "source": "i.cpuid.iter().any(|c| {",
-        "suggest": "i.cpuid.iter ()。any (| c | {",
-        "translate": false
+        "source": "Store 256-bits (composed of 8 packed 32-bit integers) from a into memory.",
+        "suggest": "将 a 中的 256 位 (由 8 个包装的 32 位整数组成) 存储到内存中。",
+        "translate": ""
     },
     {
-        "source": "if avx512 { continue }",
-        "suggest": "如果 avx512 { continue }",
-        "translate": false
+        "source": "Store 128-bits (composed of 4 packed 32-bit integers) from a into memory.",
+        "suggest": "将 a 中的 128 位 (由 4 个包装的 32 位整数组成) 存入内存。",
+        "translate": ""
     },
     {
-        "source": "float const * foo => float const* foo",
-        "suggest": "float const *foo => float const* foo",
-        "translate": false
+        "source": "Load 256-bits (composed of 4 packed 64-bit integers) from memory into dst.",
+        "suggest": "将 256 位 (由 4 个包装的 64 位整数组成) 从内存加载到 dst 中。",
+        "translate": ""
     },
     {
-        "source": "const float* foo => float const*",
-        "suggest": "const float *foo => 浮点 const*",
-        "translate": false
+        "source": "Load 128-bits (composed of 2 packed 64-bit integers) from memory into dst.",
+        "suggest": "将 128 位 (由 2 个包装的 64 位整数组成) 从内存加载到 dst 中。",
+        "translate": ""
     },
     {
-        "source": "evtstrm: bool, // 2",
-        "suggest": "evtstrm: bool，//2",
-        "translate": false
+        "source": "Store 256-bits (composed of 4 packed 64-bit integers) from a into memory.",
+        "suggest": "将 a 中的 256 位 (由 4 个包装的 64 位整数组成) 存储到内存中。",
+        "translate": ""
     },
     {
-        "source": "cpuid: bool, // 11",
-        "suggest": "cpuid: bool，//11",
-        "translate": false
+        "source": "Store 128-bits (composed of 2 packed 64-bit integers) from a into memory.",
+        "suggest": "将 a 中的 128 位 (由 2 个包装的 64 位整数组成) 存入内存。",
+        "translate": ""
     },
     {
-        "source": "jscvt: bool, // 13 fcma: bool, // 14",
-        "suggest": "jscvt: bool，//13 fcma: bool，//14",
-        "translate": false
+        "source": "mem_addr must be aligned on a 32-byte boundary or a general-protection exception may be generated.",
+        "suggest": "mem_addr 必须在 32 字节边界上对齐，否则可能会生成一般保护异常。",
+        "translate": ""
     },
     {
-        "source": "dcpop: bool, // 16 sha3: bool, // 17 sm3: bool, // 18 sm4: bool, // 19",
-        "suggest": "dcpop: bool，//16 sha3: bool，//17 sm3: bool，//18 sm4: bool，//19",
-        "translate": false
+        "source": "mem_addr must be aligned on a 16-byte boundary or a general-protection exception may be generated.",
+        "suggest": "mem_addr 必须在 16 字节边界上对齐，否则可能会生成一般保护异常。",
+        "translate": ""
     },
     {
-        "source": "sha512: bool, // 21",
-        "suggest": "sha512: bool，//21",
-        "translate": false
+        "source": "Shuffle 8-bit integers in a and b across lanes using the corresponding selector and index in idx, and store the results in dst.",
+        "suggest": "使用 idx 中的相应选择器和索引将 a 和 b 中的 8 位整数跨通道打乱，并将结果存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "evtstrm: bit::test(auxv.hwcap, 2),",
-        "suggest": "evtstrm: bit::test (auxv.hwcap，2)，",
-        "translate": false
+        "source": "should be vpermi2b",
+        "suggest": "应该是 vpermi2b",
+        "translate": ""
     },
     {
-        "source": "cpuid: bit::test(auxv.hwcap, 11),",
-        "suggest": "cpuid: bit::test (auxv.hwcap，11)，",
-        "translate": false
+        "source": "Shuffle 8-bit integers in a and b across lanes using the corresponding selector and index in idx, and store the results in dst using writemask k (elements are copied from a when the corresponding mask bit is not set).",
+        "suggest": "使用相应的选择器和 idx 中的索引将 a 和 b 中的 8 位整数跨通道打乱，并使用 writemask k 将结果存储在 dst 中 (当相应的掩码位未设置时，从 a 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "jscvt: bit::test(auxv.hwcap, 13), fcma: bit::test(auxv.hwcap, 14),",
-        "suggest": "jscvt: bit::test (auxv.hwcap，13)，fcma: bit::test (auxv.hwcap，14)，",
-        "translate": false
+        "source": "Shuffle 8-bit integers in a and b across lanes using the corresponding selector and index in idx, and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "使用 idx 中的相应选择器和索引将 a 和 b 中的 8 位整数跨通道打乱，并使用 zeromask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "dcpop: bit::test(auxv.hwcap, 16), sha3: bit::test(auxv.hwcap, 17), sm3: bit::test(auxv.hwcap, 18), sm4: bit::test(auxv.hwcap, 19),",
-        "suggest": "dcpop: bit::test (auxv.hwcap，16)，sha3: bit::test (auxv.hwcap，17)，sm3: bit::test (auxv.hwcap，18)，sm4: bit::test (auxv.hwcap，18)，sm4: bit::test (auxv。.hwcap，19)，",
-        "translate": false
+        "source": "Shuffle 8-bit integers in a across lanes using the corresponding index in idx, and store the results in dst.",
+        "suggest": "使用 idx 中的相应索引将 a 中的 8 位整数打乱到通道中，并将结果存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "sha512: bit::test(auxv.hwcap, 21),",
-        "suggest": "sha512: bit::test (auxv.hwcap，21)，",
-        "translate": false
+        "source": "Shuffle 8-bit integers in a across lanes using the corresponding index in idx, and store the results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "使用 idx 中的相应索引在跨通道的 a 中打乱 8 位整数，并使用 writemask k 将结果存储在 dst 中 (当相应的掩码位未设置时，从 src 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "jscvt: f.has(\"jscvt\"), fcma:",
-        "suggest": "jscvt: f.has(\"jscvt\")，fcma:",
-        "translate": false
+        "source": "Shuffle 8-bit integers in a across lanes using the corresponding index in idx, and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "使用 idx 中的相应索引在跨通道的 a 中打乱 8 位整数，并使用 zeromask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "dcpop: f.has(\"dcpop\"), sha3: f.has(\"sha3\"), sm3: f.has(\"sm3\"), sm4:",
-        "suggest": "dcpop: f.has(\"dcpop\")，sha3: f.has(\"sha3\")，sm3: f.has(\"sm3\")，sm4:",
-        "translate": false
+        "source": "For each 64-bit element in b, select 8 unaligned bytes using a byte-granular shift control within the corresponding 64-bit element of a, and store the 8 assembled bytes to the corresponding 64-bit element of dst.",
+        "suggest": "对于 b 中的每个 64 位元素，使用 a 的相应 64 位元素内的字节粒度移位控制选择 8 个未对齐的字节，并将 8 个组装字节存储到 dst 的相应 64 位元素。",
+        "translate": ""
     },
     {
-        "source": "EAX = 1, ECX = 0: Queries \"Processor Info and Feature Bits\";",
-        "suggest": "EAX = 1，ECX = 0: 查询 \"Processor Info and Feature Bits\";",
-        "translate": false
+        "source": "For each 64-bit element in b, select 8 unaligned bytes using a byte-granular shift control within the corresponding 64-bit element of a, and store the 8 assembled bytes to the corresponding 64-bit element of dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "对于 b 中的每个 64 位元素，使用 a 的相应 64 位元素内的字节粒度移位控制选择 8 个未对齐的字节，并使用 writemask k (元素当相应的屏蔽位未设置时，从 src 复制)。",
+        "translate": ""
     },
     {
-        "source": "EAX = 7, ECX = 0: Queries \"Extended Features\";",
-        "suggest": "EAX=7，ECX=0: 查询 \"Extended Features\";",
-        "translate": false
+        "source": "For each 64-bit element in b, select 8 unaligned bytes using a byte-granular shift control within the corresponding 64-bit element of a, and store the 8 assembled bytes to the corresponding 64-bit element of dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "对于 b 中的每个 64 位元素，使用 a 的相应 64 位元素内的字节粒度移位控制选择 8 个未对齐的字节，并使用 zeromask k (元素当相应的屏蔽位未设置时被清零)。",
+        "translate": ""
     },
     {
-        "source": "unsafe { worker(); }",
-        "suggest": "不安全的 { worker(); }",
-        "translate": false
+        "source": "Contiguously store the active 16-bit integers in a (those with their respective bit set in writemask k) to dst, and pass through the remaining elements from src.",
+        "suggest": "将 a 中的活动 16 位整数 (它们各自的位设置在写掩码 k 中) 连续存储到 dst，并通过 src 中的其余元素。",
+        "translate": ""
     },
     {
-        "source": "T             H",
-        "suggest": "TH",
-        "translate": false
+        "source": "Contiguously store the active 16-bit integers in a (those with their respective bit set in zeromask k) to dst, and set the remaining elements to zero.",
+        "suggest": "将 a 中的活动 16 位整数 (它们各自的位设置在 zeromask k 中) 连续存储到 dst，并将其余元素设置为零。",
+        "translate": ""
     },
     {
-        "source": "H                 T",
-        "suggest": "H T",
-        "translate": false
+        "source": "Contiguously store the active 8-bit integers in a (those with their respective bit set in writemask k) to dst, and pass through the remaining elements from src.",
+        "suggest": "将 a 中的活动 8 位整数 (它们各自的位设置在写掩码 k 中) 连续存储到 dst，并通过 src 中的其余元素。",
+        "translate": ""
     },
     {
-        "source": "T I             H",
-        "suggest": "卫生部",
-        "translate": false
+        "source": "Contiguously store the active 8-bit integers in a (those with their respective bit set in zeromask k) to dst, and set the remaining elements to zero.",
+        "suggest": "将 a 中的活动 8 位整数 (它们各自的位设置在 zeromask k 中) 连续存储到 dst，并将其余元素设置为零。",
+        "translate": ""
     },
     {
-        "source": "H         T   I",
-        "suggest": "HTI",
-        "translate": false
+        "source": "Load contiguous active 16-bit integers from a (those with their respective bit set in mask k), and store the results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "从 a 加载连续的活动 16 位整数 (那些在掩码 k 中设置了相应位的整数)，并使用 writemask k 将结果存储在 dst 中 (当相应的掩码位未设置时，从 src 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "M M M                         M",
-        "suggest": "MMMM",
-        "translate": false
+        "source": "Load contiguous active 16-bit integers from a (those with their respective bit set in mask k), and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "从 a 加载连续的活动 16 位整数 (那些在掩码 k 中设置了相应位的整数)，并使用 zeromask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "I                   H     T",
-        "suggest": "IHT",
-        "translate": false
+        "source": "Load contiguous active 8-bit integers from a (those with their respective bit set in mask k), and store the results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "从 a 加载连续的活动 8 位整数 (那些在掩码 k 中设置了相应位的整数)，并使用 writemask k 将结果存储在 dst 中 (当相应的掩码位未设置时，从 src 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "M M                     M M M M",
-        "suggest": "MMMMMM",
-        "translate": false
+        "source": "Load contiguous active 8-bit integers from a (those with their respective bit set in mask k), and store the results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "从 a 加载连续的活动 8 位整数 (那些在掩码 k 中设置了相应位的整数)，并使用 zeromask k 将结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "T   R         H",
-        "suggest": "TRH",
-        "translate": false
+        "source": "Concatenate packed 64-bit integers in a and b producing an intermediate 128-bit result.",
+        "suggest": "在 a 和 b 中连接包装的 64 位整数，产生一个中间的 128 位结果。",
+        "translate": ""
     },
     {
-        "source": "H         T   R",
-        "suggest": "HTR",
-        "translate": false
+        "source": "Shift the result left by the amount specified in the corresponding element of c, and store the upper 64-bits in dst.",
+        "suggest": "将结果左移 c 的对应元素中指定的量，并将高 64 位存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "R     H           T",
-        "suggest": "RHT",
-        "translate": false
+        "source": "Shift the result left by the amount specified in the corresponding element of c, and store the upper 64-bits in dst using writemask k (elements are copied from a when the corresponding mask bit is not set).",
+        "suggest": "将结果左移 c 的相应元素中指定的数量，并使用 writemask k 将高 64 位存储在 dst 中 (当相应的掩码位未设置时，元素从 a 复制)。",
+        "translate": ""
     },
     {
-        "source": "from: DEFGH....ABC",
-        "suggest": "来自: DEFGH .... ABC",
-        "translate": false
+        "source": "Shift the result left by the amount specified in the corresponding element of c, and store the upper 64-bits in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将结果左移 c 的相应元素中指定的数量，并使用 zeromask k 将高 64 位存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "to:   ABCDEFGH....",
-        "suggest": "至: ABCDEFGH ....",
-        "translate": false
+        "source": "Concatenate packed 32-bit integers in a and b producing an intermediate 64-bit result.",
+        "suggest": "将 a 和 b 中的 32 位整数连接包装产生中间 64 位结果。",
+        "translate": ""
     },
     {
-        "source": "from: FGH....ABCDE",
-        "suggest": "来自: FGH .... ABCDE",
-        "translate": false
+        "source": "Shift the result left by the amount specified in the corresponding element of c, and store the upper 32-bits in dst.",
+        "suggest": "将结果左移 c 的对应元素中指定的量，并将高 32 位存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "to:   ...ABCDEFGH.",
-        "suggest": "到: ... ABCDEFGH。",
-        "translate": false
+        "source": "Shift the result left by the amount specified in the corresponding element of c, and store the upper 32-bits in dst using writemask k (elements are copied from a when the corresponding mask bit is not set).",
+        "suggest": "将结果左移 c 的相应元素中指定的数量，并使用 writemask k 将高 32 位存储在 dst 中 (当相应的掩码位未设置时，元素从 a 中复制)。",
+        "translate": ""
     },
     {
-        "source": "from: EFGHI...ABCD or HIJK.ABCDEFG",
-        "suggest": "来自: EFGHI ... ABCD 或 HIJK.ABCDEFG",
-        "translate": false
+        "source": "Shift the result left by the amount specified in the corresponding element of c, and store the upper 32-bits in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将结果左移 c 的相应元素中指定的数量，并使用 zeromask k 将高 32 位存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "to:   ABCDEFGHI...",
-        "suggest": "至: ABCDEFGHI ...",
-        "translate": false
+        "source": "Concatenate packed 16-bit integers in a and b producing an intermediate 32-bit result.",
+        "suggest": "在 a 和 b 中连接包装的 16 位整数，产生一个中间 32 位结果。",
+        "translate": ""
     },
     {
-        "source": "or ABCDEFGHIJK.",
-        "suggest": "或 ABCDEFGHIJK。",
-        "translate": false
+        "source": "Shift the result left by the amount specified in the corresponding element of c, and store the upper 16-bits in dst.",
+        "suggest": "将结果左移 c 的对应元素中指定的量，并将高 16 位存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "EF..ABCD ABCDEF..",
-        "suggest": "EF..ABCD ABCDEF ..",
-        "translate": false
+        "source": "Shift the result left by the amount specified in the corresponding element of c, and store the upper 16-bits in dst using writemask k (elements are copied from a when the corresponding mask bit is not set).",
+        "suggest": "将结果左移 c 的相应元素中指定的数量，并使用 writemask k 将高 16 位存储在 dst 中 (当相应的掩码位未设置时，元素从 a 中复制)。",
+        "translate": ""
     },
     {
-        "source": "|<-              processed len   ->| ^- next to check",
-        "suggest": "| <- 处理后的 len -> |^- 检查旁边",
-        "translate": false
+        "source": "Shift the result left by the amount specified in the corresponding element of c, and store the upper 16-bits in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将结果左移 c 的相应元素中指定的数量，并使用 zeromask k 将高 16 位存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "|<-  deleted cnt     ->|",
-        "suggest": "| <- 删除的 cnt -> |",
-        "translate": false
+        "source": "Concatenate packed 64-bit integers in b and a producing an intermediate 128-bit result.",
+        "suggest": "将 b 和 a 中的包装的 64 位整数连接起来，产生一个中间的 128 位结果。",
+        "translate": ""
     },
     {
-        "source": "|<-              original_len                          ->| Kept: Elements which predicate returns true on.",
-        "suggest": "| <-original_len -> | 保留: 谓词在其上返回 true 的元素。",
-        "translate": false
+        "source": "Shift the result right by the amount specified in the corresponding element of c, and store the lower 64-bits in dst.",
+        "suggest": "将结果右移 c 的对应元素中指定的量，并将低 64 位存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": ": |1 ulp|1 ulp|",
-        "suggest": ": | 1 ulp | 1 ulp |",
-        "translate": false
+        "source": "Shift the result right by the amount specified in the corresponding element of c, and store the lower 64-bits in dst using writemask k (elements are copied from a when the corresponding mask bit is not set).",
+        "suggest": "将结果右移 c 的相应元素中指定的数量，并使用 writemask k 将低 64 位存储在 dst 中 (当相应的掩码位未设置时，从 a 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "unsafe {",
-        "suggest": "不安全 {",
-        "translate": false
+        "source": "Shift the result right by the amount specified in the corresponding element of c, and store the lower 64-bits in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将结果右移 c 的相应元素中指定的数量，并使用 zeromask k 将低 64 位存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "H         T",
-        "suggest": "H T",
-        "translate": false
+        "source": "Concatenate packed 32-bit integers in b and a producing an intermediate 64-bit result.",
+        "suggest": "连接包装在 b 和 a 中的 32 位整数，产生中间 64 位结果。",
+        "translate": ""
     },
     {
-        "source": "T   I         H",
-        "suggest": "卫生部",
-        "translate": false
+        "source": "Shift the result right by the amount specified in the corresponding element of c, and store the lower 32-bits in dst.",
+        "suggest": "将结果右移 c 的对应元素中指定的量，并将低 32 位存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "T               H",
-        "suggest": "TH",
-        "translate": false
+        "source": "Shift the result right by the amount specified in the corresponding element of c, and store the lower 32-bits in dst using writemask k (elements are copied from a when the corresponding mask bit is not set).",
+        "suggest": "将结果右移 c 的相应元素中指定的数量，并使用 writemask k 将低 32 位存储在 dst 中 (当相应的掩码位未设置时，元素从 a 中复制)。",
+        "translate": ""
     },
     {
-        "source": "H             T",
-        "suggest": "H T",
-        "translate": false
+        "source": "Shift the result right by the amount specified in the corresponding element of c, and store the lower 32-bits in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将结果右移 c 的相应元素中指定的数量，并使用 zeromask k 将低 32 位存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "T       I     H",
-        "suggest": "卫生部",
-        "translate": false
+        "source": "Concatenate packed 16-bit integers in b and a producing an intermediate 32-bit result.",
+        "suggest": "将 b 和 a 中的包装的 16 位整数连接起来，产生一个中间 32 位结果。",
+        "translate": ""
     },
     {
-        "source": "H       T",
-        "suggest": "H T",
-        "translate": false
+        "source": "Shift the result right by the amount specified in the corresponding element of c, and store the lower 16-bits in dst.",
+        "suggest": "将结果右移 c 的对应元素中指定的量，并将低 16 位存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "H             T         I",
-        "suggest": "HTI",
-        "translate": false
+        "source": "Shift the result right by the amount specified in the corresponding element of c, and store the lower 16-bits in dst using writemask k (elements are copied from a when the corresponding mask bit is not set).",
+        "suggest": "将结果右移 c 的相应元素中指定的数量，并使用 writemask k 将低 16 位存储在 dst 中 (当相应的掩码位未设置时，元素从 a 中复制)。",
+        "translate": ""
     },
     {
-        "source": "H           T",
-        "suggest": "H T",
-        "translate": false
+        "source": "Shift the result right by the amount specified in the corresponding element of c, and store the lower 16-bits in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将结果右移 c 的相应元素中指定的数量，并使用 zeromask k 将低 16 位存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "H   T",
-        "suggest": "H T",
-        "translate": false
+        "source": "Shift the result left by imm8 bits, and store the upper 64-bits in dst).",
+        "suggest": "将结果左移 imm8 位，并将高 64 位存储在 dst 中)。",
+        "translate": ""
     },
     {
-        "source": "I             H     T",
-        "suggest": "IHT",
-        "translate": false
+        "source": "Shift the result left by imm8 bits, and store the upper 64-bits in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "将结果左移 imm8 位，并使用 writemask k 将高 64 位存储在 dst 中 (当相应的掩码位未设置时，从 src 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "I     H           T",
-        "suggest": "IHT",
-        "translate": false
+        "source": "Shift the result left by imm8 bits, and store the upper 64-bits in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将结果左移 imm8 位，并使用 zeromask k 将高 64 位存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "T           H",
-        "suggest": "TH",
-        "translate": false
+        "source": "Shift the result left by imm8 bits, and store the upper 32-bits in dst.",
+        "suggest": "将结果左移 imm8 位，并将高 32 位存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "T       R     H",
-        "suggest": "TRH",
-        "translate": false
+        "source": "Shift the result left by imm8 bits, and store the upper 32-bits in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "将结果左移 imm8 位，并使用 writemask k 将高 32 位存储在 dst 中 (当相应的掩码位未设置时，从 src 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "H           T         R",
-        "suggest": "HTR",
-        "translate": false
+        "source": "Shift the result left by imm8 bits, and store the upper 32-bits in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将结果左移 imm8 位，并使用 zeromask k 将高 32 位存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "M M                         M M",
-        "suggest": "MMMM",
-        "translate": false
+        "source": "Shift the result left by imm8 bits, and store the upper 16-bits in dst).",
+        "suggest": "将结果左移 imm8 位，并将高 16 位存储在 dst 中)。",
+        "translate": ""
     },
     {
-        "source": "H                 T         R",
-        "suggest": "HTR",
-        "translate": false
+        "source": "Shift the result left by imm8 bits, and store the upper 16-bits in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "将结果左移 imm8 位，并使用 writemask k 将高 16 位存储在 dst 中 (当相应的掩码位未设置时，从 src 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "R               H     T",
-        "suggest": "RHT",
-        "translate": false
+        "source": "Shift the result left by imm8 bits, and store the upper 16-bits in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将结果左移 imm8 位，并使用 zeromask k 将高 16 位存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "M M M                       M M",
-        "suggest": "MMMMMM",
-        "translate": false
+        "source": "Shift the result right by imm8 bits, and store the lower 64-bits in dst.",
+        "suggest": "将结果右移 imm8 位，并将低 64 位存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": ":                    |1 ulp|1 ulp|",
-        "suggest": ": | 1 ulp | 1 ulp |",
-        "translate": false
+        "source": "should be vpshrdq",
+        "suggest": "应该是 vpshrdq",
+        "translate": ""
     },
     {
-        "source": "unsafe {        core::arch::wasm32::atomic_notify(             LOCKED.as_mut_ptr(),",
-        "suggest": "不安全 {",
-        "translate": false
+        "source": "Shift the result right by imm8 bits, and store the lower 64-bits in dst using writemask k (elements are copied from src\" when the corresponding mask bit is not set).",
+        "suggest": "将结果右移 imm8 位，并使用 writemask k 将低 64 位存储在 dst 中 (当相应的掩码位未设置时，元素从 src` 复制)。",
+        "translate": ""
     },
     {
-        "source": "v   1        2    |  2",
-        "suggest": "v 1 2 |2 个",
-        "translate": false
+        "source": "Shift the result right by imm8 bits, and store the lower 64-bits in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将结果右移 imm8 位，并使用 zeromask k 将低 64 位存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "T = source_deque_tail;",
-        "suggest": "T=source_deque_tail;",
-        "translate": false
+        "source": "Shift the result right by imm8 bits, and store the lower 32-bits in dst.",
+        "suggest": "将结果右移 imm8 位，并将低 32 位存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "H = source_deque_head;",
-        "suggest": "H=source_deque_head;",
-        "translate": false
+        "source": "should be vpshldd",
+        "suggest": "应该是 vpshldd",
+        "translate": ""
     },
     {
-        "source": "t = drain_tail;",
-        "suggest": "t=drain_tail;",
-        "translate": false
+        "source": "Shift the result right by imm8 bits, and store the lower 32-bits in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "将结果右移 imm8 位，并使用 writemask k 将低 32 位存储在 dst 中 (当相应的掩码位未设置时，从 src 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "h = drain_head",
-        "suggest": "h=drain_head",
-        "translate": false
+        "source": "Shift the result right by imm8 bits, and store the lower 32-bits in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将结果右移 imm8 位，并使用 zeromask k 将低 32 位存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "T   t   h   H",
-        "suggest": "高度",
-        "translate": false
+        "source": "Shift the result right by imm8 bits, and store the lower 16-bits in dst.",
+        "suggest": "将结果右移 imm8 位，并将低 16 位存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "S . . .",
-        "suggest": "S.。。",
-        "translate": false
+        "source": "should be vpshrdw",
+        "suggest": "应该是 vpshrdw",
+        "translate": ""
     },
     {
-        "source": "2 [_ _ A A A A B B _] D . . .",
-        "suggest": "2 [_ _ A A A A B B _] D。。。",
-        "translate": false
+        "source": "Shift the result right by imm8 bits, and store the lower 16-bits in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "将结果右移 imm8 位，并使用 writemask k 将低 16 位存储在 dst 中 (当相应的掩码位未设置时，从 src 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "D .",
-        "suggest": "D.",
-        "translate": false
+        "source": "Shift the result right by imm8 bits, and store the lower 16-bits in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将结果右移 imm8 位，并使用 zeromask k 将低 16 位存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": ".. S .",
-        "suggest": ".. S。",
-        "translate": false
+        "source": "Multiply groups of 2 adjacent pairs of signed 16-bit integers in a with corresponding 16-bit integers in b, producing 2 intermediate signed 32-bit results.",
+        "suggest": "将 a 中的 2 对相邻的有符号 16 位整数组与 b 中的相应 16 位整数相乘，产生 2 个中间有符号 32 位结果。",
+        "translate": ""
     },
     {
-        "source": "3 [C C _ _ _ B B C C] D . . .",
-        "suggest": "3 [C C _ _ _ B B C C] D。。。",
-        "translate": false
+        "source": "Sum these 2 results with the corresponding 32-bit integer in src, and store the packed 32-bit results in dst.",
+        "suggest": "将这 2 个结果与 src 中对应的 32 位整数相加，并将包装的 32 位结果存入 dst。",
+        "translate": ""
     },
     {
-        "source": "3 [C C A A _ _ _ C C] D . . .",
-        "suggest": "3 [C C A A _ _ _ C C] D。。。",
-        "translate": false
+        "source": "Sum these 2 results with the corresponding 32-bit integer in src, and store the packed 32-bit results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "将这 2 个结果与 src 中相应的 32 位整数相加，并使用 writemask k 将包装的 32 位结果存储在 dst 中 (当相应的掩码位未设置时，元素从 src 复制)。",
+        "translate": ""
     },
     {
-        "source": ".",
-        "suggest": "。",
-        "translate": false
+        "source": "Sum these 2 results with the corresponding 32-bit integer in src, and store the packed 32-bit results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将这 2 个结果与 src 中对应的 32 位整数相加，并使用 zeromask k 将包装的 32 位结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "D . .",
-        "suggest": "D.。",
-        "translate": false
+        "source": "Sum these 2 results with the corresponding 32-bit integer in src using signed saturation, and store the packed 32-bit results in dst.",
+        "suggest": "使用符号饱和将这 2 个结果与 src 中相应的 32 位整数相加，并将包装的 32 位结果存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": ".. S . .",
-        "suggest": ".. S。。",
-        "translate": false
+        "source": "Sum these 2 results with the corresponding 32-bit integer in src using signed saturation, and store the packed 32-bit results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "使用符号饱和将这 2 个结果与 src 中相应的 32 位整数相加，并使用 writemask k 将包装的 32 位结果存储在 dst 中 (当相应的掩码位未设置时，元素从 src 复制)。",
+        "translate": ""
     },
     {
-        "source": "4 [H A B D _ E F F G] . ..",
-        "suggest": "4 [H A B D _ E F F G]。..",
-        "translate": false
+        "source": "Sum these 2 results with the corresponding 32-bit integer in src using signed saturation, and store the packed 32-bit results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "使用符号饱和将这 2 个结果与 src 中相应的 32 位整数相加，并使用 zeromask k 将包装的 32 位结果存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "T             H A [o o o o o o o . . . . . . . . . ] H T",
-        "suggest": "THA [o o o o o o o . . . . . . . . . ] HT",
-        "translate": false
+        "source": "Multiply groups of 4 adjacent pairs of unsigned 8-bit integers in a with corresponding signed 8-bit integers in b, producing 4 intermediate signed 16-bit results.",
+        "suggest": "将 a 中的 4 对相邻的无符号 8 位整数组与 b 中的相应有符号 8 位整数相乘，产生 4 个中间有符号 16 位结果。",
+        "translate": ""
     },
     {
-        "source": "T             H B [. . . o o o o o o o . . . . . . ] H T",
-        "suggest": "泰铢 [. . . o o o o o o o . . . . . . ] HT",
-        "translate": false
+        "source": "Sum these 4 results with the corresponding 32-bit integer in src, and store the packed 32-bit results in dst.",
+        "suggest": "将这 4 个结果与 src 中对应的 32 位整数相加，并将包装的 32 位结果存入 dst。",
+        "translate": ""
     },
     {
-        "source": "H                 T C [o o o o o . . . . . . . . . o o ]",
-        "suggest": "宏达 [o o o o o . . . . . . . . . o o ]",
-        "translate": false
+        "source": "Sum these 4 results with the corresponding 32-bit integer in src, and store the packed 32-bit results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "将这 4 个结果与 src 中对应的 32 位整数相加，并使用 writemask k 将包装的 32 位结果存储在 dst 中 (未设置相应掩码位时从 src 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "A Nop",
-        "suggest": "小睡",
-        "translate": false
+        "source": "Sum these 4 results with the corresponding 32-bit integer in src, and store the packed 32-bit results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将这 4 个结果与 src 中对应的 32 位整数相加，并将包装的 32 位结果使用 zeromask k 存储在 dst 中 (当相应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "[A o o o o o o . . . . . . .",
-        "suggest": "[噢!。。。。。。",
-        "translate": false
+        "source": "Sum these 4 results with the corresponding 32-bit integer in src using signed saturation, and store the packed 32-bit results in dst.",
+        "suggest": "使用有符号饱和将这 4 个结果与 src 中相应的 32 位整数相加，并将包装的 32 位结果存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "M                             M",
-        "suggest": "毫米",
-        "translate": false
+        "source": "Sum these 4 results with the corresponding 32-bit integer in src using signed saturation, and store the packed 32-bit results in dst using writemask k (elements are copied from src when the corresponding mask bit is not set).",
+        "suggest": "使用符号饱和将这 4 个结果与 src 中相应的 32 位整数相加，并使用 writemask k 将包装的 32 位结果存储在 dst 中 (当相应的掩码位未设置时，从 src 复制元素)。",
+        "translate": ""
     },
     {
-        "source": "M M M",
-        "suggest": "MMM",
-        "translate": false
+        "source": "Sum these 4 results with the corresponding 32-bit integer in src using signed saturation, and store the packed 32-bit results in dst using zeromask k (elements are zeroed out when the corresponding mask bit is not set).",
+        "suggest": "将这 4 个结果与 src 中对应的 32 位整数用带符号饱和求和，并将包装的 32 位结果用 zeromask k 存储在 dst 中 (当对应的掩码位未设置时，元素被清零)。",
+        "translate": ""
     },
     {
-        "source": "(cap + 1 - offset) > (cap + 1 - len) && (len - (cap + 1 - offset)) > (cap + 1 - len)) right block size  >   free space    &&      left block size       >    free space",
-        "suggest": "(上限 + 1 - 偏移) > (上限 + 1-len) && (len- (上限 + 1 - 偏移) ) > (上限 + 1-len) ) 右块大小 > 可用空间 && 左块大小 > 可用空间",
-        "translate": false
+        "source": "x86-64 uses `rbx` as the base register, so preserve it.",
+        "suggest": "x86-64 使用 `rbx` 作为基址寄存器，所以保留它。",
+        "translate": ""
     },
     {
-        "source": "AsRef<str> for Drain<'a> { fn as_ref(&self) -> &str {",
-        "suggest": "AsRef<str> for Drain<'a> {fn as_ref(&self) -> &str {",
-        "translate": false
+        "source": "128-bit wide set of eight 'u16' types, x86-specific",
+        "suggest": "128 位宽的一组 8 个 `u16` 类型，特定于 x86",
+        "translate": ""
     },
     {
-        "source": "AsRef<[u8]> for Drain<'a> { fn as_ref(&self) -> &[u8] {        self.as_str().as_bytes() } }",
-        "suggest": "用于 Drain<'a> 的 AsRef<[u8]> { fn as_ref(&self) -> &[u8] { self.as_str().as_bytes() }}",
-        "translate": false
+        "source": "This type is representing a 128-bit SIMD register which internally is consisted of eight packed `u16` instances.",
+        "suggest": "该类型代表一个 128 位的 SIMD 寄存器，内部由 8 个包装的 `u16` 实例组成。",
+        "translate": ""
     },
     {
-        "source": "--no_https avoids javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: No trusted certificate found",
-        "suggest": "--no_https 避免 javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: 未找到可信证书",
-        "translate": false
+        "source": "It's purpose is for bf16 related intrinsic implementations.",
+        "suggest": "它的目的是用于 bf16 相关的内在实现。",
+        "translate": ""
     },
     {
-        "source": "?Sized> AsRef<U> for D { fn as_ref(&self) -> &U {        self.deref().as_ref() } }",
-        "suggest": "大小 > AsRef<U> for D { fn as_ref(&self) -> &U { self.deref().as_ref() }}",
-        "translate": false
+        "source": "256-bit wide set of 16 'u16' types, x86-specific",
+        "suggest": "256 位宽的 16 种 `u16` 类型集，特定于 x86",
+        "translate": ""
     },
     {
-        "source": "?Sized> AsMut<U> for D { fn as_mut(&mut self) -> &mut U {        self.deref_mut().as_mut() } }",
-        "suggest": "大小 > AsMut<U> for D { fn as_mut(&mut self) -> &mut U { self.deref_mut().as_mut() }}",
-        "translate": false
+        "source": "This type is the same as the `__m128bh` type defined by Intel, representing a 256-bit SIMD register which internally is consisted of",
+        "suggest": "该类型与 Intel 定义的 `__m128bh` 类型相同，代表一个 256 位的 SIMD 寄存器，内部由",
+        "translate": ""
     },
     {
-        "source": "x        lsb",
-        "suggest": "l",
-        "translate": false
+        "source": "16 packed `u16` instances.",
+        "suggest": "16 个包装的 `u16` 实例。",
+        "translate": ""
     },
     {
-        "source": "q     trunc.",
-        "suggest": "q 截断",
-        "translate": false
+        "source": "512-bit wide set of 32 'u16' types, x86-specific",
+        "suggest": "512 位宽的 32 种 `u16` 类型集，特定于 x86",
+        "translate": ""
     },
     {
-        "source": "|<---- buf ---->|  zeroes   |     exp",
-        "suggest": "| <----buf--- -> | 零 | 经验值",
-        "translate": false
+        "source": "This type is the same as the `__m128bh` type defined by Intel, representing a 512-bit SIMD register which internally is consisted of",
+        "suggest": "该类型与 Intel 定义的 `__m128bh` 类型相同，代表一个 512 位的 SIMD 寄存器，内部由",
+        "translate": ""
     },
     {
-        "source": "10^exp    10^(exp-buf.len())   10^(exp-buf.len()-nzeroes)",
-        "suggest": "10 ^ exp 10 ^ (exp-buf.len () ) 10 ^ (exp-buf.len () -nzeroes)",
-        "translate": false
+        "source": "32 packed `u16` instances.",
+        "suggest": "32 个包装的 `u16` 实例。",
+        "translate": ""
     },
     {
-        "source": "|1 ulp|1 ulp|                 |1 ulp|1 ulp|                 |1 ulp|1 ulp|",
-        "suggest": "| 1 ulp | 1 ulp || 1 ulp | 1 ulp || 1 ulp | 1 ulp |",
-        "translate": false
+        "source": "Convert the lower double-precision (64-bit) floating-point element in a to a 64-bit integer, and store the result in dst.",
+        "suggest": "将 a 中的低位双精度 (64-bit) 浮点元素转换为 64 位整数，并将结果存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": ":<--------- 10^kappa ---------->:",
-        "suggest": ": <---------10 ^ kappa-- ------- -> :",
-        "translate": false
+        "source": "Convert the lower single-precision (32-bit) floating-point element in a to a 64-bit integer, and store the result in dst.",
+        "suggest": "将 a 中的低位单精度 (32-bit) 浮点元素转换为 64 位整数，并将结果存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "|1 ulp|1 ulp|                     :",
-        "suggest": "| 1 ulp | 1 ulp |:",
-        "translate": false
+        "source": "Convert the lower single-precision (32-bit) floating-point element in a to an unsigned 64-bit integer, and store the result in dst.",
+        "suggest": "将 a 中的低位单精度 (32-bit) 浮点元素转换为无符号 64 位整数，并将结果存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": ":<------- remainder ------>|   :",
-        "suggest": ": <------- 余数 --- -- -> |:",
-        "translate": false
+        "source": "Convert the lower double-precision (64-bit) floating-point element in a to an unsigned 64-bit integer, and store the result in dst.",
+        "suggest": "将 a 中的低位双精度 (64-bit) 浮点元素转换为无符号 64 位整数，并将结果存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": ":<--------- 10^kappa --------->:",
-        "suggest": ": <---------10 ^ kappa-- ------ -> :",
-        "translate": false
+        "source": "Convert the signed 64-bit integer b to a single-precision (32-bit) floating-point element, store the result in the lower element of dst, and copy the upper 3 packed elements from a to the upper elements of dst.",
+        "suggest": "将有符号的 64 位整数 b 转换为单精度 (32-bit) 浮点元素，将结果存入 dst 的低位元素，将 a 的高 3 个包装元素从 a 复制到 dst 的高位元素。",
+        "translate": ""
     },
     {
-        "source": "UTF8-1      = %x00-7F UTF8-2      = %xC2-DF UTF8-tail UTF8-3      = %xE0 %xA0-BF UTF8-tail / %xE1-EC 2( UTF8-tail ) / %xED %x80-9F UTF8-tail / %xEE-EF 2( UTF8-tail ) UTF8-4      = %xF0 %x90-BF 2( UTF8-tail ) / %xF1-F3 3( UTF8-tail ) / %xF4 %x80-8F 2( UTF8-tail )",
-        "suggest": "UTF8-1=%x00-7F UTF8-2=%xC2-DF UTF8 尾 UTF8-3= %xE0%xA0-BF UTF8 尾 /%xE1-EC 2( UTF8-tail )/%xED%x80-9F UTF8 尾 /%xEE-EF 2( UTF8-tail ) UTF8-4= %xF0%x90-BF 2( UTF8-tail )/%xF1-F3 3( UTF8-tail )/%xF4%x80-8F 2( UTF8-tail )",
-        "translate": false
+        "source": "Convert the signed 64-bit integer b to a double-precision (64-bit) floating-point element, store the result in the lower element of dst, and copy the upper element from a to the upper element of dst.",
+        "suggest": "将有符号的 64 位整数 b 转换为双精度 (64-bit) 浮点元素，将结果存入 dst 的低位元素，将 a 的高位元素复制到 dst 的高位元素。",
+        "translate": ""
     },
     {
-        "source": "(upper, # items in lowers)",
-        "suggest": "(上方，下方的 #项)",
-        "translate": false
+        "source": "Convert the lower double-precision (64-bit) floating-point element in a to a 64-bit integer with truncation, and store the result in dst.",
+        "suggest": "将 a 中的低位双精度 (64-bit) 浮点元素转换为带有截断的 64 位整数，并将结果存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "lengths 0x00..0x7f are encoded as 00, 01, ..., 7e, 7f lengths 0x80..0x7fff are encoded as 80 80, 80 81, ..., ff fe, ff ff",
-        "suggest": "长度 0x00..0x7f 编码为 00、01，...，7e，7f 长度 0x80..0x7fff 编码为 80 80、80 81，...，ff fe，ff ff",
-        "translate": false
+        "source": "Convert the lower double-precision (64-bit) floating-point element in a to an unsigned 64-bit integer with truncation, and store the result in dst.",
+        "suggest": "将 a 中的低位双精度 (64-bit) 浮点元素转换为带截断的无符号 64 位整数，并将结果存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "fn check(x: u16, singletonuppers: &[(u8, u8)], singletonlowers: &[u8], normal: &[u8]) -> bool { let xupper = (x >> 8) as u8;",
-        "suggest": "fn check (x: u16，singletonuppers: &[(u8，u8) ]，singletonlowers: &[u8]，normal: &[u8]) -> bool {令 xupper= (x>> 8) 为 u8;",
-        "translate": false
+        "source": "Convert the lower single-precision (32-bit) floating-point element in a to a 64-bit integer with truncation, and store the result in dst.",
+        "suggest": "将 a 中的低位单精度 (32-bit) 浮点元素转换为带有截断的 64 位整数，并将结果存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "let mut lowerstart = 0;",
-        "suggest": "令 mut lowerstart=0;",
-        "translate": false
+        "source": "Convert the lower single-precision (32-bit) floating-point element in a to an unsigned 64-bit integer with truncation, and store the result in dst.",
+        "suggest": "将 a 中的低位单精度 (32-bit) 浮点元素转换为带截断的无符号 64 位整数，并将结果存储在 dst 中。",
+        "translate": ""
     },
     {
-        "source": "for &(upper, lowercount) in singletonuppers { let lowerend = lowerstart + lowercount as usize;",
-        "suggest": "对于单例 upper 中的 & (upper，lowercount) {让 lowerend=lowerstart + lowercount 作为 usize;",
-        "translate": false
+        "source": "The XML file names VBMI as \"avx512_vbmi\", while Rust calls it \"avx512vbmi\".",
+        "suggest": "XML 文件将 VBMI 命名为 \"avx512_vbmi\"，而 Rust 将其命名为 \"avx512vbmi\"。",
+        "translate": ""
     },
     {
-        "source": "if xupper == upper { for &lower in &singletonlowers[lowerstart..lowerend] { if lower == x as u8 { return false; } } } else if xupper < upper { break; } lowerstart = lowerend;",
-        "suggest": "如果 xupper == 上限 { for &lower in &singletonlowers[lowerstart..lowerend] { if lower == x as u8 { return false; }}} 否则，如果 xupper < 上限 { break; }",
-        "translate": false
+        "source": "The XML file names VBMI2 as \"avx512_vbmi2\", while Rust calls it \"avx512vbmi2\".",
+        "suggest": "XML 文件将 VBMI2 命名为 \"avx512_vbmi2\"，而 Rust 将其命名为 \"avx512vbmi2\"。",
+        "translate": ""
     },
     {
-        "source": "let mut x = x as i32;",
-        "suggest": "让 mut x=x 作为 i32;",
-        "translate": false
+        "source": "The XML file names VNNI as \"avx512_vnni\", while Rust calls it \"avx512vnni\".",
+        "suggest": "XML 文件将 VNNI 命名为 \"avx512_vnni\"，而 Rust 将其命名为 \"avx512vnni\"。",
+        "translate": ""
     },
     {
-        "source": "let mut normal = normal.iter().cloned();",
-        "suggest": "让 mut normal=normal.iter ()。cloned () ;",
-        "translate": false
+        "source": "The XML file names VNNI as \"avx512_bf16\", while Rust calls it \"avx512bf16\".",
+        "suggest": "XML 文件将 VNNI 命名为 \"avx512_bf16\"，而 Rust 将其命名为 \"avx512bf16\"。",
+        "translate": ""
     },
     {
-        "source": "let mut current = true;",
-        "suggest": "令 mut current=true;",
-        "translate": false
+        "source": "AVX-512 BITALG (Support for VPOPCNT\\[B,W\\] and VPSHUFBITQMB)",
+        "suggest": "AVX-512 BITALG (支持 VPOPCNT\\[B,W\\] 和 VPSHUFBITQMB)",
+        "translate": ""
     },
     {
-        "source": "while let Some(v) = normal.next() { let len = if v & 0x80 != 0 { ((v & 0x7f) as i32) << 8 | normal.next().unwrap() as i32 } else { v as i32 };",
-        "suggest": "而让 Some(v) = normal.next() { let len = if v & 0x80 != 0 { ((v & 0x7f) as i32) << 8 | normal.next().unwrap() as i32 } 否则 { v as i32 };",
-        "translate": false
+        "source": "removing `extern crate` gives an error that `vec_spare_capacity` is unknown",
+        "suggest": "删除 `extern crate` 会出现 `vec_spare_capacity` 未知的错误",
+        "translate": ""
     },
     {
-        "source": "if x < 0 { break; } current = !current;",
-        "suggest": "如果 x <0 { break; } 当前 = !current;",
-        "translate": false
+        "source": "<b>Outer-Open Gomoku</b> is a board game which is a enhanced version of connect5 (Gomoku).",
+        "suggest": "<b>Outer-Open Gomoku</b> 是 connect5 (Gomoku) 的增强版棋盘游戏。</b>",
+        "translate": ""
     },
     {
-        "source": "} current }",
-        "suggest": "} 当前的}",
-        "translate": false
+        "source": "The game is a two-player game which played on a 15x15 Go board.",
+        "suggest": "该游戏是在 15x15 围棋棋盘上进行的两人游戏。",
+        "translate": ""
     },
     {
-        "source": "fn is_printable(x: char) -> bool { let x = x as u32;",
-        "suggest": "fn is_printable(x: char) -> bool {令 x=x 为 u32;",
-        "translate": false
+        "source": "Two players take turns placing a move on an empty intersection in this board.",
+        "suggest": "两名玩家轮流在此棋盘上的空交叉点上移动。",
+        "translate": ""
     },
     {
-        "source": "let lower = x as u16;",
-        "suggest": "让 lower=x 作为 u16;",
-        "translate": false
+        "source": "The winner is the first player to form an unbroken chain of five moves horizontally, vertically, or diagonally.",
+        "suggest": "获胜者是第一个在水平、垂直或对角线上形成连续五个移动链的玩家。",
+        "translate": ""
     },
     {
-        "source": "if x < 0x10000 {",
-        "suggest": "如果 x <0x10000 {",
-        "translate": false
+        "source": "Unlike Gomoku, the first move is required to be placed at the two outer rows or columns of this board.",
+        "suggest": "与五子棋不同的是，第一步需要放在这个棋盘的两行或两列之外。",
+        "translate": ""
     },
     {
-        "source": "} else if x < 0x20000 {",
-        "suggest": "} 如果 x <0x20000 {",
-        "translate": false
+        "source": "This program provides an AI playing with Minimax search with alpha-beta pruning which uses",
+        "suggest": "该程序提供了一个 AI 玩 Minimax 搜索和 alpha-beta 剪枝，它使用",
+        "translate": ""
     },
     {
-        "source": "} else {",
-        "suggest": "} 别的 {",
-        "translate": false
+        "source": "patterns on evaluation.",
+        "suggest": "评估模式。",
+        "translate": ""
     },
     {
-        "source": "true }",
-        "suggest": "真的}",
-        "translate": false
+        "source": "The avx512 intrinsic can do 32 pattern matching at one time.",
+        "suggest": "avx512 内在函数一次可以进行 32 个模式匹配。",
+        "translate": ""
     },
     {
-        "source": "'A'    '9'    '.'    ' '",
-        "suggest": "'A' '9' '.' '",
-        "translate": false
+        "source": "This avx512 is tested with non-avx512 code to verify its correctness.",
+        "suggest": "此 avx512 使用非 avx512 代码进行测试以验证其正确性。",
+        "translate": ""
     },
     {
-        "source": "unsafe { ptr::write(&mut res as *mut _, 42); } res } const ALIGNED: i32 = write_aligned();",
-        "suggest": "不安全的 { ptr::write(&mut res as *mut _, 42); } res} const ALIGNED: i32 = write_aligned();",
-        "translate": false
+        "source": "On Intel i7-7800x using single thread with fixed AVX-512 clock at 4.0GHz, the avx512 is speed up about 9x.",
+        "suggest": "在英特尔 i7-7800x 上使用单线程，在 4.0GHz 上固定 AVX-512 时钟，avx512 的速度提高了大约 9 倍。",
+        "translate": ""
     },
     {
-        "source": "} two_aligned } const UNALIGNED: [u16; 2] = write_unaligned();",
-        "suggest": "} two_aligned} const unaligned: [u16; 2] = write_unaligned();",
-        "translate": false
+        "source": "The average time for each move in the avx512 is around 14.00s <span>±</span> 1.31s and in the non-avx512",
+        "suggest": "avx512 每次移动的平均时间约为 14.00s <span>±</span> 1.31s，非 avx512",
+        "translate": ""
     },
     {
-        "source": "fn mut_ptr_write() { const fn aligned() -> i32 {",
-        "suggest": "fn mut_ptr_write() {const fn aligned() -> i32 {",
-        "translate": false
+        "source": "is 129.02s <span>±</span> 4.96s.",
+        "suggest": "是 129.02s <span>±</span> 4.96s。",
+        "translate": ""
     },
     {
-        "source": "unsafe { (&mut res as *mut i32).write(42); } res } const ALIGNED: i32 = aligned();",
-        "suggest": "不安全的 { (&mut res as *mut i32).write(42); } res} const ALIGNED: i32 = aligned();",
-        "translate": false
+        "source": "On Intel Tiger Lake i7-1165G7, the avx512 is around 11.11s <span>±</span> 1.31s.",
+        "suggest": "在 Intel Tiger Lake i7-1165G7 上，avx512 约为 11.11s <span>±</span> 1.31s。",
+        "translate": ""
     },
     {
-        "source": "unaligned_ptr.write_unaligned(u16::from_ne_bytes([0x23, 0x45]));",
-        "suggest": "unaligned_ptr.write_unaligned (u16::from_ne_bytes ([0x23，0x45]) ) ;",
-        "translate": false
+        "source": "Pattern Matching",
+        "suggest": "模式匹配",
+        "translate": ""
     },
     {
-        "source": "a            b              c              d              e              a              b              c              d              EOF",
-        "suggest": "abcdeabcd EOF",
-        "translate": false
+        "source": "Use 512-bit to present the board state.",
+        "suggest": "使用 512 位来呈现板子状态。",
+        "translate": ""
     },
     {
-        "source": "d            c              b              a            e                d              c              b              a             EOF",
-        "suggest": "dcbaedcba EOF",
-        "translate": false
+        "source": "The location 0 is top left.",
+        "suggest": "位置 0 位于左上角。",
+        "translate": ""
     },
     {
-        "source": "creation mode           | read  | write | read-write | append | read-append |",
-        "suggest": "创建模式 | 阅读 | 写读写追加 | 读取追加 |",
-        "translate": false
+        "source": "Pattern \"OOOOO\" is matching through \"0 1 2 3 4\", \"1 2 3 4 5\", ...",
+        "suggest": "模式 \"OOOOO\" 通过 \"0 1 2 3 4\"、\"1 2 3 4 5\"、...",
+        "translate": ""
     },
     {
-        "source": "not set (open existing) |   X   |   X   |     X      |   X    |      X      | create                  |       |   X   |     X      |   X    |      X      | truncate                |       |   X   |     X      |        |             | create and truncate     |       |   X   |     X      |        |             | create_new              |       |   X   |     X      |   X    |      X      |",
-        "suggest": "未设置 (打开现有) |X |X |X |X |X | 创建 || X |X |X |X | 截断 | X |X ||| 创建和截断 || X |X |||create_new ||X |X |X |X |",
-        "translate": false
+        "source": "Using avx512, \"0 1 2 3 4\", \"16 17 18 19 20\", ...",
+        "suggest": "使用 avx512, \"0 1 2 3 4\", \"16 17 18 19 20\", ...",
+        "translate": ""
     },
     {
-        "source": "recv() queue.push(t)                       return if queue.pop() if increment() == -1                deschedule { wakeup()                            if decrement() > 0",
-        "suggest": "recv() queue.push(t) 返回 queue.pop() 如果 increment() == -1 调度 {wakeup() 如果 decrement()> 0",
-        "translate": false
+        "source": "can be matched simultaneously.",
+        "suggest": "可以同时匹配。",
+        "translate": ""
     },
     {
-        "source": "next --->",
-        "suggest": "下一个 -- ->",
-        "translate": false
+        "source": "//! You can test out this program via:",
+        "suggest": "//! 您可以通过以下方式测试此程序:",
+        "translate": ""
     },
     {
-        "source": "|prev_tail|           |head_tail|",
-        "suggest": "| prev_tail || head_tail |",
-        "translate": false
+        "source": "You should see a game self-playing.",
+        "suggest": "您应该看一个自己玩的游戏。",
+        "translate": ""
     },
     {
-        "source": "next ---> /-----\\ next --->",
-        "suggest": "下一个 -- -> /-----\\ 下一个 -- ->",
-        "translate": false
+        "source": "In the end of the game, it shows the average time for each move.",
+        "suggest": "在游戏结束时，它会显示每一步的平均时间。",
+        "translate": ""
     },
     {
-        "source": "|prev_tail|           |entry|           |head_tail|",
-        "suggest": "| prev_tail || 输入 || head_tail |",
-        "translate": false
+        "source": "DIRECTION 0: left to right",
+        "suggest": "方向 0: 从左到右",
+        "translate": ""
     },
     {
-        "source": "|head_tail|           |first|           |second|",
-        "suggest": "| head_tail || 第一 || 秒 |",
-        "translate": false
+        "source": "DIRECTION 1: top to bottom",
+        "suggest": "方向 1: 从上到下",
+        "translate": ""
     },
     {
-        "source": "|head_tail|           |second|",
-        "suggest": "| head_tail || 秒 |",
-        "translate": false
+        "source": "DIRECTION 2: top left to bottom right",
+        "suggest": "方向 2: 从左上到右下",
+        "translate": ""
     },
     {
-        "source": "|prev|           |entry|           |next|",
-        "suggest": "| 上一页 || 输入 || 下一个 |",
-        "translate": false
+        "source": "DIRECTION 3: top right to bottom left",
+        "suggest": "方向 3: 从右上到左下",
+        "translate": ""
     },
     {
-        "source": "|prev|           |next|",
-        "suggest": "| 上一页 || 下一个 |",
-        "translate": false
+        "source": "A table to encode each location to a value in bit 31-0 in the bitboard for 4 direction",
+        "suggest": "将每个位置编码为位板中位 31-0 中的值的表，用于 4 个方向",
+        "translate": ""
     },
     {
-        "source": "timeout );",
-        "suggest": "超时 ) ;",
-        "translate": false
+        "source": "Direction 0",
+        "suggest": "方向 0",
+        "translate": ""
     },
     {
-        "source": "unsafe {        core::arch::wasm32::atomic_notify( LOCKED.as_mut_ptr(),",
-        "suggest": "不安全 {",
-        "translate": false
+        "source": "Direction 1",
+        "suggest": "方向 1",
+        "translate": ""
     },
     {
-        "source": "res = abs(a\\[0\\] - b\\[0\\]) + abs(a\\[1\\] - b\\[1\\]) +",
-        "suggest": "分辨率 = abs(a\\[0\\] - b\\[0\\]) + abs(a\\[1\\] - b\\[1\\]) +",
-        "translate": false
+        "source": "Direction 2",
+        "suggest": "方向 2",
+        "translate": ""
     },
     {
-        "source": "_MM_MANT_NORM_1_2     // interval [1, 2) _MM_MANT_NORM_p5_2    // interval [0.5, 2) _MM_MANT_NORM_p5_1    // interval [0.5, 1) _MM_MANT_NORM_p75_1p5 // interval [0.75, 1.5) The sign is determined by sc which can take the following values:",
-        "suggest": "_MM_MANT_NORM_1_2// 间隔 [1，2) _MM_MANT_NORM_p5_2// 间隔 [0.5，2) _MM_MANT_NORM_p5_1// 间隔 [0.5，1) _MM_MANT_NORM_p75_1p5// 间隔 [0.75，1.5) 该符号由 sc 决定，它可以采用以下值:",
-        "translate": false
+        "source": "Direction 3",
+        "suggest": "方向 3",
+        "translate": ""
     },
     {
-        "source": "_MM_MANT_SIGN_src     // sign = sign(src) _MM_MANT_SIGN_zero    // sign = 0 _MM_MANT_SIGN_nan     // dst = NaN if sign(src) = 1",
-        "suggest": "_MM_MANT_SIGN_src// 符号 = sign(src)_MM_MANT_SIGN_zero// 符号 = 0 _MM_MANT_SIGN_nan// 如果 sign(src) =1 则 dst=NaN",
-        "translate": false
+        "source": "A table to encode each location to an index in the bitboard for 4 direction",
+        "suggest": "将每个位置编码为位板中 4 个方向的索引的表",
+        "translate": ""
     },
     {
-        "source": "_MM_MANT_NORM_1_2     // interval [1, 2)",
-        "suggest": "_MM_MANT_NORM_1_2// 间隔 [1、2)",
-        "translate": false
+        "source": "Use one-dimensional array to store the board state.",
+        "suggest": "使用一维数组存储棋盘状态。",
+        "translate": ""
     },
     {
-        "source": "_MM_MANT_NORM_p5_2    // interval [0.5, 2)",
-        "suggest": "_MM_MANT_NORM_p5_2// 间隔 [0.5，2)",
-        "translate": false
+        "source": "position 15, 31, ...",
+        "suggest": "位置 15, 31, ...",
+        "translate": ""
     },
     {
-        "source": "_MM_MANT_NORM_p5_1    // interval [0.5, 1)",
-        "suggest": "_MM_MANT_NORM_p5_1// 间隔 [0.5，1)",
-        "translate": false
+        "source": "are Borders.",
+        "suggest": "是边界。",
+        "translate": ""
     },
     {
-        "source": "_MM_MANT_NORM_p75_1p5 // interval [0.75, 1.5)",
-        "suggest": "_MM_MANT_NORM_p75_1p5// 间隔 [0.75，1.5)",
-        "translate": false
+        "source": "position 0 is file 0, rank 0.",
+        "suggest": "位置 0 是文件 0，等级 0。",
+        "translate": ""
     },
     {
-        "source": "_MM_MANT_SIGN_src     // sign = sign(src)",
-        "suggest": "_MM_MANT_SIGN_src// 符号 = sign(src)",
-        "translate": false
+        "source": "position 17 is file 1, rank 1.",
+        "suggest": "位置 17 是文件 1，等级 1。",
+        "translate": ""
     },
     {
-        "source": "_MM_MANT_SIGN_zero    // sign = 0",
-        "suggest": "_MM_MANT_SIGN_zero// 符号 = 0",
-        "translate": false
+        "source": "Use a three-dimensional array to store the bitboard.",
+        "suggest": "使用三维数组来存储位板。",
+        "translate": ""
     },
     {
-        "source": "_MM_MANT_SIGN_nan     // dst = NaN if sign(src) = 1",
-        "suggest": "_MM_MANT_SIGN_nan// 如果 sign(src) =1 则 dst=NaN",
-        "translate": false
+        "source": "The first dimension is color: Black, White and Empty.",
+        "suggest": "第一个维度是颜色: 黑色、白色和空。",
+        "translate": ""
     },
     {
-        "source": "(_MM_FROUND_TO_NEAREST_INT |_MM_FROUND_NO_EXC) // round to nearest, and suppress exceptions (_MM_FROUND_TO_NEG_INF |_MM_FROUND_NO_EXC)     // round down, and suppress exceptions (_MM_FROUND_TO_POS_INF |_MM_FROUND_NO_EXC)     // round up, and suppress exceptions (_MM_FROUND_TO_ZERO |_MM_FROUND_NO_EXC)        // truncate, and suppress exceptions _MM_FROUND_CUR_DIRECTION // use MXCSR.RC;",
-        "suggest": "(_MM_FROUND_TO_NEAREST_INT | _MM_FROUND_NO_EXC) // 舍入到最接近的位置，并抑制异常 (_MM_FROUND_TO_NEG_INF | _MM_FROUND_NO_EXC) // 向下取整并抑制异常 (_MM_FROUND_TO_POS_INF | _MM_FROUNDS 和 //_抑制异常 _MM_FROUND_CUR_DIRECTION// 使用 MXCSR.RC;",
-        "translate": false
+        "source": "The second and third one are 2 x 512-bit.",
+        "suggest": "第二个和第三个是 2 x 512 位。",
+        "translate": ""
     },
     {
-        "source": "core_arch::{simd::*, simd_llvm::*, x86::*}, mem::transmute, };",
-        "suggest": "core_arch::{simd::*，simd_llvm::*，x86::*}，mem::transmute，};",
-        "translate": false
+        "source": "Direction 0 and 2 use the first 512-bit.",
+        "suggest": "方向 0 和 2 使用第一个 512 位。",
+        "translate": ""
     },
     {
-        "source": "fn type_to_native_type(t: &str) -> &str { match t { \"int8x8_t\" => \"i8\", \"int8x16_t\" => \"i8\", \"int16x4_t\" => \"i16\", \"int16x8_t\" => \"i16\", \"int32x2_t\" => \"i32\", \"int32x4_t\" => \"i32\", \"int64x1_t\" => \"i64\", \"int64x2_t\" => \"i64\", \"uint8x8_t\" => \"u8\", \"uint8x16_t\" => \"u8\", \"uint16x4_t\" => \"u16\", \"uint16x8_t\" => \"u16\", \"uint32x2_t\" => \"u32\", \"uint32x4_t\" => \"u32\", \"uint64x1_t\" => \"u64\", \"uint64x2_t\" => \"u64\", \"float16x4_t\" => \"f16\", \"float16x8_t\" => \"f16\", \"float32x2_t\" => \"f32\", \"float32x4_t\" => \"f32\", \"float64x1_t\" => \"f64\", \"float64x2_t\" => \"f64\", \"poly64x1_t\" => \"i64\", \"poly64x2_t\" => \"i64\", _ => panic!(\"unknown type: {}\", t), } }",
-        "suggest": "fn type_to_native_type (t: &str) -> &str { match t { \"int8x8_t\" => \"i8\", \"int8x16_t\" => \"i8\", \"int16x4_t\" => \"i16\", \"int16x8_t\" => \"i16\", \"int32x2_t\" => \"i32\", \"int32x4_t\" => \"i32\", \"int64x1_t\" => \"i64\", \"int64x2_t\" => \"i64\", \"uint8x8_t\" => \"u8\", \"uint8x16_t\" => \"u8\", \"uint16x4_t\" => \"u16\", \"uint16x8_t\" => \"u16\", \"uint32x2_t\" => \"u32\", \"uint32x4_t\" => \"u32\", \"uint64x1_t\" => \"u64\", \"uint64x2_t\" => \"u64\", \"float16x4_t\" => \"f16\", \"float16x8_t\" => \"f16\", \"float32x2_t\" => \"f32\", \"float32x4_t\" => \"f32\", \"float64x1_t\" => \"f64\", \"float64x2_t\" => \"f64\", \"poly64x1_t\" => \"i64\", \"poly64x2_t\" => \"i64\", _ => panic!(\"unknown type: {}\", t), }}",
-        "translate": false
+        "source": "Direction 1 and",
+        "suggest": "方向 1 和",
+        "translate": ""
     },
     {
-        "source": "ab cd ef     $instr..",
-        "suggest": "ab cd ef $ instr ..",
-        "translate": false
+        "source": "3 use the second 512-bit.",
+        "suggest": "3 使用第二个 512 位。",
+        "translate": ""
     },
     {
-        "source": "00 12          # this line os optional",
-        "suggest": "00 12# 此行 os 可选",
-        "translate": false
+        "source": "Each 512-bit is a 32-bit x 16 array.",
+        "suggest": "每个 512 位是一个 32 位 x 16 阵列。",
+        "translate": ""
     },
     {
-        "source": "mips-*gnu* | mipsel-*gnu*) export RUSTFLAGS=\"${RUSTFLAGS} -C target-feature=+msa,+fp64,+mips32r5\" cargo_test \"--release\"",
-        "suggest": "mips-*gnu* |mipsel-*gnu*) export RUSTFLAGS=`$ {RUSTFLAGS} -C target-feature=+ msa，+ fp64，+ mips32r5` cargo_test \"--release\"",
-        "translate": false
+        "source": "Direction 0 and 1 store at bit 31-16 and Direction 2 and 3 store at bit 15-0.",
+        "suggest": "方向 0 和 1 存储在位 31-16，方向 2 和 3 存储在位 15-0。",
+        "translate": ""
     },
     {
-        "source": "if rustup component add clippy-preview ; then cargo clippy -V cargo clippy --all -- -D clippy::pedantic fi",
-        "suggest": "如果 rustup 组件添加 clippy-preview; 然后 cargo clippy -V cargo clippy-- all--D clippy::pedantic fi",
-        "translate": false
+        "source": "starting position Set up the Border",
+        "suggest": "起始位置 设置边框",
+        "translate": ""
     },
     {
-        "source": "#[macro_use] extern crate stdarch;",
-        "suggest": "#[macro_use] extern crate stdarch;",
-        "translate": false
+        "source": "In the beginning, all is Empty",
+        "suggest": "一开始，一切都是空的",
+        "translate": ""
     },
     {
-        "source": "31, 5 (May. 1996),",
-        "suggest": "31, 5 (1996 年 5 月),",
-        "translate": false
+        "source": "first move is Black",
+        "suggest": "第一步是黑色",
+        "translate": ""
     },
     {
-        "source": "45, 6 (June 2010),",
-        "suggest": "45、6 (2010 年 6 月)，",
-        "translate": false
+        "source": "set up the corresponding bitboard",
+        "suggest": "设置相应的位板",
+        "translate": ""
     },
     {
-        "source": "&Result<T: Deref, E>::Ok(T).as_deref() -> Result<&T::Deref::Target, &E>::Ok(&*T)",
-        "suggest": "& 结果 <T: Deref, E>::Ok (T).as_deref () -> 结果 <&T::Target,&E>::Ok (&*T)",
-        "translate": false
+        "source": "use bit 31-16 to store direction 0 and 1",
+        "suggest": "使用位 31-16 来存储方向 0 和 1",
+        "translate": ""
     },
     {
-        "source": "&Result<T: Deref, E>::Err(T).as_deref() -> Result<&T::Deref::Target, &E>::Err(&*E)",
-        "suggest": "& 结果 <T: Deref, E>::Err (T).as_deref () -> 结果 <&T::Target,&E>::Err (&*E)",
-        "translate": false
+        "source": "use bit 15-0 to store direction 2 and 3.",
+        "suggest": "使用位 15-0 来存储方向 2 和 3。",
+        "translate": ""
     },
     {
-        "source": "FIXME vmovntpd",
-        "suggest": "修复 vmovntpd",
-        "translate": false
+        "source": "There are 21 for each one.",
+        "suggest": "每个人有 21 个。",
+        "translate": ""
+    },
+    {
+        "source": "We combine row1 and row16, row2 and row17, row3 and row18, row4 and row19, and row 5 and row20",
+        "suggest": "我们组合 row1 和 row16、row2 和 row17、row3 和 row18、row4 和 row19，row5 和 row20",
+        "translate": ""
+    },
+    {
+        "source": "row 0",
+        "suggest": "第 0 行",
+        "translate": ""
+    },
+    {
+        "source": "update black move and remove empty move in bitboard",
+        "suggest": "更新黑色移动并删除位板中的空移动",
+        "translate": ""
+    },
+    {
+        "source": "update white move and remove empty move in bitboard",
+        "suggest": "更新空白移动并移除位板中的空白移动",
+        "translate": ""
+    },
+    {
+        "source": "legal move list",
+        "suggest": "合法移动列表",
+        "translate": ""
+    },
+    {
+        "source": "Use List to store legal moves.",
+        "suggest": "使用列表存储合法移动。",
+        "translate": ""
+    },
+    {
+        "source": "if all empty is 0, all board is filled.",
+        "suggest": "如果所有空的都是 0，则所有板都已填满。",
+        "translate": ""
+    },
+    {
+        "source": "use Minimax search with alpha-beta pruning",
+        "suggest": "使用极小极大搜索和 alpha-beta 剪枝",
+        "translate": ""
+    },
+    {
+        "source": "move loop",
+        "suggest": "循环移动",
+        "translate": ""
+    },
+    {
+        "source": "best move at the root node, best score elsewhere",
+        "suggest": "最好在根节点移动，在其他地方得分最高",
+        "translate": ""
+    },
+    {
+        "source": "Evaluation function: give different scores to different patterns after a fixed depth.",
+        "suggest": "评价函数: 在固定深度后，给不同的图案赋予不同的分数。",
+        "translate": ""
+    },
+    {
+        "source": "check if opp has live4 which will win playing next move",
+        "suggest": "检查 opp 是否有 live4 这将赢得下一步行动",
+        "translate": ""
+    },
+    {
+        "source": "check if self has live4 which will win playing next move",
+        "suggest": "检查自己是否有 live4 这将赢得下一步行动",
+        "translate": ""
+    },
+    {
+        "source": "check if self has dead4 which will win playing next move",
+        "suggest": "检查自己是否有 dead4 这将赢得下一步行动",
+        "translate": ""
+    },
+    {
+        "source": "check if opp has 2 dead4 which will win playing next move",
+        "suggest": "检查 opp 是否有 2 dead4 这将赢得下一步行动",
+        "translate": ""
+    },
+    {
+        "source": "check if opp has a dead 4 and live 3 which will win playing the next two move",
+        "suggest": "检查 opp 是否有死 4 和活 3，这将赢得接下来的两步",
+        "translate": ""
+    },
+    {
+        "source": "check if opp has 2 live3 which will win playing the next two move",
+        "suggest": "检查 opp 是否有 2 live3 这将赢得接下来的两步",
+        "translate": ""
+    },
+    {
+        "source": "check if self has 2 live3 which will win playing the next two move",
+        "suggest": "检查自己是否有 2 live3 这将赢得接下来的两步棋",
+        "translate": ""
+    },
+    {
+        "source": "Check <b>OOOOO</b>",
+        "suggest": "检查 <b>OOOOO</b>",
+        "translate": ""
+    },
+    {
+        "source": "Check <b>-OOOO-</b>",
+        "suggest": "检查 <b>-OOOO-</b>",
+        "translate": ""
+    },
+    {
+        "source": "Check <b>OOOO-, OOO-O, OO-OO, O-OOO, -OOOO</b>",
+        "suggest": "检查 <b>OOOO-, OOO-O, OO-OO, O-OOO,-OOOO</b>",
+        "translate": ""
+    },
+    {
+        "source": "Check <b>-OOO-, -OO-O-, -O-OO-</br>",
+        "suggest": "检查 <b>-OOO-、-OO-O-、-O-OO-</b></br>",
+        "translate": ""
+    },
+    {
+        "source": "load states from bitboard",
+        "suggest": "从位板加载状态",
+        "translate": ""
+    },
+    {
+        "source": "an unbroken chain of five moves",
+        "suggest": "连续的五个动作链",
+        "translate": ""
+    },
+    {
+        "source": "use Mask to filter out which data is not processed.",
+        "suggest": "使用 Mask 过滤掉哪些数据没有被处理。",
+        "translate": ""
+    },
+    {
+        "source": "There is no data to match (x = black, o = white, _ = empty, 0 = no data).",
+        "suggest": "没有要匹配的数据 (x = 黑色，o = 白色，_= 空，0 = 无数据)。",
+        "translate": ""
+    },
+    {
+        "source": "Then, shift one space left.",
+        "suggest": "然后，左移一格。",
+        "translate": ""
+    },
+    {
+        "source": "There is no enough data to match (o x o x but we want to match o o o o o).",
+        "suggest": "没有足够的数据来匹配 (o x o x 但我们想匹配 o o o o o)。",
+        "translate": ""
+    },
+    {
+        "source": "mix 2 data together (column 17-23 and column 24-32).",
+        "suggest": "将 2 个数据混合在一起 (17-23 列和 24-32 列)。",
+        "translate": ""
+    },
+    {
+        "source": "Using Mask to make it match correctly.",
+        "suggest": "使用 Mask 使其正确匹配。",
+        "translate": ""
+    },
+    {
+        "source": "For example, column 23,24,25,26,27 is not a pattern and 24,25,26,27,28 is a pattern.",
+        "suggest": "例如，第 23,24,25,26,27 列不是模式，而 24,25,26,27,28 是模式。",
+        "translate": ""
+    },
+    {
+        "source": "That is why some mask bits are set to 0 from answer_mask[2] to answer_mask[10].",
+        "suggest": "这就是为什么一些掩码位从 answer_mask[2] 到 answer_mask [10] 设置为 0 的原因。",
+        "translate": ""
+    },
+    {
+        "source": "direction 0 and 1",
+        "suggest": "方向 0 和 1",
+        "translate": ""
+    },
+    {
+        "source": "OOOOOOOOOOO----, the last 4 \"-\" cannot make an unbroken chain of five.",
+        "suggest": "OOOOOOOOOOO----，最后的 4 个 \"-\" 不能组成一个完整的 5 个链。",
+        "translate": ""
+    },
+    {
+        "source": "shift one space left",
+        "suggest": "左移一格",
+        "translate": ""
+    },
+    {
+        "source": "focus on the pattern",
+        "suggest": "专注于模式",
+        "translate": ""
+    },
+    {
+        "source": "see if it matches the pattern",
+        "suggest": "看看它是否与模式匹配",
+        "translate": ""
+    },
+    {
+        "source": "set the first move is (1,7)",
+        "suggest": "设置第一步是 (1,7)",
+        "translate": ""
+    },
+    {
+        "source": "search depth = 4",
+        "suggest": "搜索深度 = 4",
+        "translate": ""
+    },
+    {
+        "source": "See [`std::hint::black_box`] for details.",
+        "suggest": "有关详细信息，请参见 [`std::hint::black_box`]。",
+        "translate": ""
+    },
+    {
+        "source": "A unique integer associated with each test.",
+        "suggest": "与每个测试关联的唯一整数。",
+        "translate": ""
     }
 ]
