@@ -4981,7 +4981,7 @@
     },
     {
         "source": "does **not** create a new type:",
-        "suggest": "不会创建新类型:",
+        "suggest": "不创建新类型:",
         "translate": ""
     },
     {

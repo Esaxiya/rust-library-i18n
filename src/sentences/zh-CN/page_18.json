@@ -4881,7 +4881,7 @@
     },
     {
         "source": "A barrier will block `n`-1 threads which call [`wait()`] and then wake up all threads at once when the `n`th thread calls [`wait()`].",
-        "suggest": "屏障将阻塞调用 [`wait()`] 的 n 个 - 1 线程，然后在第 n 个线程调用 [`wait()`] 时立即唤醒所有线程。",
+        "suggest": "屏障将阻塞调用 [`wait()`] 的 `n - 1` 个线程，然后在第 n 个线程调用 [`wait()`] 时立即唤醒所有线程。",
         "translate": ""
     },
     {

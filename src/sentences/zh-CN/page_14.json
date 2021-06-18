@@ -4891,7 +4891,7 @@
     },
     {
         "source": "Purposefully skip printing \"StringError(..)\"",
-        "suggest": "故意跳过打印 \"StringError(..)\"",
+        "suggest": "有意跳过打印 \"StringError(..)\"",
         "translate": ""
     },
     {
@@ -4996,7 +4996,7 @@
     },
     {
         "source": "limitation due to round-off error",
-        "suggest": "由于舍入误差而受到限制",
+        "suggest": "由于舍入误差而造成的限制",
         "translate": ""
     }
 ]
