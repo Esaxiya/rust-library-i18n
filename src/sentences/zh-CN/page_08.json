@@ -116,12 +116,12 @@
     },
     {
         "source": "// error: Sized is not implemented for [i32]",
-        "suggest": "// 错误: 未为 [i32] 实现大小调整",
+        "suggest": "// 错误: 没有为 [i32] 实现大小调整",
         "translate": ""
     },
     {
         "source": "// error: the trait `Bar` cannot be made into an object",
-        "suggest": "// 错误: 无法将 trait `Bar` 制成对象",
+        "suggest": "// 错误: 无法将 trait `Bar` 创建成对象",
         "translate": ""
     },
     {
@@ -551,12 +551,12 @@
     },
     {
         "source": "When *should* my type be `Copy`?",
-        "suggest": "我的 *什么时候* 应该是 `Copy`?",
+        "suggest": "什么时候我的类型应该是 `Copy`?",
         "translate": ""
     },
     {
         "source": "Generally speaking, if your type _can_ implement `Copy`, it should.",
-        "suggest": "一般来说，如果您的 _can_ 类型实现 `Copy`，则应该这样做。",
+        "suggest": "一般来说，如果您的类型可以实现 `Copy`，则应该这样做。",
         "translate": ""
     },
     {
@@ -566,12 +566,12 @@
     },
     {
         "source": "If the type might become non-`Copy` in the future, it could be prudent to omit the `Copy` implementation now, to avoid a breaking API change.",
-        "suggest": "如果在 future 中该类型可能变为非 `Copy`，则最好现在省略 `Copy` 实现，以避免 API 发生重大更改。",
+        "suggest": "如果该类型将来可能变为非 `Copy`，则最好现在省略 `Copy` 实现，以避免 API 发生重大更改。",
         "translate": ""
     },
     {
         "source": "In addition to the [implementors listed below][impls], the following types also implement `Copy`:",
-        "suggest": "除 [implementors listed below][impls] 之外，以下类型还实现 `Copy`:",
+        "suggest": "除 [下面列出的实现者][impls] 之外，以下类型还实现 `Copy`:",
         "translate": ""
     },
     {
@@ -606,7 +606,7 @@
     },
     {
         "source": "Derive macro generating an impl of the trait `Copy`.",
-        "suggest": "派生宏，生成 trait `Copy` 的印象。",
+        "suggest": "派生宏，生成 `Copy` trait 的 impl。",
         "translate": ""
     },
     {
@@ -621,7 +621,7 @@
     },
     {
         "source": "In other words, if there is no possibility of [undefined behavior][ub] (including data races) when passing `&T` references between threads.",
-        "suggest": "换句话说，如果在线程之间传递 `&T` 引用时没有 [undefined behavior][ub] (包括数据竞争) 的可能性。",
+        "suggest": "换句话说，如果在线程之间传递 `&T` 引用时没有 [未定义的行为][ub] (包括数据竞争) 的可能性。",
         "translate": ""
     },
     {
@@ -631,7 +631,7 @@
     },
     {
         "source": "More examples of basic [`Sync`] types include \"immutable\" types like `&T`, and those with simple inherited mutability, such as [`Box<T>`][box], [`Vec<T>`][vec] and most other collection types.",
-        "suggest": "基本 [`Sync`] 类型的更多示例包括 \"immutable\" 类型 (例如 `&T`) 以及具有简单继承的可变性的类型，例如 [`Box<T>`][box]，[`Vec<T>`][vec] 和大多数其他集合类型。",
+        "suggest": "基本 [`Sync`] 类型的更多示例包括不可变类型 (例如 `&T`) 以及具有简单继承的可变性的类型，例如 [`Box<T>`][box]，[`Vec<T>`][vec] 和大多数其他集合类型。",
         "translate": ""
     },
     {
@@ -706,7 +706,7 @@
     },
     {
         "source": "Failing to doing this is [undefined behavior][ub].",
-        "suggest": "[undefined behavior][ub] 无法做到这一点。",
+        "suggest": "[未定义的行为][ub] 无法做到这一点。",
         "translate": ""
     },
     {
@@ -726,7 +726,7 @@
     },
     {
         "source": "Zero-sized type used to mark things that \"act like\" they own a `T`.",
-        "suggest": "零大小类型用于标记 \"act like\" 拥有 `T` 的事物。",
+        "suggest": "零大小的类型用来标记那些行为像它们拥有一个 `T` 的东西。",
         "translate": ""
     },
     {
@@ -1471,7 +1471,7 @@
     },
     {
         "source": "This makes it undefined behavior to have uninitialized data in a variable even if that variable has an integer type, which otherwise can hold any *fixed* bit pattern:",
-        "suggest": "这使得在变量中具有未初始化的数据成为未定义的行为，即使该变量具有整数类型也可以保留任何 *fixed* 位模式:",
+        "suggest": "这使得在变量中具有未初始化的数据成为未定义的行为，即使该变量具有整数类型也可以保留任何固定位模式",
         "translate": ""
     },
     {
@@ -1501,7 +1501,7 @@
     },
     {
         "source": "It is a signal to the compiler indicating that the data here might *not* be initialized:",
-        "suggest": "这是向编译器发出的信号，指示此处的数据可能 *不* 被初始化:",
+        "suggest": "这是向编译器发出的信号，指示此处的数据可能不被初始化:",
         "translate": ""
     },
     {
@@ -1741,7 +1741,7 @@
     },
     {
         "source": "*Incorrect* usage of this method:",
-        "suggest": "这种方法的 *不正确* 用法:",
+        "suggest": "这个方法的错误用法:",
         "translate": ""
     },
     {
@@ -1866,7 +1866,7 @@
     },
     {
         "source": "*Incorrect* usages of this method:",
-        "suggest": "这种方法的 *不正确* 用法:",
+        "suggest": "这个方法的错误用法:",
         "translate": ""
     },
     {
@@ -1951,7 +1951,7 @@
     },
     {
         "source": "casting slice to a `*const [T]` is safe since the caller guarantees that `slice` is initialized, and`MaybeUninit` is guaranteed to have the same layout as `T`.",
-        "suggest": "将切片投射到 `*const [T]` 是安全的，因为调用方保证已初始化 `slice`，并保证 `MaybeUninit` 具有与 `T` 相同的布局。",
+        "suggest": "将切片转换为 `*const [T]` 是安全的，因为调用方保证已初始化 `slice`，并保证 `MaybeUninit` 具有与 `T` 相同的布局。",
         "translate": ""
     },
     {

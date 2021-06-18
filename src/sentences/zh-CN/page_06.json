@@ -1021,7 +1021,7 @@
     },
     {
         "source": "The `.await` lowering will safely cast that back to a `&mut Context`.",
-        "suggest": "降低 `.await` 会将其安全地投射回 `&mut Context`。",
+        "suggest": "`.await` lowering 会安全地将其转换为 `&mut Context`。",
         "translate": ""
     },
     {

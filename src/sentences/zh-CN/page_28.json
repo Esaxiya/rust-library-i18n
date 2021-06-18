@@ -3236,7 +3236,7 @@
     },
     {
         "source": "Rustdocs on functions do not.",
-        "suggest": "函数上的 Rustdocs 没有。",
+        "suggest": "函数上的 Rustdocs 不支持。",
         "translate": ""
     },
     {
@@ -4321,7 +4321,7 @@
     },
     {
         "source": "has the ability to attach a message as part of the abort.",
-        "suggest": "能够附加消息作为终止的一部分。",
+        "suggest": "能够附加消息作为中止的一部分。",
         "translate": ""
     },
     {
@@ -4466,7 +4466,7 @@
     },
     {
         "source": "For more information on the `move` keyword, see the [closures][closure] section of the Rust book or the [threads] section.",
-        "suggest": "有关 `move` 关键字的更多信息，请参见 Rust 书籍的 [closures][closure] 部分或 [threads] 部分。",
+        "suggest": "有关 `move` 关键字的更多信息，请参见 Rust 书籍的 [闭包][closure] 部分或 [threads] 部分。",
         "translate": ""
     },
     {

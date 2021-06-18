@@ -1386,7 +1386,7 @@
     },
     {
         "source": "Casting a `bool` will never overflow `isize`.",
-        "suggest": "投射 `bool` 不会使 `isize` 溢出。",
+        "suggest": "转换 `bool` 不会使 `isize` 溢出。",
         "translate": ""
     },
     {

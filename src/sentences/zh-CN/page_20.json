@@ -3601,7 +3601,7 @@
     },
     {
         "source": "unsigned and cast here.",
-        "suggest": "无符号并投射到此处。",
+        "suggest": "没有签名和 cast。",
         "translate": ""
     },
     {

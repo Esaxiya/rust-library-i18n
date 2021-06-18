@@ -796,7 +796,7 @@
     },
     {
         "source": "We can just cast the pointer from `UnsafeCell<T>` to `T` because of #[repr(transparent)].",
-        "suggest": "由于 #[repr(transparent)]，我们只能将指针从 `UnsafeCell<T>` 投射到 `T`。",
+        "suggest": "由于 #[repr(transparent)]，我们只能将指针从 `UnsafeCell<T>` 转换为 `T`。",
         "translate": ""
     },
     {
@@ -2156,7 +2156,7 @@
     },
     {
         "source": "Derive macro generating an impl of the trait `Clone`.",
-        "suggest": "派生宏，生成 trait `Clone` 的印象。",
+        "suggest": "派生宏，生成 trait `Clone` 的 impl。",
         "translate": ""
     },
     {
@@ -2406,7 +2406,7 @@
     },
     {
         "source": "Derive macro generating an impl of the trait `PartialEq`.",
-        "suggest": "派生宏，生成 trait `PartialEq` 的印象。",
+        "suggest": "派生宏，生成 trait `PartialEq` 的 impl。",
         "translate": ""
     },
     {
@@ -2471,7 +2471,7 @@
     },
     {
         "source": "Derive macro generating an impl of the trait `Eq`.",
-        "suggest": "派生宏，生成 trait `Eq` 的印象。",
+        "suggest": "派生宏，生成 trait `Eq` 的 impl。",
         "translate": ""
     },
     {
@@ -2746,7 +2746,7 @@
     },
     {
         "source": "Derive macro generating an impl of the trait `Ord`.",
-        "suggest": "派生宏，生成 trait `Ord` 的印象。",
+        "suggest": "派生宏，生成 trait `Ord` 的 impl。",
         "translate": ""
     },
     {
@@ -2856,7 +2856,7 @@
     },
     {
         "source": "Derive macro generating an impl of the trait `PartialOrd`.",
-        "suggest": "派生宏，生成 trait `PartialOrd` 的印象。",
+        "suggest": "派生宏，生成 trait `PartialOrd` 的 impl。",
         "translate": ""
     },
     {
@@ -3831,7 +3831,7 @@
     },
     {
         "source": "Derive macro generating an impl of the trait `Default`.",
-        "suggest": "派生宏，生成 trait `Default` 的印象。",
+        "suggest": "派生宏，生成 trait `Default` 的 impl。",
         "translate": ""
     },
     {
@@ -4791,7 +4791,7 @@
     },
     {
         "source": "Derive macro generating an impl of the trait `Debug`.",
-        "suggest": "派生宏，生成 trait `Debug` 的印象。",
+        "suggest": "派生宏，生成 trait `Debug` 的 impl。",
         "translate": ""
     },
     {

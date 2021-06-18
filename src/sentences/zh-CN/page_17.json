@@ -1716,7 +1716,7 @@
     },
     {
         "source": "It is safe to cast from `&in_addr` to `&Ipv4Addr`.",
-        "suggest": "从 `&in_addr` 投射到 `&Ipv4Addr` 是安全的。",
+        "suggest": "从 `&in_addr` 转换为 `&Ipv4Addr` 是安全的。",
         "translate": ""
     },
     {

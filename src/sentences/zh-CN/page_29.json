@@ -346,7 +346,7 @@
     },
     {
         "source": "without atomics maps directly to `static mut`, and dtors aren't implemented because thread dtors aren't really a thing on wasm right now",
-        "suggest": "没有原子 maps 直接到 `static mut`，并且没有实现 dtor，因为线程 dtor 现在在 wasm 上并不是真正的东西",
+        "suggest": "没有原子直接映射到 `static mut`，并且没有实现 dtor，因为线程 dtor 现在在 wasm 上并不是真正的东西",
         "translate": ""
     },
     {
@@ -981,7 +981,7 @@
     },
     {
         "source": "Store 128-bits (composed of 4 packed 32-bit integers) from a into memory.",
-        "suggest": "将 a 中的 128 位 (由 4 个包装的 32 位整数组成) 存入内存。",
+        "suggest": "将 a 中的 128 位 (由 4 个包装的 32 位整数组成) 存储到内存中。",
         "translate": ""
     },
     {
@@ -1001,7 +1001,7 @@
     },
     {
         "source": "Store 128-bits (composed of 2 packed 64-bit integers) from a into memory.",
-        "suggest": "将 a 中的 128 位 (由 2 个包装的 64 位整数组成) 存入内存。",
+        "suggest": "将 a 中的 128 位 (由 2 个包装的 64 位整数组成) 存储到内存中。",
         "translate": ""
     },
     {
