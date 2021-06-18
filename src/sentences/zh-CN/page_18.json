@@ -661,7 +661,7 @@
     },
     {
         "source": "Once we stack all that together we should have the \"most efficient' method of calling a catch panic whilst juggling ownership.",
-        "suggest": "一旦我们将所有内容堆叠在一起，我们就应该拥有一种在兼顾所有权的同时调用 catch panic 的 `最有效` 方法。",
+        "suggest": "一旦我们把所有这些都堆在一起，我们就有了最有效的方法，可以在兼顾所有权的同时触发 panic。",
         "translate": ""
     },
     {
@@ -691,7 +691,7 @@
     },
     {
         "source": "We consider unwinding to be rare, so mark this function as cold.",
-        "suggest": "我们认为展开很少见，因此将此函数标记为 `冷`。",
+        "suggest": "我们认为展开很少见，因此将此函数标记为 `cold`。",
         "translate": ""
     },
     {
@@ -2341,7 +2341,7 @@
     },
     {
         "source": "The difference between 'the prelude' and these other preludes is that they are not automatically `use`'d, and must be imported manually.",
-        "suggest": "`prelude` 和其他 preludes 之间的区别是它们不会自动 `使用`，而必须手动导入。",
+        "suggest": "`prelude` 和其他 preludes 之间的区别是它们不会自动 `use`，而必须手动导入。",
         "translate": ""
     },
     {
@@ -2506,7 +2506,7 @@
     },
     {
         "source": "'combining acute accent'",
-        "suggest": "`结合重音`",
+        "suggest": "结合重音",
         "translate": ""
     },
     {
@@ -3156,7 +3156,7 @@
     },
     {
         "source": "The `str` type, also called a 'string slice', is the most primitive string type.",
-        "suggest": "`str` 类型，也称为 `字符串切片`，是最原始的字符串类型。",
+        "suggest": "`str` 类型，也称为字符串切片，是最原始的字符串类型。",
         "translate": ""
     },
     {
@@ -3221,7 +3221,7 @@
     },
     {
         "source": "Tuples are *finite*.",
-        "suggest": "元组是 `有限的`。",
+        "suggest": "元组是有限的。",
         "translate": ""
     },
     {
@@ -3246,7 +3246,7 @@
     },
     {
         "source": "Tuples are *heterogeneous*.",
-        "suggest": "元组是 `异构的`。",
+        "suggest": "元组是异构的。",
         "translate": ""
     },
     {
@@ -3261,7 +3261,7 @@
     },
     {
         "source": "Tuples are a *sequence*.",
-        "suggest": "元组是一个 `序列`。",
+        "suggest": "元组是一个序列。",
         "translate": ""
     },
     {
@@ -3271,7 +3271,7 @@
     },
     {
         "source": "this is called 'tuple indexing', and it looks like this:",
-        "suggest": "这称为 `元组索引`，看起来像这样:",
+        "suggest": "这称为元组索引，它看起来像这样:",
         "translate": ""
     },
     {
@@ -3956,7 +3956,7 @@
     },
     {
         "source": "There is no implementation of [`Drop`] for child processes, so if you do not ensure the `Child` has exited then it will continue to run, even after the `Child` handle to the child process has gone out of scope.",
-        "suggest": "子进程没有 [`Drop`] 的实现，因此，即使不确定子进程的 `Child` 句柄已离开 `离开作用域`，如果您不确保 `Child` 已经退出，它也将继续运行。",
+        "suggest": "子进程没有 [`Drop`] 的实现，所以如果你不确保 `Child` 已经退出，那么它会继续运行，即使在子进程的 `Child` 句柄已经离开作用域之后。",
         "translate": ""
     },
     {
@@ -4486,7 +4486,7 @@
     },
     {
         "source": "On Unix this is the **wait status**.",
-        "suggest": "在 Unix 上，这是 `等待状态`。",
+        "suggest": "在 Unix 上，这是等待状态。",
         "translate": ""
     },
     {
@@ -4516,7 +4516,7 @@
     },
     {
         "source": "In Unix terms the return value is the **exit status**: the value passed to `exit`, if the process finished by calling `exit`.",
-        "suggest": "用 Unix 的术语来说，返回值是 `退出状态`: 如果进程通过调用 `exit` 完成，则传递给 `exit` 的值。",
+        "suggest": "用 Unix 的术语来说，返回值是退出状态: 如果进程通过调用 `exit` 完成，则传递给 `exit` 的值。",
         "translate": ""
     },
     {

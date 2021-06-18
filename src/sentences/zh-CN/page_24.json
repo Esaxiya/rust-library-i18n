@@ -3356,7 +3356,7 @@
     },
     {
         "source": "Compute the bitwise NOT of `a` and then AND with `b`, producing an intermediate value, and set `CF` to 1 if the sign bit of each 32-bit element in the intermediate value is zero, otherwise set `CF` to 0.",
-        "suggest": "计算 `a` 的按位非，然后与 `b` 进行 `与` 运算，产生一个中间值，如果中间值中每个 32 位元素的符号位为零，则将 `CF` 设置为 1，否则将 `CF` 设置为 0。",
+        "suggest": "计算 `a` 的按位非，然后与 `b` 进行与运算，产生一个中间值，如果中间值中每个 32 位元素的符号位为零，则将 `CF` 设置为 1，否则将 `CF` 设置为 0。",
         "translate": ""
     },
     {

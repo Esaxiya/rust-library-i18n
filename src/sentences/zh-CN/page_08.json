@@ -181,12 +181,12 @@
     },
     {
         "source": "An example of a non-`Send` type is the reference-counting pointer [`rc::Rc`][`Rc`].",
-        "suggest": "非 `发送` 类型的一个示例是 `引用计数` 指针 [`rc::Rc`][`Rc`]。",
+        "suggest": "非 `Send` 类型的一个示例是引用计数指针 [`rc::Rc`][`Rc`]。",
         "translate": ""
     },
     {
         "source": "If two threads attempt to clone [`Rc`]s that point to the same reference-counted value, they might try to update the reference count at the same time, which is [undefined behavior][ub] because [`Rc`] doesn't use atomic operations.",
-        "suggest": "如果两个线程尝试克隆指向相同的 `引用计数` 值的 [`Rc`]，则它们可能会尝试同时更新 `引用计数`，即 [undefined behavior][ub]，因为 [`Rc`] 不使用原子操作。",
+        "suggest": "如果两个线程试图克隆指向相同引用计数值的 [`Rc`]，它们可能会同时尝试更新引用计数，这是 [未定义行为][ub] 因为 [`Rc`] 不使用原子操作。",
         "translate": ""
     },
     {
@@ -231,7 +231,7 @@
     },
     {
         "source": "for Default, for example, which requires that `[T]: !Default` be evaluatable",
-        "suggest": "例如，对于 `默认` 而言，它要求 `[T]: !Default` 必须是可评估的",
+        "suggest": "例如，对于 Default，它要求 `[T]: !Default` 必须是可评估的",
         "translate": ""
     },
     {
@@ -376,12 +376,12 @@
     },
     {
         "source": "By default, variable bindings have 'move semantics.' In other words:",
-        "suggest": "默认情况下，变量绑定具有 `移动语义`。换句话说:",
+        "suggest": "默认情况下，变量绑定具有移动语义。换句话说:",
         "translate": ""
     },
     {
         "source": "However, if a type implements `Copy`, it instead has 'copy semantics':",
-        "suggest": "但是，如果类型实现 `Copy`，则它具有 `复制语义`:",
+        "suggest": "但是，如果类型实现 `Copy`，则它具有复制语义:",
         "translate": ""
     },
     {
@@ -546,7 +546,7 @@
     },
     {
         "source": "If you try to implement `Copy` on a struct or enum containing non-`Copy` data, you will get the error [E0204].",
-        "suggest": "如果尝试在包含非 `复制` 数据的结构体或枚举上实现 `Copy`，则会收到错误 [E0204]。",
+        "suggest": "果您尝试在包含非 `Copy` 数据的结构或枚举上实现 `Copy`，则会收到 [E0204] 错误。",
         "translate": ""
     },
     {
@@ -676,7 +676,7 @@
     },
     {
         "source": "Another example of a non-`Sync` type is the reference-counting pointer [`Rc`][rc].",
-        "suggest": "非 `同步` 类型的另一个示例是引用计数指针 [`Rc`][rc]。",
+        "suggest": "另一个非 `Sync` 类型的例子是引用计数指针 [`Rc`][rc]。",
         "translate": ""
     },
     {
@@ -751,12 +751,12 @@
     },
     {
         "source": "Though they both have scary names, `PhantomData` and 'phantom types' are related, but not identical.",
-        "suggest": "尽管它们都有可怕的名称，但 `PhantomData` 和 `幻像类型` 是相关的，但并不完全相同。",
+        "suggest": "尽管它们都有可怕的名称，但 `PhantomData` 和 phantom 类型是相关的，但并不完全相同。",
         "translate": ""
     },
     {
         "source": "A phantom type parameter is simply a type parameter which is never used.",
-        "suggest": "幻像类型参数只是从未使用过的类型参数。",
+        "suggest": "phantom 类型参数只是从未使用过的类型参数。",
         "translate": ""
     },
     {
@@ -866,7 +866,7 @@
     },
     {
         "source": "It is **undefined behavior** to transmute between `DiscriminantKind::Discriminant` and `mem::Discriminant`.",
-        "suggest": "在 `DiscriminantKind::Discriminant` 和 `mem::Discriminant` 之间转换是 `未定义的行为`。",
+        "suggest": "在 `DiscriminantKind::Discriminant` 和 `mem::Discriminant` 之间转换是未定义的行为。",
         "translate": ""
     },
     {
@@ -4531,7 +4531,7 @@
     },
     {
         "source": "We call (1) the **fractional representation** and (2) the **integral representation**.",
-        "suggest": "我们将 (1) 称为 `分数表示`，将 (2) 称为 `整数表示`。",
+        "suggest": "我们将 (1) 称为分数表示，将 (2) 称为积分表示。",
         "translate": ""
     },
     {

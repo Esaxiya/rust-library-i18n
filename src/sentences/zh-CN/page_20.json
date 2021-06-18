@@ -2936,7 +2936,7 @@
     },
     {
         "source": "This primarily means that any modifications made to memory on behalf of this closure will **not** be visible to the parent process.",
-        "suggest": "这主要意味着，代表此闭包对内存所做的任何修改对于父进程都是 `不可见的`。",
+        "suggest": "这主要意味着，代表此闭包对内存所做的任何修改对于父进程都是不可见的。",
         "translate": ""
     },
     {
@@ -3071,7 +3071,7 @@
     },
     {
         "source": "The value should be a **wait status, not an exit status**.",
-        "suggest": "该值应该是 `等待状态`，而不是退出状态 **。",
+        "suggest": "该值应该是等待状态，而不是退出状态。",
         "translate": ""
     },
     {
@@ -3121,7 +3121,7 @@
     },
     {
         "source": "The returned integer is a **wait status, not an exit status**.",
-        "suggest": "返回的整数是 `等待状态`，而不是退出状态 **。",
+        "suggest": "返回的整数是等待状态，而不是退出状态。",
         "translate": ""
     },
     {
@@ -3246,7 +3246,7 @@
     },
     {
         "source": "Otherwise, it will be set to None.",
-        "suggest": "否则，它将设置为 `无`。",
+        "suggest": "否则，它将设置为 `None`。",
         "translate": ""
     },
     {
@@ -3626,7 +3626,7 @@
     },
     {
         "source": "This module contains specializations that can offload `io::copy()` operations on file descriptor containing types (`File`, `TcpStream`, etc.) to more efficient syscalls than `read(2)` and `write(2)`.",
-        "suggest": "该模块包含一些专门知识，可以将包含类型 (`文件`，`TcpStream` 等) 的文件描述符上的 `io::copy()` 操作卸载到比 `read(2)` 和 `write(2)` 更有效的系统调用中。",
+        "suggest": "该模块包含一些专门知识，可以将包含类型 (`File`，`TcpStream` 等) 的文件描述符上的 `io::copy()` 操作卸载到比 `read(2)` 和 `write(2)` 更有效的系统调用中。",
         "translate": ""
     },
     {

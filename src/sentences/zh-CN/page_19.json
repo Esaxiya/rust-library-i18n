@@ -661,7 +661,7 @@
     },
     {
         "source": "The [`channel`] function will return a `(Sender, Receiver)` tuple where all sends will be **asynchronous** (they never block).",
-        "suggest": "[`channel`] 函数将返回 `(Sender, Receiver)` 元组，其中所有发送都是 `异步的` (它们从不阻塞)。",
+        "suggest": "[`channel`] 函数将返回 `(Sender, Receiver)` 元组，其中所有发送都是异步的 (它们从不阻塞)。",
         "translate": ""
     },
     {
@@ -681,7 +681,7 @@
     },
     {
         "source": "All sends will be **synchronous** by blocking until there is buffer space available.",
-        "suggest": "通过阻塞直到缓冲区空间可用之前，所有发送将 `同步`。",
+        "suggest": "所有的发送都将被阻塞，直到有可用的缓冲区空间。",
         "translate": ""
     },
     {
@@ -1146,7 +1146,7 @@
     },
     {
         "source": "A **send** operation can only fail if the receiving end of a channel is disconnected, implying that the data could never be received.",
-        "suggest": "仅当通道的接收端断开连接时，`发送` 操作才会失败，这意味着永远无法接收到数据。",
+        "suggest": "仅当通道的接收端断开连接时，发送操作才会失败，这意味着永远无法接收到数据。",
         "translate": ""
     },
     {
@@ -1346,7 +1346,7 @@
     },
     {
         "source": "This function will *block* until space in the internal buffer becomes available or a receiver is available to hand off the message to.",
-        "suggest": "该函数将 `阻塞`，直到内部缓冲区中的空间可用或接收者可以将消息传递给它为止。",
+        "suggest": "该函数将阻塞，直到内部缓冲区中的空间可用或接收者可以将消息传递给它为止。",
         "translate": ""
     },
     {
@@ -2736,7 +2736,7 @@
     },
     {
         "source": "Messages which actually popped from the queue shouldn't count as a steal, so offset the decrement here (we already have our \"steal\" factored into the channel count above).",
-        "suggest": "实际上从队列中弹出的消息不应算作窃取，因此请在此处抵消减少的费用 (我们已经将 \"steal\" 计入了上面的 `通道数` 中)。",
+        "suggest": "实际上从队列中弹出的消息不应算作窃取，因此请在此处抵消减少的费用 (我们已经将 \"steal\" 计入了上面的通道计数中)。",
         "translate": ""
     },
     {
@@ -2816,7 +2816,7 @@
     },
     {
         "source": "The tricky part is that we can't let any in-flight sends go un-dropped, we have to make sure *everything* is dropped and nothing new will come onto the channel.",
-        "suggest": "棘手的是，我们不能让任何正在进行的发送都被丢弃，我们必须确保 `所有内容` 都已丢弃，并且没有新内容进入通道。",
+        "suggest": "棘手的是，我们不能让任何正在进行的发送都被丢弃，我们必须确保所有内容都已丢弃，并且没有新内容进入通道。",
         "translate": ""
     },
     {
@@ -3796,7 +3796,7 @@
     },
     {
         "source": "Additionally, we add on the restriction of **poisoning**.",
-        "suggest": "此外，我们增加了 `中毒` 的限制。",
+        "suggest": "此外，我们增加了中毒的限制。",
         "translate": ""
     },
     {
@@ -3831,12 +3831,12 @@
     },
     {
         "source": "Incomplete - no initialization has run yet, and no thread is currently using the Once.",
-        "suggest": "未完成 - 尚未运行任何初始化，并且当前没有线程在使用 `一次`。",
+        "suggest": "未完成 - 尚未运行任何初始化，并且当前没有线程在使用 `Once`。",
         "translate": ""
     },
     {
         "source": "Poisoned - some thread has previously attempted to initialize the Once, but it panicked, so the Once is now poisoned.",
-        "suggest": "中毒 - 某个线程先前曾尝试初始化一次，但是它感到恐慌，因此，一次中毒了。",
+        "suggest": "中毒 - 一些线程之前尝试初始化 `Once`，但是它 panic 了，所以 `Once` 现在是中毒的。",
         "translate": ""
     },
     {

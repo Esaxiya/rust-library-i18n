@@ -1841,7 +1841,7 @@
     },
     {
         "source": "Rust adaptation of the Grisu3 algorithm described in \"Printing Floating-Point Numbers Quickly and Accurately with Integers\"[^1].",
-        "suggest": "Grisu3 算法的 Rust 适应性，在 `使用整数快速而准确地打印浮点数` [^ 1] 中进行了介绍。",
+        "suggest": "Grisu3 算法的 Rust 适应性，在使用整数快速而准确地打印浮点数 [^1] 中进行了介绍。",
         "translate": ""
     },
     {
@@ -1951,7 +1951,7 @@
     },
     {
         "source": "above `minus`, `v` and `plus` are *quantized* approximations (error < 1 ulp).",
-        "suggest": "`minus` 之上的 `v` 和 `plus` 被 `量化` 为近似值 (误差 < 1 ulp)。",
+        "suggest": "`minus` 之上的 `v` 和 `plus` 被量化为近似值 (误差 < 1 ulp)。",
         "translate": ""
     },
     {
@@ -3231,7 +3231,7 @@
     },
     {
         "source": "Note that this is *not* the same as a rotate-left;",
-        "suggest": "注意，这与 `向左旋转` 不同;",
+        "suggest": "注意，这与左旋不同;",
         "translate": ""
     },
     {
@@ -3811,17 +3811,17 @@
     },
     {
         "source": "since `self` and `rhs` are both nonzero, the result of the bitwise-or will be nonzero.",
-        "suggest": "由于 `self` 和 `rhs` 都不为零，所以按位 `或` 的结果将为非零。",
+        "suggest": "由于 `self` 和 `rhs` 都不为零，所以按位或的结果将为非零。",
         "translate": ""
     },
     {
         "source": "since `self` is nonzero, the result of the bitwise-or will be nonzero regardless of the value of `rhs`.",
-        "suggest": "由于 `self` 为非零值，因此无论 `rhs` 的值如何，按位 `或` 运算的结果都将为非零值。",
+        "suggest": "由于 `self` 为非零值，因此无论 `rhs` 的值如何，按位或运算的结果都将为非零值。",
         "translate": ""
     },
     {
         "source": "since `rhs` is nonzero, the result of the bitwise-or will be nonzero regardless of the value of `self`.",
-        "suggest": "由于 `rhs` 为非零值，因此无论 `self` 的值如何，按位 `或` 运算的结果都将为非零值。",
+        "suggest": "由于 `rhs` 为非零值，因此无论 `self` 的值如何，按位或运算的结果都将为非零值。",
         "translate": ""
     },
     {
@@ -4296,7 +4296,7 @@
     },
     {
         "source": "So, by keeping `Rational`s in reduced form, we can derive `Eq` and `PartialEq`.",
-        "suggest": "因此，通过将 `理性` 保持为简化形式，我们可以得出 `Eq` 和 `PartialEq`。",
+        "suggest": "因此，通过将 `Rational` 保持为简化形式，我们可以得出 `Eq` 和 `PartialEq`。",
         "translate": ""
     },
     {

@@ -281,7 +281,7 @@
     },
     {
         "source": "This method is called implicitly when the value goes out of scope, and cannot be called explicitly (this is compiler error [E0040]).",
-        "suggest": "当值 `离开作用域` 时隐式调用此方法，并且不能显式调用此方法 (会得到编译器错误 [E0040])。",
+        "suggest": "当值离开作用域时隐式调用此方法，并且不能显式调用此方法 (会得到编译器 [E0040] 错误)。",
         "translate": ""
     },
     {
@@ -866,7 +866,7 @@
     },
     {
         "source": "These correspond to the three kinds of methods that can be invoked on an instance: call-by-reference, call-by-mutable-reference, and call-by-value.",
-        "suggest": "这些对应于可以在实例上调用的三种方法: `按引用调用`，`按变量引用引用` 和 `按值调用`。",
+        "suggest": "这些对应于可以在实例上调用的三种方法: 引用调用、可变引用调用和值调用。",
         "translate": ""
     },
     {
@@ -1096,7 +1096,7 @@
     },
     {
         "source": "This iterator is [fused], but the specific values of `start` and `end` after iteration has finished are **unspecified** other than that [`.is_empty()`] will return `true` once no more values will be produced.",
-        "suggest": "这个迭代器是 [fused]，但是迭代完成后 `start` 和 `end` 的特定值是 `未指定` 的，除了 [`.is_empty()`] 将在不再产生任何值时返回 `true` 之外。",
+        "suggest": "这个迭代器是 [fused]，但是迭代完成后 `start` 和 `end` 的特定值是未指定的，除了 [`.is_empty()`]之外，一旦不再产生值，就会返回 `true`。",
         "translate": ""
     },
     {
@@ -3606,7 +3606,7 @@
     },
     {
         "source": "The 'static borrow guarantees the data will not be moved/invalidated until it gets dropped (which is never).",
-        "suggest": "`静态借用` 保证数据在被丢弃之前不会是 moved/invalidated (永远不会)。",
+        "suggest": "静态借用保证数据在被丢弃之前不会被移动/失效 (永远不会)。",
         "translate": ""
     },
     {
@@ -3901,7 +3901,7 @@
     },
     {
         "source": "If any of the following conditions are violated, the result is Undefined Behavior:",
-        "suggest": "如果违反以下任一条件，则结果为 `不确定行为`:",
+        "suggest": "如果违反以下任一条件，则结果为未定义行为:",
         "translate": ""
     },
     {
@@ -4601,12 +4601,12 @@
     },
     {
         "source": "For statically-sized types (that implement the `Sized` traits) as well as for `extern` types, pointers are said to be “thin”: metadata is zero-sized and its type is `()`.",
-        "suggest": "对于静态大小的类型 (实现 `Sized` traits) 以及 `extern` 类型，指针被称为 `瘦`: 元数据的大小为零，其类型为 `()`。",
+        "suggest": "对于静态大小的类型 (实现 `Sized` traits) 以及 `extern` 类型，指针被称为 `thin`: 元数据的大小为零，其类型为 `()`。",
         "translate": ""
     },
     {
         "source": "Pointers to [dynamically-sized types][dst] are said to be “wide” or “fat”, they have non-zero-sized metadata:",
-        "suggest": "指向 [动态大小的类型][dst] 的指针被称为 `宽` 或 `胖`，它们具有非零大小的元数据:",
+        "suggest": "指向 [动态大小的类型][dst] 的指针被称为 `wide` 或 `fat`，它们具有非零大小的元数据:",
         "translate": ""
     },
     {
@@ -4691,7 +4691,7 @@
     },
     {
         "source": "This includes statically-`Sized` types and `extern` types.",
-        "suggest": "这包括静态 `大小` 类型和 `extern` 类型。",
+        "suggest": "这包括静态 `Sized` 类型和 `extern` 类型。",
         "translate": ""
     },
     {

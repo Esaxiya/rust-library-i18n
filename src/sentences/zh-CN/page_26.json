@@ -4686,7 +4686,7 @@
     },
     {
         "source": "Performs a serializing operation on all load-from-memory and store-to-memory instructions that were issued prior to this instruction.",
-        "suggest": "对在此指令之前发布的所有 `从内存加载` 和 `存储到内存` 指令执行序列化操作。",
+        "suggest": "对在此指令之前发布的所有从内存加载和存储到内存指令执行序列化操作。",
         "translate": ""
     },
     {

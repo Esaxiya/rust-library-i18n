@@ -4521,7 +4521,7 @@
     },
     {
         "source": "Ideally, it wouldn't check for the feature gate for docs from other crates, but since this can only appear for lang items, it doesn't seem worth fixing.",
-        "suggest": "理想情况下，它不会为其他 crates 的文档检查 `特性开关`，但是由于它只能出现在 lang 项上，因此似乎不值得修复。",
+        "suggest": "理想情况下，它不会为其他 crates 的文档检查特性开关，但是由于它只能出现在 lang 项上，因此似乎不值得修复。",
         "translate": ""
     },
     {
@@ -4821,7 +4821,7 @@
     },
     {
         "source": "It is up to the user of `RawVec` to handle the actual things *stored* inside of a `RawVec`.",
-        "suggest": "`RawVec` 的用户可以处理 `RawVec` 内部 `存储` 的实际内容。",
+        "suggest": "由 `RawVec` 的用户来处理存储在 `RawVec` 中的实际内容。",
         "translate": ""
     },
     {

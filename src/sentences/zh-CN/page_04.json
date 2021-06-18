@@ -101,7 +101,7 @@
     },
     {
         "source": "Note that this function is **safe**, it internally has its own synchronization.",
-        "suggest": "请注意，此函数是 `安全的`，它在内部具有自己的同步。",
+        "suggest": "请注意，此函数是安全的，它在内部具有自己的同步。",
         "translate": ""
     },
     {
@@ -166,7 +166,7 @@
     },
     {
         "source": "So all of that is to say that the first thing we do here is we atomically create a `HANDLE` which is a named mutex on Windows.",
-        "suggest": "因此，所有这些就是说，我们要做的第一件事就是原子地创建一个 `HANDLE`，它是 Windows 上的一个名为 `互斥锁`。",
+        "suggest": " 所以所有这一切都是说，我们要做的第一件事就是原子地创建一个 `HANDLE`，它是 Windows 上的一个命名互斥锁。",
         "translate": ""
     },
     {
@@ -421,7 +421,7 @@
     },
     {
         "source": "align_to aligns 'x' to 'to'-byte alignment assuming 'to' is a power of 2.",
-        "suggest": "假设 'to' 为 2 的幂，align_to 将 'x' 对齐为 `至` 字节对齐。",
+        "suggest": "假设 '`to` 为 2 的幂，align_to 将 'x' 对齐为 `to` 字节对齐。",
         "translate": ""
     },
     {
@@ -1176,7 +1176,7 @@
     },
     {
         "source": "Convert to 'static lifetimes since the symbols should only borrow `map` and `stash` and we're preserving them below.",
-        "suggest": "转换为 `静态生命周期`，因为这些符号仅应借用 `map` 和 `stash`，我们将其保留在下面。",
+        "suggest": "转换为静态生命周期，因为这些符号仅应借用 `map` 和 `stash`，我们将其保留在下面。",
         "translate": ""
     },
     {
@@ -1736,7 +1736,7 @@
     },
     {
         "source": "Given all that we try as hard as possible to *not* pass in a filename, but we must on platforms that don't support /proc/self/exe at all.",
-        "suggest": "考虑到所有这些，我们将尽最大努力 `不` 传递文件名，但是我们必须在根本不支持 /proc/self/exe 的平台上。",
+        "suggest": "考虑到所有这些，我们尽可能不传递文件名，但是我们必须在完全不支持 /proc/self/exe 的平台上运行。",
         "translate": ""
     },
     {
@@ -3286,7 +3286,7 @@
     },
     {
         "source": "Some of the methods require that a layout *fit* a memory block.",
-        "suggest": "有些方法要求布局 `适合` 内存块。",
+        "suggest": "有些方法要求布局适合内存块。",
         "translate": ""
     },
     {
@@ -4191,7 +4191,7 @@
     },
     {
         "source": "'Zips up' two arrays into a single array of pairs.",
-        "suggest": "将两个阵列 `压缩` 为成对的单个阵列。",
+        "suggest": "将两个阵列压缩为成对的单个阵列。",
         "translate": ""
     },
     {
@@ -4476,7 +4476,7 @@
     },
     {
         "source": "They are said to be ‘borrowed as’ that type.",
-        "suggest": "据说它们是 `借来的` 那种类型的。",
+        "suggest": "据说它们是借来的那种类型的。",
         "translate": ""
     },
     {
@@ -4761,7 +4761,7 @@
     },
     {
         "source": "Having several immutable references (`&T`) to the object (also known as **aliasing**).",
-        "suggest": "对对象具有多个不可变引用 (`&T`) (也称为 `别名`)。",
+        "suggest": "对对象具有多个不可变引用 (`&T`) (也称为别名)。",
         "translate": ""
     },
     {
@@ -4816,7 +4816,7 @@
     },
     {
         "source": "We say that `Cell<T>` and `RefCell<T>` provide 'interior mutability', in contrast with typical Rust types that exhibit 'inherited mutability'.",
-        "suggest": "我们说 `Cell<T>` 和 `RefCell<T>` 提供了 `内部可变性`，而典型的 Rust 类型却表现出 `继承的可变性`。",
+        "suggest": "我们说 `Cell<T>` 和 `RefCell<T>` 提供了内部可变性，而典型的 Rust 类型却表现出继承的可变性。",
         "translate": ""
     },
     {
@@ -4861,7 +4861,7 @@
     },
     {
         "source": "uses Rust's lifetimes to implement 'dynamic borrowing', a process whereby one can claim temporary, exclusive, mutable access to the inner value.",
-        "suggest": "使用 Rust 的生命周期实现 `动态借用`，这一过程使人们可以要求临时，排他，可变地访问内部值。",
+        "suggest": "使用 Rust 的生命周期实现动态借用，这一过程使人们可以要求临时，排他，可变地访问内部值。",
         "translate": ""
     },
     {

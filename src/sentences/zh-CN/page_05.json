@@ -46,7 +46,7 @@
     },
     {
         "source": "This also won't invalidate any pointers since `Cell` makes sure nothing else will be pointing into either of these `Cell`s.",
-        "suggest": "这也不会使任何指针无效，因为 `Cell` 确保没有其他指针指向这些 `单元` 中的任何一个。",
+        "suggest": "这也不会使任何指针无效，因为 `Cell` 确保没有其他指针指向这些 `Cell` 中的任何一个。",
         "translate": ""
     },
     {
@@ -566,7 +566,7 @@
     },
     {
         "source": "The underlying `RefCell` will remain mutably borrowed until both returned `RefMut`s go out of scope.",
-        "suggest": "底层 `RefCell` 将保持可变借用状态，直到两个返回的 RefMut 的 `离开作用域`。",
+        "suggest": "底层 `RefCell` 将保持可变借用状态，直到两个返回的 RefMut 离开作用域。",
         "translate": ""
     },
     {
@@ -1996,7 +1996,7 @@
     },
     {
         "source": "The `Clone` trait for types that cannot be 'implicitly copied'.",
-        "suggest": "不能 `隐式复制` 的类型的 `Clone` trait。",
+        "suggest": "不能隐式复制的类型的 `Clone` trait。",
         "translate": ""
     },
     {
@@ -2096,7 +2096,7 @@
     },
     {
         "source": "In this case, the implementation of `Clone` cannot be `derive`d, but can be implemented as:",
-        "suggest": "在这种情况下，不能对 `Clone` 的实现进行 `派生` 操作，而可以将其实现为:",
+        "suggest": "在这种情况下，不能对 `Clone` 的实现进行派生操作，而可以将其实现为:",
         "translate": ""
     },
     {
@@ -2316,7 +2316,7 @@
     },
     {
         "source": "When `derive`d on enums, each variant is equal to itself and not equal to the other variants.",
-        "suggest": "对枚举进行 `派生` 时，每个成员都等于自己，而不等于另一个成员。",
+        "suggest": "对枚举进行派生时，每个成员都等于自己，而不等于另一个成员。",
         "translate": ""
     },
     {
@@ -2616,7 +2616,7 @@
     },
     {
         "source": "When `derive`d on enums, variants are ordered by their top-to-bottom discriminant order.",
-        "suggest": "对枚举进行 `派生` 时，成员按从上到下的判别顺序排序。",
+        "suggest": "对枚举进行派生时，成员按从上到下的判别顺序排序。",
         "translate": ""
     },
     {
@@ -2966,7 +2966,7 @@
     },
     {
         "source": "Implement the [`AsRef`] trait for cheap reference-to-reference conversions",
-        "suggest": "实现 [`AsRef`] trait 以实现廉价的 `引用到引用` 转换",
+        "suggest": "实现 [`AsRef`] trait 以实现廉价的引用到引用转换",
         "translate": ""
     },
     {
@@ -3081,7 +3081,7 @@
     },
     {
         "source": "Used to do a cheap reference-to-reference conversion.",
-        "suggest": "用于执行廉价的 `引用到引用` 转换。",
+        "suggest": "用于执行廉价的引用到引用转换。",
         "translate": ""
     },
     {
@@ -3631,7 +3631,7 @@
     },
     {
         "source": "CHERI proposes 256-bit “capabilities”.",
-        "suggest": "CHERI 提出了 256 位 `功能`。",
+        "suggest": "CHERI 提出了 256 位权限。",
         "translate": ""
     },
     {
@@ -3746,7 +3746,7 @@
     },
     {
         "source": "This comes up often with `struct`s that define a set of options:",
-        "suggest": "通常会用 `结构体` 来定义一组选项:",
+        "suggest": "这经常出现在定义一组选项的 `struct` 中:",
         "translate": ""
     },
     {
@@ -4741,7 +4741,7 @@
     },
     {
         "source": "For `enum`s, it will use the name of the variant and, if applicable, `(`, then the `Debug` values of the fields, then `)`.",
-        "suggest": "对于 `枚举`，它将使用成员的名称，如果适用，将使用 `(`，然后是字段的 `Debug` 值，然后是 `)`。",
+        "suggest": "对于 `enum`，它将使用成员的名称，如果适用，将使用 `(`，然后是字段的 `Debug` 值，然后是 `)`。",
         "translate": ""
     },
     {

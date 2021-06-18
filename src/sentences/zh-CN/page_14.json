@@ -16,7 +16,7 @@
     },
     {
         "source": "Alternatively, special 'modes\" could be listed of types in with_api instead of pattern matching on methods, here and in server decl.",
-        "suggest": "或者，可以在 with_api 中列出特殊的 `模式` 类型，而不是在此以及在服务器 decl 中对方法进行模式匹配。",
+        "suggest": "或者，可以在 with_api 中列出特殊的 `modes` 类型，而不是在此以及在服务器 decl 中对方法进行模式匹配。",
         "translate": ""
     },
     {
@@ -211,7 +211,7 @@
     },
     {
         "source": "Reusable buffer (only `clear`-ed, never shrunk), primarily used for making requests, but also for passing input to client.",
-        "suggest": "可重复使用的缓冲区 (仅 `清除`-ed，从不缩小)，主要用于发出请求，也用于将输入传递给客户端。",
+        "suggest": "可重复使用的缓冲区 (仅 `clear`，从不缩小)，主要用于发出请求，也用于将输入传递给客户端。",
         "translate": ""
     },
     {
@@ -911,12 +911,12 @@
     },
     {
         "source": "Configures the span for this `Group`'s delimiters, but not its internal tokens.",
-        "suggest": "配置此 `组` 定界符的范围，但不配置其内部 tokens 的范围。",
+        "suggest": "配置此 `Group` 定界符的范围，但不配置其内部 tokens 的范围。",
         "translate": ""
     },
     {
         "source": "This method will **not** set the span of all the internal tokens spanned by this group, but rather it will only set the span of the delimiter tokens at the level of the `Group`.",
-        "suggest": "此方法将 `不` 设置该组所跨越的所有内部 tokens 的跨度，而只会将定界符 tokens 的跨度设置为 `Group` 的水平。",
+        "suggest": "此方法将不设置该组所跨越的所有内部 tokens 的跨度，而只会将定界符 tokens 的跨度设置为 `Group` 的水平。",
         "translate": ""
     },
     {
@@ -1486,7 +1486,7 @@
     },
     {
         "source": "In a given program, the standard library has one “global” memory allocator that is used for example by `Box<T>` and `Vec<T>`.",
-        "suggest": "在给定程序中，标准库具有一个 `多个` 内存分配器，例如 `Box<T>` 和 `Vec<T>` 使用它。",
+        "suggest": "在给定程序中，标准库具有一个 `global` 内存分配器，例如 `Box<T>` 和 `Vec<T>` 就会使用它。",
         "translate": ""
     },
     {
@@ -3541,7 +3541,7 @@
     },
     {
         "source": "All the other collections in the standard library have specific use cases where they are the optimal choice, but these cases are borderline *niche* in comparison.",
-        "suggest": "标准库中的所有其他集合都具有特定的用例，在这些用例中它们是最佳选择，但相比之下，这些用例只是 `小众` 而已。",
+        "suggest": "标准库中的所有其他集合都具有特定的用例，在这些用例中它们是最佳选择，但相比之下，这些用例是边缘性的。",
         "translate": ""
     },
     {
@@ -3751,12 +3751,12 @@
     },
     {
         "source": "Operations which have an *amortized* cost are suffixed with a `*`.",
-        "suggest": "`*` 后缀为具有 `摊销` 成本的工序。",
+        "suggest": "具有 `amortized` 成本的操作以 `*` 为后缀。",
         "translate": ""
     },
     {
         "source": "Operations with an *expected* cost are suffixed with a `~`.",
-        "suggest": "`~` 后缀有 *预期* 成本的操作。",
+        "suggest": "具有 `expected` 成本的操作以 `~` 为后缀。",
         "translate": ""
     },
     {
@@ -3856,7 +3856,7 @@
     },
     {
         "source": "Most collections therefore use an *amortized* allocation strategy.",
-        "suggest": "因此，大多数集合使用 `摊销` 分配策略。",
+        "suggest": "因此，大多数集合使用 `amortized` 分配策略。",
         "translate": ""
     },
     {
@@ -3946,7 +3946,7 @@
     },
     {
         "source": "The contents of an iterator are usually *lazily* evaluated, so that only the values that are actually needed are ever actually produced, and no allocation need be done to temporarily store them.",
-        "suggest": "通常对迭代器的内容进行 `延迟` 评估，以便仅实际生成实际需要的值，而无需进行分配即可临时存储它们。",
+        "suggest": " 迭代器的内容通常是惰性求值的，因此只有实际需要的值才会实际产生，而不需要进行任何分配来临时存储它们。",
         "translate": ""
     },
     {

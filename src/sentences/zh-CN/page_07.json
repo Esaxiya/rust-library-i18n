@@ -186,7 +186,7 @@
     },
     {
         "source": "This is why there are so many `struct`s in this module: there is one for each iterator and iterator adapter.",
-        "suggest": "这就是为什么此模块中有这么多 `结构体` 的原因: 每个迭代器和迭代器适配器都有一个。",
+        "suggest": "这就是为什么此模块中有这么多 `struct` 的原因: 每个迭代器和迭代器适配器都有一个。",
         "translate": ""
     },
     {
@@ -356,7 +356,7 @@
     },
     {
         "source": "Functions which take an [`Iterator`] and return another [`Iterator`] are often called 'iterator adapters', as they're a form of the 'adapter pattern'.",
-        "suggest": "带有 [`Iterator`] 并返回另一个 [`Iterator`] 的函数通常称为 `迭代器适配器`，因为它们是 `适配器模式` 的一种形式。",
+        "suggest": "接受一个 [`Iterator`] 并返回另一个 [`Iterator`] 的函数通常被称为迭代器适配器，因为它们是适配器模式的一种形式。",
         "translate": ""
     },
     {
@@ -606,7 +606,7 @@
     },
     {
         "source": "Returns the value that would be obtained by taking the *predecessor* of `self` `count` times.",
-        "suggest": "返回将 `self` `count` 的 `前任` 乘以 X 所得的值。",
+        "suggest": "返回通过获取 self `count` 次的 *predecessor* 而获得的值。",
         "translate": ""
     },
     {
@@ -2366,7 +2366,7 @@
     },
     {
         "source": "'Zips up' two iterators into a single iterator of pairs.",
-        "suggest": "将两个迭代器 `压缩` 为成对的单个迭代器。",
+        "suggest": "将两个迭代器压缩为成对的单个迭代器。",
         "translate": ""
     },
     {
@@ -2576,7 +2576,7 @@
     },
     {
         "source": "The returned iterator yields only the `value`s for which the supplied closure returns `Some(value)`.",
-        "suggest": "返回的迭代器仅产生所提供的闭包为其返回 `Some(value)` 的 `值`。",
+        "suggest": "返回的迭代器只产生 `value`，而提供的闭包会返回 `Some(value)`。",
         "translate": ""
     },
     {
@@ -2731,7 +2731,7 @@
     },
     {
         "source": "Note that unlike [`take_while`] this iterator is **not** fused.",
-        "suggest": "请注意，与 [`take_while`] 不同，此迭代器是 `不融合` 的。",
+        "suggest": "请注意，与 [`take_while`] 不同，此迭代器是不融合的。",
         "translate": ""
     },
     {

@@ -151,12 +151,12 @@
     },
     {
         "source": "Streams are *lazy*.",
-        "suggest": "流是 `懒惰的`。",
+        "suggest": "流是懒惰的。",
         "translate": ""
     },
     {
         "source": "This means that just creating a stream doesn't _do_ a whole lot.",
-        "suggest": "这意味着仅仅创建一个流并不会 _do_ 太多。",
+        "suggest": "这意味着仅仅创建一个流并不能做很多事情。",
         "translate": ""
     },
     {
@@ -1446,7 +1446,7 @@
     },
     {
         "source": "Signals the processor that it is inside a busy-wait spin-loop (\"spin lock\").",
-        "suggest": "向处理器发出信号，通知它处于忙于等待的自旋循环 (`自旋锁定`) 中。",
+        "suggest": "向处理器发出信号，通知它处于忙于等待的自旋循环 (自旋锁) 中。",
         "translate": ""
     },
     {
@@ -1956,7 +1956,7 @@
     },
     {
         "source": "This method does **not** return the length of the duration when represented by milliseconds.",
-        "suggest": "当以毫秒为单位表示时，此方法 `不` 返回持续时间的长度。",
+        "suggest": "当以毫秒表示时，这个方法不会返回持续时间的长度。",
         "translate": ""
     },
     {
@@ -1971,7 +1971,7 @@
     },
     {
         "source": "This method does **not** return the length of the duration when represented by microseconds.",
-        "suggest": "当以微秒表示时，此方法 `不` 返回持续时间的长度。",
+        "suggest": " 当以微秒表示时，这个方法不会返回持续时间的长度。",
         "translate": ""
     },
     {
@@ -1986,7 +1986,7 @@
     },
     {
         "source": "This method does **not** return the length of the duration when represented by nanoseconds.",
-        "suggest": "当以纳秒表示时，此方法 `不` 返回持续时间的长度。",
+        "suggest": "当以纳秒表示时，这个方法不会返回持续时间的长度。",
         "translate": ""
     },
     {

@@ -911,7 +911,7 @@
     },
     {
         "source": "If the size of `T` is larger than 4 `usize`s, this algorithm also outperforms other algorithms.",
-        "suggest": "如果 `T` 的大小大于 4 个 `使用`，则该算法也将优于其他算法。",
+        "suggest": "如果 `T` 的大小大于 4 个 `usize`，则该算法也将优于其他算法。",
         "translate": ""
     },
     {
@@ -4341,7 +4341,7 @@
     },
     {
         "source": "One of the main ideas of Two-Way is that we factorize the needle into two halves, (u, v), and begin trying to find v in the haystack by scanning left to right.",
-        "suggest": "`双向` 的主要思想之一是，将针分解为两半 (u，v)，然后开始尝试通过从左到右扫描在 haystack 中查找 v。",
+        "suggest": "`Two-Way` 的主要思想之一是，我们将针分解成两半 (u，v)，然后开始尝试通过从左到右扫描在 haystack 中查找 v。",
         "translate": ""
     },
     {
@@ -4531,7 +4531,7 @@
     },
     {
         "source": "TwoWayStrategy allows the algorithm to either skip non-matches as quickly as possible, or to work in a mode where it emits Rejects relatively quickly.",
-        "suggest": "TwoWayStrategy 允许该算法尽快跳过不匹配项，或者以相对较快地发出 `拒绝` 的模式工作。",
+        "suggest": "TwoWayStrategy 允许该算法尽可能快地跳过不匹配项，或者以相对较快地发出 `reject` 的模式下工作。",
         "translate": ""
     },
     {

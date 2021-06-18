@@ -4971,7 +4971,7 @@
     },
     {
         "source": "the caller will not be able to call further methods on self until the value slice reference is dropped, as we have unique access for the lifetime of the borrow.",
-        "suggest": "调用者将无法调用自已的其他方法，直到丢弃 `切片引用` 的值为止，因为我们对借用的生命周期具有唯一的访问权。",
+        "suggest": "在值切片引用被丢弃之前，调用者将无法在 self 上调用更多方法，因为我们在借用的生命周期内拥有唯一的访问权限。",
         "translate": ""
     },
     {

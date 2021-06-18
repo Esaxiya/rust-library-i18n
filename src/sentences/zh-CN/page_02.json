@@ -141,7 +141,7 @@
     },
     {
         "source": "Panics if the given amount is *larger* than the current capacity.",
-        "suggest": "Panics，如果给定的数量 `大于` 当前容量。",
+        "suggest": "如果给定数量大于当前容量，则会出现 panic。",
         "translate": ""
     },
     {
@@ -356,7 +356,7 @@
     },
     {
         "source": "Create `Gadget`s belonging to `gadget_owner`.",
-        "suggest": "创建属于 `gadget_owner` 的 `小工具`。",
+        "suggest": "创建属于 `gadget_owner` 的 `Gadget`。",
         "translate": ""
     },
     {
@@ -406,12 +406,12 @@
     },
     {
         "source": "Create `Gadget`s belonging to `gadget_owner`, as before.",
-        "suggest": "如前所述，创建属于 `gadget_owner` 的 `小工具`。",
+        "suggest": "如前所述，创建属于 `gadget_owner` 的 `Gadget`。",
         "translate": ""
     },
     {
         "source": "Add the `Gadget`s to their `Owner`.",
-        "suggest": "将 `小工具` 添加到其 `Owner` 中。",
+        "suggest": "将 `Gadget` 添加到其 `Owner` 中。",
         "translate": ""
     },
     {
@@ -421,7 +421,7 @@
     },
     {
         "source": "Iterate over our `Gadget`s, printing their details out.",
-        "suggest": "遍历我们的 `小工具`，将其详细信息打印出来。",
+        "suggest": "遍历我们的 `Gadget`，将其详细信息打印出来。",
         "translate": ""
     },
     {
@@ -476,7 +476,7 @@
     },
     {
         "source": "The memory was freed when `x` went out of scope above, so `x_ptr` is now dangling!",
-        "suggest": "当 `x` 移到上面的 `离开作用域` 时，内存被释放，因此 `x_ptr` 现在悬空了!",
+        "suggest": "当 `x` 离开作用域时，内存被释放，所以 `x_ptr` 现在悬空了!",
         "translate": ""
     },
     {
@@ -561,7 +561,7 @@
     },
     {
         "source": "'Rc' stands for 'Reference Counted'.",
-        "suggest": "'Rc' 代表 `引用计数`。",
+        "suggest": "`Rc` 代表引用计数。",
         "translate": ""
     },
     {
@@ -696,22 +696,22 @@
     },
     {
         "source": "Consider a scenario where a set of `Gadget`s are owned by a given `Owner`.",
-        "suggest": "考虑一个场景，其中给定的 `Owner` 拥有一组 `小工具`。",
+        "suggest": "考虑一个场景，其中给定的 `Owner` 拥有一组 `Gadget`。",
         "translate": ""
     },
     {
         "source": "We want to have our `Gadget`s point to their `Owner`.",
-        "suggest": "我们想让我们的 `小工具` 指向他们的 `Owner`。",
+        "suggest": "我们想让我们的 `Gadget` 指向他们的 `Owner`。",
         "translate": ""
     },
     {
         "source": "We can't do this with unique ownership, because more than one gadget may belong to the same `Owner`.",
-        "suggest": "我们不能用唯一的所有权来做到这一点，因为一个以上的小工具可能属于同一个 `Owner`。",
+        "suggest": "我们不能用唯一的所有权来做到这一点，因为一个以上的 gadget 可能属于同一个 `Owner`。",
         "translate": ""
     },
     {
         "source": "allows us to share an `Owner` between multiple `Gadget`s, and have the `Owner` remain allocated as long as any `Gadget` points at it.",
-        "suggest": "允许我们在多个 `小工具` 之间共享 `Owner`，并且只要 `Gadget` 指向它，`Owner` 就会一直分配。",
+        "suggest": "允许我们在多个 `Gadget` 之间共享 `Owner`，并且只要 `Gadget` 指向它，`Owner` 就会一直分配。",
         "translate": ""
     },
     {
@@ -1361,7 +1361,7 @@
     },
     {
         "source": "'Less than or equal to' comparison for two `Rc`s.",
-        "suggest": "两个 `Rc` 的 `小于或等于` 比较。",
+        "suggest": "两个 `Rc` 的小于或等于比较。",
         "translate": ""
     },
     {
@@ -1381,7 +1381,7 @@
     },
     {
         "source": "'Greater than or equal to' comparison for two `Rc`s.",
-        "suggest": "两个 `Rc` 的 `大于或等于` 比较。",
+        "suggest": "两个 `Rc` 的大于或等于比较。",
         "translate": ""
     },
     {
@@ -2751,7 +2751,7 @@
     },
     {
         "source": "Enforcing them on just top three is not sufficient to ensure that the invariants will still hold for *all* runs in the stack.",
-        "suggest": "仅在前三名上强制执行它们不足以确保不可变变量对于栈中的所有 `运行` 仍然成立。",
+        "suggest": "仅在前三个上强制执行它们不足以确保不可变变量仍然适用于栈中的所有运行。",
         "translate": ""
     },
     {
@@ -3701,7 +3701,7 @@
     },
     {
         "source": "Ensures that this `String`'s capacity is at least `additional` bytes larger than its length.",
-        "suggest": "确保此 `字符串` 的容量至少比其长度大 `additional` 字节。",
+        "suggest": "确保此 `String` 的容量至少比其长度大 `additional` 字节。",
         "translate": ""
     },
     {
@@ -3726,7 +3726,7 @@
     },
     {
         "source": "Ensures that this `String`'s capacity is `additional` bytes larger than its length.",
-        "suggest": "确保此 `字符串` 的容量比其长度大 `additional` 字节。",
+        "suggest": "确保此 `String` 的容量比其长度大 `additional` 字节。",
         "translate": ""
     },
     {
@@ -4381,7 +4381,7 @@
     },
     {
         "source": "'Arc' stands for 'Atomically Reference Counted'.",
-        "suggest": "'Arc' 代表 `原子引用计数`。",
+        "suggest": "`Arc` 代表原子引用计数。",
         "translate": ""
     },
     {
@@ -4626,7 +4626,7 @@
     },
     {
         "source": "It can *clone* the `Weak`, increasing the weak reference count.",
-        "suggest": "它可以 `克隆` `Weak`，从而增加 `弱引用` 计数。",
+        "suggest": "它可以克隆 `Weak`，从而增加弱引用计数。",
         "translate": ""
     },
     {
@@ -4756,7 +4756,7 @@
     },
     {
         "source": "This Relaxed is OK because we're checking the value in the CAS below.",
-        "suggest": "可以使用 `轻松`，因为我们正在检查以下 CAS 中的值。",
+        "suggest": "可以使用 `Relaxed`，因为我们正在检查以下 CAS 中的值。",
         "translate": ""
     },
     {

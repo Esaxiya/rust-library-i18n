@@ -426,7 +426,7 @@
     },
     {
         "source": "If `val` is out-of-range the behavior is **undefined**.",
-        "suggest": "如果 `val` 越界，则行为是 `未定义`。",
+        "suggest": "如果 `val` 越界，则行为是 `undefined`。",
         "translate": ""
     },
     {
@@ -446,7 +446,7 @@
     },
     {
         "source": "The current implementation only accepts values in range `[0, 255]` - if the value is out-of-range the behavior is **undefined**.",
-        "suggest": "当前实现仅接受 `[0, 255]` 范围内的值 - 如果该值越界，则行为是 `未定义`。",
+        "suggest": "当前实现仅接受 `[0, 255]` 范围内的值 - 如果该值越界，则行为是未定义的。",
         "translate": ""
     },
     {
@@ -1711,7 +1711,7 @@
     },
     {
         "source": "Each bit of vector `a` (sixteen unsigned 8-bit integer numbers) is combined with the corresponding bit of vector `b` (sixteen unsigned 8-bit integer numbers) in a bitwise logical AND operation.",
-        "suggest": "vector `a` 的每个位 (十六个无符号的 8 位整数) 与 vector `b` 的对应位 (十六个无符号的 8 位整数) 按位逻辑 `与` 运算进行组合。",
+        "suggest": "vector `a` 的每个位 (十六个无符号的 8 位整数) 与 vector `b` 的对应位 (十六个无符号的 8 位整数) 按位逻辑与运算进行组合。",
         "translate": ""
     },
     {

@@ -161,7 +161,7 @@
     },
     {
         "source": "On Windows, this allows rebinding sockets which are actively in use, which allows “socket hijacking”, so we explicitly don't set it here.",
-        "suggest": "在 Windows 上，这允许重新绑定正在使用的套接字，从而允许 `套接字劫持`，因此我们在此处未明确设置。",
+        "suggest": "在 Windows 上，这允许重新绑定正在使用的套接字，从而允许套接字劫持，因此我们在此处未明确设置。",
         "translate": ""
     },
     {
@@ -256,7 +256,7 @@
     },
     {
         "source": "The actual location that this matters is when a mutex is **locked** which is where we have external synchronization ensuring that we see memory reads/writes to this flag.",
-        "suggest": "重要的实际位置是当互斥锁被 `锁定` 时，这是我们进行外部同步的地方，以确保看到此标志的内存 reads/writes。",
+        "suggest": "重要的实际位置是当互斥锁被锁定时，这是我们进行外部同步的地方，确保我们看到内存读/写到这个标志。",
         "translate": ""
     },
     {
@@ -2606,7 +2606,7 @@
     },
     {
         "source": "The join handle will implicitly *detach* the child thread upon being dropped.",
-        "suggest": "连接子句柄在被丢弃后将隐式 `分离` 子线程。",
+        "suggest": "连接子句柄在被丢弃后将隐式分离子线程。",
         "translate": ""
     },
     {
@@ -2656,7 +2656,7 @@
     },
     {
         "source": "Its return value will need to be passed from the new thread to the thread where it is `join`ed.",
-        "suggest": "它的返回值需要从新线程传递到 `加入` 线程。",
+        "suggest": "它的返回值需要从新线程传递到 `join` 线程。",
         "translate": ""
     },
     {

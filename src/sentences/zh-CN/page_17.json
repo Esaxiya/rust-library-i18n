@@ -391,7 +391,7 @@
     },
     {
         "source": "To use the trait this way, it must be 'object safe'.",
-        "suggest": "要以这种方式使用 trait，它必须是 `对象安全` 的。",
+        "suggest": "要以这种方式使用 trait，它必须是对象安全的。",
         "translate": ""
     },
     {
@@ -1656,7 +1656,7 @@
     },
     {
         "source": "socket addresses consist of an [`IPv6` address], a 16-bit port number, as well as fields containing the traffic class, the flow label, and a scope identifier (see [IETF RFC 2553, Section 3.3] for more details).",
-        "suggest": "套接字地址由 [`IPv6` address]，16 位端口号以及包含流量类别，流标签和 `作用域` 标识符的字段组成 (有关更多详细信息，请参见 [IETF RFC 2553, Section 3.3])。",
+        "suggest": "套接字地址由 [`IPv6` address]，16 位端口号以及包含流量类别，流标签和作用域标识符的字段组成 (有关更多详细信息，请参见 [IETF RFC 2553, Section 3.3])。",
         "translate": ""
     },
     {
@@ -4026,7 +4026,7 @@
     },
     {
         "source": "As stated in the User Datagram Protocol's specification in [IETF RFC 768], UDP is an unordered, unreliable protocol;",
-        "suggest": "如 [IETF RFC 768] 中的 `用户数据报协议` 规范中所述，UDP 是无序，不可靠的协议。",
+        "suggest": "如 [IETF RFC 768] 中的用户数据报协议规范中所述，UDP 是无序，不可靠的协议。",
         "translate": ""
     },
     {
@@ -4401,7 +4401,7 @@
     },
     {
         "source": "The contents of the returned `stat` are **not** consistent across Unix platforms.",
-        "suggest": "返回的 `stat` 的内容在 Unix 平台之间 `不一致`。",
+        "suggest": "返回的 `stat` 的内容在 Unix 平台上是不一致的。",
         "translate": ""
     },
     {
@@ -4556,7 +4556,7 @@
     },
     {
         "source": "The contents of the returned [`stat`] are **not** consistent across Unix platforms.",
-        "suggest": "返回的 [`stat`] 的内容在 Unix 平台之间 `不一致`。",
+        "suggest": "返回的 [`stat`] 的内容在 Unix 平台上是不一致的。",
         "translate": ""
     },
     {

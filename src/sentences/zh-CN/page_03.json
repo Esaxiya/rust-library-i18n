@@ -406,7 +406,7 @@
     },
     {
         "source": "'Less than or equal to' comparison for two `Arc`s.",
-        "suggest": "两个 `弧` 的 `小于或等于` 比较。",
+        "suggest": "两个 `Arc` 的小于或等于比较。",
         "translate": ""
     },
     {
@@ -416,7 +416,7 @@
     },
     {
         "source": "'Greater than or equal to' comparison for two `Arc`s.",
-        "suggest": "两个 `Arc` 的 `大于或等于` 比较。",
+        "suggest": "两个 `Arc` 的大于或等于比较。",
         "translate": ""
     },
     {
@@ -1171,7 +1171,7 @@
     },
     {
         "source": "This is not to be confused with the *length* of a vector, which specifies the number of actual elements within the vector.",
-        "suggest": "请勿将其与 vector 的 `长度` 混淆，后者指定 vector 中的实际元素数量。",
+        "suggest": "请勿将其与 vector 的长度混淆，后者指定 vector 中的实际元素数量。",
         "translate": ""
     },
     {
@@ -3926,7 +3926,7 @@
     },
     {
         "source": "Note that this test does *not* constitute a stable guarantee that all these functions do not reallocate!",
-        "suggest": "请注意，此测试 `不` * 构成了所有这些函数都不会重新分配的稳定保证!",
+        "suggest": "请注意，此测试不构成所有这些函数不会重新分配的稳定保证！!",
         "translate": ""
     },
     {

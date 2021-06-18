@@ -1116,7 +1116,7 @@
     },
     {
         "source": "Compute the bitwise NOT of 64-bit masks a and then AND with b, and store the result in k.",
-        "suggest": "计算 64 位掩码 a 的按位非，然后与 b 进行 `与` 运算，并将结果存储在 k 中。",
+        "suggest": "计算 64 位掩码 a 的按位非，然后与 b 进行与运算，并将结果存储在 k 中。",
         "translate": ""
     },
     {

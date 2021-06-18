@@ -76,7 +76,7 @@
     },
     {
         "source": "A [null] pointer is *never* valid, not even for accesses of [size zero][zst].",
-        "suggest": "[null] 指针 `永不` 有效，即使对于 [size zero][zst] 的访问也不有效。",
+        "suggest": "[null] 指针从来都是无效的，甚至对于 [大小为零][zst] 的访问也是无效的。",
         "translate": ""
     },
     {
@@ -106,7 +106,7 @@
     },
     {
         "source": "All accesses performed by functions in this module are *non-atomic* in the sense of [atomic operations] used to synchronize between threads.",
-        "suggest": "在 [atomic operations] 的意义上，函数在此模块中执行的所有访问都是 `非原子的`，用于在线程之间进行同步。",
+        "suggest": " 在用于在线程之间同步的 [atomic operations] 的意义上，此模块中的函数执行的所有访问都是非原子的。",
         "translate": ""
     },
     {
@@ -1681,7 +1681,7 @@
     },
     {
         "source": "the referent of the pointer should not be modified without a unique path to its owning Unique.",
-        "suggest": "如果没有指向其所属 `唯一` 的唯一路径，则不应修改指针的引用对象。",
+        "suggest": "如果没有指向其所属 `unique` 的唯一路径，则不应修改指针的引用对象。",
         "translate": ""
     },
     {
@@ -1701,7 +1701,7 @@
     },
     {
         "source": "This should always be correct for any type which upholds Unique's aliasing requirements.",
-        "suggest": "对于任何符合 `唯一` 别名要求的类型，这应该总是正确的。",
+        "suggest": "对于任何符合 `Unique` 别名要求的类型，这应该总是正确的。",
         "translate": ""
     },
     {

@@ -751,7 +751,7 @@
     },
     {
         "source": "That said, none of that's *guaranteed*, and so we fence.",
-        "suggest": "就是说，这些都没有得到 `保证`，因此我们进行了 fence。",
+        "suggest": "也就是说，这些都没有保证，所以我们采取了防范措施。",
         "translate": ""
     },
     {
@@ -2266,7 +2266,7 @@
     },
     {
         "source": "The Unicode standard requires that surrogate code points (those in the range U+D800 to U+DFFF) always be *paired*, because in the UTF-16 encoding a *surrogate code unit pair* is used to encode a single character.",
-        "suggest": "Unicode 标准要求代理代码点 (在 U+D800 到 U+DFFF 范围内的代码点) 总是 `配对` 的，因为在 UTF-16 编码中，*surrogate code 单元对 `*` 用于编码单个字符。",
+        "suggest": "Unicode 标准要求代理代码点 (在 U+D800 到 U+DFFF 范围内的代码点) 总是成对的，因为在 UTF-16 编码中，*surrogate code 单元对 `*` 用于编码单个字符。",
         "translate": ""
     },
     {
@@ -2336,7 +2336,7 @@
     },
     {
         "source": "These traits, along with [`OsString`] and [`OsStr`], work in conjunction so that it is possible to **round-trip** strings from Windows and back, with no loss of data, even if the strings are ill-formed UTF-16.",
-        "suggest": "这些 traits 与 [`OsString`] 和 [`OsStr`] 一起使用，因此即使从 Windows 到 UTF-16 的字符串格式错误，也可以从 Windows 到 X 的字符串 `往返` 字符串，而不会丢失数据。",
+        "suggest": "这些 traits 与 [`OsString`] 和 [`OsStr`] 一起工作，这样就可以在 Windows 和后面往返字符串，而不会丢失数据，即使字符串是格式错误的 UTF-16。",
         "translate": ""
     },
     {
@@ -2776,17 +2776,17 @@
     },
     {
         "source": "Constructs a new I/O object from the specified raw handle.",
-        "suggest": "从指定的原始句柄创建一个新的 I/O object。",
+        "suggest": "从指定的原始句柄创建一个新的 I/O 对象。",
         "translate": ""
     },
     {
         "source": "This function will **consume ownership** of the handle given, passing responsibility for closing the handle to the returned object.",
-        "suggest": "此函数将 `消耗` 给定句柄的所有权 **，将关闭句柄的责任传递给返回的 object。",
+        "suggest": "此函数将消耗给定句柄的所有权，将关闭句柄的责任传递给返回的对象。",
         "translate": ""
     },
     {
         "source": "A trait to express the ability to consume an object and acquire ownership of its raw `HANDLE`.",
-        "suggest": "trait，用于表达使用 object 并获得其原始 `HANDLE` 所有权的能力。",
+        "suggest": "trait，用于表达使用对象并获得其原始 `HANDLE` 所有权的能力。",
         "translate": ""
     },
     {
@@ -2796,7 +2796,7 @@
     },
     {
         "source": "This function **transfers ownership** of the underlying handle to the caller.",
-        "suggest": "该函数将基础句柄的所有权 ** 转让给调用者。",
+        "suggest": "该函数将基础句柄的所有权转让给调用者。",
         "translate": ""
     },
     {
@@ -2826,22 +2826,22 @@
     },
     {
         "source": "This function will **consume ownership** of the socket provided and it will be closed when the returned object goes out of scope.",
-        "suggest": "此函数将 `消耗` 提供的套接字的所有权 **，并且在返回的 object 离开作用域时将关闭。",
+        "suggest": "此函数将消耗提供的套接字的所有权，并且在返回的对象离开作用域时将关闭。",
         "translate": ""
     },
     {
         "source": "A trait to express the ability to consume an object and acquire ownership of its raw `SOCKET`.",
-        "suggest": "trait，用于表达使用 object 并获得其原始 `SOCKET` 所有权的能力。",
+        "suggest": "trait，用于表达使用对象并获得其原始 `SOCKET` 所有权的能力。",
         "translate": ""
     },
     {
         "source": "Consumes this object, returning the raw underlying socket.",
-        "suggest": "消耗此 object，返回原始基础套接字。",
+        "suggest": "消耗此对象，返回原始基础套接字。",
         "translate": ""
     },
     {
         "source": "This function **transfers ownership** of the underlying socket to the caller.",
-        "suggest": "此函数将基础套接字的所有权 ** 转让给调用者。",
+        "suggest": "此函数将基础套接字的所有权转让给调用者。",
         "translate": ""
     },
     {
@@ -2891,7 +2891,7 @@
     },
     {
         "source": "These will always be ORed with `CREATE_UNICODE_ENVIRONMENT`.",
-        "suggest": "这些将始终与 `CREATE_UNICODE_ENVIRONMENT` 进行 `或` 运算。",
+        "suggest": "这些将始终与 `CREATE_UNICODE_ENVIRONMENT` 进行或运算。",
         "translate": ""
     },
     {
@@ -2991,7 +2991,7 @@
     },
     {
         "source": "For the Windows 10 Creators Update, Microsoft loosened this to allow unprivileged symlink creation if the computer is in Developer Mode, but SYMBOLIC_LINK_FLAG_ALLOW_UNPRIVILEGED_CREATE must be added to dwFlags to opt into this behaviour.",
-        "suggest": "对于 Windows 10 Creators 更新，Microsoft 放宽了此限制，以允许在计算机处于 `开发人员模式` 时创建未经授权的符号链接，但是必须将 SYMBOLIC_LINK_FLAG_ALLOW_UNPRIVILEGED_CREATE 添加到 dwFlags 中才能采用此行为。",
+        "suggest": "对于 Windows 10 Creators 更新，Microsoft 放宽了此限制，以允许在计算机处于开发人员模式时创建未经授权的符号链接，但是必须将 SYMBOLIC_LINK_FLAG_ALLOW_UNPRIVILEGED_CREATE 添加到 dwFlags 中才能采用此行为。",
         "translate": ""
     },
     {
@@ -3041,7 +3041,7 @@
     },
     {
         "source": "The special treatment of BrokenPipe is to deal with Windows pipe semantics, which yields this error when *reading* from a pipe after the other end has closed;",
-        "suggest": "BrokenPipe 的特殊处理是处理 Windows 管道语义，当另一端关闭后从管道 `读取` * 时，会产生此错误。",
+        "suggest": "BrokenPipe 的特殊处理是处理 Windows 管道语义，当另一端关闭后从管道读取时，会产生此错误。",
         "translate": ""
     },
     {
@@ -4506,12 +4506,12 @@
     },
     {
         "source": "Even Ordering::Relaxed guarantees a monotonic/consistent order when looking at just a single atomic variable.",
-        "suggest": "仅查看单个原子变量时，甚至 Ordering::Relaxed 都可以保证 monotonic/consistent 顺序。",
+        "suggest": "仅查看单个原子变量时，甚至 Ordering::Relaxed 都可以保证单调/一致的顺序。",
         "translate": ""
     },
     {
         "source": "So, since this parker is just a single atomic variable, we only need to look at the ordering guarantees we need to provide to the 'outside world'.",
-        "suggest": "因此，由于该 Parker 只是单个原子变量，因此我们只需要查看我们需要提供给 `外部世界` 的排序保证。",
+        "suggest": "因此，由于该 Parker 只是单一的原子变量，因此我们只需要查看我们需要提供向外部世界的排序保证。",
         "translate": ""
     },
     {

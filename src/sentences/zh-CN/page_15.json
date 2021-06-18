@@ -1211,7 +1211,7 @@
     },
     {
         "source": "The returned slice will **not** contain the trailing nul terminator that this C string has.",
-        "suggest": "返回的切片将 `不` 包含此 C 字符串具有的尾随 nul 终止符。",
+        "suggest": "返回的切片将不包含此 C 字符串具有的尾随 nul 终止符。",
         "translate": ""
     },
     {
@@ -2091,7 +2091,7 @@
     },
     {
         "source": "tested in reverse order, so 'create_new' creates the file, and 'open existing' opens it.",
-        "suggest": "以相反的顺序进行测试，因此 'create_new' 会创建文件，然后 `打开现有文件` 将其打开。",
+        "suggest": "以相反的顺序进行测试，因此 'create_new' 创建文件，然后 `open existing` 打开它。",
         "translate": ""
     },
     {
@@ -2761,7 +2761,7 @@
     },
     {
         "source": "This option, when true, will indicate that the file should be `read`-able if opened.",
-        "suggest": "该选项为 true 时，表示如果打开该文件，则该文件应该是 `可读` 的。",
+        "suggest": "该选项为 true 时，则表示打开的文件应该是可读的。",
         "translate": ""
     },
     {
@@ -2771,7 +2771,7 @@
     },
     {
         "source": "This option, when true, will indicate that the file should be `write`-able if opened.",
-        "suggest": "此选项为 true 时，表示如果打开该文件，则该文件应为 `可写` 状态。",
+        "suggest": "此选项为 true 时，则表示打开的文件应该是可写的。",
         "translate": ""
     },
     {
@@ -3066,7 +3066,7 @@
     },
     {
         "source": "This operation does **not** modify the filesystem.",
-        "suggest": "此操作 `不` 修改文件系统。",
+        "suggest": "此操作不修改文件系统。",
         "translate": ""
     },
     {
@@ -3301,7 +3301,7 @@
     },
     {
         "source": "This function will **overwrite** the contents of `to`.",
-        "suggest": "该函数将 `覆盖` `to` 的内容。",
+        "suggest": "该函数将覆盖 `to` 的内容。",
         "translate": ""
     },
     {
@@ -3561,7 +3561,7 @@
     },
     {
         "source": "This function does **not** follow symbolic links and it will simply remove the symbolic link itself.",
-        "suggest": "此函数 `不` 跟随符号链接，并且只会删除符号链接本身。",
+        "suggest": "此函数不跟随符号链接，它会简单地删除符号链接本身。",
         "translate": ""
     },
     {

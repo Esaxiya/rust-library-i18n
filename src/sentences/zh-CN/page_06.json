@@ -1651,7 +1651,7 @@
     },
     {
         "source": "Emits a machine instruction to signal the processor that it is running in a busy-wait spin-loop (\"spin lock\").",
-        "suggest": "发出一条机器指令，以向处理器发送信号，指示其正在忙于等待的自旋循环 (`自旋锁定`) 中运行。",
+        "suggest": "发出一条机器指令，以向处理器发送信号，指示其正在忙于等待的自旋循环 (自旋锁) 中运行。",
         "translate": ""
     },
     {
@@ -1726,7 +1726,7 @@
     },
     {
         "source": "Programs cannot rely on `black_box` for *correctness* in any way.",
-        "suggest": "程序不能以任何方式依靠 `black_box` 的 `正确性`。",
+        "suggest": "程序不能以任何方式依靠 `black_box` 的正确性。",
         "translate": ""
     },
     {
@@ -4506,7 +4506,7 @@
     },
     {
         "source": "Peek into the iterator and set the value behind the mutable reference.",
-        "suggest": "Peek 迭代器，然后将值设置在 `变量引用` 后面。",
+        "suggest": "查看迭代器并设置可变引用背后的值。",
         "translate": ""
     },
     {
