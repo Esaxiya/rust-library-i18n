@@ -4786,7 +4786,7 @@
     },
     {
         "source": "Separate module to reexport the macro `Debug` from prelude without the trait `Debug`.",
-        "suggest": "单独的模块，用于从 prelude 重导出宏 `Debug`，而无需 trait `Debug`。",
+        "suggest": "单独的模块，用于从 prelude 重导出 `Debug` 宏，而无需 `Debug` trait。",
         "translate": ""
     },
     {

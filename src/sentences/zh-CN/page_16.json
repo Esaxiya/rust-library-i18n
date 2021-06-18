@@ -376,7 +376,7 @@
     },
     {
         "source": "is generally assumed to be [`std::result::Result`][`Result`], and so users of this alias will generally use `io::Result` instead of shadowing the [prelude]'s import of [`std::result::Result`][`Result`].",
-        "suggest": "通常将其假定为 [`std::result::Result`][`Result`]，因此使用此别名的用户通常将使用 `io::Result`，而不是遮盖 [`std::result::Result`][`Result`] 的 [prelude] 导入。",
+        "suggest": "通常将其假定为 [`std::result::Result`][`Result`]，因此使用这个别名的用户通常将使用 `io::Result`，而不是隐藏 [`std::result::Result`][`Result`] 的 [prelude] 导入。",
         "translate": ""
     },
     {
