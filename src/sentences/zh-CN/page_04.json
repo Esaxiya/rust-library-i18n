@@ -426,7 +426,7 @@
     },
     {
         "source": "This follows a standard pattern in C/C++ ELF parsing code where (x + to - 1) & -to is used.",
-        "suggest": "这遵循 C/C ++ ELF 解析代码中的标准模式，其中使用 (x + 到 - 1) &-to。",
+        "suggest": "这遵循 C/C++ ELF 解析代码中的标准模式，其中使用 (x + 到 - 1) &-to。",
         "translate": ""
     },
     {

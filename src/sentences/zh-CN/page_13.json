@@ -4886,7 +4886,7 @@
     },
     {
         "source": "This is used by the C++ runtime to support capturing exceptions with std::exception_ptr, which we can't support because Box<dyn Any> isn't clonable.",
-        "suggest": "C ++ 运行时使用它来支持捕获 std::exception_ptr 的异常，由于 Box<dyn Any> 不完整，我们无法支持该异常。",
+        "suggest": "C++ 运行时使用它来支持捕获 std::exception_ptr 的异常，由于 Box<dyn Any> 不完整，我们无法支持该异常。",
         "translate": ""
     },
     {

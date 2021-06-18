@@ -1941,7 +1941,7 @@
     },
     {
         "source": "Build the unwinding from libunwind C/C++ source code.",
-        "suggest": "从 libunwind C/C ++ 源代码构建展开。",
+        "suggest": "从 libunwind C/C++ 源代码构建展开。",
         "translate": ""
     },
     {
@@ -1951,7 +1951,7 @@
     },
     {
         "source": "This is handled in the target spec with late_link_args_[static|dynamic]",
-        "suggest": "这是在目标规范中使用 late_link_args_ [static | dynamic] 处理的",
+        "suggest": "这是在目标规范中使用 late_link_args_[static|dynamic] 处理的",
         "translate": ""
     },
     {
@@ -1961,7 +1961,7 @@
     },
     {
         "source": "Compile the libunwind C/C++ source code.",
-        "suggest": "编译 libunwind C/C ++ 源代码。",
+        "suggest": "编译 libunwind C/C++ 源代码。",
         "translate": ""
     },
     {
@@ -2001,7 +2001,7 @@
     },
     {
         "source": "no unwinder on the system!",
-        "suggest": "没有放松系统!",
+        "suggest": "系统上没有 unwinder!",
         "translate": ""
     },
     {
@@ -2161,7 +2161,7 @@
     },
     {
         "source": "however, they *do* keep the allocation (the backing store for the value) alive.",
-        "suggest": "然而，他们 *确实* 保持分配 (值的后备存储) 处于活动状态。",
+        "suggest": "然而，他们确实保持分配 (值的后备存储) 处于活动状态。",
         "translate": ""
     },
     {
