@@ -4993,5 +4993,10 @@
         "source": "If any of the above steps don't work,",
         "suggest": "如果以上任何步骤都不起作用，",
         "translate": ""
+    },
+    {
+        "source": "Next up you can [find an issue][issues] to help out on, we've selected a few with the [`help wanted`][help] and [`impl-period`][impl] tags which could particularly use some help.",
+        "suggest": "接下来，您可以使用 [查找问题][issues] 进行帮助，我们选择了一些带有 [`help wanted`][help] 和 [`impl-period`][impl] 标签的标签，这些标签可能特别有用。",
+        "translate": ""
     }
 ]

@@ -2804,7 +2804,6 @@
         "suggest": "[`_mm512_stream_load_si512`] // stream_load_si256, ...",
         "translate": false
     },
-
     {
         "source": "[`_mm_mask_load_sd`] //need i1",
         "suggest": "[`_mm_mask_load_sd`] // 需要 i1",

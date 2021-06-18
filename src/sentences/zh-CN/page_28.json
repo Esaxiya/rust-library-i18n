@@ -1,10 +1,5 @@
 [
     {
-        "source": "Next up you can [find an issue][issues] to help out on, we've selected a few with the [`help wanted`][help] and [`impl-period`][impl] tags which could particularly use some help.",
-        "suggest": "接下来，您可以使用 [查找问题][issues] 进行帮助，我们选择了一些带有 [`help wanted`][help] 和 [`impl-period`][impl] 标签的标签，这些标签可能特别有用。",
-        "translate": ""
-    },
-    {
         "source": "You may be most interested in [#40][vendor], implementing all vendor intrinsics on x86.",
         "suggest": "您可能对 [#40][vendor] 最感兴趣，并在 x86 上实现了所有供应商内在函数。",
         "translate": ""
@@ -4992,6 +4987,16 @@
     {
         "source": "must be set to either zero or `HEAP_ZERO_MEMORY`.",
         "suggest": "必须设置为零或 `HEAP_ZERO_MEMORY`。",
+        "translate": ""
+    },
+    {
+        "source": "Note that `dwBytes` is allowed to be zero, contrary to some other allocators.",
+        "suggest": "请注意，与其他一些分配器相反，`dwBytes` 可以为零。",
+        "translate": ""
+    },
+    {
+        "source": "Reallocate a block of memory behind a given pointer `lpMem` from a given heap `hHeap`, to a block of at least `dwBytes` bytes, either shrinking the block in place, or allocating at a new location, copying memory, and freeing the original location.",
+        "suggest": "将给定指针 `lpMem` 后面的一块内存从给定的堆 `hHeap` 重新分配到至少 `dwBytes` 字节的块，要么将块缩小到位，要么在新位置分配，复制内存并释放原始位置。",
         "translate": ""
     }
 ]

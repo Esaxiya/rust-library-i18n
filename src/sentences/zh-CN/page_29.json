@@ -1,15 +1,5 @@
 [
     {
-        "source": "Note that `dwBytes` is allowed to be zero, contrary to some other allocators.",
-        "suggest": "请注意，与其他一些分配器相反，`dwBytes` 可以为零。",
-        "translate": ""
-    },
-    {
-        "source": "Reallocate a block of memory behind a given pointer `lpMem` from a given heap `hHeap`, to a block of at least `dwBytes` bytes, either shrinking the block in place, or allocating at a new location, copying memory, and freeing the original location.",
-        "suggest": "将给定指针 `lpMem` 后面的一块内存从给定的堆 `hHeap` 重新分配到至少 `dwBytes` 字节的块，要么将块缩小到位，要么在新位置分配，复制内存并释放原始位置。",
-        "translate": ""
-    },
-    {
         "source": "Returns a pointer to the reallocated memory or null if the operation fails.",
         "suggest": "返回指向重新分配的内存的指针，如果操作失败，则返回 null。",
         "translate": ""
@@ -1992,6 +1982,21 @@
     {
         "source": "A unique integer associated with each test.",
         "suggest": "与每个测试关联的唯一整数。",
+        "translate": ""
+    },
+    {
+        "source": "Memory safety",
+        "suggest": "内存安全",
+        "translate": ""
+    },
+    {
+        "source": "Fully qualified syntax",
+        "suggest": "完全限定的语法",
+        "translate": ""
+    },
+    {
+        "source": "base case",
+        "suggest": "基本情况",
         "translate": ""
     }
 ]
