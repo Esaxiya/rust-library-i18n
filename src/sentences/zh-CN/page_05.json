@@ -6,7 +6,7 @@
     },
     {
         "source": "In other words, it enables \"interior mutability\".",
-        "suggest": "换句话说，它启用 \"interior mutability\"。",
+        "suggest": "换句话说，它实现了内部可变性。",
         "translate": ""
     },
     {
@@ -61,7 +61,7 @@
     },
     {
         "source": "Unwraps the value.",
-        "suggest": "取消包装值。",
+        "suggest": "取消包装的值。",
         "translate": ""
     },
     {
@@ -81,7 +81,7 @@
     },
     {
         "source": "Returns a mutable reference to the underlying data.",
-        "suggest": "返回基础数据的可变引用。",
+        "suggest": "返回对基础数据的可变引用。",
         "translate": ""
     },
     {
@@ -191,7 +191,7 @@
     },
     {
         "source": "Panics if the value is currently borrowed.",
-        "suggest": "Panics (如果当前借用了该值)。",
+        "suggest": "如果当前的值是借来的，就会出现 panic。",
         "translate": ""
     },
     {
@@ -211,7 +211,7 @@
     },
     {
         "source": "Panics if the value in either `RefCell` is currently borrowed.",
-        "suggest": "Panics (如果当前借用了 `RefCell` 中的值)。",
+        "suggest": "如果当前借用了任一 `RefCell` 中的值，则会出现 panic。",
         "translate": ""
     },
     {
@@ -231,7 +231,7 @@
     },
     {
         "source": "Panics if the value is currently mutably borrowed.",
-        "suggest": "Panics (如果该值当前是可变借用的)。",
+        "suggest": "如果值当前是可变借用的，则出现 panic。",
         "translate": ""
     },
     {

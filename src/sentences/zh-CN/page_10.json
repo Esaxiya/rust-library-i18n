@@ -4776,7 +4776,7 @@
     },
     {
         "source": "type size",
-        "suggest": "字号",
+        "suggest": "类型大小",
         "translate": ""
     },
     {
