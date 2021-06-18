@@ -2979,5 +2979,10 @@
         "source": "16 0 0 0 0 0 0 0 0 0 0  0  0  0  0  0  x  o  x  o  o  o  o  o  o  o  0  0  0  0  0  0  0 answer_mask[1]: ................_10: \"0\" is in row 1 and column 17-32;",
         "suggest": "16 0 0 0 0 0 0 0 0 0 0  0  0  0  0  0  x  o  x  o  o  o  o  o  o  o  0  0  0  0  0  0  0 answer_mask[1]: ................_10: \"0\" 在第 1 行并且 17-32 列;",
         "translate": false
+    },
+    {
+        "source": "unsafe fn worker() {",
+        "suggest": "不安全的 fn worker() {",
+        "translate": false
     }
 ]

@@ -4356,12 +4356,12 @@
     },
     {
         "source": "Field of cpuinfo",
-        "suggest": "cpuinfo 的领域",
+        "suggest": "cpuinfo 字段",
         "translate": ""
     },
     {
         "source": "Does the field exist?",
-        "suggest": "该字段存在吗?",
+        "suggest": "字段是否存在?",
         "translate": ""
     },
     {
@@ -4942,11 +4942,6 @@
     {
         "source": "is supported and ensure that `target_feature` is enabled for your worker",
         "suggest": "受支持，并确保为您的工作人员启用了 `target_feature`",
-        "translate": ""
-    },
-    {
-        "source": "unsafe fn worker() {",
-        "suggest": "不安全的 fn worker() {",
         "translate": ""
     },
     {
