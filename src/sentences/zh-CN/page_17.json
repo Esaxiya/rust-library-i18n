@@ -861,7 +861,7 @@
     },
     {
         "source": "32-bit integers (very useful), and there is a [page for the module `std::i32`] that documents the constant values [`MIN`] and [`MAX`] (rarely useful).",
-        "suggest": "32 位整数 (非常有用)，并且有一个 [模块为 `std::i32`] 的页面记录了常量值 [`MIN`] 和 [`MAX`] (很少有用)。",
+        "suggest": "32 位整数 (非常有用)，并且有一个 [page for the module `std::i32`] 记录了常量值 [`MIN`] 和 [`MAX`] (很少有用)。",
         "translate": ""
     },
     {
