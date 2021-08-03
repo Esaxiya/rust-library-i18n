@@ -1736,7 +1736,7 @@
     },
     {
         "source": "Extracts the scalar value of lane specified in the immediate mode operand `N` from `a`.",
-        "suggest": "从 `a` 中提取在即时模式操作数 `N` 中指定的泳道的标量值。",
+        "suggest": "从 `a` 中提取在即时模式操作数 `N` 中指定的通道的标量值。",
         "translate": ""
     },
     {
@@ -1751,7 +1751,7 @@
     },
     {
         "source": "Replaces the scalar value of lane specified in the immediate mode operand `N` from `a`.",
-        "suggest": "从 `a` 替换在即时模式操作数 `N` 中指定的泳道的标量值。",
+        "suggest": "从 `a` 替换在即时模式操作数 `N` 中指定的通道的标量值。",
         "translate": ""
     },
     {
@@ -1761,7 +1761,7 @@
     },
     {
         "source": "Extracts a the scalar value of lane specified in the immediate mode operand `N` from `a`.",
-        "suggest": "从 `a` 中提取在即时模式操作数 `N` 中指定的泳道的标量值。",
+        "suggest": "从 `a` 中提取在即时模式操作数 `N` 中指定的通道的标量值。",
         "translate": ""
     },
     {
@@ -1836,7 +1836,7 @@
     },
     {
         "source": "Returns a new vector where each lane is all ones if the pairwise elements were not equal, or all zeros if the elements were equal.",
-        "suggest": "返回一个新的 vector，如果成对元素不相等，则每个泳道全为 1; 如果元素相等，则全零。",
+        "suggest": "返回一个新的 vector，如果成对元素不相等，则每个通道全为 1; 如果元素相等，则全零。",
         "translate": ""
     },
     {
@@ -1846,7 +1846,7 @@
     },
     {
         "source": "Returns a new vector where each lane is all ones if the pairwise left element is less than the pairwise right element, or all zeros otherwise.",
-        "suggest": "返回一个新的 vector，如果成对的左元素小于成对的右元素，则每个泳道全为 1，否则为全零。",
+        "suggest": "返回一个新的 vector，如果成对的左元素小于成对的右元素，则每个通道全为 1，否则为全零。",
         "translate": ""
     },
     {
@@ -1856,7 +1856,7 @@
     },
     {
         "source": "Returns a new vector where each lane is all ones if the pairwise left element is greater than the pairwise right element, or all zeros otherwise.",
-        "suggest": "返回一个新的 vector，如果成对的左元素大于成对的右元素，则每个泳道全为 1，否则为全零。",
+        "suggest": "返回一个新的 vector，如果成对的左元素大于成对的右元素，则每个通道全为 1，否则为全零。",
         "translate": ""
     },
     {
@@ -2036,17 +2036,17 @@
     },
     {
         "source": "Compares lane-wise signed integers, and returns the minimum of each pair.",
-        "suggest": "比较车道有符号整数，并返回每对中的最小值。",
+        "suggest": "比较通道有符号整数，并返回每对中的最小值。",
         "translate": ""
     },
     {
         "source": "Compares lane-wise unsigned integers, and returns the minimum of each pair.",
-        "suggest": "比较泳道无符号整数，并返回每对中的最小值。",
+        "suggest": "比较通道无符号整数，并返回每对中的最小值。",
         "translate": ""
     },
     {
         "source": "Compares lane-wise signed integers, and returns the maximum of each pair.",
-        "suggest": "比较车道有符号整数，并返回每对的最大值。",
+        "suggest": "比较通道有符号整数，并返回每对的最大值。",
         "translate": ""
     },
     {
