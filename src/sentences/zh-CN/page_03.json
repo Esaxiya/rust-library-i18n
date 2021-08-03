@@ -1901,7 +1901,7 @@
     },
     {
         "source": "Unchecked: Unchecked valid elements.",
-        "suggest": "未选中: 未选中的有效元素。",
+        "suggest": "未检查: 未检查的有效元素。",
         "translate": ""
     },
     {
@@ -1911,7 +1911,7 @@
     },
     {
         "source": "It shifts unchecked elements to cover holes and `set_len` to the correct length.",
-        "suggest": "它将未经检查的元素移动到覆盖孔和 `set_len` 的正确长度。",
+        "suggest": "它将未经检查的元素移动到覆盖 holes 和 `set_len` 的正确长度。",
         "translate": ""
     },
     {
@@ -1926,7 +1926,7 @@
     },
     {
         "source": "After filling holes, all items are in contiguous memory.",
-        "suggest": "填充完孔后，所有项都存储在连续的内存中。",
+        "suggest": "填充完 holes 后，所有项都存储在连续的内存中。",
         "translate": ""
     },
     {
