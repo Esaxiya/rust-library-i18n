@@ -4968,5 +4968,35 @@
         "source": "Same as [`i8x16_shuffle`], except operates as if the inputs were eight",
         "suggest": "与 [`i8x16_shuffle`] 相同，只是操作起来好像输入是八个",
         "translate": ""
+    },
+    {
+        "source": "Note that this will generate the `i8x16.shuffle` instruction, since there is no native `i16x8.shuffle` instruction (there is no need for one since `i8x16.shuffle` suffices).",
+        "suggest": "请注意，这将生成 `i8x16.shuffle` 指令，因为没有原生 `i16x8.shuffle` 指令 (不需要一个，因为 `i8x16.shuffle` 就足够了)。",
+        "translate": ""
+    },
+    {
+        "source": "Same as [`i8x16_shuffle`], except operates as if the inputs were four",
+        "suggest": "与 [`i8x16_shuffle`] 相同，但操作时如同输入为 4",
+        "translate": ""
+    },
+    {
+        "source": "Note that this will generate the `i8x16.shuffle` instruction, since there is no native `i32x4.shuffle` instruction (there is no need for one since `i8x16.shuffle` suffices).",
+        "suggest": "请注意，这将生成 `i8x16.shuffle` 指令，因为没有原生 `i32x4.shuffle` 指令 (不需要一个，因为 `i8x16.shuffle` 就足够了)。",
+        "translate": ""
+    },
+    {
+        "source": "Same as [`i8x16_shuffle`], except operates as if the inputs were two",
+        "suggest": "与 [`i8x16_shuffle`] 相同，但操作时就像输入是两个",
+        "translate": ""
+    },
+    {
+        "source": "Note that this will generate the `v8x16.shuffle` instruction, since there is no native `i64x2.shuffle` instruction (there is no need for one since `i8x16.shuffle` suffices).",
+        "suggest": "请注意，这将生成 `v8x16.shuffle` 指令，因为没有原生 `i64x2.shuffle` 指令 (不需要一个，因为 `i8x16.shuffle` 就足够了)。",
+        "translate": ""
+    },
+    {
+        "source": "Extracts a lane from a 128-bit vector interpreted as 16 packed u8 numbers.",
+        "suggest": "从解释为 16 个包装的 u8 数字的 128 位 vector 中提取一个通道。",
+        "translate": ""
     }
 ]
