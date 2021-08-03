@@ -4266,7 +4266,7 @@
     },
     {
         "source": "This is just an internal function, so feel free to remove if this bound turns out to be a bad idea.",
-        "suggest": "这只是一个内部函数，因此如果发现此绑定不是一个好主意，请随时删除。",
+        "suggest": "这只是一个内联函数，因此如果发现此绑定不是一个好主意，请随时删除。",
         "translate": ""
     },
     {

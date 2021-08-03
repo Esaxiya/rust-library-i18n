@@ -1636,12 +1636,12 @@
     },
     {
         "source": "This intrinsic generates a sequence of instructions, which may perform worse than a native instruction.",
-        "suggest": "此内在函数生成指令序列，其执行可能比原生指令差。",
+        "suggest": "此内联函数生成指令序列，其执行可能比原生指令差。",
         "translate": ""
     },
     {
         "source": "Consider the performance impact of this intrinsic.",
-        "suggest": "考虑此内在函数对性能的影响。",
+        "suggest": "考虑此内联函数对性能的影响。",
         "translate": ""
     },
     {
@@ -2306,7 +2306,7 @@
     },
     {
         "source": "This intrinsic essentially calculates floor(log2(x)) for each element.",
-        "suggest": "本质上，此内在函数为每个元素计算 floor(log2(x))。",
+        "suggest": "本质上，此内联函数为每个元素计算 floor(log2(x))。",
         "translate": ""
     },
     {
@@ -2486,7 +2486,7 @@
     },
     {
         "source": "This intrinsic essentially calculates ±(2^k)*|x.significand|, where k depends on the interval range defined by interv and the sign depends on sc and the source sign.",
-        "suggest": "此内在函数本质上计算 ± (2 ^ k) * | x.significand |，其中 k 取决于由 interv 定义的间隔范围，而符号取决于 sc 和源符号。",
+        "suggest": "此内联函数本质上计算 ± (2 ^ k) * | x.significand |，其中 k 取决于由 interv 定义的间隔范围，而符号取决于 sc 和源符号。",
         "translate": ""
     },
     {
@@ -4026,12 +4026,12 @@
     },
     {
         "source": "Note that this intrinsic shuffles across 128-bit lanes, unlike past intrinsics that use the permutevar name.",
-        "suggest": "请注意，与使用 permutevar 名称的过去内在函数不同，该内在函数在 128 位通道上进行了重排。",
+        "suggest": "请注意，与使用 permutevar 名称的过去内联函数不同，该内联函数在 128 位通道上进行了重排。",
         "translate": ""
     },
     {
         "source": "This intrinsic is identical to _mm512_permutexvar_epi32, and it is recommended that you use that intrinsic name.",
-        "suggest": "此内在函数与 _mm512_permutexvar_epi32 相同，建议您使用该内在名称。",
+        "suggest": "此内联函数与 _mm512_permutexvar_epi32 相同，建议您使用该内在名称。",
         "translate": ""
     },
     {

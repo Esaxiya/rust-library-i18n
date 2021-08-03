@@ -3811,7 +3811,7 @@
     },
     {
         "source": "It also gets a lot harder with poisoning to figure out when the mutex needs to be deallocated because it's not after the closure finishes, but after the first successful closure finishes.",
-        "suggest": "确定互斥锁何时需要解除分配还很困难，因为这不是在闭包完成之后，而是在第一个成功的闭包完成之后。",
+        "suggest": "通过中毒来确定何时需要释放互斥锁也会变得更加困难，因为它不是在闭包结束之后，而是在第一个成功的闭包结束之后。",
         "translate": ""
     },
     {
