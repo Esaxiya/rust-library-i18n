@@ -51,7 +51,7 @@
     },
     {
         "source": "Then, we implement `Stream` for our `Counter`:",
-        "suggest": "然后，我们为 `Counter` 实现 `Stream`:",
+        "suggest": "然后，为我们的 `Counter` 实现 `Stream`:",
         "translate": ""
     },
     {
